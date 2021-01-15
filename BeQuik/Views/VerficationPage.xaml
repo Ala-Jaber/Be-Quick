@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeQuik.Views.VerficationPage"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:XFC="clr-namespace:BeQuik.UserControl"
+             xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" BackgroundColor="#F5F5F5">
+    <ContentPage.Content>
+        <Grid Margin="0" Padding="20,20,20,0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
+            <StackLayout Margin="5,0,5,30" Padding="0" Spacing="20">
+                <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
+                <Label Text="SingUp" FontAttributes="Bold" TextColor="#000000" FontSize="Title"/>
+                <Frame Margin="0" Padding="0" BackgroundColor="White"
+                       HasShadow="True" BorderColor="WhiteSmoke" CornerRadius="10">
+                    <StackLayout Margin="20,10" Padding="0" Spacing="20">
+                        <Image Source="verfication" Aspect="AspectFit"/>
+                        <XF:MaterialLabel TextColor="#3E4A59" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand">
+                            <XF:MaterialLabel.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span  Text="Enter OTP code sent to your number" />
+                                        <Span Text="&#10;"/>
+                                        <Span Text="{Binding PhoneNumber,StringFormat='+962-{0:#### ####}'}" CharacterSpacing="1" FontAttributes="Bold" />
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </XF:MaterialLabel.FormattedText>
+                        </XF:MaterialLabel>
+                        <Grid Margin="0" Padding="0" ColumnDefinitions="*,*,*,*,*,*,*" HorizontalOptions="CenterAndExpand" VerticalOptions="Start">
+                            <Frame Grid.Column="0" Margin="0,10" Padding="0" BackgroundColor="White" HasShadow="True">
+                                <XF:MaterialTextField TextColor="#000000" InputType="Numeric"
+                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                              CardBackgroundColor="White" UnderlineColor="White" ReturnType="Next"/>
+                            </Frame>
+                            <Frame Grid.Column="2" Margin="0,10" Padding="0" BackgroundColor="White" HasShadow="True">
+                                <XF:MaterialTextField  TextColor="#000000" InputType="Numeric"
+                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                              CardBackgroundColor="White" UnderlineColor="White" ReturnType="Next"/>
+                            </Frame>
+                            <Frame Grid.Column="4" Margin="0,10" Padding="0" BackgroundColor="White" HasShadow="True">
+                                <XF:MaterialTextField TextColor="#000000" InputType="Numeric"
+                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                              CardBackgroundColor="White" UnderlineColor="White" ReturnType="Next"/>
+                            </Frame>
+                            <Frame Grid.Column="6" Margin="0,10" Padding="0" BackgroundColor="White" HasShadow="True">
+                                <XF:MaterialTextField  TextColor="#000000" InputType="Numeric"
+                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                              CardBackgroundColor="White" UnderlineColor="White" ReturnType="Next"/>
+                            </Frame>
+                        </Grid>
+                        <XF:MaterialButton Text="Confirme" TextColor="White" BackgroundColor="#75B2FF" 
+                                               Grid.Column="2" ButtonType="Elevated"
+                                               Elevation="10" AllCaps="False" CornerRadius="5"
+                                               Command="{Binding SingInCommand}"/>
+
+                        <StackLayout Margin="0" Padding="0" Spacing="5">
+                            <XF:MaterialLabel Text="{Binding RemainTime,StringFormat='resend code after {0:mm\\:ss}'}" 
+                                              FontAttributes="Bold" TextColor="#3E4A59"
+                                              HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                            <XF:MaterialButton Text="Resend verification code" TextColor="#899099" BackgroundColor="#F5F5F5"
+                                               ButtonType="Elevated" Elevation="10" AllCaps="False" Margin="20,0"
+                                               CornerRadius="5" IsEnabled="False" PressedBackgroundColor="#F5F5F5"
+                                               Command="{Binding TrySendVerifivationCodeAgain}">
+                                <XF:MaterialButton.Triggers>
+                                    <DataTrigger TargetType="XF:MaterialButton" Binding="{Binding RemainTime,StringFormat='{0:mm\\:ss}'}" Value="00:00">
+                                        <Setter Property="IsEnabled" Value="True"/>
+                                        <Setter Property="BackgroundColor" Value="#75B2FF" />
+                                        <Setter Property="PressedBackgroundColor" Value="#75B2FF" />
+                                        <Setter Property="TextColor" Value="White" />
+                                    </DataTrigger>
+                                </XF:MaterialButton.Triggers>
+                            </XF:MaterialButton>
+
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

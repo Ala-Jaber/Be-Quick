@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeQuik.Views.RegisterPage"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:XFC="clr-namespace:BeQuik.UserControl"
+             xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" BackgroundColor="#F5F5F5">
+    <ContentPage.Content>
+        <Grid Margin="0" Padding="20,20,20,0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
+            <StackLayout Margin="5,0,5,30" Padding="0" Spacing="20">
+                <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
+                <Label Text="SingUp" FontAttributes="Bold" TextColor="#000000" FontSize="Title"/>
+                <Frame Margin="0" Padding="0" BackgroundColor="White"
+                       HasShadow="True" BorderColor="WhiteSmoke" CornerRadius="10">
+                    <StackLayout Margin="20,10" Padding="0" Spacing="20">
+                        <Grid Margin="0" Padding="0" ColumnDefinitions="*,*" HorizontalOptions="FillAndExpand">
+                            <Frame Grid.Column="0" Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
+                                <XF:MaterialTextField Placeholder="First Name" TextColor="#000000" InputType="Text"
+                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                              CardBackgroundColor="White" UnderlineColor="White"/>
+                            </Frame>
+                            <Frame Grid.Column="1" Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
+                                <XF:MaterialTextField Placeholder="Last Name" TextColor="#000000" InputType="Text"
+                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                              CardBackgroundColor="White" UnderlineColor="White"/>
+                            </Frame>
+                        </Grid>
+                        <Frame Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
+                            <XF:MaterialTextField Placeholder="Email" TextColor="#000000" InputType="Email"
+                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                              CardBackgroundColor="White" UnderlineColor="White"/>
+                        </Frame>
+
+                        <Frame Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
+                            <XF:MaterialTextField Placeholder="Password" TextColor="#000000" InputType="Password"
+                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                              CardBackgroundColor="White" UnderlineColor="White"/>
+                        </Frame>
+
+                        <Frame Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
+                            <XF:MaterialTextField Placeholder="Confirm Password" TextColor="#000000" InputType="Password"
+                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                              CardBackgroundColor="White" UnderlineColor="White"/>
+                        </Frame>
+
+                        <Grid Margin="0" Padding="0" ColumnDefinitions="*,2.5*" HorizontalOptions="FillAndExpand">
+                            <Frame Grid.Column="0" Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
+                                <XFC:CustomPicker Visual="Material" Title="Area Code" TextColor="#000000"
+                                                  Image="arrow_downlist">
+                                    <XFC:CustomPicker.Items>
+                                        <x:String>JO +962</x:String>
+                                        <x:String>JO +962</x:String>
+                                        <x:String>JO +962</x:String>
+                                        <x:String>JO +962</x:String>
+                                        <x:String>JO +962</x:String>
+                                    </XFC:CustomPicker.Items>
+                                </XFC:CustomPicker>
+                            </Frame>
+                            <Frame Grid.Column="1" Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
+                                <XF:MaterialTextField Placeholder="Phone Number" TextColor="#000000" InputType="Telephone"
+                                                      FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                      CardBackgroundColor="White" UnderlineColor="White"
+                                                      Text="{Binding PhoneNumber}"/>
+                            </Frame>
+                        </Grid>
+
+                        <Grid Margin="0" Padding="0" ColumnDefinitions="*,*,*">
+                            <XF:MaterialButton Text="Singin" TextColor="White" BackgroundColor="#75B2FF" 
+                                               Grid.Column="2" ButtonType="Elevated"
+                                               Elevation="10" AllCaps="False"
+                                               Command="{Binding SendVerficationCodeCommand}"/>
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <XF:MaterialLabel Text="Already have account?" FontAttributes="Bold" TextColor="#3E4A59"/>
+                    <XF:MaterialLabel Text="Singin" FontAttributes="Bold" TextColor="#5D74E3">
+                        <XF:MaterialLabel.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding SingInCommand}"/>
+                        </XF:MaterialLabel.GestureRecognizers>
+                    </XF:MaterialLabel>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
