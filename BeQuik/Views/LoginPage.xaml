@@ -18,23 +18,22 @@
                     <Frame Margin="0" Padding="20,10" BackgroundColor="White"
                        HasShadow="True" BorderColor="WhiteSmoke" CornerRadius="10">
                         <StackLayout Margin="0" Padding="0" Spacing="20">
-                            <Image Source="car_driver" Aspect="AspectFit" HeightRequest="180"/>
-                            <Frame Margin="0" Padding="0" BackgroundColor="White" BorderColor="WhiteSmoke" HasShadow="True">
-                                <XF:MaterialTextField Placeholder="Email" TextColor="#000000" InputType="Email"
+                            <Image Source="lost_login" Aspect="AspectFit" HeightRequest="180"/>
+                            <StackLayout Margin="0" Padding="0" Spacing="10">
+                                <Frame Margin="5,1,5,2.5" Padding="0" BackgroundColor="White" BorderColor="WhiteSmoke" HasShadow="True">
+                                    <XF:MaterialTextField Placeholder="Email" TextColor="#000000" InputType="Email"
                                               FloatingPlaceholderColor="#000000" TintColor="#000000"
                                               CardBackgroundColor="White" UnderlineColor="White"/>
-                            </Frame>
-                            <Frame Margin="0" Padding="0" BackgroundColor="White" BorderColor="WhiteSmoke" HasShadow="True">
-                                <XF:MaterialTextField Placeholder="Password" TextColor="#000000" InputType="Password"
+                                </Frame>
+                                <Frame Margin="5,2,5,5" Padding="0" BackgroundColor="White" BorderColor="WhiteSmoke" HasShadow="True">
+                                    <XF:MaterialTextField Placeholder="Password" TextColor="#000000" InputType="Password"
                                               FloatingPlaceholderColor="#000000" TintColor="#000000"
                                               CardBackgroundColor="White" UnderlineColor="White"/>
-                            </Frame>
-                            <Grid Margin="0" Padding="0" ColumnDefinitions="*,*,*">
-                                <XF:MaterialButton Text="Singin" TextColor="White" BackgroundColor="#75B2FF" 
-                                               Grid.Column="2" ButtonType="Elevated"
-                                               Elevation="10" AllCaps="False"
+                                </Frame>
+                            </StackLayout>
+                            <Button Text="Sing in" TextColor="White" BackgroundColor="#75B2FF" 
+                                        TextTransform="None" CornerRadius="5" HeightRequest="40" HorizontalOptions="End"
                                                Command="{Binding SingInCommand}"/>
-                            </Grid>
                         </StackLayout>
                     </Frame>
                     <XF:MaterialLabel Text="Forget Password?" TextColor="#E93832" 

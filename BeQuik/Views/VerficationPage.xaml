@@ -11,7 +11,7 @@
             <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
             <StackLayout Margin="5,0,5,30" Padding="0" Spacing="20">
                 <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
-                <Label Text="SingUp" FontAttributes="Bold" TextColor="#000000" FontSize="Title"/>
+                <Label Text="Verification" FontAttributes="Bold" TextColor="#000000" FontSize="Title"/>
                 <Frame Margin="0" Padding="0" BackgroundColor="White"
                        HasShadow="True" BorderColor="WhiteSmoke" CornerRadius="10">
                     <StackLayout Margin="20,10" Padding="0" Spacing="20">
@@ -28,38 +28,42 @@
                             </XF:MaterialLabel.FormattedText>
                         </XF:MaterialLabel>
                         <Grid Margin="0" Padding="0" ColumnDefinitions="*,*,*,*,*,*,*" HorizontalOptions="CenterAndExpand" VerticalOptions="Start">
-                            <Frame Grid.Column="0" Margin="0,10" Padding="0" BackgroundColor="White" HasShadow="True">
+                            <Frame Grid.Column="0" Margin="0,10" Padding="0" BackgroundColor="White" HasShadow="True"
+                                   HorizontalOptions="Start" VerticalOptions="Start" HeightRequest="45" WidthRequest="45">
                                 <XF:MaterialTextField TextColor="#000000" InputType="Numeric"
                                               FloatingPlaceholderColor="#000000" TintColor="#000000"
                                               CardBackgroundColor="White" UnderlineColor="White" ReturnType="Next"/>
                             </Frame>
-                            <Frame Grid.Column="2" Margin="0,10" Padding="0" BackgroundColor="White" HasShadow="True">
+                            <Frame Grid.Column="2" Margin="0,10" Padding="0" BackgroundColor="White" HasShadow="True"
+                                   HorizontalOptions="Start" VerticalOptions="Start" HeightRequest="45" WidthRequest="45">
                                 <XF:MaterialTextField  TextColor="#000000" InputType="Numeric"
                                               FloatingPlaceholderColor="#000000" TintColor="#000000"
                                               CardBackgroundColor="White" UnderlineColor="White" ReturnType="Next"/>
                             </Frame>
-                            <Frame Grid.Column="4" Margin="0,10" Padding="0" BackgroundColor="White" HasShadow="True">
+                            <Frame Grid.Column="4" Margin="0,10" Padding="0" BackgroundColor="White" HasShadow="True"
+                                   HorizontalOptions="Start" VerticalOptions="Start" HeightRequest="45" WidthRequest="45">
                                 <XF:MaterialTextField TextColor="#000000" InputType="Numeric"
                                               FloatingPlaceholderColor="#000000" TintColor="#000000"
                                               CardBackgroundColor="White" UnderlineColor="White" ReturnType="Next"/>
                             </Frame>
-                            <Frame Grid.Column="6" Margin="0,10" Padding="0" BackgroundColor="White" HasShadow="True">
+                            <Frame Grid.Column="6" Margin="0,10" Padding="0" BackgroundColor="White" HasShadow="True"
+                                   HorizontalOptions="Start" VerticalOptions="Start" HeightRequest="45" WidthRequest="45">
                                 <XF:MaterialTextField  TextColor="#000000" InputType="Numeric"
                                               FloatingPlaceholderColor="#000000" TintColor="#000000"
                                               CardBackgroundColor="White" UnderlineColor="White" ReturnType="Next"/>
                             </Frame>
                         </Grid>
                         <XF:MaterialButton Text="Confirme" TextColor="White" BackgroundColor="#75B2FF" 
-                                               Grid.Column="2" ButtonType="Elevated"
-                                               Elevation="10" AllCaps="False" CornerRadius="5"
-                                               Command="{Binding SingInCommand}"/>
+                                            ButtonType="Elevated" TextTransform="None"
+                                            Elevation="10" AllCaps="False" CornerRadius="5"
+                                            Command="{Binding SingInCommand}"/>
 
                         <StackLayout Margin="0" Padding="0" Spacing="5">
                             <XF:MaterialLabel Text="{Binding RemainTime,StringFormat='resend code after {0:mm\\:ss}'}" 
                                               FontAttributes="Bold" TextColor="#3E4A59"
                                               HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
                             <XF:MaterialButton Text="Resend verification code" TextColor="#899099" BackgroundColor="#F5F5F5"
-                                               ButtonType="Elevated" Elevation="10" AllCaps="False" Margin="20,0"
+                                               ButtonType="Elevated" Elevation="10" AllCaps="False" Margin="20,0" TextTransform="None"
                                                CornerRadius="5" IsEnabled="False" PressedBackgroundColor="#F5F5F5"
                                                Command="{Binding TrySendVerifivationCodeAgain}">
                                 <XF:MaterialButton.Triggers>

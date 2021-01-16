@@ -14,7 +14,7 @@
                 <Label Text="SingUp" FontAttributes="Bold" TextColor="#000000" FontSize="Title"/>
                 <Frame Margin="0" Padding="0" BackgroundColor="White"
                        HasShadow="True" BorderColor="WhiteSmoke" CornerRadius="10">
-                    <StackLayout Margin="20,10" Padding="0" Spacing="20">
+                    <StackLayout Margin="10" Padding="5" Spacing="20">
                         <Grid Margin="0" Padding="0" ColumnDefinitions="*,*" HorizontalOptions="FillAndExpand">
                             <Frame Grid.Column="0" Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
                                 <XF:MaterialTextField Placeholder="First Name" TextColor="#000000" InputType="Text"
@@ -48,7 +48,7 @@
                         <Grid Margin="0" Padding="0" ColumnDefinitions="*,2.5*" HorizontalOptions="FillAndExpand">
                             <Frame Grid.Column="0" Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
                                 <XFC:CustomPicker Visual="Material" Title="Area Code" TextColor="#000000"
-                                                  Image="arrow_downlist">
+                                                  Image="arrow_downlist" TitleColor="#9F9F9F" FontSize="16">
                                     <XFC:CustomPicker.Items>
                                         <x:String>JO +962</x:String>
                                         <x:String>JO +962</x:String>
@@ -65,13 +65,9 @@
                                                       Text="{Binding PhoneNumber}"/>
                             </Frame>
                         </Grid>
-
-                        <Grid Margin="0" Padding="0" ColumnDefinitions="*,*,*">
-                            <XF:MaterialButton Text="Singin" TextColor="White" BackgroundColor="#75B2FF" 
-                                               Grid.Column="2" ButtonType="Elevated"
-                                               Elevation="10" AllCaps="False"
-                                               Command="{Binding SendVerficationCodeCommand}"/>
-                        </Grid>
+                        <Button Text="Sing in" TextColor="White" BackgroundColor="#75B2FF" 
+                                TextTransform="None" CornerRadius="5" HeightRequest="40" Padding="40,0" HorizontalOptions="End"
+                                Command="{Binding SendVerficationCodeCommand}"/>
                     </StackLayout>
                 </Frame>
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">

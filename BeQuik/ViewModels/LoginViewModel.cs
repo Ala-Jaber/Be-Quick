@@ -17,11 +17,11 @@ namespace BeQuik.ViewModels
             OpenAsRootPage(new Views.LoginPage());
         }
 
-        private async void OnSingInClicked(object obj)
+        private void OnSingInClicked(object obj)
         {
-
+            new ViewModels.CustomerPaymentViewModel();
         }
-        private async void OnSingUpClicked(object obj)
+        private void OnSingUpClicked(object obj)
         {
             new ViewModels.RegisterViewModel();
         }
