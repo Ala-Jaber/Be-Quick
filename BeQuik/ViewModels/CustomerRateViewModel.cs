@@ -4,11 +4,11 @@ using System.Text;
 
 namespace BeQuik.ViewModels
 {
-    public class CustomerRateViewModel:BaseViewModel
+    public class CustomerRateViewModel : BaseViewModel
     {
         public CustomerRateViewModel()
         {
-            OpenPage(new Views.CustomerRatePage());
+            OpenPage(new Views.CustomerRatePage()).ConfigureAwait(false);
         }
     }
 }

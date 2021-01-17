@@ -15,7 +15,7 @@ namespace BeQuik.ViewModels
         public VerficationViewModel(string phonenumber)
         {
             this.PhoneNumber = phonenumber;
-            OpenPage(new Views.VerficationPage());
+            OpenPage(new Views.VerficationPage()).ConfigureAwait(false);
             TrySendVerifivationCodeAgain = new Command(SendVerifivationCodeAgain);
             ShowRemainTimer();
         }

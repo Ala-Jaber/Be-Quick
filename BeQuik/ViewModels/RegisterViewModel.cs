@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
@@ -9,6 +10,7 @@ namespace BeQuik.ViewModels
     {
         public Command SendVerficationCodeCommand { get; }
         private string _PhoneNumber;
+        public IList ListAreaCode { get; }
         public string PhoneNumber
         {
             get { return _PhoneNumber; }
@@ -18,6 +20,7 @@ namespace BeQuik.ViewModels
 
         public RegisterViewModel()
         {
+            ListAreaCode = new List<string> { "JO\t+962", "JO\t+962", "JO\t+962", "JO\t+962", "JO\t+962", };
             SendVerficationCodeCommand = new Command(OnSendVerficationCodeClicked);
             OpenPage(new Views.RegisterPage()).ConfigureAwait(false);
         }

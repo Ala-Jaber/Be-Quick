@@ -4,7 +4,8 @@
              x:Class="BeQuik.Views.CustomerPaymentPage"
              Shell.NavBarIsVisible="False"
              NavigationPage.HasNavigationBar="False"
-             xmlns:XFC="clr-namespace:BeQuik.UserControl"
+             xmlns:XFC="clr-namespace:BeQuik.UserControl"             
+             xmlns:Utils="clr-namespace:BeQuik.Utils"
              xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" BackgroundColor="#F5F5F5">
     <ContentPage.Content>
         <Grid Margin="0" Padding="10,20,10,0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
@@ -25,7 +26,7 @@
                                     <StackLayout Margin="0" Padding="0" Spacing="5" HorizontalOptions="FillAndExpand" >
                                         <XF:MaterialLabel Text="Ala' Jaber" TextColor="#000000" FontAttributes="Bold" FontSize="Large"/>
                                         <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="20">
-                                            <XF:MaterialLabel Text="Rated" TextColor="#556080" FontAttributes="Bold" FontSize="Small"/>
+                                            <XF:MaterialLabel Text="{Utils:Translate Rated}" TextColor="#556080" FontAttributes="Bold" FontSize="Small"/>
                                             <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10">
                                                 <XF:MaterialLabel Text="4.90" TextColor="#556080" FontAttributes="Bold" FontSize="Small"/>
                                                 <Image Source="star_filled_gray" Aspect="AspectFit"/>
@@ -55,7 +56,7 @@
                             <Frame Margin="0" Padding="0" BackgroundColor="White" CornerRadius="0">
                                 <StackLayout Margin="10" Padding="5" Spacing="20">
                                     <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10" HorizontalOptions="FillAndExpand">
-                                        <XF:MaterialLabel Text="FARE" TextColor="#9097AC" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                        <XF:MaterialLabel Text="{Utils:Translate FARE}" TextColor="#9097AC" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Start" VerticalOptions="Center"/>
                                         <XF:MaterialLabel TextColor="#75B2FF" FontAttributes="Bold" FontSize="Title" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand">
                                             <XF:MaterialLabel.FormattedText>
                                                 <FormattedString>
@@ -67,16 +68,17 @@
                                                 </FormattedString>
                                             </XF:MaterialLabel.FormattedText>
                                         </XF:MaterialLabel>
-                                        <XF:MaterialLabel Text="(incl. Tax)" TextColor="#9097AC" FontAttributes="None" FontSize="Small" HorizontalOptions="End" VerticalOptions="End"/>
+                                        <XF:MaterialLabel Text="{Utils:Translate incl_Tax}" TextColor="#9097AC" FontAttributes="None" FontSize="Small" HorizontalOptions="End" VerticalOptions="End"/>
                                     </StackLayout>
                                     <StackLayout Margin="0" Padding="0" Spacing="10">
                                         <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="0">
-                                            <XF:MaterialLabel Text="Credit" TextColor="#9097AC" FontAttributes="None" FontSize="Small" HorizontalOptions="StartAndExpand"/>
+                                            <XF:MaterialLabel Text="{Utils:Translate Credit}" TextColor="#9097AC" FontAttributes="None" FontSize="Small" HorizontalOptions="StartAndExpand"/>
                                             <XF:MaterialLabel TextColor="#000000" FontAttributes="None" FontSize="Small" HorizontalOptions="EndAndExpand">
                                                 <XF:MaterialLabel.FormattedText>
                                                     <FormattedString>
                                                         <FormattedString.Spans>
                                                             <Span Text="1.40"/>
+                                                            <Span Text=" "/>
                                                             <Span Text="JOD"/>
                                                         </FormattedString.Spans>
                                                     </FormattedString>
@@ -84,12 +86,13 @@
                                             </XF:MaterialLabel>
                                         </StackLayout>
                                         <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="0">
-                                            <XF:MaterialLabel Text="Cash" TextColor="#9097AC" FontAttributes="None" FontSize="Small" HorizontalOptions="StartAndExpand"/>
+                                            <XF:MaterialLabel Text="{Utils:Translate Cash}" TextColor="#9097AC" FontAttributes="None" FontSize="Small" HorizontalOptions="StartAndExpand"/>
                                             <XF:MaterialLabel TextColor="#000000" FontAttributes="None" FontSize="Small" HorizontalOptions="EndAndExpand">
                                                 <XF:MaterialLabel.FormattedText>
                                                     <FormattedString>
                                                         <FormattedString.Spans>
                                                             <Span Text="1.40"/>
+                                                            <Span Text=" "/>
                                                             <Span Text="JOD"/>
                                                         </FormattedString.Spans>
                                                     </FormattedString>
@@ -98,15 +101,16 @@
                                         </StackLayout>
                                     </StackLayout>
                                     <StackLayout Margin="0" Padding="0" Spacing="10">
-                                        <XF:MaterialLabel Text="Details" TextColor="#9097AC" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="StartAndExpand"/>
+                                        <XF:MaterialLabel Text="{Utils:Translate Details}" TextColor="#9097AC" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="StartAndExpand"/>
                                         <StackLayout Margin="0" Padding="0" Spacing="10">
                                             <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="0">
-                                                <XF:MaterialLabel Text="Minmum payment" TextColor="#9097AC" FontAttributes="None" FontSize="Small" HorizontalOptions="StartAndExpand"/>
+                                                <XF:MaterialLabel Text="{Utils:Translate Minmum_payment}" TextColor="#9097AC" FontAttributes="None" FontSize="Small" HorizontalOptions="StartAndExpand"/>
                                                 <XF:MaterialLabel TextColor="#000000" FontAttributes="None" FontSize="Small" HorizontalOptions="EndAndExpand">
                                                     <XF:MaterialLabel.FormattedText>
                                                         <FormattedString>
                                                             <FormattedString.Spans>
                                                                 <Span Text="1.40"/>
+                                                                <Span Text=" "/>
                                                                 <Span Text="JOD"/>
                                                             </FormattedString.Spans>
                                                         </FormattedString>
@@ -114,12 +118,13 @@
                                                 </XF:MaterialLabel>
                                             </StackLayout>
                                             <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="0">
-                                                <XF:MaterialLabel Text="BeQuick service fees (incl. Tax)" LineBreakMode="WordWrap" TextColor="#9097AC" FontAttributes="None" FontSize="Small" HorizontalOptions="StartAndExpand"/>
+                                                <XF:MaterialLabel Text="{Utils:Translate BeQuick_service_fees}" LineBreakMode="WordWrap" TextColor="#9097AC" FontAttributes="None" FontSize="Small" HorizontalOptions="StartAndExpand"/>
                                                 <XF:MaterialLabel TextColor="#000000" FontAttributes="None" FontSize="Small" HorizontalOptions="EndAndExpand">
                                                     <XF:MaterialLabel.FormattedText>
                                                         <FormattedString>
                                                             <FormattedString.Spans>
                                                                 <Span Text="1.40"/>
+                                                                <Span Text=" "/>
                                                                 <Span Text="JOD"/>
                                                             </FormattedString.Spans>
                                                         </FormattedString>
@@ -127,12 +132,13 @@
                                                 </XF:MaterialLabel>
                                             </StackLayout>
                                             <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="0">
-                                                <XF:MaterialLabel Text="Distance" TextColor="#9097AC" FontAttributes="None" FontSize="Small" HorizontalOptions="StartAndExpand"/>
+                                                <XF:MaterialLabel Text="{Utils:Translate Distance}" TextColor="#9097AC" FontAttributes="None" FontSize="Small" HorizontalOptions="StartAndExpand"/>
                                                 <XF:MaterialLabel TextColor="#000000" FontAttributes="None" FontSize="Small" HorizontalOptions="EndAndExpand">
                                                     <XF:MaterialLabel.FormattedText>
                                                         <FormattedString>
                                                             <FormattedString.Spans>
                                                                 <Span Text="1.40"/>
+                                                                <Span Text=" "/>
                                                                 <Span Text="JOD"/>
                                                             </FormattedString.Spans>
                                                         </FormattedString>
@@ -140,12 +146,13 @@
                                                 </XF:MaterialLabel>
                                             </StackLayout>
                                             <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="0">
-                                                <XF:MaterialLabel Text="Amount charged" TextColor="#000000" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="StartAndExpand"/>
+                                                <XF:MaterialLabel Text="{Utils:Translate Amount_charged}" TextColor="#000000" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="StartAndExpand"/>
                                                 <XF:MaterialLabel TextColor="#000000" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="EndAndExpand">
                                                     <XF:MaterialLabel.FormattedText>
                                                         <FormattedString>
                                                             <FormattedString.Spans>
                                                                 <Span Text="1.40"/>
+                                                                <Span Text=" "/>
                                                                 <Span Text="JOD"/>
                                                             </FormattedString.Spans>
                                                         </FormattedString>
@@ -155,15 +162,15 @@
 
                                         </StackLayout>
                                     </StackLayout>
-                                    <XF:MaterialTextField Placeholder="Customer Payment" TextColor="#000000" InputType="Numeric"
+                                    <XF:MaterialTextField Placeholder="{Utils:Translate Customer_Payment}" TextColor="#000000" InputType="Numeric"
                                                           FloatingPlaceholderColor="#000000" TintColor="#000000"
-                                                          Text="0.0" x:Name="PricePymentText"
-                                                          HelperText="The amount the customer paid" UnderlineColor="White"/>
-                                    <Button Text="Confirme Payment" TextColor="White" BackgroundColor="#75B2FF" 
+                                                          Text="" x:Name="PricePymentText"
+                                                          HelperText="{Utils:Translate The_amount_the_customer_paid}" ShouldAnimateUnderline="False"/>
+                                    <Button Text="{Utils:Translate Confirme_Payment}" TextColor="White" BackgroundColor="#75B2FF" 
                                             TextTransform="None" CornerRadius="5" Margin="20,0" 
                                             Command="{Binding ConfirmePaymentCommand}">
                                         <Button.Triggers>
-                                            <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference PricePymentText},Path=Text}" Value="0.0">
+                                            <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference PricePymentText},Path=Text}" Value="">
                                                 <Setter Property="IsEnabled" Value="False"/>
                                             </DataTrigger>
                                         </Button.Triggers>

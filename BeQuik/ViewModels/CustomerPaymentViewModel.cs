@@ -13,7 +13,7 @@ namespace BeQuik.ViewModels
         {
             BackButtonCommand = new Command(BackButtonClicked);
             ConfirmePaymentCommand = new Command(ConfirmePaymentClick);
-            OpenPage(new Views.CustomerPaymentPage());
+            OpenPage(new Views.CustomerPaymentPage()).ConfigureAwait(false);
         }
         public void BackButtonClicked()
         {

@@ -19,7 +19,7 @@ namespace BeQuik.ViewModels
 
         private void OnSingInClicked(object obj)
         {
-            new ViewModels.CustomerPaymentViewModel();
+            new ViewModels.MainViewModel();
         }
         private void OnSingUpClicked(object obj)
         {

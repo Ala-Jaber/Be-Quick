@@ -4,14 +4,40 @@
              x:Class="BeQuik.Views.VerficationPage"
              Shell.NavBarIsVisible="False"
              NavigationPage.HasNavigationBar="False"
-             xmlns:XFC="clr-namespace:BeQuik.UserControl"
+             xmlns:XFC="clr-namespace:BeQuik.UserControl"             
+             xmlns:Utils="clr-namespace:BeQuik.Utils"
              xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" BackgroundColor="#F5F5F5">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Frame" x:Key="FrameEntryCode">
+                <Setter Property="Margin" Value="0"/>
+                <Setter Property="Padding" Value="0"/>
+                <Setter Property="HorizontalOptions" Value="Start"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HeightRequest" Value="45"/>
+                <Setter Property="WidthRequest" Value="45"/>
+                <Setter Property="IsClippedToBounds" Value="True"/>
+            </Style>
+            <Style TargetType="XF:MaterialTextField" x:Key="EntryCode">
+                <Setter Property="TextColor" Value="#000000"/>
+                <Setter Property="InputType" Value="Numeric"/>
+                <Setter Property="MaxLength" Value="1"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="FloatingPlaceholderEnabled" Value="False"/>
+                <Setter Property="TextFontSize" Value="20"/>
+                <Setter Property="HorizontalPadding" Value="15"/>
+                <Setter Property="CardBackgroundColor" Value="#FAFAFA"/>
+                <Setter Property="ShouldAnimateUnderline" Value="False"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <Grid Margin="0" Padding="20,20,20,0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
             <StackLayout Margin="5,0,5,30" Padding="0" Spacing="20">
                 <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
-                <Label Text="Verification" FontAttributes="Bold" TextColor="#000000" FontSize="Title"/>
+                <Label Text="{Utils:Translate Verification}" FontAttributes="Bold" TextColor="#000000" FontSize="Title"/>
                 <Frame Margin="0" Padding="0" BackgroundColor="White"
                        HasShadow="True" BorderColor="WhiteSmoke" CornerRadius="10">
                     <StackLayout Margin="20,10" Padding="0" Spacing="20">
@@ -20,61 +46,53 @@
                             <XF:MaterialLabel.FormattedText>
                                 <FormattedString>
                                     <FormattedString.Spans>
-                                        <Span  Text="Enter OTP code sent to your number" />
+                                        <Span  Text="{Utils:Translate Enter_OTP_code_sent_to_your_number}" />
                                         <Span Text="&#10;"/>
                                         <Span Text="{Binding PhoneNumber,StringFormat='+962-{0:#### ####}'}" CharacterSpacing="1" FontAttributes="Bold" />
                                     </FormattedString.Spans>
                                 </FormattedString>
                             </XF:MaterialLabel.FormattedText>
                         </XF:MaterialLabel>
-                        <Grid Margin="0" Padding="0" ColumnDefinitions="*,*,*,*,*,*,*" HorizontalOptions="CenterAndExpand" VerticalOptions="Start">
-                            <Frame Grid.Column="0" Margin="0,10" Padding="0" BackgroundColor="White" HasShadow="True"
-                                   HorizontalOptions="Start" VerticalOptions="Start" HeightRequest="45" WidthRequest="45">
-                                <XF:MaterialTextField TextColor="#000000" InputType="Numeric"
-                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
-                                              CardBackgroundColor="White" UnderlineColor="White" ReturnType="Next"/>
+
+                        <Grid Margin="0" Padding="0" ColumnDefinitions="*,0.5*,*,0.5*,*,0.5*,*" HorizontalOptions="CenterAndExpand" VerticalOptions="Start">
+                            <Frame Grid.Column="0" Style="{Binding Source={x:StaticResource FrameEntryCode}}">
+                                <XF:MaterialTextField Text="5" Style="{Binding Source={x:StaticResource EntryCode}}" ReturnType="Next"/>
                             </Frame>
-                            <Frame Grid.Column="2" Margin="0,10" Padding="0" BackgroundColor="White" HasShadow="True"
-                                   HorizontalOptions="Start" VerticalOptions="Start" HeightRequest="45" WidthRequest="45">
-                                <XF:MaterialTextField  TextColor="#000000" InputType="Numeric"
-                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
-                                              CardBackgroundColor="White" UnderlineColor="White" ReturnType="Next"/>
+                            <Frame Grid.Column="2" Style="{Binding Source={x:StaticResource FrameEntryCode}}">
+                                <XF:MaterialTextField  Style="{Binding Source={x:StaticResource EntryCode}}" ReturnType="Next"/>
                             </Frame>
-                            <Frame Grid.Column="4" Margin="0,10" Padding="0" BackgroundColor="White" HasShadow="True"
-                                   HorizontalOptions="Start" VerticalOptions="Start" HeightRequest="45" WidthRequest="45">
-                                <XF:MaterialTextField TextColor="#000000" InputType="Numeric"
-                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
-                                              CardBackgroundColor="White" UnderlineColor="White" ReturnType="Next"/>
+                            <Frame Grid.Column="4" Style="{Binding Source={x:StaticResource FrameEntryCode}}">
+                                <XF:MaterialTextField Style="{Binding Source={x:StaticResource EntryCode}}" ReturnType="Next"/>
                             </Frame>
-                            <Frame Grid.Column="6" Margin="0,10" Padding="0" BackgroundColor="White" HasShadow="True"
-                                   HorizontalOptions="Start" VerticalOptions="Start" HeightRequest="45" WidthRequest="45">
-                                <XF:MaterialTextField  TextColor="#000000" InputType="Numeric"
-                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
-                                              CardBackgroundColor="White" UnderlineColor="White" ReturnType="Next"/>
+                            <Frame Grid.Column="6" Style="{Binding Source={x:StaticResource FrameEntryCode}}">
+                                <XF:MaterialTextField  Style="{Binding Source={x:StaticResource EntryCode}}" ReturnType="Done"/>
                             </Frame>
                         </Grid>
-                        <XF:MaterialButton Text="Confirme" TextColor="White" BackgroundColor="#75B2FF" 
-                                            ButtonType="Elevated" TextTransform="None"
-                                            Elevation="10" AllCaps="False" CornerRadius="5"
-                                            Command="{Binding SingInCommand}"/>
+                        <Button Text="{Utils:Translate Confirme}" TextColor="White" BackgroundColor="#75B2FF" TextTransform="None" CornerRadius="5"/>
 
                         <StackLayout Margin="0" Padding="0" Spacing="5">
-                            <XF:MaterialLabel Text="{Binding RemainTime,StringFormat='resend code after {0:mm\\:ss}'}" 
-                                              FontAttributes="Bold" TextColor="#3E4A59"
-                                              HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
-                            <XF:MaterialButton Text="Resend verification code" TextColor="#899099" BackgroundColor="#F5F5F5"
-                                               ButtonType="Elevated" Elevation="10" AllCaps="False" Margin="20,0" TextTransform="None"
-                                               CornerRadius="5" IsEnabled="False" PressedBackgroundColor="#F5F5F5"
-                                               Command="{Binding TrySendVerifivationCodeAgain}">
-                                <XF:MaterialButton.Triggers>
-                                    <DataTrigger TargetType="XF:MaterialButton" Binding="{Binding RemainTime,StringFormat='{0:mm\\:ss}'}" Value="00:00">
+                            <XF:MaterialLabel FontAttributes="Bold" TextColor="#3E4A59"
+                                              HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center">
+                                <XF:MaterialLabel.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="{Utils:Translate resend_code_after}"/>
+                                            <Span Text="{Binding RemainTime,StringFormat='{0:mm\\:ss}'}"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </XF:MaterialLabel.FormattedText>
+                            </XF:MaterialLabel>
+                            <Button Text="{Utils:Translate Resend_verification_code}" TextColor="#899099" BackgroundColor="#F5F5F5"
+                                    Margin="20,0" TextTransform="None" CornerRadius="5" IsEnabled="False" 
+                                    Command="{Binding TrySendVerifivationCodeAgain}">
+                                <Button.Triggers>
+                                    <DataTrigger TargetType="Button" Binding="{Binding RemainTime,StringFormat='{0:mm\\:ss}'}" Value="00:00">
                                         <Setter Property="IsEnabled" Value="True"/>
                                         <Setter Property="BackgroundColor" Value="#75B2FF" />
-                                        <Setter Property="PressedBackgroundColor" Value="#75B2FF" />
                                         <Setter Property="TextColor" Value="White" />
                                     </DataTrigger>
-                                </XF:MaterialButton.Triggers>
-                            </XF:MaterialButton>
+                                </Button.Triggers>
+                            </Button>
 
                         </StackLayout>
                     </StackLayout>
