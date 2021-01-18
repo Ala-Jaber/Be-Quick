@@ -47,12 +47,18 @@
                         </Frame>
 
                         <Grid Margin="0" Padding="0" ColumnDefinitions="*,2.5*" HorizontalOptions="FillAndExpand">
-                            <Frame Grid.Column="0" Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
+                            <!--<Frame Grid.Column="0" Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
                                 <XF:MaterialTextField Placeholder="{Utils:Translate Area_Code}" TextColor="#000000" InputType="Choice"
                                                       FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                       CardBackgroundColor="White" ShouldAnimateUnderline="False"
                                                       FloatingPlaceholderFontSize="15"
                                                       Choices="{Binding ListAreaCode}" SelectedChoice="{Binding AreaCodeSelected}"/>
+                            </Frame>-->
+                            <Frame Grid.Column="0" Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
+                                <XFC:CustomPicker Visual="Material" Title="Area Code" TextColor="#000000"
+                                                  Image="arrow_downlist" TitleColor="#9F9F9F" FontSize="16"
+                                                  ItemDisplayBinding="{Binding .}"
+                                                  ItemsSource="{Binding ListAreaCode}" SelectedItem="{Binding AreaCodeSelected}"/>
                             </Frame>
                             <Frame Grid.Column="1" Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
                                 <XF:MaterialTextField Placeholder="{Utils:Translate Phone_Number}" TextColor="#000000" InputType="Telephone"

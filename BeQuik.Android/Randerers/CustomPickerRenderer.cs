@@ -5,50 +5,45 @@ using BeQuik.Droid.UserControl;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using AndroidX.Core.Content;
+using Android.Content;
 
 [assembly: ExportRenderer(typeof(CustomPicker), typeof(CustomPickerRenderer))]
 namespace BeQuik.Droid.UserControl
 {
-#pragma warning disable CS0618 // Type or member is obsolete
-    class CustomPickerRenderer : PickerRenderer
+    public class CustomPickerRenderer : PickerRenderer
     {
-        CustomPicker element;
+        public CustomPickerRenderer(Context context) : base(context)
+        {
+        }
 
         protected override void OnElementChanged(ElementChangedEventArgs<Picker> e)
         {
+            var CustomPicker = this.Element as CustomPicker;
+            if (!string.IsNullOrEmpty(CustomPicker?.Image))
+                Control.Background = AddPickerStyles(CustomPicker.Image, CustomPicker.ImageSize, CustomPicker.ImageSize);
             base.OnElementChanged(e);
-
-            element = (CustomPicker)this.Element;
-
-            if (Control != null && this.Element != null && !string.IsNullOrEmpty(element.Image))
-                Control.Background = AddPickerStyles(element.Image);
         }
 
-        public LayerDrawable AddPickerStyles(string imagePath)
+        public LayerDrawable AddPickerStyles(string imagePath,int width, int height)
         {
-
-            Drawable[] layers = { GetDrawable(imagePath) };
-            LayerDrawable layerDrawable = new LayerDrawable(layers);
+            var layers = new Drawable[] { GetDrawable(imagePath,width, height) };
+            var layerDrawable = new LayerDrawable(layers);
             layerDrawable.SetLayerInset(0, 0, 0, 0, 0);
-
             return layerDrawable;
         }
 
-        private BitmapDrawable GetDrawable(string imagePath)
+        private BitmapDrawable GetDrawable(string imagePath, int width, int height)
         {
             int resID = Resources.GetIdentifier(imagePath, "drawable", this.Context.PackageName);
             var drawable = ContextCompat.GetDrawable(this.Context, resID);
             var bitmap = ((BitmapDrawable)drawable).Bitmap;
-            BitmapDrawable result;
-            if (element.ImageSize != 0)
-                result = new BitmapDrawable(Resources, Bitmap.CreateScaledBitmap(bitmap, element.ImageSize, element.ImageSize, true));
-            else
-                result = new BitmapDrawable(Resources);
-            result.Gravity = Android.Views.GravityFlags.Right;
-
+            var Image = Bitmap.CreateScaledBitmap(bitmap, width, height, true);
+            var result = new BitmapDrawable(Resources, Image)
+            {
+                Gravity = Android.Views.GravityFlags.Right
+            };
             return result;
         }
 
     }
 }
-#pragma warning restore CS0618 // Type or member is obsolete

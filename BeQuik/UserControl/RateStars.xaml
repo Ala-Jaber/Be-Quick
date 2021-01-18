@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Mobile.UserControl.RateStars">
+             x:Class="BeQuik.UserControl.RateStars">
     <ContentView.Content>
         <StackLayout x:Name="StackPage" Orientation="Horizontal" Margin="0" Padding="0" Spacing="5" VerticalOptions="Start" HorizontalOptions="Start"/>
     </ContentView.Content>

@@ -11,27 +11,24 @@ using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
-using Mobile.UserControl;
+using BeQuik.UserControl;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
-using Mobile.Droid.UserControl;
+using BeQuik.Droid.UserControl;
 
 [assembly: ExportRenderer(typeof(CustomEditor), typeof(CustomEditorRenderer))]
 
-namespace Mobile.Droid.UserControl
+namespace BeQuik.Droid.UserControl
 {
-#pragma warning disable CS0618 // Type or member is obsolete
-    class CustomEditorRenderer : EditorRenderer
+    public class CustomEditorRenderer : EditorRenderer
     {
+        public CustomEditorRenderer(Context context) : base(context) { }
+
         protected override void OnElementChanged(ElementChangedEventArgs<Editor> e)
         {
-            base.OnElementChanged(e);
-            if (Control != null)
-            {
-                Control.Background = new ColorDrawable(Android.Graphics.Color.Transparent);
-            }
+            base.OnElementChanged(e); 
+            Control.Background = new ColorDrawable(Android.Graphics.Color.Transparent);
         }
     }
-#pragma warning restore CS0618 // Type or member is obsolete
 
 }

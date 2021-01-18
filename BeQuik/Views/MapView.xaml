@@ -6,8 +6,8 @@
              Shell.NavBarIsVisible="False"
              NavigationPage.HasNavigationBar="False"  
              xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
-             xmlns:Utils="clr-namespace:BeQuik.Utils"
-             xmlns:MapsForms="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps">
+             xmlns:UserControl="clr-namespace:BeQuik.UserControl"
+             xmlns:Utils="clr-namespace:BeQuik.Utils">
     <ContentPage.Resources>
         <ControlTemplate x:Key="RadioButtonTemplate">
             <Frame x:Name="FrameRadioButton" Margin="0" Padding="0" HasShadow="True" BorderColor="#1A000000" CornerRadius="10">
@@ -55,9 +55,7 @@
     </ContentPage.Resources>
     <ContentPage.Content>
         <Grid Margin="0" Padding="0" >
-            <MapsForms:Map x:Name="MapForms" HasZoomEnabled="False" IsShowingUser="False">
-
-            </MapsForms:Map>
+            <UserControl:CustomMap x:Name="MapForms"/>
             <Image Source="pin" HorizontalOptions="Center" VerticalOptions="Center"/>
             <!--Header-->
             <StackLayout Margin="0" Padding="0" Spacing="10" VerticalOptions="Start">
@@ -99,7 +97,6 @@
                                 </StackLayout>
                             </RadioButton.Content>
                         </RadioButton>
-                    </Grid>
                 </ScrollView>
             </StackLayout>
             <!--Footer-->

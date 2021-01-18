@@ -4,7 +4,7 @@
              x:Class="BeQuik.Views.CustomerRatePage"
              Shell.NavBarIsVisible="False"
              NavigationPage.HasNavigationBar="False"
-             xmlns:UserControls="clr-namespace:Mobile.UserControl"             
+             xmlns:UserControls="clr-namespace:BeQuik.UserControl"             
              xmlns:Utils="clr-namespace:BeQuik.Utils"
              xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" BackgroundColor="#F5F5F5">
     <ContentPage.Content>

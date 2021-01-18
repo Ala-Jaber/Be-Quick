@@ -74,7 +74,7 @@
     <Compile Include="CachingNativeBitmapDescriptorFactory.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Randerers\CustomEditorRenderer.cs" />
-    <Compile Include="Randerers\CustomeMapRanderer.cs" />
+    <Compile Include="Randerers\CustomMapRanderer.cs" />
     <Compile Include="Randerers\CustomPickerRenderer.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
