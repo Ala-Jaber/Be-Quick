@@ -8,17 +8,19 @@
              xmlns:Utils="clr-namespace:BeQuik.Utils"
              xmlns:MapsForms="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps">
     <ContentPage.Content>
-        <Grid Margin="0" Padding="0" >
-            <MapsForms:Map x:Name="MapForms" HasZoomEnabled="False" IsShowingUser="True"/>
-            <Image Source="pin_taxi" HorizontalOptions="Center" VerticalOptions="Center"/>
-            <!--Header-->
-            <StackLayout Margin="0" Padding="10" Spacing="10" VerticalOptions="Start">
+        <StackLayout Margin="0" Padding="0" Spacing="0">
+            <Grid Margin="0" Padding="0" VerticalOptions="FillAndExpand">
+                <MapsForms:Map x:Name="MapForms" HasZoomEnabled="False" IsShowingUser="True"/>
+                <Image Source="pin_taxi" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <!--Header-->
+                <StackLayout Margin="0" Padding="10" Spacing="10" VerticalOptions="Start">
                     <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
-            </StackLayout>
+                </StackLayout>
+            </Grid>
             <!--Footer-->
             <StackLayout Margin="0" Padding="10" Spacing="0" BackgroundColor="White" VerticalOptions="End">
-                <XF:MaterialIconButton Image="cancelBut" HeightRequest="50" WidthRequest="50"
-                                       HorizontalOptions="Start" TranslationY="-35" />
+                <XF:MaterialIconButton Image="cancelBut" HeightRequest="50" WidthRequest="50" CornerRadius="25"
+                                       HorizontalOptions="Start" TranslationY="-35" BackgroundColor="Transparent"/>
                 <StackLayout Margin="0" Padding="0" Spacing="10" TranslationY="-25">
                     <Label Text="{Utils:Translate WE_FOUND_YOU_A_DRIVER}" TextColor="#000000" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
                     <Label TextColor="#FA4B44" FontSize="Small" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center">
@@ -66,7 +68,6 @@
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
-
-        </Grid>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
