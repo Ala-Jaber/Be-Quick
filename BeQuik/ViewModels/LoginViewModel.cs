@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace BeQuik.ViewModels
@@ -12,18 +14,30 @@ namespace BeQuik.ViewModels
 
         public LoginViewModel()
         {
-            SingInCommand = new Command(OnSingInClicked);
+            SingInCommand = new Command(()=> OnSingInClicked().ConfigureAwait(false));
             SingUpCommand = new Command(OnSingUpClicked);
             OpenAsRootPage(new Views.LoginPage());
         }
 
-        private void OnSingInClicked(object obj)
+        private async Task OnSingInClicked()
         {
-            new ViewModels.MainViewModel();
+            var isMap = await RequestPermissionsLocation();
+            new ViewModels.MainViewModel(isMap);
         }
-        private void OnSingUpClicked(object obj)
+        private void OnSingUpClicked()
         {
             new ViewModels.RegisterViewModel();
+        }
+        private async Task<bool> RequestPermissionsLocation()
+        {
+            PermissionStatus status = PermissionStatus.Denied;
+
+            status = await MainThread.InvokeOnMainThreadAsync(async () =>
+            {
+                return await Permissions.RequestAsync<Permissions.LocationAlways>();
+            });
+
+            return (status == PermissionStatus.Granted);
         }
     }
 }

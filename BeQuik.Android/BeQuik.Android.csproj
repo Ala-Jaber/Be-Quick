@@ -74,6 +74,7 @@
     <Compile Include="CachingNativeBitmapDescriptorFactory.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Randerers\CustomEditorRenderer.cs" />
+    <Compile Include="Randerers\CustomeMapRanderer.cs" />
     <Compile Include="Randerers\CustomPickerRenderer.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -242,10 +243,16 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\call.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\warningBut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\cancelBut.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties XamarinHotReloadDebuggerTimeoutExceptionBeQuikAndroidHideInfoBar="True" TriggeredFromHotReload="False" />
+      <UserProperties TriggeredFromHotReload="False" XamarinHotReloadDebuggerTimeoutExceptionBeQuikAndroidHideInfoBar="True" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

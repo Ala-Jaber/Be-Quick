@@ -55,7 +55,7 @@
     </ContentPage.Resources>
     <ContentPage.Content>
         <Grid Margin="0" Padding="0" >
-            <MapsForms:Map x:Name="MapForms" HasZoomEnabled="False" IsShowingUser="True">
+            <MapsForms:Map x:Name="MapForms" HasZoomEnabled="False" IsShowingUser="False">
 
             </MapsForms:Map>
             <Image Source="pin" HorizontalOptions="Center" VerticalOptions="Center"/>
@@ -87,7 +87,7 @@
                             <RadioButton.Content>
                                 <StackLayout>
                                     <Image Source="taxi" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-                                    <Label Text="{Utils:Translate YellowTaxi}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Utils:Translate Yellow_Taxi}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
                                 </StackLayout>
                             </RadioButton.Content>
                         </RadioButton>

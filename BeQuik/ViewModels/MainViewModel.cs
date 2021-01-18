@@ -12,26 +12,14 @@ namespace BeQuik.ViewModels
         public FlyoutPage Page { get;}
         public Command MenuShow { get; }
         public Command RequestServiceCommand { get; }
-        public MainViewModel()
+        public MainViewModel(bool getCurrentLocation)
         {
             MenuShow = new Command(ShowMenu);
             RequestServiceCommand = new Command(RequestService);
-            var isMap = RequestLocation().GetAwaiter().GetResult();
-            Page = new Views.MasterDetailView(new Views.MapView(isMap));
+            Page = new Views.MasterDetailView(new Views.MapView(getCurrentLocation));
             OpenAsRootPage(Page);
         }
         private void ShowMenu() => Page.IsPresented = true;
-        private async Task<bool> RequestLocation()
-        {
-            PermissionStatus status = PermissionStatus.Denied;
-
-            status = await MainThread.InvokeOnMainThreadAsync(async () =>
-            {
-                return await Permissions.RequestAsync<Permissions.LocationAlways>();
-            });
-
-            return (status == PermissionStatus.Granted);
-        }
         private void RequestService()
         {
             new ViewModels.TracingServiceViewModel();
