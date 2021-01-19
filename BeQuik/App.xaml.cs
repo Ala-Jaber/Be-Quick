@@ -23,9 +23,9 @@ namespace BeQuik
         {
             return new MaterialLoadingDialogConfiguration
             {
-                BackgroundColor = XF.Material.Forms.Material.GetResource<Color>(MaterialConstants.Color.PRIMARY),
+                BackgroundColor = Color.FromHex("#232F34"),
                 MessageTextColor = XF.Material.Forms.Material.GetResource<Color>(MaterialConstants.Color.ON_PRIMARY).MultiplyAlpha(0.8),
-                TintColor = XF.Material.Forms.Material.GetResource<Color>(MaterialConstants.Color.ON_PRIMARY),
+                TintColor = Color.FromHex("#232F34"),
                 CornerRadius = 8,
                 ScrimColor = Color.FromHex("#232F34").MultiplyAlpha(0.32),
             };
@@ -34,7 +34,7 @@ namespace BeQuik
         {
             return new MaterialAlertDialogConfiguration
             {
-                BackgroundColor = XF.Material.Forms.Material.GetResource<Color>(MaterialConstants.Color.PRIMARY),
+                BackgroundColor = Color.FromHex("#232F34"),
                 TitleTextColor = XF.Material.Forms.Material.GetResource<Color>(MaterialConstants.Color.ON_PRIMARY),
                 MessageTextColor = XF.Material.Forms.Material.GetResource<Color>(MaterialConstants.Color.ON_PRIMARY).MultiplyAlpha(0.8),
                 TintColor = XF.Material.Forms.Material.GetResource<Color>(MaterialConstants.Color.ON_PRIMARY),
@@ -43,7 +43,7 @@ namespace BeQuik
                 ButtonAllCaps = false
             };
         }
-        public static void AddMapStyle(Xamarin.Forms.GoogleMaps.Map MapForms)
+        public static void AddMapStyle(Map MapForms)
         {
             var assembly = typeof(App).GetTypeInfo().Assembly;
             var stream = assembly.GetManifestResourceStream($"BeQuik.MapResources.StyleMap.json");

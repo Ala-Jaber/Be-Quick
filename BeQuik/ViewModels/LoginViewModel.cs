@@ -28,7 +28,7 @@ namespace BeQuik.ViewModels
                                 acknowledgementText: "Got It",
                                 configuration: App.GetMaterialAlertDialogConfiguration());
 
-            using (await MaterialDialog.Instance.LoadingDialogAsync(message: ""))
+            using (await MaterialDialog.Instance.LoadingDialogAsync(message: "Wait Sing in...", configuration: App.GetMaterialLoadingDialogConfiguration()))
             {
                 await Task.Delay(5000); // Represents a task that is running.
                 var isMap = await RequestPermissionsLocation();
