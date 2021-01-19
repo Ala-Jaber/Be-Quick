@@ -264,7 +264,7 @@
   <data name="Yellow_Taxi" xml:space="preserve">
     <value>Yellow Taxi</value>
   </data>
-  <data name="Your_driver_has_arrived._Please_be_there_within_5_minutes" xml:space="preserve">
+  <data name="Your_driver_has_arrived_Please_be_there_within_5_minutes" xml:space="preserve">
     <value>Your driver has arrived. Please be there within 5 minutes</value>
   </data>
   <data name="Your_feedback_will_help_us_improve_driving_experience_better" xml:space="preserve">

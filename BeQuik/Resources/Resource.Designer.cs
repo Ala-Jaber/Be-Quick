@@ -504,9 +504,9 @@ namespace BeQuik.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Your driver has arrived. Please be there within 5 minutes.
         /// </summary>
-        internal static string Your_driver_has_arrived__Please_be_there_within_5_minutes {
+        internal static string Your_driver_has_arrived_Please_be_there_within_5_minutes {
             get {
-                return ResourceManager.GetString("Your_driver_has_arrived._Please_be_there_within_5_minutes", resourceCulture);
+                return ResourceManager.GetString("Your_driver_has_arrived_Please_be_there_within_5_minutes", resourceCulture);
             }
         }
         

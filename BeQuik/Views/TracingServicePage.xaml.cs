@@ -17,6 +17,6 @@ namespace BeQuik.Views
             InitializeComponent();
             App.AddMapStyle(MapForms);
         }
-        protected override bool OnBackButtonPressed() => false;
+        protected override bool OnBackButtonPressed() => true;
     }
 }

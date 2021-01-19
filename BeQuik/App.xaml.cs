@@ -25,7 +25,7 @@ namespace BeQuik
             {
                 BackgroundColor = Color.FromHex("#232F34"),
                 MessageTextColor = XF.Material.Forms.Material.GetResource<Color>(MaterialConstants.Color.ON_PRIMARY).MultiplyAlpha(0.8),
-                TintColor = Color.FromHex("#232F34"),
+                TintColor = XF.Material.Forms.Material.GetResource<Color>(MaterialConstants.Color.ON_PRIMARY),
                 CornerRadius = 8,
                 ScrimColor = Color.FromHex("#232F34").MultiplyAlpha(0.32),
             };
