@@ -27,7 +27,7 @@ namespace BeQuik
                 MessageTextColor = XF.Material.Forms.Material.GetResource<Color>(MaterialConstants.Color.ON_PRIMARY).MultiplyAlpha(0.8),
                 TintColor = XF.Material.Forms.Material.GetResource<Color>(MaterialConstants.Color.ON_PRIMARY),
                 CornerRadius = 8,
-                ScrimColor = Color.FromHex("#011A27").MultiplyAlpha(0.32),
+                ScrimColor = Color.FromHex("#232F34").MultiplyAlpha(0.32),
             };
         }
         public static MaterialAlertDialogConfiguration GetMaterialAlertDialogConfiguration()
@@ -39,7 +39,7 @@ namespace BeQuik
                 MessageTextColor = XF.Material.Forms.Material.GetResource<Color>(MaterialConstants.Color.ON_PRIMARY).MultiplyAlpha(0.8),
                 TintColor = XF.Material.Forms.Material.GetResource<Color>(MaterialConstants.Color.ON_PRIMARY),
                 CornerRadius = 8,
-                ScrimColor = Color.FromHex("#011A27").MultiplyAlpha(0.32),
+                ScrimColor = Color.FromHex("#232F34").MultiplyAlpha(0.32),
                 ButtonAllCaps = false
             };
         }
