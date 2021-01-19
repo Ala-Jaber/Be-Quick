@@ -97,6 +97,7 @@
                                 </StackLayout>
                             </RadioButton.Content>
                         </RadioButton>
+                    </Grid>
                 </ScrollView>
             </StackLayout>
             <!--Footer-->

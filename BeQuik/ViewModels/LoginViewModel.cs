@@ -4,6 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using XF.Material.Forms.UI.Dialogs;
 
 namespace BeQuik.ViewModels
 {
@@ -21,8 +22,18 @@ namespace BeQuik.ViewModels
 
         private async Task OnSingInClicked()
         {
-            var isMap = await RequestPermissionsLocation();
-            new ViewModels.MainViewModel(isMap);
+            await MaterialDialog.Instance.AlertAsync(
+                                title: "Alert Dialog",
+                                message: "This is an alert dialog",
+                                acknowledgementText: "Got It",
+                                configuration: App.GetMaterialAlertDialogConfiguration());
+
+            using (await MaterialDialog.Instance.LoadingDialogAsync(message: ""))
+            {
+                await Task.Delay(5000); // Represents a task that is running.
+                var isMap = await RequestPermissionsLocation();
+                new ViewModels.MainViewModel(isMap);
+            }
         }
         private void OnSingUpClicked()
         {
