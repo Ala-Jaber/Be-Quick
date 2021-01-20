@@ -18,13 +18,11 @@
                             <VisualState x:Name="Checked">
                                 <VisualState.Setters>
                                     <Setter TargetName="FrameRadioButton" Property="Frame.BackgroundColor" Value="#75B2FF" />
-                                    <!--<Setter Property="TextColor" Value="White" />-->
                                 </VisualState.Setters>
                             </VisualState>
                             <VisualState x:Name="Unchecked">
                                 <VisualState.Setters>
                                     <Setter TargetName="FrameRadioButton" Property="Frame.BackgroundColor" Value="White" />
-                                    <!--<Setter Property="TextColor" Value="#000000" />-->
                                 </VisualState.Setters>
                             </VisualState>
                         </VisualStateGroup>
@@ -104,7 +102,7 @@
             <StackLayout Margin="0" Padding="0" Spacing="30"  VerticalOptions="End">
                 <Button Text="{Utils:Translate Confirm_Place}" TextColor="White" BackgroundColor="#75B2FF" 
                         TextTransform="None" CornerRadius="5" Padding="0,10"
-                        Margin="30,0" Command="{Binding RequestServiceCommand}"
+                        Margin="30,0" Command="{Binding DisplaySummaryOrderCommand}"
                         HorizontalOptions="FillAndExpand" VerticalOptions="End"/>
                 <Grid RowSpacing="0" RowDefinitions="Auto,*">
                     <Frame Margin="0" Padding="20,5" HeightRequest="40" VerticalOptions="End"

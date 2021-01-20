@@ -8,7 +8,7 @@
              xmlns:Utils="clr-namespace:BeQuik.Utils"
              xmlns:UserControl="clr-namespace:BeQuik.UserControl">
     <ContentPage.Content>
-        <Grid Margin="0" Padding="0">            
+        <Grid Margin="0" Padding="0">
             <StackLayout Margin="0" Padding="0" Spacing="0">
                 <Grid Margin="0" Padding="0" VerticalOptions="FillAndExpand">
                     <UserControl:CustomMap x:Name="MapForms"/>
@@ -19,7 +19,7 @@
                     </StackLayout>
                 </Grid>
                 <!--Footer-->
-                <Grid Margin="0" Padding="0" RowDefinitions="30,30,*" Background="Transparent" VerticalOptions="End">                
+                <Grid Margin="0" Padding="0" RowDefinitions="30,30,*" Background="Transparent" VerticalOptions="End">
                     <Grid Grid.Row="1" Grid.RowSpan="2" Margin="0" Padding="0">
                         <StackLayout Margin="0" Padding="0,0,0,10" Spacing="10" BackgroundColor="White">
                             <Label Text="{Utils:Translate WE_FOUND_YOU_A_DRIVER}" TextColor="#000000" FontAttributes="Bold" 
@@ -100,52 +100,11 @@
                         <XF:MaterialIconButton.Triggers>
                             <DataTrigger TargetType="XF:MaterialIconButton" Binding="{Binding IsShowCancelRide}" Value="True">
                                 <Setter Property="IsVisible" Value="False"/>
-                            </DataTrigger>  
+                            </DataTrigger>
                         </XF:MaterialIconButton.Triggers>
                     </XF:MaterialIconButton>
                 </Grid>
             </StackLayout>
-            <ContentView Margin="0" Padding="0" BackgroundColor="#1F000000" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
-                         IsVisible="{Binding IsPopupArrivedDeriver}">
-                <Frame Margin="30,0" Padding="0" BackgroundColor="White" CornerRadius="10" HorizontalOptions="Center" VerticalOptions="Center">
-                    <StackLayout Margin="10" Padding="0" Spacing="20">
-                        <StackLayout Orientation="Horizontal" Margin="0" Padding="5" Spacing="20">
-                            <Image Source="img_profile" Aspect="AspectFit" HeightRequest="70"/>
-                            <StackLayout Margin="0" Padding="0" Spacing="5" HorizontalOptions="FillAndExpand" >
-                                <XF:MaterialLabel Text="Ala' Jaber" TextColor="#000000" FontAttributes="Bold" FontSize="Large"/>
-                                <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10">
-                                    <XF:MaterialLabel Text="{Utils:Translate Rated}" TextColor="#556080" FontAttributes="Bold" FontSize="Micro"/>
-                                    <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="3">
-                                        <XF:MaterialLabel Text="4.90" TextColor="#556080" FontAttributes="Bold" FontSize="Micro"/>
-                                        <Image Source="star_filled_gray" Aspect="AspectFit"/>
-                                    </StackLayout>
-                                </StackLayout>
-                                <XF:MaterialLabel FontAttributes="Bold" FontSize="Small">
-                                    <XF:MaterialLabel.FormattedText>
-                                        <FormattedString>
-                                            <FormattedString.Spans>
-                                                <Span Text="95-659471" TextColor="#000000"/>
-                                                <Span Text="~" TextColor="#AE556080"/>
-                                                <Span Text="Hundai i20" TextColor="#AE556080"/>
-                                            </FormattedString.Spans>
-                                        </FormattedString>
-                                    </XF:MaterialLabel.FormattedText>
-                                </XF:MaterialLabel>
-                            </StackLayout>
-                            <XF:MaterialIconButton Image="call" CornerRadius="25" WidthRequest="50" HeightRequest="50" 
-                                                   BackgroundColor="#E2E5EF" HorizontalOptions="Start" VerticalOptions="Start"
-                                                   Command="{Binding CallCommand}"/>
-                        </StackLayout>
-                        <BoxView Margin="0" HeightRequest="1" HorizontalOptions="FillAndExpand" Color="#FD707070"/>
-                        <Label Text="{Utils:Translate Your_driver_has_arrived_Please_be_there_within_5_minutes}" Padding="30,0" TextColor="#000000" FontAttributes="Bold" FontSize="Small"/>
-                        <Button Text="{Utils:Translate Confirm}" TextColor="White" BackgroundColor="#75B2FF" 
-                                TextTransform="None" CornerRadius="5" Padding="0,10"
-                                Command="{Binding ToggelDisplayPopupArrivedDeriverCommand}"
-                                HorizontalOptions="FillAndExpand" VerticalOptions="End"/>
-                    </StackLayout>
-
-                </Frame>
-            </ContentView>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

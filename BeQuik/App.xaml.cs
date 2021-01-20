@@ -19,6 +19,20 @@ namespace BeQuik
             XF.Material.Forms.Material.Init(this);
             new ViewModels.LoginViewModel();
         }
+        public static MaterialInputDialogConfiguration GetMaterialInputDialogConfiguration()
+        {
+            return new MaterialInputDialogConfiguration
+            {
+                InputType = XF.Material.Forms.UI.MaterialTextFieldInputType.Text,
+                CornerRadius = 8,
+                BackgroundColor = Color.FromHex("#2c3e50"),
+                InputTextColor = Color.White,
+                InputPlaceholderColor = Color.White.MultiplyAlpha(0.6),
+                TintColor = Color.White,
+                TitleTextColor = Color.White,
+                MessageTextColor = Color.FromHex("#DEFFFFFF")
+            };
+        }
         public static MaterialLoadingDialogConfiguration GetMaterialLoadingDialogConfiguration()
         {
             return new MaterialLoadingDialogConfiguration

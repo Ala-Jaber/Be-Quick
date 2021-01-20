@@ -3,6 +3,7 @@ using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
 using Xamarin.Forms.GoogleMaps.Android;
+using Android.Content.Res;
 
 namespace BeQuik.Droid
 {
@@ -16,17 +17,42 @@ namespace BeQuik.Droid
 
             base.OnCreate(bundle);
 
+            Rg.Plugins.Popup.Popup.Init(this);
+
             Xamarin.Essentials.Platform.Init(this, bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
             XF.Material.Droid.Material.Init(this, bundle);
 
-            // Override default BitmapDescriptorFactory by your implementation. 
             var platformConfig = new PlatformConfig { BitmapDescriptorFactory = new CachingNativeBitmapDescriptorFactory() };
             Xamarin.FormsGoogleMaps.Init(this, bundle, platformConfig); 
 
             LoadApplication(new App());
+        }
+        public override Android.Content.Res.Resources Resources
+        {
+            get
+            {
+                Configuration config = new Configuration();
+                config.SetToDefaults();
+
+                Android.Content.Context context = CreateConfigurationContext(config);
+                var resources = context.Resources;
+
+                return resources;
+            }
+        }
+        public override void OnBackPressed()
+        {
+            if (Rg.Plugins.Popup.Popup.SendBackPressed(base.OnBackPressed))
+            {
+                // Do something if there are some pages in the `PopupStack`
+            }
+            else
+            {
+                base.OnBackPressed();
+            }
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
