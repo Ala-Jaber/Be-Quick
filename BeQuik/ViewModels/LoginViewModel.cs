@@ -35,12 +35,12 @@ namespace BeQuik.ViewModels
 
         private async Task OnSingInClicked()
         {
-            switch (UserName.Trim())
+            switch (UserName.Trim().ToLower())
             {
-                case "Alert":
+                case "alert":
                     ShowAlert().ConfigureAwait(false);
                     break;
-                case "Loading":
+                case "loading":
                     ShowLoading().ConfigureAwait(false);
                     break;
                 case "client":
