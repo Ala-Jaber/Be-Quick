@@ -162,10 +162,12 @@
 
                                         </StackLayout>
                                     </StackLayout>
-                                    <XF:MaterialTextField Placeholder="{Utils:Translate Customer_Payment}" TextColor="#000000" InputType="Numeric"
+                                    <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5">
+                                        <XF:MaterialTextField Placeholder="{Utils:Translate Customer_Payment}" TextColor="#000000" InputType="Numeric"
                                                           FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                           Text="" x:Name="PricePymentText"
                                                           HelperText="{Utils:Translate The_amount_the_customer_paid}" ShouldAnimateUnderline="False"/>
+                                    </XF:MaterialCard>
                                     <Button Text="{Utils:Translate Confirme_Payment}" TextColor="White" BackgroundColor="#75B2FF" 
                                             TextTransform="None" CornerRadius="5" Margin="20,0" 
                                             Command="{Binding ConfirmePaymentCommand}">

@@ -10,76 +10,78 @@
              xmlns:Utils="clr-namespace:BeQuik.Utils"
              xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" BackgroundColor="#F5F5F5">
     <ContentPage.Content>
-        <Grid Margin="0" Padding="20,20,20,0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Grid Margin="0" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
-            <StackLayout Margin="5,0" Padding="0" Spacing="20">
-                <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
-                <Label Text="{Utils:Translate SingIn}" FontAttributes="Bold" TextColor="#000000" FontSize="Title"/>
-                <StackLayout Margin="0" Padding="0" Spacing="10">
-                    <Frame Margin="0" Padding="20,10" BackgroundColor="White" HasShadow="True" BorderColor="WhiteSmoke" CornerRadius="10">
-                        <StackLayout Margin="0" Padding="0" Spacing="20">
-                            <Image Source="lost_login" Aspect="AspectFit" HeightRequest="180"/>
-                            <StackLayout Margin="0" Padding="0" Spacing="10">
-                                <Frame Margin="5,1,5,2.5" Padding="0" BackgroundColor="White" BorderColor="WhiteSmoke" HasShadow="True">
-                                    <XF:MaterialTextField Placeholder="{Utils:Translate Email}" TextColor="#000000" InputType="Email"
+            <StackLayout Margin="0" Padding="0" Spacing="0">
+                <Image Margin="20" Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
+                <ScrollView Margin="0" Padding="10">
+                    <StackLayout Margin="0" Padding="0" Spacing="20">
+                        <StackLayout Margin="0" Padding="0" Spacing="10">
+                            <Image Source="lost_login" Aspect="AspectFit" HeightRequest="150"/>
+
+                            <XF:MaterialCard Margin="0" Padding="20,10" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                <StackLayout Margin="0" Padding="0" Spacing="20">
+                                    <StackLayout Margin="0" Padding="0" Spacing="10">
+                                        <Label Text="{Utils:Translate SingIn}" FontAttributes="Bold" TextColor="#000000" FontSize="Large"/>
+                                        <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                            <XF:MaterialTextField Placeholder="{Utils:Translate Email}" Text="{Binding UserName}" TextColor="#000000" InputType="Email"
                                                           FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                           CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
-                                </Frame>
-                                <Frame Margin="5,2,5,5" Padding="0" BackgroundColor="White" BorderColor="WhiteSmoke" HasShadow="True">
-                                    <XF:MaterialTextField Placeholder="{Utils:Translate Password}" TextColor="#000000" InputType="Password"
+                                        </XF:MaterialCard>
+                                        <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                            <XF:MaterialTextField Placeholder="{Utils:Translate Password}" Text="{Binding Password}" TextColor="#000000" InputType="Password"
                                                           FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                           CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
-                                </Frame>
-                            </StackLayout>
-                            <Button Text="{Utils:Translate SingIn}" TextColor="White" BackgroundColor="#75B2FF" 
+                                        </XF:MaterialCard>
+                                    </StackLayout>
+                                    <Button Text="{Utils:Translate SingIn}" TextColor="White" BackgroundColor="#75B2FF" 
                                     TextTransform="None" CornerRadius="5" HeightRequest="40" HorizontalOptions="End"
                                     Command="{Binding SingInCommand}"/>
+                                </StackLayout>
+                            </XF:MaterialCard>
+                            <XF:MaterialLabel TextColor="#E93832" FontAttributes="Bold" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End">
+                                <XF:MaterialLabel.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="{Utils:Translate Forget_Password}"/>
+                                            <Span Text="?"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </XF:MaterialLabel.FormattedText>
+                            </XF:MaterialLabel>
                         </StackLayout>
-                    </Frame>
-                    <XF:MaterialLabel TextColor="#E93832" FontAttributes="Bold" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End">
-                        <XF:MaterialLabel.FormattedText>
-                            <FormattedString>
-                                <FormattedString.Spans>
-                                    <Span Text="{Utils:Translate Forget_Password}"/>
-                                    <Span Text="?"/>
-                                </FormattedString.Spans>
-                            </FormattedString>                            
-                        </XF:MaterialLabel.FormattedText>
-                    </XF:MaterialLabel>
-                </StackLayout>
-                <StackLayout Margin="0" Padding="0" Spacing="10">
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                        <XF:MaterialLabel FontAttributes="Bold" TextColor="#3E4A59">
-                            <XF:MaterialLabel.FormattedText>
-                                <FormattedString>
-                                    <FormattedString.Spans>
-                                        <Span Text="{Utils:Translate New_user}"/>
-                                        <Span Text="?"/>
-                                    </FormattedString.Spans>
-                                </FormattedString>
-                            </XF:MaterialLabel.FormattedText>
-                        </XF:MaterialLabel>
-                        <XF:MaterialLabel Text="{Utils:Translate SingUp}" FontAttributes="Bold" TextColor="#5D74E3">
-                            <XF:MaterialLabel.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding SingUpCommand}"/>
-                            </XF:MaterialLabel.GestureRecognizers>
-                        </XF:MaterialLabel>
+                        <StackLayout Margin="0" Padding="0" Spacing="10">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                <XF:MaterialLabel FontAttributes="Bold" TextColor="#3E4A59">
+                                    <XF:MaterialLabel.FormattedText>
+                                        <FormattedString>
+                                            <FormattedString.Spans>
+                                                <Span Text="{Utils:Translate New_user}"/>
+                                                <Span Text="?"/>
+                                            </FormattedString.Spans>
+                                        </FormattedString>
+                                    </XF:MaterialLabel.FormattedText>
+                                </XF:MaterialLabel>
+                                <XF:MaterialLabel Text="{Utils:Translate SingUp}" FontAttributes="Bold" TextColor="#5D74E3">
+                                    <XF:MaterialLabel.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding SingUpCommand}"/>
+                                    </XF:MaterialLabel.GestureRecognizers>
+                                </XF:MaterialLabel>
+                            </StackLayout>
+                            <XF:MaterialLabel FontAttributes="Bold" HorizontalOptions="CenterAndExpand">
+                                <XF:MaterialLabel.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="Privacy terms" TextColor="#5D74E3"/>
+                                            <Span Text=" &amp; " TextColor="Black"/>
+                                            <Span Text="Conditions" TextColor="#5D74E3"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </XF:MaterialLabel.FormattedText>
+                            </XF:MaterialLabel>
+                        </StackLayout>
                     </StackLayout>
-                    <XF:MaterialLabel FontAttributes="Bold" HorizontalOptions="CenterAndExpand">
-                        <XF:MaterialLabel.FormattedText>
-                            <FormattedString>
-                                <FormattedString.Spans>
-                                    <Span Text="Privacy terms" TextColor="#5D74E3"/>
-                                    <Span Text=" &amp; " TextColor="Black"/>
-                                    <Span Text="Conditions" TextColor="#5D74E3"/>
-                                </FormattedString.Spans>
-                            </FormattedString>
-                        </XF:MaterialLabel.FormattedText>
-                        <!--<XF:MaterialLabel.GestureRecognizers>
-                            <TapGestureRecognizer/>
-                        </XF:MaterialLabel.GestureRecognizers>-->
-                    </XF:MaterialLabel>
-                </StackLayout>
+                </ScrollView>
             </StackLayout>
         </Grid>
     </ContentPage.Content>

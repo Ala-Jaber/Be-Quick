@@ -68,9 +68,9 @@
                                                   TextColor="#9097AC" FontSize="Small" Margin="25,0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
                                 <UserControls:RateStars FillStarImage="stars_filled.png" EmptyStarImage="stars_empty.png" ValueRate="4"
                                                         HorizontalOptions="CenterAndExpand" SizeStars="32"/>
-                                <Frame Margin="10,0" Padding="5" BackgroundColor="White" CornerRadius="5" HeightRequest="120" VerticalOptions="Start">
+                                <XF:MaterialCard Margin="10,0" Padding="5" Elevation="0.5" CornerRadius="5" HeightRequest="120" VerticalOptions="Start">
                                     <UserControls:CustomEditor Placeholder="{Utils:Translate Additional_comments}" PlaceholderColor="#9F9097AC" FontSize="Small"/>
-                                </Frame>
+                                </XF:MaterialCard>
                                 <Button Text="{Utils:Translate Submit_Review}" TextColor="White" BackgroundColor="#75B2FF" 
                                         TextTransform="None" CornerRadius="5" Margin="20,0" />
                             </StackLayout>

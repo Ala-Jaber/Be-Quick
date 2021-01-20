@@ -9,11 +9,13 @@
              xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" BackgroundColor="#F5F5F5">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Style TargetType="Frame" x:Key="FrameEntryCode">
+            <Style TargetType="XF:MaterialCard" x:Key="FrameEntryCode">
                 <Setter Property="Margin" Value="0"/>
                 <Setter Property="Padding" Value="0"/>
-                <Setter Property="HorizontalOptions" Value="Start"/>
+                <Setter Property="HasShadow" Value="True"/>
+                <Setter Property="Elevation" Value="0.5"/>
                 <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Start"/>
                 <Setter Property="HeightRequest" Value="45"/>
                 <Setter Property="WidthRequest" Value="45"/>
                 <Setter Property="IsClippedToBounds" Value="True"/>
@@ -55,24 +57,24 @@
                         </XF:MaterialLabel>
 
                         <Grid Margin="0" Padding="0" ColumnDefinitions="*,0.5*,*,0.5*,*,0.5*,*" HorizontalOptions="CenterAndExpand" VerticalOptions="Start">
-                            <Frame Grid.Column="0" Style="{Binding Source={x:StaticResource FrameEntryCode}}">
+                            <XF:MaterialCard Grid.Column="0" Style="{Binding Source={x:StaticResource FrameEntryCode}}">
                                 <XF:MaterialTextField Text="5" Style="{Binding Source={x:StaticResource EntryCode}}" ReturnType="Next"/>
-                            </Frame>
-                            <Frame Grid.Column="2" Style="{Binding Source={x:StaticResource FrameEntryCode}}">
+                            </XF:MaterialCard>
+                            <XF:MaterialCard Grid.Column="2" Style="{Binding Source={x:StaticResource FrameEntryCode}}">
                                 <XF:MaterialTextField  Style="{Binding Source={x:StaticResource EntryCode}}" ReturnType="Next"/>
-                            </Frame>
-                            <Frame Grid.Column="4" Style="{Binding Source={x:StaticResource FrameEntryCode}}">
+                            </XF:MaterialCard>
+                            <XF:MaterialCard Grid.Column="4" Style="{Binding Source={x:StaticResource FrameEntryCode}}">
                                 <XF:MaterialTextField Style="{Binding Source={x:StaticResource EntryCode}}" ReturnType="Next"/>
-                            </Frame>
-                            <Frame Grid.Column="6" Style="{Binding Source={x:StaticResource FrameEntryCode}}">
+                            </XF:MaterialCard>
+                            <XF:MaterialCard Grid.Column="6" Style="{Binding Source={x:StaticResource FrameEntryCode}}">
                                 <XF:MaterialTextField  Style="{Binding Source={x:StaticResource EntryCode}}" ReturnType="Done"/>
-                            </Frame>
+                            </XF:MaterialCard>
                         </Grid>
+                        
                         <Button Text="{Utils:Translate Confirme}" TextColor="White" BackgroundColor="#75B2FF" TextTransform="None" CornerRadius="5"/>
 
                         <StackLayout Margin="0" Padding="0" Spacing="5">
-                            <XF:MaterialLabel FontAttributes="Bold" TextColor="#3E4A59"
-                                              HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center">
+                            <XF:MaterialLabel FontAttributes="Bold" TextColor="#3E4A59" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center">
                                 <XF:MaterialLabel.FormattedText>
                                     <FormattedString>
                                         <FormattedString.Spans>
@@ -82,6 +84,7 @@
                                     </FormattedString>
                                 </XF:MaterialLabel.FormattedText>
                             </XF:MaterialLabel>
+                            
                             <Button Text="{Utils:Translate Resend_verification_code}" TextColor="#899099" BackgroundColor="#F5F5F5"
                                     Margin="20,0" TextTransform="None" CornerRadius="5" IsEnabled="False" 
                                     Command="{Binding TrySendVerifivationCodeAgain}">
@@ -93,7 +96,7 @@
                                     </DataTrigger>
                                 </Button.Triggers>
                             </Button>
-
+                            
                         </StackLayout>
                     </StackLayout>
                 </Frame>

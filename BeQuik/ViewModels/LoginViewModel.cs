@@ -10,6 +10,19 @@ namespace BeQuik.ViewModels
 {
     public class LoginViewModel : BaseViewModel
     {
+        private string _UserName;
+        public string UserName
+        {
+            get { return _UserName; }
+            set { _UserName = value; OnPropertyChanged(); }
+        }
+        private string _Password;
+        public string Password
+        {
+            get { return _Password; }
+            set { _Password = value; OnPropertyChanged(); }
+        }
+
         public Command SingInCommand { get; }
         public Command SingUpCommand { get; }
 
@@ -32,7 +45,8 @@ namespace BeQuik.ViewModels
             {
                 await Task.Delay(5000); // Represents a task that is running.
                 var isMap = await RequestPermissionsLocation();
-                new ViewModels.MainViewModel(isMap);
+
+                new ViewModels.MapClientViewModel(isMap);
             }
         }
         private void OnSingUpClicked()

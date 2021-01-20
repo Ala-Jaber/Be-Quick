@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace BeQuik.Views
+namespace BeQuik.Views.PopupViews
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MapViewDriver : ContentPage
+    public partial class AlertNewOrder : Rg.Plugins.Popup.Pages.PopupPage
     {
-        public MapViewDriver()
+        public AlertNewOrder()
         {
             InitializeComponent();
         }

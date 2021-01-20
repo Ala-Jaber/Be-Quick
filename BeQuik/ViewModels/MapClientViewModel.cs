@@ -10,7 +10,7 @@ using XF.Material.Forms.UI.Dialogs;
 
 namespace BeQuik.ViewModels
 {
-    public class MainViewModel : BaseViewModel
+    public class MapClientViewModel : BaseViewModel
     {
         public FlyoutPage Page { get;}
         public Command MenuShow { get; }
@@ -19,13 +19,13 @@ namespace BeQuik.ViewModels
         public Command EnterPromoCodeCommand { get; }
         public string PromotionCode { get; set; }
         public bool IsPromotionCodeAdded { get; set; }
-        public MainViewModel(bool getCurrentLocation)
+        public MapClientViewModel(bool getCurrentLocation)
         {
             MenuShow = new Command(ShowMenu);
             RequestServiceCommand = new Command(RequestService);
             DisplaySummaryOrderCommand = new Command(DisplaySummaryOrder);
             EnterPromoCodeCommand = new Command(()=> ShowDialogEnterPromoCode());
-            Page = new Views.MasterDetailView(new Views.MapView(getCurrentLocation));
+            Page = new Views.MasterDetailView(new Views.MapClientView(getCurrentLocation));
             OpenAsRootPage(Page);
         }
         private void ShowMenu() => Page.IsPresented = true; 

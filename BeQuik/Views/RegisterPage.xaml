@@ -4,90 +4,91 @@
              x:Class="BeQuik.Views.RegisterPage"
              Shell.NavBarIsVisible="False"
              NavigationPage.HasNavigationBar="False"
-             xmlns:XFC="clr-namespace:BeQuik.UserControl"             
+             xmlns:UserControl="clr-namespace:BeQuik.UserControl"             
              xmlns:Utils="clr-namespace:BeQuik.Utils"
              xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" BackgroundColor="#F5F5F5">
     <ContentPage.Content>
-        <Grid Margin="0" Padding="20,20,20,0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Grid Margin="0" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
-            <StackLayout Margin="5,0,5,30" Padding="0" Spacing="20">
-                <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
-                <Label Text="{Utils:Translate SingUp}" FontAttributes="Bold" TextColor="#000000" FontSize="Title"/>
-                <Frame Margin="0" Padding="0" BackgroundColor="White"
-                       HasShadow="True" BorderColor="WhiteSmoke" CornerRadius="10">
-                    <StackLayout Margin="10" Padding="5" Spacing="20">
-                        <Grid Margin="0" Padding="0" ColumnDefinitions="*,*" HorizontalOptions="FillAndExpand">
-                            <Frame Grid.Column="0" Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
-                                <XF:MaterialTextField Placeholder="{Utils:Translate First_Name}" TextColor="#000000" InputType="Text"
-                                                      FloatingPlaceholderColor="#000000" TintColor="#000000"
-                                                      CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
-                            </Frame>
-                            <Frame Grid.Column="1" Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
-                                <XF:MaterialTextField Placeholder="{Utils:Translate Last_Name}" TextColor="#000000" InputType="Text"
-                                                      FloatingPlaceholderColor="#000000" TintColor="#000000"
-                                                      CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
-                            </Frame>
-                        </Grid>
-                        <Frame Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
-                            <XF:MaterialTextField Placeholder="{Utils:Translate Email}" TextColor="#000000" InputType="Email"
-                                                  FloatingPlaceholderColor="#000000" TintColor="#000000"
-                                                  CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
-                        </Frame>
+            <StackLayout Margin="0" Padding="0" Spacing="0">
+                <Image Margin="20" Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
+                <ScrollView Margin="0" Padding="10" >
+                    <StackLayout Margin="0" Padding="0" Spacing="20">
+                        <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="1" CornerRadius="5">
+                            <StackLayout Margin="10" Padding="5" Spacing="20">
+                            <Label Text="{Utils:Translate SingUp}" FontAttributes="Bold" TextColor="#000000" FontSize="Large"/>
 
-                        <Frame Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
-                            <XF:MaterialTextField Placeholder="{Utils:Translate Password}" TextColor="#000000" InputType="Password"
-                                                  FloatingPlaceholderColor="#000000" TintColor="#000000"
-                                                  CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
-                        </Frame>
+                                <Grid Margin="0" Padding="0" ColumnDefinitions="*,*" ColumnSpacing="10" HorizontalOptions="FillAndExpand">
+                                    <XF:MaterialCard Grid.Column="0" Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                        <XF:MaterialTextField Placeholder="{Utils:Translate First_Name}" TextColor="#000000" InputType="Text"
+                                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                              CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                                    </XF:MaterialCard>
+                                    <XF:MaterialCard Grid.Column="1" Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                        <XF:MaterialTextField Placeholder="{Utils:Translate Last_Name}" TextColor="#000000" InputType="Text"
+                                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                              CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                                    </XF:MaterialCard>
+                                </Grid>
 
-                        <Frame Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
-                            <XF:MaterialTextField Placeholder="{Utils:Translate Confirm_Password}" TextColor="#000000" InputType="Password"
-                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
-                                              CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
-                        </Frame>
+                                <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                    <XF:MaterialTextField Placeholder="{Utils:Translate Email}" TextColor="#000000" InputType="Email"
+                                                          FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                          CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                                </XF:MaterialCard>
 
-                        <Grid Margin="0" Padding="0" ColumnDefinitions="*,2.5*" HorizontalOptions="FillAndExpand">
-                            <!--<Frame Grid.Column="0" Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
-                                <XF:MaterialTextField Placeholder="{Utils:Translate Area_Code}" TextColor="#000000" InputType="Choice"
-                                                      FloatingPlaceholderColor="#000000" TintColor="#000000"
-                                                      CardBackgroundColor="White" ShouldAnimateUnderline="False"
-                                                      FloatingPlaceholderFontSize="15"
-                                                      Choices="{Binding ListAreaCode}" SelectedChoice="{Binding AreaCodeSelected}"/>
-                            </Frame>-->
-                            <Frame Grid.Column="0" Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
-                                <XFC:CustomPicker Visual="Material" Title="Area Code" TextColor="#000000"
-                                                  Image="arrow_downlist" TitleColor="#9F9F9F" FontSize="16"
-                                                  ItemDisplayBinding="{Binding .}"
-                                                  ItemsSource="{Binding ListAreaCode}" SelectedItem="{Binding AreaCodeSelected}"/>
-                            </Frame>
-                            <Frame Grid.Column="1" Margin="0" Padding="0" BackgroundColor="White" HasShadow="True">
-                                <XF:MaterialTextField Placeholder="{Utils:Translate Phone_Number}" TextColor="#000000" InputType="Telephone"
-                                                      FloatingPlaceholderColor="#000000" TintColor="#000000"
-                                                      CardBackgroundColor="White" ShouldAnimateUnderline="False"
-                                                      Text="{Binding PhoneNumber}"/>
-                            </Frame>
-                        </Grid>
-                        <Button Text="{Utils:Translate SingIn}" TextColor="White" BackgroundColor="#75B2FF" 
-                                TextTransform="None" CornerRadius="5" HeightRequest="40" Padding="40,0" HorizontalOptions="End"/>
+                                <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                    <XF:MaterialTextField Placeholder="{Utils:Translate Password}" TextColor="#000000" InputType="Password"
+                                                          FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                          CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                                </XF:MaterialCard>
+
+                                <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                    <XF:MaterialTextField Placeholder="{Utils:Translate Confirm_Password}" TextColor="#000000" InputType="Password"
+                                                          FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                          CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                                </XF:MaterialCard>
+
+                                <Grid Margin="0" Padding="0" ColumnDefinitions="1.5*,2.5*" ColumnSpacing="10" HorizontalOptions="FillAndExpand">
+                                    <XF:MaterialCard Grid.Column="0" Margin="0" Padding="10,0,5,0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                        <UserControl:CustomPicker Title="Area Code" TextColor="#000000" FontSize="16" TitleColor="DimGray"
+                                                                  Image="arrow_downlist" ImageSize="40"
+                                                                  ItemsSource="{Binding ListAreaCode}" 
+                                                                  ItemDisplayBinding="{Binding .}"
+                                                                  SelectedItem="{Binding AreaCodeSelected}"/>
+                                    </XF:MaterialCard>
+                                    <XF:MaterialCard Grid.Column="1" Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                        <XF:MaterialTextField Placeholder="{Utils:Translate Phone_Number}" TextColor="#000000" InputType="Telephone"
+                                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                              CardBackgroundColor="White" ShouldAnimateUnderline="False"
+                                                              Text="{Binding PhoneNumber}"/>
+                                    </XF:MaterialCard>
+                                </Grid>
+
+                                <Button Text="{Utils:Translate SingIn}" TextColor="White" BackgroundColor="#75B2FF" 
+                                        TextTransform="None" CornerRadius="5" HeightRequest="40" Padding="40,0" HorizontalOptions="End"/>
+
+                            </StackLayout>
+                        </XF:MaterialCard>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <XF:MaterialLabel FontAttributes="Bold" TextColor="#3E4A59">
+                                <XF:MaterialLabel.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="{Utils:Translate Already_have_account}" />
+                                            <Span Text="?"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </XF:MaterialLabel.FormattedText>
+                            </XF:MaterialLabel>
+                            <XF:MaterialLabel Text="{Utils:Translate SingIn}" FontAttributes="Bold" TextColor="#5D74E3">
+                                <XF:MaterialLabel.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding SingInCommand}"/>
+                                </XF:MaterialLabel.GestureRecognizers>
+                            </XF:MaterialLabel>
+                        </StackLayout>
                     </StackLayout>
-                </Frame>
-                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                    <XF:MaterialLabel FontAttributes="Bold" TextColor="#3E4A59">
-                        <XF:MaterialLabel.FormattedText>
-                            <FormattedString>
-                                <FormattedString.Spans>
-                                    <Span Text="{Utils:Translate Already_have_account}" />
-                                    <Span Text="?"/>
-                                </FormattedString.Spans>
-                            </FormattedString>
-                        </XF:MaterialLabel.FormattedText>
-                    </XF:MaterialLabel>
-                    <XF:MaterialLabel Text="{Utils:Translate SingIn}" FontAttributes="Bold" TextColor="#5D74E3">
-                        <XF:MaterialLabel.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding SingInCommand}"/>
-                        </XF:MaterialLabel.GestureRecognizers>
-                    </XF:MaterialLabel>
-                </StackLayout>
+                </ScrollView>
             </StackLayout>
         </Grid>
     </ContentPage.Content>
