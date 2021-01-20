@@ -35,18 +35,40 @@ namespace BeQuik.ViewModels
 
         private async Task OnSingInClicked()
         {
+            switch (UserName.Trim())
+            {
+                case "Alert":
+                    ShowAlert().ConfigureAwait(false);
+                    break;
+                case "Loading":
+                    ShowLoading().ConfigureAwait(false);
+                    break;
+                case "client":
+                    var isMap = await RequestPermissionsLocation();
+                    new ViewModels.MapClientViewModel(isMap);
+                    break;
+                case "driver":
+                    new ViewModels.MapDriverViewModel();
+                    break;
+            }
+            
+
+
+            
+        }
+        private async Task ShowAlert()
+        {
             await MaterialDialog.Instance.AlertAsync(
                                 title: "Alert Dialog",
                                 message: "This is an alert dialog",
                                 acknowledgementText: "Got It",
                                 configuration: App.GetMaterialAlertDialogConfiguration());
-
+        }
+        private async Task ShowLoading() 
+        {
             using (await MaterialDialog.Instance.LoadingDialogAsync(message: "Wait Sing in...", configuration: App.GetMaterialLoadingDialogConfiguration()))
             {
                 await Task.Delay(5000); // Represents a task that is running.
-                var isMap = await RequestPermissionsLocation();
-
-                new ViewModels.MapClientViewModel(isMap);
             }
         }
         private void OnSingUpClicked()
