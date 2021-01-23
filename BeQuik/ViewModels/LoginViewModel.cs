@@ -38,10 +38,10 @@ namespace BeQuik.ViewModels
             switch (UserName.Trim().ToLower())
             {
                 case "alert":
-                    ShowAlert().ConfigureAwait(false);
+                    await ShowAlert().ConfigureAwait(false);
                     break;
                 case "loading":
-                    ShowLoading().ConfigureAwait(false);
+                    await ShowLoading().ConfigureAwait(false);
                     break;
                 case "client":
                     var isMap = await RequestPermissionsLocation();
@@ -51,10 +51,6 @@ namespace BeQuik.ViewModels
                     new ViewModels.MapDriverViewModel();
                     break;
             }
-            
-
-
-            
         }
         private async Task ShowAlert()
         {
@@ -68,7 +64,7 @@ namespace BeQuik.ViewModels
         {
             using (await MaterialDialog.Instance.LoadingDialogAsync(message: "Wait Sing in...", configuration: App.GetMaterialLoadingDialogConfiguration()))
             {
-                await Task.Delay(5000); // Represents a task that is running.
+                await Task.Delay(5000);
             }
         }
         private void OnSingUpClicked()

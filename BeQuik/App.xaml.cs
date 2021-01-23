@@ -12,7 +12,6 @@ namespace BeQuik
 {
     public partial class App : Application
     {
-
         public App()
         {
             InitializeComponent();
@@ -25,12 +24,12 @@ namespace BeQuik
             {
                 InputType = XF.Material.Forms.UI.MaterialTextFieldInputType.Text,
                 CornerRadius = 8,
-                BackgroundColor = Color.FromHex("#2c3e50"),
-                InputTextColor = Color.White,
-                InputPlaceholderColor = Color.White.MultiplyAlpha(0.6),
-                TintColor = Color.White,
                 TitleTextColor = Color.White,
-                MessageTextColor = Color.FromHex("#DEFFFFFF")
+                InputPlaceholderColor = XF.Material.Forms.Material.GetResource<Color>(MaterialConstants.Color.ON_PRIMARY),
+                InputTextColor = XF.Material.Forms.Material.GetResource<Color>(MaterialConstants.Color.ON_PRIMARY),
+                MessageTextColor = XF.Material.Forms.Material.GetResource<Color>(MaterialConstants.Color.ON_PRIMARY).MultiplyAlpha(0.8),
+                TintColor = XF.Material.Forms.Material.GetResource<Color>(MaterialConstants.Color.ON_PRIMARY),
+                BackgroundColor = Color.FromHex("#2c3e50"),
             };
         }
         public static MaterialLoadingDialogConfiguration GetMaterialLoadingDialogConfiguration()
@@ -87,11 +86,9 @@ namespace BeQuik
         protected override void OnStart()
         {
         }
-
         protected override void OnSleep()
         {
         }
-
         protected override void OnResume()
         {
         }

@@ -31,12 +31,12 @@ namespace BeQuik.ViewModels
         private void ShowMenu() => Page.IsPresented = true; 
         private void DisplaySummaryOrder()
         {
-            var PopupView = new Views.PopupViews.SummaryRequestOrder();
-            PopupView.BindingContext = this;
+            var PopupView = new Views.PopupViews.SummaryRequestOrder() { BindingContext = this };
             PopupNavigation.Instance.PushAsync(PopupView);
         }
         private void RequestService()
         {
+            PopupNavigation.Instance.PopAllAsync();
             new ViewModels.TracingServiceViewModel();
         }
         private async Task ShowDialogEnterPromoCode()
@@ -45,6 +45,7 @@ namespace BeQuik.ViewModels
                                                         title: "Promotion code",
                                                         message: "Enter promotion code",
                                                         inputPlaceholder: "Code",
+                                                        dismissiveText: "Cancel",
                                                         confirmingText: "Confirme",
                                                         configuration: App.GetMaterialInputDialogConfiguration());
             IsPromotionCodeAdded = !string.IsNullOrEmpty(input) && IsValidPromotionCode(input);

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace BeQuik.ViewModels
@@ -12,27 +13,24 @@ namespace BeQuik.ViewModels
         public Command CancelRideCommand { get; }
         public Command CallCommand { get; }
         public Command MessageCommand { get; }
-        public Command DiscountCommand { get; }
         public bool IsShowCancelRide { get; set; } = false;
         public bool IsPopupArrivedDeriver { get; set; } = true;
         public TracingServiceViewModel()
         {
             ToggelDisplayCancelRideCommand = new Command(() => SetShowCancelRide(!IsShowCancelRide));
             ToggelDisplayPopupArrivedDeriverCommand = new Command(() => SetShowPopupArrivedDeriver(!IsPopupArrivedDeriver));
-            CancelRideCommand = new Command(OnCancelRide);
+            CancelRideCommand = new Command(()=> OnCancelRide());
             CallCommand = new Command(OnCall);
             MessageCommand = new Command(OnMessage);
-            DiscountCommand = new Command(OnDiscount);
 
             OpenPage(new Views.TracingServicePage()).ConfigureAwait(false);
         }
-        public void OnCancelRide() {
+        public async Task OnCancelRide() {
+            await Application.Current.MainPage.Navigation.PopToRootAsync();
         }
         public void OnCall() {
         }
         public void OnMessage() { 
-        }
-        public void OnDiscount() { 
         }
         public void SetShowCancelRide(bool show)
         {

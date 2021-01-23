@@ -19,14 +19,14 @@
             HasBackgroundAnimation="True"/>
     </pages:PopupPage.Animation>
     <pages:PopupPage.Content>
-        <Frame Margin="30,0" Padding="0" BackgroundColor="White" CornerRadius="10" HorizontalOptions="Center" VerticalOptions="Center">
-            <StackLayout Margin="0" Padding="0" Spacing="10">
+        <Frame Margin="30,0" Padding="10" BackgroundColor="White" CornerRadius="10" HorizontalOptions="Center" VerticalOptions="Center">
+            <StackLayout Margin="0" Padding="0" Spacing="15">
                 <Label Text="Summary" Padding="30,0" TextColor="#000000" FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
-                <Grid ColumnDefinitions="32,*,0.5*" RowDefinitions="*,*,*" Margin="0" Padding="0">
+                <Grid ColumnDefinitions="32,*,0.5*" RowDefinitions="*,*,0*" ColumnSpacing="10" RowSpacing="20" Margin="0" Padding="0">
                     <!--Service Summary-->
                     <Image Grid.Row="0" Grid.Column="0"
                            Source="taxi" Aspect="AspectFit" HeightRequest="32"/>
-                    <Label Grid.Row="0" Grid.Column="1"
+                    <Label Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center"
                            Text="Yallow Taxi" TextColor="#000000" FontAttributes="Bold" FontSize="Small"/>
                     <Label Grid.Row="0" Grid.Column="2"
                            TextColor="#000000" FontAttributes="Bold" FontSize="Medium">
@@ -43,7 +43,7 @@
                     <!--Location Summary-->
                     <Image Grid.Row="1" Grid.Column="0"
                            Source="pin" Aspect="AspectFit" HeightRequest="32"/>
-                    <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
+                    <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" VerticalTextAlignment="Center"
                            Text="Irbid - Irbid Goverment" TextColor="#000000" FontAttributes="Bold" FontSize="Small"/>
                     <!--Discount Summary-->
                     <Image Grid.Row="2" Grid.Column="0" IsVisible="{Binding IsPromotionCodeAdded}"
@@ -51,7 +51,8 @@
                     <Label Grid.Row="2" Grid.Column="1" IsVisible="{Binding IsPromotionCodeAdded}"
                            Text="Discount" TextColor="#000000" FontAttributes="Bold" FontSize="Small"/>
                     <Label Grid.Row="2" Grid.Column="2" IsVisible="{Binding IsPromotionCodeAdded}"
-                           TextColor="#000000" FontAttributes="Bold" FontSize="Medium">
+                           VerticalTextAlignment="Center"
+                           TextColor="#43B372" FontAttributes="Bold" FontSize="Medium">
                         <Label.FormattedText>
                             <FormattedString>
                                 <FormattedString.Spans>
@@ -62,12 +63,16 @@
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
+                    <Grid.Triggers>
+                        <DataTrigger TargetType="Grid" Binding="{Binding IsPromotionCodeAdded}" Value="True">
+                            <Setter Property="RowDefinitions" Value="*,*,*"/>
+                        </DataTrigger>
+                    </Grid.Triggers>
                 </Grid>
                 <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10">
-                    <XF:MaterialIconButton Image="money_discount_white"
-                                           HeightRequest="60" WidthRequest="60" CornerRadius="5"
+                    <XF:MaterialIconButton Image="money_discount_white" CornerRadius="5" 
                                            HorizontalOptions="Start" VerticalOptions="Start"
-                                           BackgroundColor="#43B372"
+                                           BackgroundColor="#43B372" HeightRequest="58" WidthRequest="55"
                                            Command="{Binding EnterPromoCodeCommand}" IsVisible="True" >
                         <XF:MaterialIconButton.Triggers>
                             <DataTrigger TargetType="XF:MaterialIconButton" Binding="{Binding IsPromotionCodeAdded}" Value="True">
@@ -76,10 +81,10 @@
                         </XF:MaterialIconButton.Triggers>
                     </XF:MaterialIconButton>
 
-                    <Button Text="{Utils:Translate Confirm}" TextColor="White" BackgroundColor="#75B2FF" 
+                    <Button Text="{Utils:Translate Confirme}" TextColor="White" BackgroundColor="#75B2FF" 
                                 TextTransform="None" CornerRadius="5" Padding="0,10"
                                 Command="{Binding RequestServiceCommand}"
-                                HorizontalOptions="FillAndExpand" VerticalOptions="End"/>
+                                HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
 
                 </StackLayout>
             </StackLayout>
