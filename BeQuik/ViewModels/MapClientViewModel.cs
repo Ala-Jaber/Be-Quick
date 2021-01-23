@@ -25,7 +25,7 @@ namespace BeQuik.ViewModels
             RequestServiceCommand = new Command(RequestService);
             DisplaySummaryOrderCommand = new Command(DisplaySummaryOrder);
             EnterPromoCodeCommand = new Command(()=> ShowDialogEnterPromoCode());
-            Page = new Views.MasterDetailView(new Views.MapClientView(getCurrentLocation));
+            Page = new Views.MasterDetailView(new Views.MapClientView(getCurrentLocation),"client");
             OpenAsRootPage(Page);
         }
         private void ShowMenu() => Page.IsPresented = true; 

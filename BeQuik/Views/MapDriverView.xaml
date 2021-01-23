@@ -9,13 +9,20 @@
              xmlns:UserControl="clr-namespace:BeQuik.UserControl"
              xmlns:Utils="clr-namespace:BeQuik.Utils">
     <ContentPage.Content>
-        <Grid Margin="0" Padding="0" >
+        <Grid Margin="0" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <UserControl:CustomMap x:Name="MapForms"/>
             <Image Source="pin" HorizontalOptions="Center" VerticalOptions="Center"/>
             <!--Header-->
-            <StackLayout Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
-                <XF:MaterialIconButton Image="menu_but" BackgroundColor="White" CornerRadius="25" WidthRequest="50" HeightRequest="50" Command="{Binding MenuShow}"/>
-                <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
+            <StackLayout Margin="0" Padding="0" Spacing="0" VerticalOptions="Start">
+                <StackLayout Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
+                    <XF:MaterialIconButton Image="menu_but" BackgroundColor="White" CornerRadius="25" WidthRequest="50" HeightRequest="50" Command="{Binding MenuShow}"/>
+                    <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
+                </StackLayout>
+                <XF:MaterialCard x:Name="ErrorCard" Margin="0" Padding="20,10" BackgroundColor="#E93832" VerticalOptions="Start"
+                                 TranslationY="-50" Opacity="0" IsVisible="False">
+                    <Label x:Name="TextError" Text="You have to charge to get order from client" TextColor="White"
+                           FontAttributes="Bold"/>
+                </XF:MaterialCard>
             </StackLayout>
 
             <!--Footer-->

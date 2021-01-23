@@ -12,10 +12,11 @@ namespace BeQuik.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MasterDetailView : FlyoutPage
     {
-        public MasterDetailView(ContentPage page)
+        public MasterDetailView(ContentPage page, string role)
         {
             InitializeComponent();
             Detail = new NavigationPage(page);
+            Flyout = new MasterView(role);
             IsPresented = false;
         }
     }
