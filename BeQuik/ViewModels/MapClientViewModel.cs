@@ -19,15 +19,29 @@ namespace BeQuik.ViewModels
         public Command EnterPromoCodeCommand { get; }
         public string PromotionCode { get; set; }
         public bool IsPromotionCodeAdded { get; set; }
+        public List<Model.MenuItem> MenuItems { get; set; }
         public MapClientViewModel(bool getCurrentLocation)
         {
+            InitMenuItem();
             MenuShow = new Command(ShowMenu);
             RequestServiceCommand = new Command(RequestService);
             DisplaySummaryOrderCommand = new Command(DisplaySummaryOrder);
             EnterPromoCodeCommand = new Command(()=> ShowDialogEnterPromoCode());
-            Page = new Views.MasterDetailView(new Views.MapClientView(getCurrentLocation),"client");
+            Page = new Views.MasterDetailView(new Views.MapClientView(getCurrentLocation));
             OpenAsRootPage(Page);
         }
+
+        private void InitMenuItem()
+        {
+            MenuItems = new List<Model.MenuItem>
+            {
+                new Model.MenuItem{ImageSource="calendar.png" ,Text="Booking history",Command=new Command(()=> new ViewModels.BookingHistoryViewModel())},
+                new Model.MenuItem{ImageSource="digital_wallet_g.png" ,Text="Your wallet",Command=new Command(()=> new ViewModels.WalletPageViewModel())},
+                new Model.MenuItem{ImageSource="headphones.png" ,Text="Contact us",Command=new Command(()=> new ViewModels.ContactUsViewModel())},
+                new Model.MenuItem{ImageSource="question.png" ,Text="Help",Command=new Command(()=> new ViewModels.HelpPageViewModel())},
+            };
+        }
+
         private void ShowMenu() => Page.IsPresented = true; 
         private void DisplaySummaryOrder()
         {

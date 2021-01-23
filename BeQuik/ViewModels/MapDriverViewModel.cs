@@ -13,10 +13,12 @@ namespace BeQuik.ViewModels
         public MapDriverViewModel()
         {
             MenuShow = new Command(ShowMenu);
-            Page = new Views.MasterDetailView(new Views.MapDriverView(),"driver");
+            Page = new Views.MasterDetailView(new Views.MapDriverView());
+            OpenAsRootPage(Page);
+
+            //Optional Code
             Device.StartTimer(TimeSpan.FromSeconds(15), () => { ShowDriverWalletEmptyError.Invoke(true); return false; });
             Device.StartTimer(TimeSpan.FromSeconds(40), () => { ShowDriverWalletEmptyError.Invoke(false); return false; });
-            OpenAsRootPage(Page);
         }
         private void ShowMenu() => Page.IsPresented = true;
 

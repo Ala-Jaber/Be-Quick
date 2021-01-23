@@ -27,7 +27,8 @@ namespace BeQuik.iOS
             global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
             global::Xamarin.Forms.Forms.Init();
 
-            XF.Material.iOS.Material.Init();
+            XF.Material.iOS.Material.Init(); 
+            XamEffects.iOS.Effects.Init();
             Xamarin.FormsGoogleMaps.Init("your_google_maps_ios_api_key");
 
             LoadApplication(new App());

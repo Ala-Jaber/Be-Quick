@@ -2,8 +2,44 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BeQuik.Views.MasterView"
-             Title="Master">
-  <StackLayout>
-
-  </StackLayout>
+             Title="Master"  BackgroundColor="White"
+             xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+             xmlns:Utils="clr-namespace:BeQuik.Utils"
+             xmlns:XE="clr-namespace:XamEffects;assembly=XamEffects">
+  <StackLayout Margin="0,50" Padding="0" Spacing="30">
+        <StackLayout Orientation="Horizontal" Margin="20,0" Padding="0" Spacing="20">
+            <Image Source="img_profile" Aspect="AspectFit" WidthRequest="80" HeightRequest="80">
+                <Image.Clip>
+                    <EllipseGeometry Center="40,40" RadiusX="40" RadiusY="40"/>
+                </Image.Clip>
+            </Image>
+            <StackLayout Margin="0" Padding="0" Spacing="10" VerticalOptions="Center">
+                <XF:MaterialLabel Text="Ala' Jaber" TextColor="#000000" FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"/>
+                <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="20">
+                    <XF:MaterialLabel Text="{Utils:Translate Rated}" TextColor="#556080" FontAttributes="Bold" 
+                                      FontSize="Small"/>
+                    <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10">
+                        <XF:MaterialLabel Text="4.90" TextColor="#556080" FontAttributes="Bold" FontSize="Small"/>
+                        <Image Source="star_filled_gray" Aspect="AspectFit"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+        <BoxView Color="#556080" Opacity="0.30" HorizontalOptions="FillAndExpand" VerticalOptions="Start" HeightRequest="2"/>
+        <ScrollView Margin="0" Padding="0">
+            <StackLayout Margin="0" Padding="0" Spacing="5" BindableLayout.ItemsSource="{Binding MenuItems}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Orientation="Horizontal" Margin="0" Padding="20,10" Spacing="20" XE:TouchEffect.Color="#5275B2FF">
+                            <Image Source="{Binding ImageSource}" Aspect="AspectFit" HeightRequest="32"/>
+                            <XF:MaterialLabel Text="{Binding Text}" TextColor="#556080" VerticalOptions="Center" TypeScale="Body1" FontAttributes="Bold"/>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Command}"/>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
 </ContentPage>

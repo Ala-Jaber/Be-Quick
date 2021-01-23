@@ -15,7 +15,7 @@ namespace BeQuik.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MasterView : ContentPage
     {
-        public MasterView(string role)
+        public MasterView()
         {
             InitializeComponent();
         }
