@@ -1,9 +1,10 @@
 ﻿namespace BeQuik.ViewModels
 {
-    internal class WalletPageViewModel
+    public class WalletPageViewModel : BaseViewModel
     {
         public WalletPageViewModel()
         {
+            OpenPage(new Views.WalletPage());
         }
     }
 }

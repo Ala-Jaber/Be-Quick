@@ -16,8 +16,7 @@
             <StackLayout Margin="0" Padding="0" Spacing="10" VerticalOptions="Center">
                 <XF:MaterialLabel Text="Ala' Jaber" TextColor="#000000" FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"/>
                 <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="20">
-                    <XF:MaterialLabel Text="{Utils:Translate Rated}" TextColor="#556080" FontAttributes="Bold" 
-                                      FontSize="Small"/>
+                    <XF:MaterialLabel Text="{Utils:Translate Rated}" TextColor="#556080" FontAttributes="Bold" FontSize="Small"/>
                     <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10">
                         <XF:MaterialLabel Text="4.90" TextColor="#556080" FontAttributes="Bold" FontSize="Small"/>
                         <Image Source="star_filled_gray" Aspect="AspectFit"/>
@@ -30,12 +29,9 @@
             <StackLayout Margin="0" Padding="0" Spacing="5" BindableLayout.ItemsSource="{Binding MenuItems}">
                 <BindableLayout.ItemTemplate>
                     <DataTemplate>
-                        <StackLayout Orientation="Horizontal" Margin="0" Padding="20,10" Spacing="20" XE:TouchEffect.Color="#5275B2FF">
+                        <StackLayout Orientation="Horizontal" Margin="0" Padding="20,10" Spacing="20" XE:TouchEffect.Color="#5275B2FF" XE:Commands.Tap="{Binding Command}">
                             <Image Source="{Binding ImageSource}" Aspect="AspectFit" HeightRequest="32"/>
                             <XF:MaterialLabel Text="{Binding Text}" TextColor="#556080" VerticalOptions="Center" TypeScale="Body1" FontAttributes="Bold"/>
-                            <StackLayout.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding Command}"/>
-                            </StackLayout.GestureRecognizers>
                         </StackLayout>
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>

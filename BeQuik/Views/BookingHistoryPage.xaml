@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeQuik.Views.BookingHistoryPage"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:Utils="clr-namespace:BeQuik.Utils"
+             xmlns:XE="clr-namespace:XamEffects;assembly=XamEffects"
+             xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" 
+             BackgroundColor="#F5F5F5">
+    <ContentPage.Content>
+        <Grid Margin="0" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
+            <StackLayout Margin="0" Padding="0,10" Spacing="20">
+                <StackLayout Margin="0" Padding="0" Spacing="10" VerticalOptions="Start">
+                    <StackLayout Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
+                        <XF:MaterialIconButton Image="arrow_left" BackgroundColor="White" CornerRadius="25" WidthRequest="50" HeightRequest="50" Command="{Binding BackCommand}"/>
+                        <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
+                    </StackLayout>
+                </StackLayout>
+                <Grid ColumnDefinitions="*,*" RowDefinitions="25,2.5" ColumnSpacing="10" RowSpacing="5">
+                    <XF:MaterialLabel Grid.Row="0" Grid.Column="0"
+                                  Text="Weekly" TextColor="Black" TypeScale="Subtitle1"
+                                  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"
+                                  VerticalOptions="FillAndExpand" VerticalTextAlignment="Center"
+                                  FontAttributes="Bold">
+                        <XF:MaterialLabel.Triggers>
+                            <DataTrigger TargetType="XF:MaterialLabel" Binding="{Binding ActiveTabName}" Value="Weekly">
+                                <Setter Property="TextColor" Value="#75B2FF"/>
+                            </DataTrigger>
+                        </XF:MaterialLabel.Triggers>
+                    </XF:MaterialLabel>
+
+                    <BoxView Grid.Row="1" Grid.Column="0" 
+                         HorizontalOptions="FillAndExpand" CornerRadius="1"
+                         Color="#75B2FF" Margin="20,0">
+                        <BoxView.Triggers>
+                            <DataTrigger TargetType="BoxView" Binding="{Binding ActiveTabName}" Value="Monthly">
+                                <Setter Property="Grid.Column" Value="1"/>
+                            </DataTrigger>
+                        </BoxView.Triggers>
+                    </BoxView>
+
+                    <XF:MaterialLabel Grid.Row="0" Grid.Column="1" 
+                                  Text="Monthly" TextColor="Black" TypeScale="Subtitle1"
+                                  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"
+                                  VerticalOptions="FillAndExpand" VerticalTextAlignment="Center"
+                                  FontAttributes="Bold">
+                        <XF:MaterialLabel.Triggers>
+                            <DataTrigger TargetType="XF:MaterialLabel" Binding="{Binding ActiveTabName}" Value="Monthly">
+                                <Setter Property="TextColor" Value="#75B2FF"/>
+                            </DataTrigger>
+                        </XF:MaterialLabel.Triggers>
+                    </XF:MaterialLabel>
+
+                    <BoxView Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" 
+                         HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                         Color="#F5F5F5" Opacity="0.5"
+                         XE:TouchEffect.Color="LightGray"
+                         XE:Commands.Tap="{Binding ChangeActiveTabCommand}">
+                        <BoxView.Triggers>
+                            <DataTrigger TargetType="BoxView" Binding="{Binding ActiveTabName}" Value="Monthly">
+                                <Setter Property="Grid.Column" Value="0"/>
+                            </DataTrigger>
+                        </BoxView.Triggers>
+                    </BoxView>
+                </Grid>
+                <CollectionView ItemsSource="{Binding OrdersHistory}" ItemSizingStrategy="MeasureFirstItem" Margin="10,0,10,30">
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <XF:MaterialCard Margin="0" Padding="10" CornerRadius="5" HasShadow="True" BackgroundColor="White" Elevation="200">
+                                <Grid ColumnDefinitions="68,3*,*" Margin="0" Padding="0" ColumnSpacing="10">
+                                    <XF:MaterialCard Grid.Column="0" Margin="0" Padding="0"
+                                                     CornerRadius="34" HeightRequest="68" WidthRequest="68"
+                                                     HorizontalOptions="Start" VerticalOptions="Center">
+                                        <XF:MaterialIcon Source="{Binding ImageSource}" Aspect="AspectFit"
+                                                         HeightRequest="35" WidthRequest="35" 
+                                                         VerticalOptions="Center" HorizontalOptions="Center"/>
+                                    </XF:MaterialCard>
+                                    <StackLayout Grid.Column="1" Margin="0" Padding="0" Spacing="5">
+                                        <XF:MaterialLabel Text="{Binding Date,StringFormat='{0:dd MMM, hh\\:mm tt}'}"
+                                                          TextColor="Black" FontAttributes="Bold" TypeScale="Body2"/>
+                                        <XF:MaterialLabel TextColor="Black"  TypeScale="Body2">
+                                            <XF:MaterialLabel.FormattedText>
+                                                <FormattedString>
+                                                    <FormattedString.Spans>
+                                                        <Span Text="Order Number"/>
+                                                        <Span Text=": "/>
+                                                        <Span Text="{Binding OrderID}" FontAttributes="Bold"/>
+                                                    </FormattedString.Spans>
+                                                </FormattedString>
+                                            </XF:MaterialLabel.FormattedText>
+                                        </XF:MaterialLabel>
+                                        <XF:MaterialLabel TextColor="Black" TypeScale="Body2">
+                                            <XF:MaterialLabel.FormattedText>
+                                                <FormattedString>
+                                                    <FormattedString.Spans>
+                                                        <Span Text="Service Type"/>
+                                                        <Span Text=": "/>
+                                                        <Span Text="{Binding Type}" FontAttributes="Bold"/>
+                                                    </FormattedString.Spans>
+                                                </FormattedString>
+                                            </XF:MaterialLabel.FormattedText>
+                                        </XF:MaterialLabel>
+                                    </StackLayout>
+                                    <XF:MaterialLabel Grid.Column="2" TextColor="Black" FontAttributes="Bold" TypeScale="Body2">
+                                        <XF:MaterialLabel.FormattedText>
+                                            <FormattedString>
+                                                <FormattedString.Spans>
+                                                    <Span Text="{Binding Price,StringFormat='{0:D2}'}"/>
+                                                    <Span Text=" "/>
+                                                    <Span Text="JOD"/>
+                                                </FormattedString.Spans>
+                                            </FormattedString>
+                                        </XF:MaterialLabel.FormattedText>
+                                    </XF:MaterialLabel>
+                                </Grid>
+                            </XF:MaterialCard>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                    <CollectionView.EmptyView>
+                        <StackLayout Margin="0" Padding="0" Spacing="20">
+                            <StackLayout Margin="0" Padding="0" Spacing="20"
+                                     HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                                <Image Source="empty_file" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                <StackLayout Margin="0" Padding="0" Spacing="5">
+                                    <XF:MaterialLabel
+                                  Text="Booking history is empty" TextColor="#9097AC" TypeScale="Subtitle1"
+                                  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                    <XF:MaterialLabel
+                                  Text="Let get started" TextColor="#9097AC" TypeScale="Body2"
+                                  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </CollectionView.EmptyView>
+                </CollectionView>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

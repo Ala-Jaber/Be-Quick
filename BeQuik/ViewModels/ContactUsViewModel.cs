@@ -1,9 +1,10 @@
 ﻿namespace BeQuik.ViewModels
 {
-    internal class ContactUsViewModel
+    public class ContactUsViewModel:BaseViewModel
     {
         public ContactUsViewModel()
         {
+            OpenPage(new Views.ContactUsPage());
         }
     }
 }

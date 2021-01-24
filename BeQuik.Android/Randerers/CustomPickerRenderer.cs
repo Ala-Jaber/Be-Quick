@@ -10,7 +10,7 @@ using Android.Content;
 [assembly: ExportRenderer(typeof(CustomPicker), typeof(CustomPickerRenderer))]
 namespace BeQuik.Droid.UserControl
 {
-    public class CustomPickerRenderer : Xamarin.Forms.Platform.Android.AppCompat.PickerRenderer
+    public class CustomPickerRenderer : PickerRenderer
     {
         public CustomPickerRenderer(Context context) : base(context)
         {

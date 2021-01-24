@@ -1,9 +1,10 @@
 ﻿namespace BeQuik.ViewModels
 {
-    internal class HelpPageViewModel
+    public class HelpPageViewModel : BaseViewModel
     {
         public HelpPageViewModel()
         {
+            OpenPage(new Views.HelpPage());
         }
     }
 }
