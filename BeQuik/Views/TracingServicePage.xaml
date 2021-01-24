@@ -8,102 +8,100 @@
              xmlns:Utils="clr-namespace:BeQuik.Utils"
              xmlns:UserControl="clr-namespace:BeQuik.UserControl">
     <ContentPage.Content>
-        <Grid Margin="0" Padding="0">
-            <Grid Margin="0" Padding="0" RowDefinitions="1.5*,30,*">
-                <Grid Grid.Row="0" Grid.RowSpan="2" Margin="0" Padding="0" VerticalOptions="FillAndExpand">
-                    <UserControl:CustomMap x:Name="MapForms"/>
-                    <Image Source="pin_taxi" HorizontalOptions="Center" VerticalOptions="Center"/>
-                    <!--Header-->
-                    <StackLayout Margin="0" Padding="10" Spacing="10" VerticalOptions="Start">
-                        <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
-                    </StackLayout>
-                </Grid>
-                <!--Footer-->
-                <Grid Grid.Row="2" Margin="0" Padding="0" BackgroundColor="White">
-                    <StackLayout Margin="0" Padding="0,0,0,10" Spacing="10">
-                        <Label Text="{Utils:Translate WE_FOUND_YOU_A_DRIVER}" TextColor="#000000" FontAttributes="Bold" 
+        <Grid Margin="0" Padding="0" RowDefinitions="1.5*,30,*">
+            <Grid Grid.Row="0" Grid.RowSpan="2" Margin="0" Padding="0" VerticalOptions="FillAndExpand">
+                <UserControl:CustomMap x:Name="MapForms"/>
+                <!--Header-->
+                <StackLayout Margin="0" Padding="10" Spacing="10" VerticalOptions="Start">
+                    <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
+                </StackLayout>
+            </Grid>
+            <!--Footer-->
+            <Grid Grid.Row="2" Margin="0" Padding="0" BackgroundColor="White">
+                <StackLayout Margin="0" Padding="0,0,0,10" Spacing="10">
+                    <Label Text="{Utils:Translate WE_FOUND_YOU_A_DRIVER}" TextColor="#000000" FontAttributes="Bold" 
                                    FontSize="Medium" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
-                        <Label TextColor="#FA4B44" FontSize="Small" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center">
-                            <Label.FormattedText>
-                                <FormattedString>
-                                    <FormattedString.Spans>
-                                        <Span Text="{Utils:Translate Driver_will_arrive_to_you_in}"/>
-                                        <Span Text=" "/>
-                                        <Span Text="02:35"/>
-                                    </FormattedString.Spans>
-                                </FormattedString>
-                            </Label.FormattedText>
-                        </Label>
-                        <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10" HorizontalOptions="CenterAndExpand">
-                            <XF:MaterialIconButton Image="call" CornerRadius="25" WidthRequest="50" HeightRequest="50" 
+                    <Label TextColor="#FA4B44" FontSize="Small" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="{Utils:Translate Driver_will_arrive_to_you_in}"/>
+                                    <Span Text=" "/>
+                                    <Span Text="02:35"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10" HorizontalOptions="CenterAndExpand">
+                        <XF:MaterialIconButton Image="call" CornerRadius="25" WidthRequest="50" HeightRequest="50" 
                                                    BackgroundColor="#E2E5EF" HorizontalOptions="Start" VerticalOptions="Center"
                                                    Command="{Binding CallCommand}"/>
-                            <Image Source="img_profile" HeightRequest="70" WidthRequest="70" VerticalOptions="Center"/>
-                            <XF:MaterialIconButton Image="message" CornerRadius="25" WidthRequest="50" HeightRequest="50" 
+                        <Image Source="img_profile" HeightRequest="70" WidthRequest="70" VerticalOptions="Center"/>
+                        <XF:MaterialIconButton Image="message" CornerRadius="25" WidthRequest="50" HeightRequest="50" 
                                                    BackgroundColor="#E2E5EF" HorizontalOptions="End" VerticalOptions="Center"
                                                        Command="{Binding MessageCommand}"/>
-                        </StackLayout>
-                        <StackLayout Margin="0" Padding="0" Spacing="5" HorizontalOptions="CenterAndExpand" >
-                            <XF:MaterialLabel Text="Ala' Jaber" TextColor="#000000" FontAttributes="Bold" FontSize="Large"
-                                              HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"/>
-                            <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="20" HorizontalOptions="CenterAndExpand">
-                                <XF:MaterialLabel Text="{Utils:Translate Rated}" TextColor="#556080" FontAttributes="Bold" FontSize="Micro"/>
-                                <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10">
-                                    <XF:MaterialLabel Text="4.90" TextColor="#556080" FontAttributes="Bold" FontSize="Micro"/>
-                                    <Image Source="star_filled_gray" Aspect="AspectFit"/>
-                                </StackLayout>
-                            </StackLayout>
-                            <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10" HorizontalOptions="CenterAndExpand">
-                                <Image Source="taxi" Aspect="AspectFit" HeightRequest="16"/>
-                                <XF:MaterialLabel FontSize="Subtitle" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand">
-                                    <XF:MaterialLabel.FormattedText>
-                                        <FormattedString>
-                                            <FormattedString.Spans>
-                                                <Span Text="95-659471" TextColor="#000000"/>
-                                                <Span Text="~" TextColor="#AE556080"/>
-                                                <Span Text="Hundai i20" TextColor="#AE556080"/>
-                                            </FormattedString.Spans>
-                                        </FormattedString>
-                                    </XF:MaterialLabel.FormattedText>
-                                </XF:MaterialLabel>
-                            </StackLayout>
-                        </StackLayout>
-                        <StackLayout.Triggers>
-                            <DataTrigger TargetType="StackLayout" Binding="{Binding IsShowCancelRide}" Value="True">
-                                <Setter Property="IsVisible" Value="False"/>
-                            </DataTrigger>
-                        </StackLayout.Triggers>
                     </StackLayout>
-                    <StackLayout Margin="0" Padding="0,10" Spacing="20" IsVisible="{Binding IsShowCancelRide}">
-                        <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10" HorizontalOptions="CenterAndExpand">
-                            <Image Source="warningBut" Aspect="AspectFit" HeightRequest="32"/>
-                            <Label Text="{Utils:Translate CANCEL_THIS_RIDE?}" TextColor="#000000" FontAttributes="Bold" FontSize="Medium" VerticalOptions="Center"/>
+                    <StackLayout Margin="0" Padding="0" Spacing="5" HorizontalOptions="CenterAndExpand" >
+                        <XF:MaterialLabel Text="Ala' Jaber" TextColor="#000000" FontAttributes="Bold" FontSize="Large"
+                                              HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"/>
+                        <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="20" HorizontalOptions="CenterAndExpand">
+                            <XF:MaterialLabel Text="{Utils:Translate Rated}" TextColor="#556080" FontAttributes="Bold" FontSize="Micro"/>
+                            <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10">
+                                <XF:MaterialLabel Text="4.90" TextColor="#556080" FontAttributes="Bold" FontSize="Micro"/>
+                                <Image Source="star_filled_gray" Aspect="AspectFit"/>
+                            </StackLayout>
                         </StackLayout>
-                        <Label Text="{Utils:Translate Passengers_that_cancel_less_get_faster_bookings}" TextColor="#000000" FontSize="Small" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
-                        <Button Text="{Utils:Translate Keep_the_booking}" TextColor="White" BackgroundColor="#75B2FF" 
+                        <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10" HorizontalOptions="CenterAndExpand">
+                            <Image Source="taxi" Aspect="AspectFit" HeightRequest="16"/>
+                            <XF:MaterialLabel FontSize="Subtitle" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand">
+                                <XF:MaterialLabel.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="95-659471" TextColor="#000000"/>
+                                            <Span Text="~" TextColor="#AE556080"/>
+                                            <Span Text="Hundai i20" TextColor="#AE556080"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </XF:MaterialLabel.FormattedText>
+                            </XF:MaterialLabel>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout.Triggers>
+                        <DataTrigger TargetType="StackLayout" Binding="{Binding IsShowCancelRide}" Value="True">
+                            <Setter Property="IsVisible" Value="False"/>
+                        </DataTrigger>
+                    </StackLayout.Triggers>
+                </StackLayout>
+                <StackLayout Margin="0" Padding="0,10" Spacing="20" IsVisible="{Binding IsShowCancelRide}">
+                    <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10" HorizontalOptions="CenterAndExpand">
+                        <Image Source="warningBut" Aspect="AspectFit" HeightRequest="32"/>
+                        <Label Text="{Utils:Translate CANCEL_THIS_RIDE?}" TextColor="#000000" FontAttributes="Bold" FontSize="Medium" VerticalOptions="Center"/>
+                    </StackLayout>
+                    <Label Text="{Utils:Translate Passengers_that_cancel_less_get_faster_bookings}" TextColor="#000000" FontSize="Small" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                    <Button Text="{Utils:Translate Keep_the_booking}" TextColor="White" BackgroundColor="#75B2FF" 
                             TextTransform="None" CornerRadius="5" Padding="0,10"
                             Margin="30,0" Command="{Binding ToggelDisplayCancelRideCommand}"
                             HorizontalOptions="FillAndExpand" VerticalOptions="End"/>
-                        <Button Text="{Utils:Translate Cancel_Ride}" TextColor="#75B2FF" BackgroundColor="White" 
+                    <Button Text="{Utils:Translate Cancel_Ride}" TextColor="#75B2FF" BackgroundColor="White" 
                                     BorderColor="#75B2FF" BorderWidth="1"
                             TextTransform="None" CornerRadius="5" Padding="0,10"
                             Margin="30,0" Command="{Binding CancelRideCommand}"
                             HorizontalOptions="FillAndExpand" VerticalOptions="End"/>
-                    </StackLayout>
-                </Grid>
-                <XF:MaterialIconButton Grid.Row="1" Grid.RowSpan="2" Image="cancelBut"
+                </StackLayout>
+            </Grid>
+            <XF:MaterialIconButton Grid.Row="1" Grid.RowSpan="2" Image="cancelBut"
                                         HeightRequest="60" WidthRequest="60" CornerRadius="30"
                                         HorizontalOptions="Start" VerticalOptions="Start"
                                         BackgroundColor="#E93832"
                                         Command="{Binding ToggelDisplayCancelRideCommand}" IsVisible="True" >
-                    <XF:MaterialIconButton.Triggers>
-                        <DataTrigger TargetType="XF:MaterialIconButton" Binding="{Binding IsShowCancelRide}" Value="True">
-                            <Setter Property="IsVisible" Value="False"/>
-                        </DataTrigger>
-                    </XF:MaterialIconButton.Triggers>
-                </XF:MaterialIconButton>
+                <XF:MaterialIconButton.Triggers>
+                    <DataTrigger TargetType="XF:MaterialIconButton" Binding="{Binding IsShowCancelRide}" Value="True">
+                        <Setter Property="IsVisible" Value="False"/>
+                    </DataTrigger>
+                </XF:MaterialIconButton.Triggers>
+            </XF:MaterialIconButton>
 
-            </Grid>
         </Grid>
+
     </ContentPage.Content>
 </ContentPage>

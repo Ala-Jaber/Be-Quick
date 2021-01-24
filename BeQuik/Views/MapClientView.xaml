@@ -105,21 +105,23 @@
             </StackLayout>
             <!--Footer-->
             <StackLayout Margin="0" Padding="0" Spacing="30"  VerticalOptions="End">
-                <Button Text="{Utils:Translate Confirm_Place}" TextColor="White" BackgroundColor="#75B2FF" 
-                        TextTransform="None" CornerRadius="5" Padding="0,10"
-                        Margin="30,0" Command="{Binding DisplaySummaryOrderCommand}"
-                        HorizontalOptions="FillAndExpand" VerticalOptions="End"/>
-                <Button ImageSource="money_discount_white" Text="Add Promo Code" 
+                <StackLayout Margin="0" Padding="0" Spacing="10">
+                    <Button ImageSource="money_discount_white" Text="Add Promo Code" 
                         TextColor="White" BackgroundColor="#43B372"                         
-                        TextTransform="None" CornerRadius="5" Padding="0,10"
+                        TextTransform="None" CornerRadius="5"
                         Margin="30,0" Command="{Binding EnterPromoCodeCommand}"
                         HorizontalOptions="FillAndExpand" VerticalOptions="End">
-                    <Button.Triggers>
-                        <DataTrigger TargetType="Button" Binding="{Binding IsPromotionCodeAdded}" Value="True">
-                            <Setter Property="IsVisible" Value="False"/>
-                        </DataTrigger>
-                    </Button.Triggers>
-                </Button>
+                        <Button.Triggers>
+                            <DataTrigger TargetType="Button" Binding="{Binding IsPromotionCodeAdded}" Value="True">
+                                <Setter Property="IsVisible" Value="False"/>
+                            </DataTrigger>
+                        </Button.Triggers>
+                    </Button>
+                    <Button Text="{Utils:Translate Confirm_Place}" TextColor="White" BackgroundColor="#75B2FF" 
+                        TextTransform="None" CornerRadius="5" Padding="0,10"
+                        Margin="30,0" Command="{Binding RequestServiceCommand}"
+                        HorizontalOptions="FillAndExpand" VerticalOptions="End"/>
+                </StackLayout>
                 <Grid RowSpacing="0" RowDefinitions="Auto,*">
                     <Frame Margin="0" Padding="20,5" HeightRequest="40" VerticalOptions="End"
                        Grid.Row="1" Grid.Column="0" CornerRadius="0"

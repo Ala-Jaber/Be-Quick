@@ -19,8 +19,8 @@ namespace BeQuik.ViewModels
             OpenAsRootPage(Page);
 
             //Optional Code
-            Device.StartTimer(TimeSpan.FromSeconds(5), () => { ShowDriverWalletEmptyError.Invoke(true); return false; });
-            Device.StartTimer(TimeSpan.FromSeconds(40), () => { ShowDriverWalletEmptyError.Invoke(false); return false; });
+            Device.StartTimer(TimeSpan.FromSeconds(5), () => { ShowDriverWalletEmptyError?.Invoke(true); return false; });
+            Device.StartTimer(TimeSpan.FromSeconds(40), () => { ShowDriverWalletEmptyError?.Invoke(false); return false; });
         }
         private void ShowMenu() => Page.IsPresented = true;
 

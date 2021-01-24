@@ -16,7 +16,7 @@ namespace BeQuik.Droid.Randerers
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             base.OnElementPropertyChanged(sender, e);
-            this.Element.Padding = new Thickness(0,250,0,150);
+            this.Element.Padding = new Thickness(0,250);
         }
         protected override void OnMapReady(GoogleMap nativeMap, Map map)
         {

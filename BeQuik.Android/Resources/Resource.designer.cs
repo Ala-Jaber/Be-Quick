@@ -5521,6 +5521,2640 @@ namespace BeQuik.Droid
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_type = global::BeQuik.Droid.Resource.Styleable.GradientColor_android_type;
 			global::Xamarin.Essentials.Resource.Xml.image_share_filepaths = global::BeQuik.Droid.Resource.Xml.image_share_filepaths;
 			global::Xamarin.Essentials.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::BeQuik.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animation.abc_fade_in = global::BeQuik.Droid.Resource.Animation.abc_fade_in;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animation.abc_fade_out = global::BeQuik.Droid.Resource.Animation.abc_fade_out;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::BeQuik.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animation.abc_popup_enter = global::BeQuik.Droid.Resource.Animation.abc_popup_enter;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animation.abc_popup_exit = global::BeQuik.Droid.Resource.Animation.abc_popup_exit;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animation.abc_shrink_fade_out_from_bottom = global::BeQuik.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animation.abc_slide_in_bottom = global::BeQuik.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animation.abc_slide_in_top = global::BeQuik.Droid.Resource.Animation.abc_slide_in_top;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animation.abc_slide_out_bottom = global::BeQuik.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animation.abc_slide_out_top = global::BeQuik.Droid.Resource.Animation.abc_slide_out_top;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animation.abc_tooltip_enter = global::BeQuik.Droid.Resource.Animation.abc_tooltip_enter;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animation.abc_tooltip_exit = global::BeQuik.Droid.Resource.Animation.abc_tooltip_exit;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animation.design_bottom_sheet_slide_in = global::BeQuik.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animation.design_bottom_sheet_slide_out = global::BeQuik.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animation.design_snackbar_in = global::BeQuik.Droid.Resource.Animation.design_snackbar_in;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animation.design_snackbar_out = global::BeQuik.Droid.Resource.Animation.design_snackbar_out;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animation.EnterFromLeft = global::BeQuik.Droid.Resource.Animation.EnterFromLeft;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animation.EnterFromRight = global::BeQuik.Droid.Resource.Animation.EnterFromRight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animation.ExitToLeft = global::BeQuik.Droid.Resource.Animation.ExitToLeft;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animation.ExitToRight = global::BeQuik.Droid.Resource.Animation.ExitToRight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animator.design_appbar_state_list_animator = global::BeQuik.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animator.design_fab_hide_motion_spec = global::BeQuik.Droid.Resource.Animator.design_fab_hide_motion_spec;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animator.design_fab_show_motion_spec = global::BeQuik.Droid.Resource.Animator.design_fab_show_motion_spec;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animator.mtrl_btn_state_list_anim = global::BeQuik.Droid.Resource.Animator.mtrl_btn_state_list_anim;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animator.mtrl_btn_unelevated_state_list_anim = global::BeQuik.Droid.Resource.Animator.mtrl_btn_unelevated_state_list_anim;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animator.mtrl_chip_state_list_anim = global::BeQuik.Droid.Resource.Animator.mtrl_chip_state_list_anim;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animator.mtrl_fab_hide_motion_spec = global::BeQuik.Droid.Resource.Animator.mtrl_fab_hide_motion_spec;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animator.mtrl_fab_show_motion_spec = global::BeQuik.Droid.Resource.Animator.mtrl_fab_show_motion_spec;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec = global::BeQuik.Droid.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec = global::BeQuik.Droid.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionBarDivider = global::BeQuik.Droid.Resource.Attribute.actionBarDivider;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionBarItemBackground = global::BeQuik.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionBarPopupTheme = global::BeQuik.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionBarSize = global::BeQuik.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionBarSplitStyle = global::BeQuik.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionBarStyle = global::BeQuik.Droid.Resource.Attribute.actionBarStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionBarTabBarStyle = global::BeQuik.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionBarTabStyle = global::BeQuik.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionBarTabTextStyle = global::BeQuik.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionBarTheme = global::BeQuik.Droid.Resource.Attribute.actionBarTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionBarWidgetTheme = global::BeQuik.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionButtonStyle = global::BeQuik.Droid.Resource.Attribute.actionButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionDropDownStyle = global::BeQuik.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionLayout = global::BeQuik.Droid.Resource.Attribute.actionLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionMenuTextAppearance = global::BeQuik.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionMenuTextColor = global::BeQuik.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionModeBackground = global::BeQuik.Droid.Resource.Attribute.actionModeBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionModeCloseButtonStyle = global::BeQuik.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionModeCloseDrawable = global::BeQuik.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionModeCopyDrawable = global::BeQuik.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionModeCutDrawable = global::BeQuik.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionModeFindDrawable = global::BeQuik.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionModePasteDrawable = global::BeQuik.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionModePopupWindowStyle = global::BeQuik.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionModeSelectAllDrawable = global::BeQuik.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionModeShareDrawable = global::BeQuik.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionModeSplitBackground = global::BeQuik.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionModeStyle = global::BeQuik.Droid.Resource.Attribute.actionModeStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionModeWebSearchDrawable = global::BeQuik.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionOverflowButtonStyle = global::BeQuik.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionOverflowMenuStyle = global::BeQuik.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionProviderClass = global::BeQuik.Droid.Resource.Attribute.actionProviderClass;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.actionViewClass = global::BeQuik.Droid.Resource.Attribute.actionViewClass;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.activityChooserViewStyle = global::BeQuik.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.alertDialogButtonGroupStyle = global::BeQuik.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.alertDialogCenterButtons = global::BeQuik.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.alertDialogStyle = global::BeQuik.Droid.Resource.Attribute.alertDialogStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.alertDialogTheme = global::BeQuik.Droid.Resource.Attribute.alertDialogTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.allowStacking = global::BeQuik.Droid.Resource.Attribute.allowStacking;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.alpha = global::BeQuik.Droid.Resource.Attribute.alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.alphabeticModifiers = global::BeQuik.Droid.Resource.Attribute.alphabeticModifiers;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.ambientEnabled = global::BeQuik.Droid.Resource.Attribute.ambientEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.arrowHeadLength = global::BeQuik.Droid.Resource.Attribute.arrowHeadLength;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.arrowShaftLength = global::BeQuik.Droid.Resource.Attribute.arrowShaftLength;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.autoCompleteTextViewStyle = global::BeQuik.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.autoSizeMaxTextSize = global::BeQuik.Droid.Resource.Attribute.autoSizeMaxTextSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.autoSizeMinTextSize = global::BeQuik.Droid.Resource.Attribute.autoSizeMinTextSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.autoSizePresetSizes = global::BeQuik.Droid.Resource.Attribute.autoSizePresetSizes;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.autoSizeStepGranularity = global::BeQuik.Droid.Resource.Attribute.autoSizeStepGranularity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.autoSizeTextType = global::BeQuik.Droid.Resource.Attribute.autoSizeTextType;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.background = global::BeQuik.Droid.Resource.Attribute.background;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.backgroundSplit = global::BeQuik.Droid.Resource.Attribute.backgroundSplit;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.backgroundStacked = global::BeQuik.Droid.Resource.Attribute.backgroundStacked;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.backgroundTint = global::BeQuik.Droid.Resource.Attribute.backgroundTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.backgroundTintMode = global::BeQuik.Droid.Resource.Attribute.backgroundTintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.barLength = global::BeQuik.Droid.Resource.Attribute.barLength;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.behavior_autoHide = global::BeQuik.Droid.Resource.Attribute.behavior_autoHide;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.behavior_fitToContents = global::BeQuik.Droid.Resource.Attribute.behavior_fitToContents;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.behavior_hideable = global::BeQuik.Droid.Resource.Attribute.behavior_hideable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.behavior_overlapTop = global::BeQuik.Droid.Resource.Attribute.behavior_overlapTop;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.behavior_peekHeight = global::BeQuik.Droid.Resource.Attribute.behavior_peekHeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.behavior_skipCollapsed = global::BeQuik.Droid.Resource.Attribute.behavior_skipCollapsed;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.borderlessButtonStyle = global::BeQuik.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.borderWidth = global::BeQuik.Droid.Resource.Attribute.borderWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.bottomAppBarStyle = global::BeQuik.Droid.Resource.Attribute.bottomAppBarStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.bottomNavigationStyle = global::BeQuik.Droid.Resource.Attribute.bottomNavigationStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.bottomSheetDialogTheme = global::BeQuik.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.bottomSheetStyle = global::BeQuik.Droid.Resource.Attribute.bottomSheetStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.boxBackgroundColor = global::BeQuik.Droid.Resource.Attribute.boxBackgroundColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.boxBackgroundMode = global::BeQuik.Droid.Resource.Attribute.boxBackgroundMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.boxCollapsedPaddingTop = global::BeQuik.Droid.Resource.Attribute.boxCollapsedPaddingTop;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.boxCornerRadiusBottomEnd = global::BeQuik.Droid.Resource.Attribute.boxCornerRadiusBottomEnd;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.boxCornerRadiusBottomStart = global::BeQuik.Droid.Resource.Attribute.boxCornerRadiusBottomStart;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.boxCornerRadiusTopEnd = global::BeQuik.Droid.Resource.Attribute.boxCornerRadiusTopEnd;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.boxCornerRadiusTopStart = global::BeQuik.Droid.Resource.Attribute.boxCornerRadiusTopStart;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.boxStrokeColor = global::BeQuik.Droid.Resource.Attribute.boxStrokeColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.boxStrokeWidth = global::BeQuik.Droid.Resource.Attribute.boxStrokeWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.buttonBarButtonStyle = global::BeQuik.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.buttonBarNegativeButtonStyle = global::BeQuik.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.buttonBarNeutralButtonStyle = global::BeQuik.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.buttonBarPositiveButtonStyle = global::BeQuik.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.buttonBarStyle = global::BeQuik.Droid.Resource.Attribute.buttonBarStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.buttonGravity = global::BeQuik.Droid.Resource.Attribute.buttonGravity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.buttonIconDimen = global::BeQuik.Droid.Resource.Attribute.buttonIconDimen;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.buttonPanelSideLayout = global::BeQuik.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.buttonSize = global::BeQuik.Droid.Resource.Attribute.buttonSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.buttonStyle = global::BeQuik.Droid.Resource.Attribute.buttonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.buttonStyleSmall = global::BeQuik.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.buttonTint = global::BeQuik.Droid.Resource.Attribute.buttonTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.buttonTintMode = global::BeQuik.Droid.Resource.Attribute.buttonTintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.cameraBearing = global::BeQuik.Droid.Resource.Attribute.cameraBearing;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.cameraMaxZoomPreference = global::BeQuik.Droid.Resource.Attribute.cameraMaxZoomPreference;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.cameraMinZoomPreference = global::BeQuik.Droid.Resource.Attribute.cameraMinZoomPreference;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.cameraTargetLat = global::BeQuik.Droid.Resource.Attribute.cameraTargetLat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.cameraTargetLng = global::BeQuik.Droid.Resource.Attribute.cameraTargetLng;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.cameraTilt = global::BeQuik.Droid.Resource.Attribute.cameraTilt;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.cameraZoom = global::BeQuik.Droid.Resource.Attribute.cameraZoom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.cardBackgroundColor = global::BeQuik.Droid.Resource.Attribute.cardBackgroundColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.cardCornerRadius = global::BeQuik.Droid.Resource.Attribute.cardCornerRadius;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.cardElevation = global::BeQuik.Droid.Resource.Attribute.cardElevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.cardMaxElevation = global::BeQuik.Droid.Resource.Attribute.cardMaxElevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.cardPreventCornerOverlap = global::BeQuik.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.cardUseCompatPadding = global::BeQuik.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.cardViewStyle = global::BeQuik.Droid.Resource.Attribute.cardViewStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.checkboxStyle = global::BeQuik.Droid.Resource.Attribute.checkboxStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.checkedChip = global::BeQuik.Droid.Resource.Attribute.checkedChip;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.checkedIcon = global::BeQuik.Droid.Resource.Attribute.checkedIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.checkedIconEnabled = global::BeQuik.Droid.Resource.Attribute.checkedIconEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.checkedIconVisible = global::BeQuik.Droid.Resource.Attribute.checkedIconVisible;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.checkedTextViewStyle = global::BeQuik.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.chipBackgroundColor = global::BeQuik.Droid.Resource.Attribute.chipBackgroundColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.chipCornerRadius = global::BeQuik.Droid.Resource.Attribute.chipCornerRadius;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.chipEndPadding = global::BeQuik.Droid.Resource.Attribute.chipEndPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.chipGroupStyle = global::BeQuik.Droid.Resource.Attribute.chipGroupStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.chipIcon = global::BeQuik.Droid.Resource.Attribute.chipIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.chipIconEnabled = global::BeQuik.Droid.Resource.Attribute.chipIconEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.chipIconSize = global::BeQuik.Droid.Resource.Attribute.chipIconSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.chipIconTint = global::BeQuik.Droid.Resource.Attribute.chipIconTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.chipIconVisible = global::BeQuik.Droid.Resource.Attribute.chipIconVisible;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.chipMinHeight = global::BeQuik.Droid.Resource.Attribute.chipMinHeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.chipSpacing = global::BeQuik.Droid.Resource.Attribute.chipSpacing;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.chipSpacingHorizontal = global::BeQuik.Droid.Resource.Attribute.chipSpacingHorizontal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.chipSpacingVertical = global::BeQuik.Droid.Resource.Attribute.chipSpacingVertical;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.chipStandaloneStyle = global::BeQuik.Droid.Resource.Attribute.chipStandaloneStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.chipStartPadding = global::BeQuik.Droid.Resource.Attribute.chipStartPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.chipStrokeColor = global::BeQuik.Droid.Resource.Attribute.chipStrokeColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.chipStrokeWidth = global::BeQuik.Droid.Resource.Attribute.chipStrokeWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.chipStyle = global::BeQuik.Droid.Resource.Attribute.chipStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.circleCrop = global::BeQuik.Droid.Resource.Attribute.circleCrop;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.closeIcon = global::BeQuik.Droid.Resource.Attribute.closeIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.closeIconEnabled = global::BeQuik.Droid.Resource.Attribute.closeIconEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.closeIconEndPadding = global::BeQuik.Droid.Resource.Attribute.closeIconEndPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.closeIconSize = global::BeQuik.Droid.Resource.Attribute.closeIconSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.closeIconStartPadding = global::BeQuik.Droid.Resource.Attribute.closeIconStartPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.closeIconTint = global::BeQuik.Droid.Resource.Attribute.closeIconTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.closeIconVisible = global::BeQuik.Droid.Resource.Attribute.closeIconVisible;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.closeItemLayout = global::BeQuik.Droid.Resource.Attribute.closeItemLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.collapseContentDescription = global::BeQuik.Droid.Resource.Attribute.collapseContentDescription;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.collapsedTitleGravity = global::BeQuik.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.collapsedTitleTextAppearance = global::BeQuik.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.collapseIcon = global::BeQuik.Droid.Resource.Attribute.collapseIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.color = global::BeQuik.Droid.Resource.Attribute.color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.colorAccent = global::BeQuik.Droid.Resource.Attribute.colorAccent;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.colorBackgroundFloating = global::BeQuik.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.colorButtonNormal = global::BeQuik.Droid.Resource.Attribute.colorButtonNormal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.colorControlActivated = global::BeQuik.Droid.Resource.Attribute.colorControlActivated;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.colorControlHighlight = global::BeQuik.Droid.Resource.Attribute.colorControlHighlight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.colorControlNormal = global::BeQuik.Droid.Resource.Attribute.colorControlNormal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.colorError = global::BeQuik.Droid.Resource.Attribute.colorError;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.colorPrimary = global::BeQuik.Droid.Resource.Attribute.colorPrimary;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.colorPrimaryDark = global::BeQuik.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.colorScheme = global::BeQuik.Droid.Resource.Attribute.colorScheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.colorSecondary = global::BeQuik.Droid.Resource.Attribute.colorSecondary;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.colorSwitchThumbNormal = global::BeQuik.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.commitIcon = global::BeQuik.Droid.Resource.Attribute.commitIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.contentDescription = global::BeQuik.Droid.Resource.Attribute.contentDescription;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.contentInsetEnd = global::BeQuik.Droid.Resource.Attribute.contentInsetEnd;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.contentInsetEndWithActions = global::BeQuik.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.contentInsetLeft = global::BeQuik.Droid.Resource.Attribute.contentInsetLeft;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.contentInsetRight = global::BeQuik.Droid.Resource.Attribute.contentInsetRight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.contentInsetStart = global::BeQuik.Droid.Resource.Attribute.contentInsetStart;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.contentInsetStartWithNavigation = global::BeQuik.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.contentPadding = global::BeQuik.Droid.Resource.Attribute.contentPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.contentPaddingBottom = global::BeQuik.Droid.Resource.Attribute.contentPaddingBottom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.contentPaddingLeft = global::BeQuik.Droid.Resource.Attribute.contentPaddingLeft;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.contentPaddingRight = global::BeQuik.Droid.Resource.Attribute.contentPaddingRight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.contentPaddingTop = global::BeQuik.Droid.Resource.Attribute.contentPaddingTop;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.contentScrim = global::BeQuik.Droid.Resource.Attribute.contentScrim;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.controlBackground = global::BeQuik.Droid.Resource.Attribute.controlBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.coordinatorLayoutStyle = global::BeQuik.Droid.Resource.Attribute.coordinatorLayoutStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.cornerRadius = global::BeQuik.Droid.Resource.Attribute.cornerRadius;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.counterEnabled = global::BeQuik.Droid.Resource.Attribute.counterEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.counterMaxLength = global::BeQuik.Droid.Resource.Attribute.counterMaxLength;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.counterOverflowTextAppearance = global::BeQuik.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.counterTextAppearance = global::BeQuik.Droid.Resource.Attribute.counterTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.customNavigationLayout = global::BeQuik.Droid.Resource.Attribute.customNavigationLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.defaultQueryHint = global::BeQuik.Droid.Resource.Attribute.defaultQueryHint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.dialogCornerRadius = global::BeQuik.Droid.Resource.Attribute.dialogCornerRadius;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.dialogPreferredPadding = global::BeQuik.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.dialogTheme = global::BeQuik.Droid.Resource.Attribute.dialogTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.displayOptions = global::BeQuik.Droid.Resource.Attribute.displayOptions;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.divider = global::BeQuik.Droid.Resource.Attribute.divider;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.dividerHorizontal = global::BeQuik.Droid.Resource.Attribute.dividerHorizontal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.dividerPadding = global::BeQuik.Droid.Resource.Attribute.dividerPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.dividerVertical = global::BeQuik.Droid.Resource.Attribute.dividerVertical;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.drawableSize = global::BeQuik.Droid.Resource.Attribute.drawableSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.drawerArrowStyle = global::BeQuik.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::BeQuik.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.dropDownListViewStyle = global::BeQuik.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.editTextBackground = global::BeQuik.Droid.Resource.Attribute.editTextBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.editTextColor = global::BeQuik.Droid.Resource.Attribute.editTextColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.editTextStyle = global::BeQuik.Droid.Resource.Attribute.editTextStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.elevation = global::BeQuik.Droid.Resource.Attribute.elevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.enforceMaterialTheme = global::BeQuik.Droid.Resource.Attribute.enforceMaterialTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.enforceTextAppearance = global::BeQuik.Droid.Resource.Attribute.enforceTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.errorEnabled = global::BeQuik.Droid.Resource.Attribute.errorEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.errorTextAppearance = global::BeQuik.Droid.Resource.Attribute.errorTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.expandActivityOverflowButtonDrawable = global::BeQuik.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.expanded = global::BeQuik.Droid.Resource.Attribute.expanded;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.expandedTitleGravity = global::BeQuik.Droid.Resource.Attribute.expandedTitleGravity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.expandedTitleMargin = global::BeQuik.Droid.Resource.Attribute.expandedTitleMargin;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.expandedTitleMarginBottom = global::BeQuik.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.expandedTitleMarginEnd = global::BeQuik.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.expandedTitleMarginStart = global::BeQuik.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.expandedTitleMarginTop = global::BeQuik.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.expandedTitleTextAppearance = global::BeQuik.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fabAlignmentMode = global::BeQuik.Droid.Resource.Attribute.fabAlignmentMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fabCradleMargin = global::BeQuik.Droid.Resource.Attribute.fabCradleMargin;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fabCradleRoundedCornerRadius = global::BeQuik.Droid.Resource.Attribute.fabCradleRoundedCornerRadius;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fabCradleVerticalOffset = global::BeQuik.Droid.Resource.Attribute.fabCradleVerticalOffset;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fabCustomSize = global::BeQuik.Droid.Resource.Attribute.fabCustomSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fabSize = global::BeQuik.Droid.Resource.Attribute.fabSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fastScrollEnabled = global::BeQuik.Droid.Resource.Attribute.fastScrollEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::BeQuik.Droid.Resource.Attribute.fastScrollHorizontalThumbDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::BeQuik.Droid.Resource.Attribute.fastScrollHorizontalTrackDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fastScrollVerticalThumbDrawable = global::BeQuik.Droid.Resource.Attribute.fastScrollVerticalThumbDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fastScrollVerticalTrackDrawable = global::BeQuik.Droid.Resource.Attribute.fastScrollVerticalTrackDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.firstBaselineToTopHeight = global::BeQuik.Droid.Resource.Attribute.firstBaselineToTopHeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.floatingActionButtonStyle = global::BeQuik.Droid.Resource.Attribute.floatingActionButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.font = global::BeQuik.Droid.Resource.Attribute.font;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fontFamily = global::BeQuik.Droid.Resource.Attribute.fontFamily;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fontProviderAuthority = global::BeQuik.Droid.Resource.Attribute.fontProviderAuthority;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fontProviderCerts = global::BeQuik.Droid.Resource.Attribute.fontProviderCerts;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fontProviderFetchStrategy = global::BeQuik.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fontProviderFetchTimeout = global::BeQuik.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fontProviderPackage = global::BeQuik.Droid.Resource.Attribute.fontProviderPackage;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fontProviderQuery = global::BeQuik.Droid.Resource.Attribute.fontProviderQuery;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fontStyle = global::BeQuik.Droid.Resource.Attribute.fontStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fontVariationSettings = global::BeQuik.Droid.Resource.Attribute.fontVariationSettings;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.fontWeight = global::BeQuik.Droid.Resource.Attribute.fontWeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.foregroundInsidePadding = global::BeQuik.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.gapBetweenBars = global::BeQuik.Droid.Resource.Attribute.gapBetweenBars;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.goIcon = global::BeQuik.Droid.Resource.Attribute.goIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.headerLayout = global::BeQuik.Droid.Resource.Attribute.headerLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.height = global::BeQuik.Droid.Resource.Attribute.height;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.helperText = global::BeQuik.Droid.Resource.Attribute.helperText;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.helperTextEnabled = global::BeQuik.Droid.Resource.Attribute.helperTextEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.helperTextTextAppearance = global::BeQuik.Droid.Resource.Attribute.helperTextTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.hideMotionSpec = global::BeQuik.Droid.Resource.Attribute.hideMotionSpec;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.hideOnContentScroll = global::BeQuik.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.hideOnScroll = global::BeQuik.Droid.Resource.Attribute.hideOnScroll;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.hintAnimationEnabled = global::BeQuik.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.hintEnabled = global::BeQuik.Droid.Resource.Attribute.hintEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.hintTextAppearance = global::BeQuik.Droid.Resource.Attribute.hintTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.homeAsUpIndicator = global::BeQuik.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.homeLayout = global::BeQuik.Droid.Resource.Attribute.homeLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.hoveredFocusedTranslationZ = global::BeQuik.Droid.Resource.Attribute.hoveredFocusedTranslationZ;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.icon = global::BeQuik.Droid.Resource.Attribute.icon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.iconEndPadding = global::BeQuik.Droid.Resource.Attribute.iconEndPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.iconGravity = global::BeQuik.Droid.Resource.Attribute.iconGravity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.iconifiedByDefault = global::BeQuik.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.iconPadding = global::BeQuik.Droid.Resource.Attribute.iconPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.iconSize = global::BeQuik.Droid.Resource.Attribute.iconSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.iconStartPadding = global::BeQuik.Droid.Resource.Attribute.iconStartPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.iconTint = global::BeQuik.Droid.Resource.Attribute.iconTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.iconTintMode = global::BeQuik.Droid.Resource.Attribute.iconTintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.imageAspectRatio = global::BeQuik.Droid.Resource.Attribute.imageAspectRatio;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.imageAspectRatioAdjust = global::BeQuik.Droid.Resource.Attribute.imageAspectRatioAdjust;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.imageButtonStyle = global::BeQuik.Droid.Resource.Attribute.imageButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.indeterminateProgressStyle = global::BeQuik.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.initialActivityCount = global::BeQuik.Droid.Resource.Attribute.initialActivityCount;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.insetForeground = global::BeQuik.Droid.Resource.Attribute.insetForeground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.isLightTheme = global::BeQuik.Droid.Resource.Attribute.isLightTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.itemBackground = global::BeQuik.Droid.Resource.Attribute.itemBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.itemHorizontalPadding = global::BeQuik.Droid.Resource.Attribute.itemHorizontalPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.itemHorizontalTranslationEnabled = global::BeQuik.Droid.Resource.Attribute.itemHorizontalTranslationEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.itemIconPadding = global::BeQuik.Droid.Resource.Attribute.itemIconPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.itemIconSize = global::BeQuik.Droid.Resource.Attribute.itemIconSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.itemIconTint = global::BeQuik.Droid.Resource.Attribute.itemIconTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.itemPadding = global::BeQuik.Droid.Resource.Attribute.itemPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.itemSpacing = global::BeQuik.Droid.Resource.Attribute.itemSpacing;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.itemTextAppearance = global::BeQuik.Droid.Resource.Attribute.itemTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.itemTextAppearanceActive = global::BeQuik.Droid.Resource.Attribute.itemTextAppearanceActive;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.itemTextAppearanceInactive = global::BeQuik.Droid.Resource.Attribute.itemTextAppearanceInactive;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.itemTextColor = global::BeQuik.Droid.Resource.Attribute.itemTextColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.keylines = global::BeQuik.Droid.Resource.Attribute.keylines;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.labelVisibilityMode = global::BeQuik.Droid.Resource.Attribute.labelVisibilityMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.lastBaselineToBottomHeight = global::BeQuik.Droid.Resource.Attribute.lastBaselineToBottomHeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.latLngBoundsNorthEastLatitude = global::BeQuik.Droid.Resource.Attribute.latLngBoundsNorthEastLatitude;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.latLngBoundsNorthEastLongitude = global::BeQuik.Droid.Resource.Attribute.latLngBoundsNorthEastLongitude;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.latLngBoundsSouthWestLatitude = global::BeQuik.Droid.Resource.Attribute.latLngBoundsSouthWestLatitude;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.latLngBoundsSouthWestLongitude = global::BeQuik.Droid.Resource.Attribute.latLngBoundsSouthWestLongitude;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.layout = global::BeQuik.Droid.Resource.Attribute.layout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.layoutManager = global::BeQuik.Droid.Resource.Attribute.layoutManager;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.layout_anchor = global::BeQuik.Droid.Resource.Attribute.layout_anchor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.layout_anchorGravity = global::BeQuik.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.layout_behavior = global::BeQuik.Droid.Resource.Attribute.layout_behavior;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.layout_collapseMode = global::BeQuik.Droid.Resource.Attribute.layout_collapseMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.layout_collapseParallaxMultiplier = global::BeQuik.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.layout_dodgeInsetEdges = global::BeQuik.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.layout_insetEdge = global::BeQuik.Droid.Resource.Attribute.layout_insetEdge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.layout_keyline = global::BeQuik.Droid.Resource.Attribute.layout_keyline;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.layout_scrollFlags = global::BeQuik.Droid.Resource.Attribute.layout_scrollFlags;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.layout_scrollInterpolator = global::BeQuik.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.liftOnScroll = global::BeQuik.Droid.Resource.Attribute.liftOnScroll;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.lineHeight = global::BeQuik.Droid.Resource.Attribute.lineHeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.lineSpacing = global::BeQuik.Droid.Resource.Attribute.lineSpacing;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::BeQuik.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.listDividerAlertDialog = global::BeQuik.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.listItemLayout = global::BeQuik.Droid.Resource.Attribute.listItemLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.listLayout = global::BeQuik.Droid.Resource.Attribute.listLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.listMenuViewStyle = global::BeQuik.Droid.Resource.Attribute.listMenuViewStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.listPopupWindowStyle = global::BeQuik.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.listPreferredItemHeight = global::BeQuik.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.listPreferredItemHeightLarge = global::BeQuik.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.listPreferredItemHeightSmall = global::BeQuik.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.listPreferredItemPaddingLeft = global::BeQuik.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.listPreferredItemPaddingRight = global::BeQuik.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.liteMode = global::BeQuik.Droid.Resource.Attribute.liteMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.logo = global::BeQuik.Droid.Resource.Attribute.logo;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.logoDescription = global::BeQuik.Droid.Resource.Attribute.logoDescription;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.mapType = global::BeQuik.Droid.Resource.Attribute.mapType;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.materialButtonStyle = global::BeQuik.Droid.Resource.Attribute.materialButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.materialCardViewStyle = global::BeQuik.Droid.Resource.Attribute.materialCardViewStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.maxActionInlineWidth = global::BeQuik.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.maxButtonHeight = global::BeQuik.Droid.Resource.Attribute.maxButtonHeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.maxImageSize = global::BeQuik.Droid.Resource.Attribute.maxImageSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.measureWithLargestChild = global::BeQuik.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.menu = global::BeQuik.Droid.Resource.Attribute.menu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.multiChoiceItemLayout = global::BeQuik.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.navigationContentDescription = global::BeQuik.Droid.Resource.Attribute.navigationContentDescription;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.navigationIcon = global::BeQuik.Droid.Resource.Attribute.navigationIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.navigationMode = global::BeQuik.Droid.Resource.Attribute.navigationMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.navigationViewStyle = global::BeQuik.Droid.Resource.Attribute.navigationViewStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.numericModifiers = global::BeQuik.Droid.Resource.Attribute.numericModifiers;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.overlapAnchor = global::BeQuik.Droid.Resource.Attribute.overlapAnchor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.paddingBottomNoButtons = global::BeQuik.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.paddingEnd = global::BeQuik.Droid.Resource.Attribute.paddingEnd;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.paddingStart = global::BeQuik.Droid.Resource.Attribute.paddingStart;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.paddingTopNoTitle = global::BeQuik.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.panelBackground = global::BeQuik.Droid.Resource.Attribute.panelBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.panelMenuListTheme = global::BeQuik.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.panelMenuListWidth = global::BeQuik.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.passwordToggleContentDescription = global::BeQuik.Droid.Resource.Attribute.passwordToggleContentDescription;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.passwordToggleDrawable = global::BeQuik.Droid.Resource.Attribute.passwordToggleDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.passwordToggleEnabled = global::BeQuik.Droid.Resource.Attribute.passwordToggleEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.passwordToggleTint = global::BeQuik.Droid.Resource.Attribute.passwordToggleTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.passwordToggleTintMode = global::BeQuik.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.popupMenuStyle = global::BeQuik.Droid.Resource.Attribute.popupMenuStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.popupTheme = global::BeQuik.Droid.Resource.Attribute.popupTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.popupWindowStyle = global::BeQuik.Droid.Resource.Attribute.popupWindowStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.preserveIconSpacing = global::BeQuik.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.pressedTranslationZ = global::BeQuik.Droid.Resource.Attribute.pressedTranslationZ;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.progressBarPadding = global::BeQuik.Droid.Resource.Attribute.progressBarPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.progressBarStyle = global::BeQuik.Droid.Resource.Attribute.progressBarStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.queryBackground = global::BeQuik.Droid.Resource.Attribute.queryBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.queryHint = global::BeQuik.Droid.Resource.Attribute.queryHint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.radioButtonStyle = global::BeQuik.Droid.Resource.Attribute.radioButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.ratingBarStyle = global::BeQuik.Droid.Resource.Attribute.ratingBarStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.ratingBarStyleIndicator = global::BeQuik.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.ratingBarStyleSmall = global::BeQuik.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.reverseLayout = global::BeQuik.Droid.Resource.Attribute.reverseLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.rippleColor = global::BeQuik.Droid.Resource.Attribute.rippleColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.scopeUris = global::BeQuik.Droid.Resource.Attribute.scopeUris;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.scrimAnimationDuration = global::BeQuik.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.scrimBackground = global::BeQuik.Droid.Resource.Attribute.scrimBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.scrimVisibleHeightTrigger = global::BeQuik.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.searchHintIcon = global::BeQuik.Droid.Resource.Attribute.searchHintIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.searchIcon = global::BeQuik.Droid.Resource.Attribute.searchIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.searchViewStyle = global::BeQuik.Droid.Resource.Attribute.searchViewStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.seekBarStyle = global::BeQuik.Droid.Resource.Attribute.seekBarStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.selectableItemBackground = global::BeQuik.Droid.Resource.Attribute.selectableItemBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.selectableItemBackgroundBorderless = global::BeQuik.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.showAsAction = global::BeQuik.Droid.Resource.Attribute.showAsAction;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.showDividers = global::BeQuik.Droid.Resource.Attribute.showDividers;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.showMotionSpec = global::BeQuik.Droid.Resource.Attribute.showMotionSpec;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.showText = global::BeQuik.Droid.Resource.Attribute.showText;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.showTitle = global::BeQuik.Droid.Resource.Attribute.showTitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.singleChoiceItemLayout = global::BeQuik.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.singleLine = global::BeQuik.Droid.Resource.Attribute.singleLine;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.singleSelection = global::BeQuik.Droid.Resource.Attribute.singleSelection;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.snackbarButtonStyle = global::BeQuik.Droid.Resource.Attribute.snackbarButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.snackbarStyle = global::BeQuik.Droid.Resource.Attribute.snackbarStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.spanCount = global::BeQuik.Droid.Resource.Attribute.spanCount;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.spinBars = global::BeQuik.Droid.Resource.Attribute.spinBars;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.spinnerDropDownItemStyle = global::BeQuik.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.spinnerStyle = global::BeQuik.Droid.Resource.Attribute.spinnerStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.splitTrack = global::BeQuik.Droid.Resource.Attribute.splitTrack;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.srcCompat = global::BeQuik.Droid.Resource.Attribute.srcCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.stackFromEnd = global::BeQuik.Droid.Resource.Attribute.stackFromEnd;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.state_above_anchor = global::BeQuik.Droid.Resource.Attribute.state_above_anchor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.state_collapsed = global::BeQuik.Droid.Resource.Attribute.state_collapsed;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.state_collapsible = global::BeQuik.Droid.Resource.Attribute.state_collapsible;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.state_liftable = global::BeQuik.Droid.Resource.Attribute.state_liftable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.state_lifted = global::BeQuik.Droid.Resource.Attribute.state_lifted;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.statusBarBackground = global::BeQuik.Droid.Resource.Attribute.statusBarBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.statusBarScrim = global::BeQuik.Droid.Resource.Attribute.statusBarScrim;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.strokeColor = global::BeQuik.Droid.Resource.Attribute.strokeColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.strokeWidth = global::BeQuik.Droid.Resource.Attribute.strokeWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.subMenuArrow = global::BeQuik.Droid.Resource.Attribute.subMenuArrow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.submitBackground = global::BeQuik.Droid.Resource.Attribute.submitBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.subtitle = global::BeQuik.Droid.Resource.Attribute.subtitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.subtitleTextAppearance = global::BeQuik.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.subtitleTextColor = global::BeQuik.Droid.Resource.Attribute.subtitleTextColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.subtitleTextStyle = global::BeQuik.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.suggestionRowLayout = global::BeQuik.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.switchMinWidth = global::BeQuik.Droid.Resource.Attribute.switchMinWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.switchPadding = global::BeQuik.Droid.Resource.Attribute.switchPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.switchStyle = global::BeQuik.Droid.Resource.Attribute.switchStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.switchTextAppearance = global::BeQuik.Droid.Resource.Attribute.switchTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabBackground = global::BeQuik.Droid.Resource.Attribute.tabBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabContentStart = global::BeQuik.Droid.Resource.Attribute.tabContentStart;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabGravity = global::BeQuik.Droid.Resource.Attribute.tabGravity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabIconTint = global::BeQuik.Droid.Resource.Attribute.tabIconTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabIconTintMode = global::BeQuik.Droid.Resource.Attribute.tabIconTintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabIndicator = global::BeQuik.Droid.Resource.Attribute.tabIndicator;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabIndicatorAnimationDuration = global::BeQuik.Droid.Resource.Attribute.tabIndicatorAnimationDuration;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabIndicatorColor = global::BeQuik.Droid.Resource.Attribute.tabIndicatorColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabIndicatorFullWidth = global::BeQuik.Droid.Resource.Attribute.tabIndicatorFullWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabIndicatorGravity = global::BeQuik.Droid.Resource.Attribute.tabIndicatorGravity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabIndicatorHeight = global::BeQuik.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabInlineLabel = global::BeQuik.Droid.Resource.Attribute.tabInlineLabel;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabMaxWidth = global::BeQuik.Droid.Resource.Attribute.tabMaxWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabMinWidth = global::BeQuik.Droid.Resource.Attribute.tabMinWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabMode = global::BeQuik.Droid.Resource.Attribute.tabMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabPadding = global::BeQuik.Droid.Resource.Attribute.tabPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabPaddingBottom = global::BeQuik.Droid.Resource.Attribute.tabPaddingBottom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabPaddingEnd = global::BeQuik.Droid.Resource.Attribute.tabPaddingEnd;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabPaddingStart = global::BeQuik.Droid.Resource.Attribute.tabPaddingStart;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabPaddingTop = global::BeQuik.Droid.Resource.Attribute.tabPaddingTop;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabRippleColor = global::BeQuik.Droid.Resource.Attribute.tabRippleColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabSelectedTextColor = global::BeQuik.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabStyle = global::BeQuik.Droid.Resource.Attribute.tabStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabTextAppearance = global::BeQuik.Droid.Resource.Attribute.tabTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabTextColor = global::BeQuik.Droid.Resource.Attribute.tabTextColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tabUnboundedRipple = global::BeQuik.Droid.Resource.Attribute.tabUnboundedRipple;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAllCaps = global::BeQuik.Droid.Resource.Attribute.textAllCaps;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearanceBody1 = global::BeQuik.Droid.Resource.Attribute.textAppearanceBody1;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearanceBody2 = global::BeQuik.Droid.Resource.Attribute.textAppearanceBody2;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearanceButton = global::BeQuik.Droid.Resource.Attribute.textAppearanceButton;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearanceCaption = global::BeQuik.Droid.Resource.Attribute.textAppearanceCaption;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearanceHeadline1 = global::BeQuik.Droid.Resource.Attribute.textAppearanceHeadline1;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearanceHeadline2 = global::BeQuik.Droid.Resource.Attribute.textAppearanceHeadline2;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearanceHeadline3 = global::BeQuik.Droid.Resource.Attribute.textAppearanceHeadline3;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearanceHeadline4 = global::BeQuik.Droid.Resource.Attribute.textAppearanceHeadline4;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearanceHeadline5 = global::BeQuik.Droid.Resource.Attribute.textAppearanceHeadline5;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearanceHeadline6 = global::BeQuik.Droid.Resource.Attribute.textAppearanceHeadline6;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearanceLargePopupMenu = global::BeQuik.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearanceListItem = global::BeQuik.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearanceListItemSecondary = global::BeQuik.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearanceListItemSmall = global::BeQuik.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearanceOverline = global::BeQuik.Droid.Resource.Attribute.textAppearanceOverline;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearancePopupMenuHeader = global::BeQuik.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearanceSearchResultSubtitle = global::BeQuik.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::BeQuik.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::BeQuik.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearanceSubtitle1 = global::BeQuik.Droid.Resource.Attribute.textAppearanceSubtitle1;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textAppearanceSubtitle2 = global::BeQuik.Droid.Resource.Attribute.textAppearanceSubtitle2;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textColorAlertDialogListItem = global::BeQuik.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textColorSearchUrl = global::BeQuik.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textEndPadding = global::BeQuik.Droid.Resource.Attribute.textEndPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textInputStyle = global::BeQuik.Droid.Resource.Attribute.textInputStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.textStartPadding = global::BeQuik.Droid.Resource.Attribute.textStartPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.theme = global::BeQuik.Droid.Resource.Attribute.theme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.thickness = global::BeQuik.Droid.Resource.Attribute.thickness;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.thumbTextPadding = global::BeQuik.Droid.Resource.Attribute.thumbTextPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.thumbTint = global::BeQuik.Droid.Resource.Attribute.thumbTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.thumbTintMode = global::BeQuik.Droid.Resource.Attribute.thumbTintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tickMark = global::BeQuik.Droid.Resource.Attribute.tickMark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tickMarkTint = global::BeQuik.Droid.Resource.Attribute.tickMarkTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tickMarkTintMode = global::BeQuik.Droid.Resource.Attribute.tickMarkTintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tint = global::BeQuik.Droid.Resource.Attribute.tint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tintMode = global::BeQuik.Droid.Resource.Attribute.tintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.title = global::BeQuik.Droid.Resource.Attribute.title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.titleEnabled = global::BeQuik.Droid.Resource.Attribute.titleEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.titleMargin = global::BeQuik.Droid.Resource.Attribute.titleMargin;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.titleMarginBottom = global::BeQuik.Droid.Resource.Attribute.titleMarginBottom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.titleMarginEnd = global::BeQuik.Droid.Resource.Attribute.titleMarginEnd;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.titleMargins = global::BeQuik.Droid.Resource.Attribute.titleMargins;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.titleMarginStart = global::BeQuik.Droid.Resource.Attribute.titleMarginStart;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.titleMarginTop = global::BeQuik.Droid.Resource.Attribute.titleMarginTop;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.titleTextAppearance = global::BeQuik.Droid.Resource.Attribute.titleTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.titleTextColor = global::BeQuik.Droid.Resource.Attribute.titleTextColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.titleTextStyle = global::BeQuik.Droid.Resource.Attribute.titleTextStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.toolbarId = global::BeQuik.Droid.Resource.Attribute.toolbarId;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.toolbarNavigationButtonStyle = global::BeQuik.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.toolbarStyle = global::BeQuik.Droid.Resource.Attribute.toolbarStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tooltipForegroundColor = global::BeQuik.Droid.Resource.Attribute.tooltipForegroundColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tooltipFrameBackground = global::BeQuik.Droid.Resource.Attribute.tooltipFrameBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.tooltipText = global::BeQuik.Droid.Resource.Attribute.tooltipText;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.track = global::BeQuik.Droid.Resource.Attribute.track;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.trackTint = global::BeQuik.Droid.Resource.Attribute.trackTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.trackTintMode = global::BeQuik.Droid.Resource.Attribute.trackTintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.ttcIndex = global::BeQuik.Droid.Resource.Attribute.ttcIndex;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.uiCompass = global::BeQuik.Droid.Resource.Attribute.uiCompass;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.uiMapToolbar = global::BeQuik.Droid.Resource.Attribute.uiMapToolbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.uiRotateGestures = global::BeQuik.Droid.Resource.Attribute.uiRotateGestures;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.uiScrollGestures = global::BeQuik.Droid.Resource.Attribute.uiScrollGestures;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.uiScrollGesturesDuringRotateOrZoom = global::BeQuik.Droid.Resource.Attribute.uiScrollGesturesDuringRotateOrZoom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.uiTiltGestures = global::BeQuik.Droid.Resource.Attribute.uiTiltGestures;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.uiZoomControls = global::BeQuik.Droid.Resource.Attribute.uiZoomControls;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.uiZoomGestures = global::BeQuik.Droid.Resource.Attribute.uiZoomGestures;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.useCompatPadding = global::BeQuik.Droid.Resource.Attribute.useCompatPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.useViewLifecycle = global::BeQuik.Droid.Resource.Attribute.useViewLifecycle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.viewInflaterClass = global::BeQuik.Droid.Resource.Attribute.viewInflaterClass;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.voiceIcon = global::BeQuik.Droid.Resource.Attribute.voiceIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.windowActionBar = global::BeQuik.Droid.Resource.Attribute.windowActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.windowActionBarOverlay = global::BeQuik.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.windowActionModeOverlay = global::BeQuik.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.windowFixedHeightMajor = global::BeQuik.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.windowFixedHeightMinor = global::BeQuik.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.windowFixedWidthMajor = global::BeQuik.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.windowFixedWidthMinor = global::BeQuik.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.windowMinWidthMajor = global::BeQuik.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.windowMinWidthMinor = global::BeQuik.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.windowNoTitle = global::BeQuik.Droid.Resource.Attribute.windowNoTitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Attribute.zOrderOnTop = global::BeQuik.Droid.Resource.Attribute.zOrderOnTop;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::BeQuik.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::BeQuik.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::BeQuik.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Boolean.mtrl_btn_textappearance_all_caps = global::BeQuik.Droid.Resource.Boolean.mtrl_btn_textappearance_all_caps;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::BeQuik.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::BeQuik.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_btn_colored_borderless_text_material = global::BeQuik.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_btn_colored_text_material = global::BeQuik.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_color_highlight_material = global::BeQuik.Droid.Resource.Color.abc_color_highlight_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_hint_foreground_material_dark = global::BeQuik.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_hint_foreground_material_light = global::BeQuik.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_primary_text_disable_only_material_dark = global::BeQuik.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_primary_text_disable_only_material_light = global::BeQuik.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_primary_text_material_dark = global::BeQuik.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_primary_text_material_light = global::BeQuik.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_search_url_text = global::BeQuik.Droid.Resource.Color.abc_search_url_text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_search_url_text_normal = global::BeQuik.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_search_url_text_pressed = global::BeQuik.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_search_url_text_selected = global::BeQuik.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_secondary_text_material_dark = global::BeQuik.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_secondary_text_material_light = global::BeQuik.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_tint_btn_checkable = global::BeQuik.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_tint_default = global::BeQuik.Droid.Resource.Color.abc_tint_default;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_tint_edittext = global::BeQuik.Droid.Resource.Color.abc_tint_edittext;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_tint_seek_thumb = global::BeQuik.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_tint_spinner = global::BeQuik.Droid.Resource.Color.abc_tint_spinner;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.abc_tint_switch_track = global::BeQuik.Droid.Resource.Color.abc_tint_switch_track;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.accent_material_dark = global::BeQuik.Droid.Resource.Color.accent_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.accent_material_light = global::BeQuik.Droid.Resource.Color.accent_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.background_floating_material_dark = global::BeQuik.Droid.Resource.Color.background_floating_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.background_floating_material_light = global::BeQuik.Droid.Resource.Color.background_floating_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.background_material_dark = global::BeQuik.Droid.Resource.Color.background_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.background_material_light = global::BeQuik.Droid.Resource.Color.background_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.bright_foreground_disabled_material_dark = global::BeQuik.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.bright_foreground_disabled_material_light = global::BeQuik.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.bright_foreground_inverse_material_dark = global::BeQuik.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.bright_foreground_inverse_material_light = global::BeQuik.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.bright_foreground_material_dark = global::BeQuik.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.bright_foreground_material_light = global::BeQuik.Droid.Resource.Color.bright_foreground_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.browser_actions_bg_grey = global::BeQuik.Droid.Resource.Color.browser_actions_bg_grey;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.browser_actions_divider_color = global::BeQuik.Droid.Resource.Color.browser_actions_divider_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.browser_actions_text_color = global::BeQuik.Droid.Resource.Color.browser_actions_text_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.browser_actions_title_color = global::BeQuik.Droid.Resource.Color.browser_actions_title_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.button_material_dark = global::BeQuik.Droid.Resource.Color.button_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.button_material_light = global::BeQuik.Droid.Resource.Color.button_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.cardview_dark_background = global::BeQuik.Droid.Resource.Color.cardview_dark_background;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.cardview_light_background = global::BeQuik.Droid.Resource.Color.cardview_light_background;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.cardview_shadow_end_color = global::BeQuik.Droid.Resource.Color.cardview_shadow_end_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.cardview_shadow_start_color = global::BeQuik.Droid.Resource.Color.cardview_shadow_start_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.common_google_signin_btn_text_dark = global::BeQuik.Droid.Resource.Color.common_google_signin_btn_text_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.common_google_signin_btn_text_dark_default = global::BeQuik.Droid.Resource.Color.common_google_signin_btn_text_dark_default;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.common_google_signin_btn_text_dark_disabled = global::BeQuik.Droid.Resource.Color.common_google_signin_btn_text_dark_disabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.common_google_signin_btn_text_dark_focused = global::BeQuik.Droid.Resource.Color.common_google_signin_btn_text_dark_focused;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.common_google_signin_btn_text_dark_pressed = global::BeQuik.Droid.Resource.Color.common_google_signin_btn_text_dark_pressed;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.common_google_signin_btn_text_light = global::BeQuik.Droid.Resource.Color.common_google_signin_btn_text_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.common_google_signin_btn_text_light_default = global::BeQuik.Droid.Resource.Color.common_google_signin_btn_text_light_default;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.common_google_signin_btn_text_light_disabled = global::BeQuik.Droid.Resource.Color.common_google_signin_btn_text_light_disabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.common_google_signin_btn_text_light_focused = global::BeQuik.Droid.Resource.Color.common_google_signin_btn_text_light_focused;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.common_google_signin_btn_text_light_pressed = global::BeQuik.Droid.Resource.Color.common_google_signin_btn_text_light_pressed;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.common_google_signin_btn_tint = global::BeQuik.Droid.Resource.Color.common_google_signin_btn_tint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.design_bottom_navigation_shadow_color = global::BeQuik.Droid.Resource.Color.design_bottom_navigation_shadow_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.design_default_color_primary = global::BeQuik.Droid.Resource.Color.design_default_color_primary;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.design_default_color_primary_dark = global::BeQuik.Droid.Resource.Color.design_default_color_primary_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.design_error = global::BeQuik.Droid.Resource.Color.design_error;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.design_fab_shadow_end_color = global::BeQuik.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.design_fab_shadow_mid_color = global::BeQuik.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.design_fab_shadow_start_color = global::BeQuik.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.design_fab_stroke_end_inner_color = global::BeQuik.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.design_fab_stroke_end_outer_color = global::BeQuik.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.design_fab_stroke_top_inner_color = global::BeQuik.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.design_fab_stroke_top_outer_color = global::BeQuik.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.design_snackbar_background_color = global::BeQuik.Droid.Resource.Color.design_snackbar_background_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.dim_foreground_disabled_material_dark = global::BeQuik.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.dim_foreground_disabled_material_light = global::BeQuik.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.dim_foreground_material_dark = global::BeQuik.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.dim_foreground_material_light = global::BeQuik.Droid.Resource.Color.dim_foreground_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.error_color_material_dark = global::BeQuik.Droid.Resource.Color.error_color_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.error_color_material_light = global::BeQuik.Droid.Resource.Color.error_color_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.foreground_material_dark = global::BeQuik.Droid.Resource.Color.foreground_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.foreground_material_light = global::BeQuik.Droid.Resource.Color.foreground_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.highlighted_text_material_dark = global::BeQuik.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.highlighted_text_material_light = global::BeQuik.Droid.Resource.Color.highlighted_text_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.material_blue_grey_800 = global::BeQuik.Droid.Resource.Color.material_blue_grey_800;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.material_blue_grey_900 = global::BeQuik.Droid.Resource.Color.material_blue_grey_900;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.material_blue_grey_950 = global::BeQuik.Droid.Resource.Color.material_blue_grey_950;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.material_deep_teal_200 = global::BeQuik.Droid.Resource.Color.material_deep_teal_200;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.material_deep_teal_500 = global::BeQuik.Droid.Resource.Color.material_deep_teal_500;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.material_grey_100 = global::BeQuik.Droid.Resource.Color.material_grey_100;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.material_grey_300 = global::BeQuik.Droid.Resource.Color.material_grey_300;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.material_grey_50 = global::BeQuik.Droid.Resource.Color.material_grey_50;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.material_grey_600 = global::BeQuik.Droid.Resource.Color.material_grey_600;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.material_grey_800 = global::BeQuik.Droid.Resource.Color.material_grey_800;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.material_grey_850 = global::BeQuik.Droid.Resource.Color.material_grey_850;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.material_grey_900 = global::BeQuik.Droid.Resource.Color.material_grey_900;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_bottom_nav_colored_item_tint = global::BeQuik.Droid.Resource.Color.mtrl_bottom_nav_colored_item_tint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_bottom_nav_item_tint = global::BeQuik.Droid.Resource.Color.mtrl_bottom_nav_item_tint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_btn_bg_color_selector = global::BeQuik.Droid.Resource.Color.mtrl_btn_bg_color_selector;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_btn_ripple_color = global::BeQuik.Droid.Resource.Color.mtrl_btn_ripple_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_btn_stroke_color_selector = global::BeQuik.Droid.Resource.Color.mtrl_btn_stroke_color_selector;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_btn_text_btn_ripple_color = global::BeQuik.Droid.Resource.Color.mtrl_btn_text_btn_ripple_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_btn_text_color_disabled = global::BeQuik.Droid.Resource.Color.mtrl_btn_text_color_disabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_btn_text_color_selector = global::BeQuik.Droid.Resource.Color.mtrl_btn_text_color_selector;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_btn_transparent_bg_color = global::BeQuik.Droid.Resource.Color.mtrl_btn_transparent_bg_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_chip_background_color = global::BeQuik.Droid.Resource.Color.mtrl_chip_background_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_chip_close_icon_tint = global::BeQuik.Droid.Resource.Color.mtrl_chip_close_icon_tint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_chip_ripple_color = global::BeQuik.Droid.Resource.Color.mtrl_chip_ripple_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_chip_text_color = global::BeQuik.Droid.Resource.Color.mtrl_chip_text_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_fab_ripple_color = global::BeQuik.Droid.Resource.Color.mtrl_fab_ripple_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_scrim_color = global::BeQuik.Droid.Resource.Color.mtrl_scrim_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_tabs_colored_ripple_color = global::BeQuik.Droid.Resource.Color.mtrl_tabs_colored_ripple_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_tabs_icon_color_selector = global::BeQuik.Droid.Resource.Color.mtrl_tabs_icon_color_selector;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_tabs_icon_color_selector_colored = global::BeQuik.Droid.Resource.Color.mtrl_tabs_icon_color_selector_colored;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_tabs_legacy_text_color_selector = global::BeQuik.Droid.Resource.Color.mtrl_tabs_legacy_text_color_selector;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_tabs_ripple_color = global::BeQuik.Droid.Resource.Color.mtrl_tabs_ripple_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_textinput_default_box_stroke_color = global::BeQuik.Droid.Resource.Color.mtrl_textinput_default_box_stroke_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_textinput_disabled_color = global::BeQuik.Droid.Resource.Color.mtrl_textinput_disabled_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_textinput_filled_box_default_background_color = global::BeQuik.Droid.Resource.Color.mtrl_textinput_filled_box_default_background_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_textinput_hovered_box_stroke_color = global::BeQuik.Droid.Resource.Color.mtrl_textinput_hovered_box_stroke_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.mtrl_text_btn_text_color_selector = global::BeQuik.Droid.Resource.Color.mtrl_text_btn_text_color_selector;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.notification_action_color_filter = global::BeQuik.Droid.Resource.Color.notification_action_color_filter;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.notification_icon_bg_color = global::BeQuik.Droid.Resource.Color.notification_icon_bg_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.notification_material_background_media_default_color = global::BeQuik.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.primary_dark_material_dark = global::BeQuik.Droid.Resource.Color.primary_dark_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.primary_dark_material_light = global::BeQuik.Droid.Resource.Color.primary_dark_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.primary_material_dark = global::BeQuik.Droid.Resource.Color.primary_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.primary_material_light = global::BeQuik.Droid.Resource.Color.primary_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.primary_text_default_material_dark = global::BeQuik.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.primary_text_default_material_light = global::BeQuik.Droid.Resource.Color.primary_text_default_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.primary_text_disabled_material_dark = global::BeQuik.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.primary_text_disabled_material_light = global::BeQuik.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.ripple_material_dark = global::BeQuik.Droid.Resource.Color.ripple_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.ripple_material_light = global::BeQuik.Droid.Resource.Color.ripple_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.secondary_text_default_material_dark = global::BeQuik.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.secondary_text_default_material_light = global::BeQuik.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.secondary_text_disabled_material_dark = global::BeQuik.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.secondary_text_disabled_material_light = global::BeQuik.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.switch_thumb_disabled_material_dark = global::BeQuik.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.switch_thumb_disabled_material_light = global::BeQuik.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.switch_thumb_material_dark = global::BeQuik.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.switch_thumb_material_light = global::BeQuik.Droid.Resource.Color.switch_thumb_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.switch_thumb_normal_material_dark = global::BeQuik.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.switch_thumb_normal_material_light = global::BeQuik.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.tooltip_background_dark = global::BeQuik.Droid.Resource.Color.tooltip_background_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Color.tooltip_background_light = global::BeQuik.Droid.Resource.Color.tooltip_background_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_action_bar_content_inset_material = global::BeQuik.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::BeQuik.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_action_bar_default_height_material = global::BeQuik.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_action_bar_default_padding_end_material = global::BeQuik.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_action_bar_default_padding_start_material = global::BeQuik.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_action_bar_elevation_material = global::BeQuik.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::BeQuik.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::BeQuik.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::BeQuik.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::BeQuik.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::BeQuik.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::BeQuik.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::BeQuik.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_action_button_min_height_material = global::BeQuik.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_action_button_min_width_material = global::BeQuik.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_action_button_min_width_overflow_material = global::BeQuik.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_alert_dialog_button_bar_height = global::BeQuik.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_alert_dialog_button_dimen = global::BeQuik.Droid.Resource.Dimension.abc_alert_dialog_button_dimen;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_button_inset_horizontal_material = global::BeQuik.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_button_inset_vertical_material = global::BeQuik.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_button_padding_horizontal_material = global::BeQuik.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_button_padding_vertical_material = global::BeQuik.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::BeQuik.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_config_prefDialogWidth = global::BeQuik.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_control_corner_material = global::BeQuik.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_control_inset_material = global::BeQuik.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_control_padding_material = global::BeQuik.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_dialog_corner_radius_material = global::BeQuik.Droid.Resource.Dimension.abc_dialog_corner_radius_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_dialog_fixed_height_major = global::BeQuik.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_dialog_fixed_height_minor = global::BeQuik.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_dialog_fixed_width_major = global::BeQuik.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_dialog_fixed_width_minor = global::BeQuik.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::BeQuik.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::BeQuik.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_dialog_min_width_major = global::BeQuik.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_dialog_min_width_minor = global::BeQuik.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_dialog_padding_material = global::BeQuik.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_dialog_padding_top_material = global::BeQuik.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_dialog_title_divider_material = global::BeQuik.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_disabled_alpha_material_dark = global::BeQuik.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_disabled_alpha_material_light = global::BeQuik.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_dropdownitem_icon_width = global::BeQuik.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_dropdownitem_text_padding_left = global::BeQuik.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_dropdownitem_text_padding_right = global::BeQuik.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_edit_text_inset_bottom_material = global::BeQuik.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::BeQuik.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_edit_text_inset_top_material = global::BeQuik.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_floating_window_z = global::BeQuik.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_list_item_padding_horizontal_material = global::BeQuik.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_panel_menu_list_width = global::BeQuik.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_progress_bar_height_material = global::BeQuik.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_search_view_preferred_height = global::BeQuik.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_search_view_preferred_width = global::BeQuik.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_seekbar_track_background_height_material = global::BeQuik.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_seekbar_track_progress_height_material = global::BeQuik.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_select_dialog_padding_start_material = global::BeQuik.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_switch_padding = global::BeQuik.Droid.Resource.Dimension.abc_switch_padding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_text_size_body_1_material = global::BeQuik.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_text_size_body_2_material = global::BeQuik.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_text_size_button_material = global::BeQuik.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_text_size_caption_material = global::BeQuik.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_text_size_display_1_material = global::BeQuik.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_text_size_display_2_material = global::BeQuik.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_text_size_display_3_material = global::BeQuik.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_text_size_display_4_material = global::BeQuik.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_text_size_headline_material = global::BeQuik.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_text_size_large_material = global::BeQuik.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_text_size_medium_material = global::BeQuik.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_text_size_menu_header_material = global::BeQuik.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_text_size_menu_material = global::BeQuik.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_text_size_small_material = global::BeQuik.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_text_size_subhead_material = global::BeQuik.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::BeQuik.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_text_size_title_material = global::BeQuik.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.abc_text_size_title_material_toolbar = global::BeQuik.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.browser_actions_context_menu_max_width = global::BeQuik.Droid.Resource.Dimension.browser_actions_context_menu_max_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.browser_actions_context_menu_min_padding = global::BeQuik.Droid.Resource.Dimension.browser_actions_context_menu_min_padding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.cardview_compat_inset_shadow = global::BeQuik.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.cardview_default_elevation = global::BeQuik.Droid.Resource.Dimension.cardview_default_elevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.cardview_default_radius = global::BeQuik.Droid.Resource.Dimension.cardview_default_radius;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.compat_button_inset_horizontal_material = global::BeQuik.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.compat_button_inset_vertical_material = global::BeQuik.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.compat_button_padding_horizontal_material = global::BeQuik.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.compat_button_padding_vertical_material = global::BeQuik.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.compat_control_corner_material = global::BeQuik.Droid.Resource.Dimension.compat_control_corner_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.compat_notification_large_icon_max_height = global::BeQuik.Droid.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.compat_notification_large_icon_max_width = global::BeQuik.Droid.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_appbar_elevation = global::BeQuik.Droid.Resource.Dimension.design_appbar_elevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::BeQuik.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_bottom_navigation_active_item_min_width = global::BeQuik.Droid.Resource.Dimension.design_bottom_navigation_active_item_min_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_bottom_navigation_active_text_size = global::BeQuik.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_bottom_navigation_elevation = global::BeQuik.Droid.Resource.Dimension.design_bottom_navigation_elevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_bottom_navigation_height = global::BeQuik.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_bottom_navigation_icon_size = global::BeQuik.Droid.Resource.Dimension.design_bottom_navigation_icon_size;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_bottom_navigation_item_max_width = global::BeQuik.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_bottom_navigation_item_min_width = global::BeQuik.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_bottom_navigation_margin = global::BeQuik.Droid.Resource.Dimension.design_bottom_navigation_margin;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_bottom_navigation_shadow_height = global::BeQuik.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_bottom_navigation_text_size = global::BeQuik.Droid.Resource.Dimension.design_bottom_navigation_text_size;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_bottom_sheet_modal_elevation = global::BeQuik.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_bottom_sheet_peek_height_min = global::BeQuik.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_fab_border_width = global::BeQuik.Droid.Resource.Dimension.design_fab_border_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_fab_elevation = global::BeQuik.Droid.Resource.Dimension.design_fab_elevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_fab_image_size = global::BeQuik.Droid.Resource.Dimension.design_fab_image_size;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_fab_size_mini = global::BeQuik.Droid.Resource.Dimension.design_fab_size_mini;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_fab_size_normal = global::BeQuik.Droid.Resource.Dimension.design_fab_size_normal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_fab_translation_z_hovered_focused = global::BeQuik.Droid.Resource.Dimension.design_fab_translation_z_hovered_focused;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_fab_translation_z_pressed = global::BeQuik.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_navigation_elevation = global::BeQuik.Droid.Resource.Dimension.design_navigation_elevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_navigation_icon_padding = global::BeQuik.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_navigation_icon_size = global::BeQuik.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_navigation_item_horizontal_padding = global::BeQuik.Droid.Resource.Dimension.design_navigation_item_horizontal_padding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_navigation_item_icon_padding = global::BeQuik.Droid.Resource.Dimension.design_navigation_item_icon_padding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_navigation_max_width = global::BeQuik.Droid.Resource.Dimension.design_navigation_max_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_navigation_padding_bottom = global::BeQuik.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_navigation_separator_vertical_padding = global::BeQuik.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_snackbar_action_inline_max_width = global::BeQuik.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_snackbar_background_corner_radius = global::BeQuik.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_snackbar_elevation = global::BeQuik.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::BeQuik.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_snackbar_max_width = global::BeQuik.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_snackbar_min_width = global::BeQuik.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_snackbar_padding_horizontal = global::BeQuik.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_snackbar_padding_vertical = global::BeQuik.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::BeQuik.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_snackbar_text_size = global::BeQuik.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_tab_max_width = global::BeQuik.Droid.Resource.Dimension.design_tab_max_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_tab_scrollable_min_width = global::BeQuik.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_tab_text_size = global::BeQuik.Droid.Resource.Dimension.design_tab_text_size;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_tab_text_size_2line = global::BeQuik.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.design_textinput_caption_translate_y = global::BeQuik.Droid.Resource.Dimension.design_textinput_caption_translate_y;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.disabled_alpha_material_dark = global::BeQuik.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.disabled_alpha_material_light = global::BeQuik.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.fastscroll_default_thickness = global::BeQuik.Droid.Resource.Dimension.fastscroll_default_thickness;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.fastscroll_margin = global::BeQuik.Droid.Resource.Dimension.fastscroll_margin;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.fastscroll_minimum_range = global::BeQuik.Droid.Resource.Dimension.fastscroll_minimum_range;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.highlight_alpha_material_colored = global::BeQuik.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.highlight_alpha_material_dark = global::BeQuik.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.highlight_alpha_material_light = global::BeQuik.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.hint_alpha_material_dark = global::BeQuik.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.hint_alpha_material_light = global::BeQuik.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.hint_pressed_alpha_material_dark = global::BeQuik.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.hint_pressed_alpha_material_light = global::BeQuik.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::BeQuik.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::BeQuik.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::BeQuik.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode = global::BeQuik.Droid.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin = global::BeQuik.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius = global::BeQuik.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset = global::BeQuik.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_bottomappbar_height = global::BeQuik.Droid.Resource.Dimension.mtrl_bottomappbar_height;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_corner_radius = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_corner_radius;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_dialog_btn_min_width = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_dialog_btn_min_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_disabled_elevation = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_disabled_elevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_disabled_z = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_disabled_z;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_elevation = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_elevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_focused_z = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_focused_z;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_hovered_z = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_hovered_z;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_icon_btn_padding_left = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_icon_btn_padding_left;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_icon_padding = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_icon_padding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_inset = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_inset;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_letter_spacing = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_letter_spacing;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_padding_bottom = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_padding_bottom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_padding_left = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_padding_left;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_padding_right = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_padding_right;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_padding_top = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_padding_top;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_pressed_z = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_pressed_z;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_stroke_size = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_stroke_size;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_text_btn_icon_padding = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_text_btn_icon_padding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_text_btn_padding_left = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_left;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_text_btn_padding_right = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_right;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_text_size = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_text_size;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_btn_z = global::BeQuik.Droid.Resource.Dimension.mtrl_btn_z;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_card_elevation = global::BeQuik.Droid.Resource.Dimension.mtrl_card_elevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_card_spacing = global::BeQuik.Droid.Resource.Dimension.mtrl_card_spacing;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_chip_pressed_translation_z = global::BeQuik.Droid.Resource.Dimension.mtrl_chip_pressed_translation_z;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_chip_text_size = global::BeQuik.Droid.Resource.Dimension.mtrl_chip_text_size;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_fab_elevation = global::BeQuik.Droid.Resource.Dimension.mtrl_fab_elevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_fab_translation_z_hovered_focused = global::BeQuik.Droid.Resource.Dimension.mtrl_fab_translation_z_hovered_focused;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_fab_translation_z_pressed = global::BeQuik.Droid.Resource.Dimension.mtrl_fab_translation_z_pressed;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_navigation_elevation = global::BeQuik.Droid.Resource.Dimension.mtrl_navigation_elevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_navigation_item_horizontal_padding = global::BeQuik.Droid.Resource.Dimension.mtrl_navigation_item_horizontal_padding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_navigation_item_icon_padding = global::BeQuik.Droid.Resource.Dimension.mtrl_navigation_item_icon_padding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_snackbar_background_corner_radius = global::BeQuik.Droid.Resource.Dimension.mtrl_snackbar_background_corner_radius;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_snackbar_margin = global::BeQuik.Droid.Resource.Dimension.mtrl_snackbar_margin;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_textinput_box_corner_radius_medium = global::BeQuik.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_medium;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_textinput_box_corner_radius_small = global::BeQuik.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_small;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_textinput_box_label_cutout_padding = global::BeQuik.Droid.Resource.Dimension.mtrl_textinput_box_label_cutout_padding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_textinput_box_stroke_width_default = global::BeQuik.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_default;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_textinput_box_stroke_width_focused = global::BeQuik.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_focused;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding = global::BeQuik.Droid.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.mtrl_toolbar_default_height = global::BeQuik.Droid.Resource.Dimension.mtrl_toolbar_default_height;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.notification_action_icon_size = global::BeQuik.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.notification_action_text_size = global::BeQuik.Droid.Resource.Dimension.notification_action_text_size;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.notification_big_circle_margin = global::BeQuik.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.notification_content_margin_start = global::BeQuik.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.notification_large_icon_height = global::BeQuik.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.notification_large_icon_width = global::BeQuik.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.notification_main_column_padding_top = global::BeQuik.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.notification_media_narrow_margin = global::BeQuik.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.notification_right_icon_size = global::BeQuik.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.notification_right_side_padding_top = global::BeQuik.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.notification_small_icon_background_padding = global::BeQuik.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.notification_small_icon_size_as_large = global::BeQuik.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.notification_subtext_size = global::BeQuik.Droid.Resource.Dimension.notification_subtext_size;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.notification_top_pad = global::BeQuik.Droid.Resource.Dimension.notification_top_pad;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.notification_top_pad_large_text = global::BeQuik.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.tooltip_corner_radius = global::BeQuik.Droid.Resource.Dimension.tooltip_corner_radius;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.tooltip_horizontal_padding = global::BeQuik.Droid.Resource.Dimension.tooltip_horizontal_padding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.tooltip_margin = global::BeQuik.Droid.Resource.Dimension.tooltip_margin;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::BeQuik.Droid.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.tooltip_precise_anchor_threshold = global::BeQuik.Droid.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.tooltip_vertical_padding = global::BeQuik.Droid.Resource.Dimension.tooltip_vertical_padding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.tooltip_y_offset_non_touch = global::BeQuik.Droid.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Dimension.tooltip_y_offset_touch = global::BeQuik.Droid.Resource.Dimension.tooltip_y_offset_touch;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::BeQuik.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_action_bar_item_background_material = global::BeQuik.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_btn_borderless_material = global::BeQuik.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_btn_check_material = global::BeQuik.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::BeQuik.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::BeQuik.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_btn_colored_material = global::BeQuik.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_btn_default_mtrl_shape = global::BeQuik.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_btn_radio_material = global::BeQuik.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::BeQuik.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::BeQuik.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::BeQuik.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::BeQuik.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_cab_background_internal_bg = global::BeQuik.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_cab_background_top_material = global::BeQuik.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::BeQuik.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_control_background_material = global::BeQuik.Droid.Resource.Drawable.abc_control_background_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_dialog_material_background = global::BeQuik.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_edit_text_material = global::BeQuik.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ic_ab_back_material = global::BeQuik.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::BeQuik.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ic_clear_material = global::BeQuik.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::BeQuik.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ic_go_search_api_material = global::BeQuik.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::BeQuik.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::BeQuik.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ic_menu_overflow_material = global::BeQuik.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::BeQuik.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::BeQuik.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::BeQuik.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ic_search_api_material = global::BeQuik.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ic_star_black_16dp = global::BeQuik.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ic_star_black_36dp = global::BeQuik.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ic_star_black_48dp = global::BeQuik.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ic_star_half_black_16dp = global::BeQuik.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ic_star_half_black_36dp = global::BeQuik.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ic_star_half_black_48dp = global::BeQuik.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ic_voice_search_api_material = global::BeQuik.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_item_background_holo_dark = global::BeQuik.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_item_background_holo_light = global::BeQuik.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_list_divider_material = global::BeQuik.Droid.Resource.Drawable.abc_list_divider_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_list_divider_mtrl_alpha = global::BeQuik.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_list_focused_holo = global::BeQuik.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_list_longpressed_holo = global::BeQuik.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_list_pressed_holo_dark = global::BeQuik.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_list_pressed_holo_light = global::BeQuik.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::BeQuik.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::BeQuik.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::BeQuik.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_list_selector_disabled_holo_light = global::BeQuik.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_list_selector_holo_dark = global::BeQuik.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_list_selector_holo_light = global::BeQuik.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::BeQuik.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_popup_background_mtrl_mult = global::BeQuik.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ratingbar_indicator_material = global::BeQuik.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ratingbar_material = global::BeQuik.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_ratingbar_small_material = global::BeQuik.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::BeQuik.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::BeQuik.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::BeQuik.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::BeQuik.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::BeQuik.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_seekbar_thumb_material = global::BeQuik.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_seekbar_tick_mark_material = global::BeQuik.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_seekbar_track_material = global::BeQuik.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::BeQuik.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_spinner_textfield_background_material = global::BeQuik.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_switch_thumb_material = global::BeQuik.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_switch_track_mtrl_alpha = global::BeQuik.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_tab_indicator_material = global::BeQuik.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::BeQuik.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::BeQuik.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::BeQuik.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::BeQuik.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::BeQuik.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_textfield_search_material = global::BeQuik.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_text_cursor_material = global::BeQuik.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::BeQuik.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::BeQuik.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::BeQuik.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::BeQuik.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::BeQuik.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::BeQuik.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.abc_vector_test = global::BeQuik.Droid.Resource.Drawable.abc_vector_test;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.avd_hide_password = global::BeQuik.Droid.Resource.Drawable.avd_hide_password;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.avd_show_password = global::BeQuik.Droid.Resource.Drawable.avd_show_password;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.common_full_open_on_phone = global::BeQuik.Droid.Resource.Drawable.common_full_open_on_phone;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.common_google_signin_btn_icon_dark = global::BeQuik.Droid.Resource.Drawable.common_google_signin_btn_icon_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.common_google_signin_btn_icon_dark_focused = global::BeQuik.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_focused;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.common_google_signin_btn_icon_dark_normal = global::BeQuik.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_normal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.common_google_signin_btn_icon_dark_normal_background = global::BeQuik.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_normal_background;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.common_google_signin_btn_icon_disabled = global::BeQuik.Droid.Resource.Drawable.common_google_signin_btn_icon_disabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.common_google_signin_btn_icon_light = global::BeQuik.Droid.Resource.Drawable.common_google_signin_btn_icon_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.common_google_signin_btn_icon_light_focused = global::BeQuik.Droid.Resource.Drawable.common_google_signin_btn_icon_light_focused;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.common_google_signin_btn_icon_light_normal = global::BeQuik.Droid.Resource.Drawable.common_google_signin_btn_icon_light_normal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.common_google_signin_btn_icon_light_normal_background = global::BeQuik.Droid.Resource.Drawable.common_google_signin_btn_icon_light_normal_background;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.common_google_signin_btn_text_dark = global::BeQuik.Droid.Resource.Drawable.common_google_signin_btn_text_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.common_google_signin_btn_text_dark_focused = global::BeQuik.Droid.Resource.Drawable.common_google_signin_btn_text_dark_focused;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.common_google_signin_btn_text_dark_normal = global::BeQuik.Droid.Resource.Drawable.common_google_signin_btn_text_dark_normal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.common_google_signin_btn_text_dark_normal_background = global::BeQuik.Droid.Resource.Drawable.common_google_signin_btn_text_dark_normal_background;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.common_google_signin_btn_text_disabled = global::BeQuik.Droid.Resource.Drawable.common_google_signin_btn_text_disabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.common_google_signin_btn_text_light = global::BeQuik.Droid.Resource.Drawable.common_google_signin_btn_text_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.common_google_signin_btn_text_light_focused = global::BeQuik.Droid.Resource.Drawable.common_google_signin_btn_text_light_focused;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.common_google_signin_btn_text_light_normal = global::BeQuik.Droid.Resource.Drawable.common_google_signin_btn_text_light_normal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.common_google_signin_btn_text_light_normal_background = global::BeQuik.Droid.Resource.Drawable.common_google_signin_btn_text_light_normal_background;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.design_bottom_navigation_item_background = global::BeQuik.Droid.Resource.Drawable.design_bottom_navigation_item_background;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.design_fab_background = global::BeQuik.Droid.Resource.Drawable.design_fab_background;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.design_ic_visibility = global::BeQuik.Droid.Resource.Drawable.design_ic_visibility;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.design_ic_visibility_off = global::BeQuik.Droid.Resource.Drawable.design_ic_visibility_off;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.design_password_eye = global::BeQuik.Droid.Resource.Drawable.design_password_eye;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.design_snackbar_background = global::BeQuik.Droid.Resource.Drawable.design_snackbar_background;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.googleg_disabled_color_18 = global::BeQuik.Droid.Resource.Drawable.googleg_disabled_color_18;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.googleg_standard_color_18 = global::BeQuik.Droid.Resource.Drawable.googleg_standard_color_18;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.ic_mtrl_chip_checked_black = global::BeQuik.Droid.Resource.Drawable.ic_mtrl_chip_checked_black;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.ic_mtrl_chip_checked_circle = global::BeQuik.Droid.Resource.Drawable.ic_mtrl_chip_checked_circle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.ic_mtrl_chip_close_circle = global::BeQuik.Droid.Resource.Drawable.ic_mtrl_chip_close_circle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.mtrl_tabs_default_indicator = global::BeQuik.Droid.Resource.Drawable.mtrl_tabs_default_indicator;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.navigation_empty_icon = global::BeQuik.Droid.Resource.Drawable.navigation_empty_icon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.notification_action_background = global::BeQuik.Droid.Resource.Drawable.notification_action_background;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.notification_bg = global::BeQuik.Droid.Resource.Drawable.notification_bg;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.notification_bg_low = global::BeQuik.Droid.Resource.Drawable.notification_bg_low;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.notification_bg_low_normal = global::BeQuik.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.notification_bg_low_pressed = global::BeQuik.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.notification_bg_normal = global::BeQuik.Droid.Resource.Drawable.notification_bg_normal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.notification_bg_normal_pressed = global::BeQuik.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.notification_icon_background = global::BeQuik.Droid.Resource.Drawable.notification_icon_background;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.notification_template_icon_bg = global::BeQuik.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.notification_template_icon_low_bg = global::BeQuik.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.notification_tile_bg = global::BeQuik.Droid.Resource.Drawable.notification_tile_bg;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.notify_panel_notification_icon_bg = global::BeQuik.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.tooltip_frame_dark = global::BeQuik.Droid.Resource.Drawable.tooltip_frame_dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Drawable.tooltip_frame_light = global::BeQuik.Droid.Resource.Drawable.tooltip_frame_light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.action0 = global::BeQuik.Droid.Resource.Id.action0;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.actions = global::BeQuik.Droid.Resource.Id.actions;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.action_bar = global::BeQuik.Droid.Resource.Id.action_bar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.action_bar_activity_content = global::BeQuik.Droid.Resource.Id.action_bar_activity_content;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.action_bar_container = global::BeQuik.Droid.Resource.Id.action_bar_container;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.action_bar_root = global::BeQuik.Droid.Resource.Id.action_bar_root;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.action_bar_spinner = global::BeQuik.Droid.Resource.Id.action_bar_spinner;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.action_bar_subtitle = global::BeQuik.Droid.Resource.Id.action_bar_subtitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.action_bar_title = global::BeQuik.Droid.Resource.Id.action_bar_title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.action_container = global::BeQuik.Droid.Resource.Id.action_container;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.action_context_bar = global::BeQuik.Droid.Resource.Id.action_context_bar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.action_divider = global::BeQuik.Droid.Resource.Id.action_divider;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.action_image = global::BeQuik.Droid.Resource.Id.action_image;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.action_menu_divider = global::BeQuik.Droid.Resource.Id.action_menu_divider;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.action_menu_presenter = global::BeQuik.Droid.Resource.Id.action_menu_presenter;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.action_mode_bar = global::BeQuik.Droid.Resource.Id.action_mode_bar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.action_mode_bar_stub = global::BeQuik.Droid.Resource.Id.action_mode_bar_stub;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.action_mode_close_button = global::BeQuik.Droid.Resource.Id.action_mode_close_button;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.action_text = global::BeQuik.Droid.Resource.Id.action_text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.activity_chooser_view_content = global::BeQuik.Droid.Resource.Id.activity_chooser_view_content;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.add = global::BeQuik.Droid.Resource.Id.add;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.adjust_height = global::BeQuik.Droid.Resource.Id.adjust_height;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.adjust_width = global::BeQuik.Droid.Resource.Id.adjust_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.alertTitle = global::BeQuik.Droid.Resource.Id.alertTitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.all = global::BeQuik.Droid.Resource.Id.all;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.ALT = global::BeQuik.Droid.Resource.Id.ALT;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.always = global::BeQuik.Droid.Resource.Id.always;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.async = global::BeQuik.Droid.Resource.Id.async;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.auto = global::BeQuik.Droid.Resource.Id.auto;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.beginning = global::BeQuik.Droid.Resource.Id.beginning;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.blocking = global::BeQuik.Droid.Resource.Id.blocking;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.bottom = global::BeQuik.Droid.Resource.Id.bottom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.bottomtab_navarea = global::BeQuik.Droid.Resource.Id.bottomtab_navarea;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.bottomtab_tabbar = global::BeQuik.Droid.Resource.Id.bottomtab_tabbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.browser_actions_header_text = global::BeQuik.Droid.Resource.Id.browser_actions_header_text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.browser_actions_menu_items = global::BeQuik.Droid.Resource.Id.browser_actions_menu_items;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.browser_actions_menu_item_icon = global::BeQuik.Droid.Resource.Id.browser_actions_menu_item_icon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.browser_actions_menu_item_text = global::BeQuik.Droid.Resource.Id.browser_actions_menu_item_text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.browser_actions_menu_view = global::BeQuik.Droid.Resource.Id.browser_actions_menu_view;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.buttonPanel = global::BeQuik.Droid.Resource.Id.buttonPanel;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.cancel_action = global::BeQuik.Droid.Resource.Id.cancel_action;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.center = global::BeQuik.Droid.Resource.Id.center;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.center_horizontal = global::BeQuik.Droid.Resource.Id.center_horizontal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.center_vertical = global::BeQuik.Droid.Resource.Id.center_vertical;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.checkbox = global::BeQuik.Droid.Resource.Id.checkbox;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.chronometer = global::BeQuik.Droid.Resource.Id.chronometer;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.clip_horizontal = global::BeQuik.Droid.Resource.Id.clip_horizontal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.clip_vertical = global::BeQuik.Droid.Resource.Id.clip_vertical;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.collapseActionView = global::BeQuik.Droid.Resource.Id.collapseActionView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.container = global::BeQuik.Droid.Resource.Id.container;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.content = global::BeQuik.Droid.Resource.Id.content;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.contentPanel = global::BeQuik.Droid.Resource.Id.contentPanel;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.coordinator = global::BeQuik.Droid.Resource.Id.coordinator;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.CTRL = global::BeQuik.Droid.Resource.Id.CTRL;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.custom = global::BeQuik.Droid.Resource.Id.custom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.customPanel = global::BeQuik.Droid.Resource.Id.customPanel;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.dark = global::BeQuik.Droid.Resource.Id.dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.decor_content_parent = global::BeQuik.Droid.Resource.Id.decor_content_parent;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.default_activity_button = global::BeQuik.Droid.Resource.Id.default_activity_button;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.design_bottom_sheet = global::BeQuik.Droid.Resource.Id.design_bottom_sheet;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.design_menu_item_action_area = global::BeQuik.Droid.Resource.Id.design_menu_item_action_area;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.design_menu_item_action_area_stub = global::BeQuik.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.design_menu_item_text = global::BeQuik.Droid.Resource.Id.design_menu_item_text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.design_navigation_view = global::BeQuik.Droid.Resource.Id.design_navigation_view;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.disableHome = global::BeQuik.Droid.Resource.Id.disableHome;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.edit_query = global::BeQuik.Droid.Resource.Id.edit_query;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.end = global::BeQuik.Droid.Resource.Id.end;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.end_padder = global::BeQuik.Droid.Resource.Id.end_padder;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.enterAlways = global::BeQuik.Droid.Resource.Id.enterAlways;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.enterAlwaysCollapsed = global::BeQuik.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.exitUntilCollapsed = global::BeQuik.Droid.Resource.Id.exitUntilCollapsed;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.expanded_menu = global::BeQuik.Droid.Resource.Id.expanded_menu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.expand_activities_button = global::BeQuik.Droid.Resource.Id.expand_activities_button;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.fill = global::BeQuik.Droid.Resource.Id.fill;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.filled = global::BeQuik.Droid.Resource.Id.filled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.fill_horizontal = global::BeQuik.Droid.Resource.Id.fill_horizontal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.fill_vertical = global::BeQuik.Droid.Resource.Id.fill_vertical;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.@fixed = global::BeQuik.Droid.Resource.Id.@fixed;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.flyoutcontent_appbar = global::BeQuik.Droid.Resource.Id.flyoutcontent_appbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.forever = global::BeQuik.Droid.Resource.Id.forever;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.FUNCTION = global::BeQuik.Droid.Resource.Id.FUNCTION;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.ghost_view = global::BeQuik.Droid.Resource.Id.ghost_view;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.group_divider = global::BeQuik.Droid.Resource.Id.group_divider;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.home = global::BeQuik.Droid.Resource.Id.home;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.homeAsUp = global::BeQuik.Droid.Resource.Id.homeAsUp;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.hybrid = global::BeQuik.Droid.Resource.Id.hybrid;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.icon = global::BeQuik.Droid.Resource.Id.icon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.icon_group = global::BeQuik.Droid.Resource.Id.icon_group;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.icon_only = global::BeQuik.Droid.Resource.Id.icon_only;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.ifRoom = global::BeQuik.Droid.Resource.Id.ifRoom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.image = global::BeQuik.Droid.Resource.Id.image;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.info = global::BeQuik.Droid.Resource.Id.info;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.italic = global::BeQuik.Droid.Resource.Id.italic;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.item_touch_helper_previous_elevation = global::BeQuik.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.labeled = global::BeQuik.Droid.Resource.Id.labeled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.largeLabel = global::BeQuik.Droid.Resource.Id.largeLabel;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.left = global::BeQuik.Droid.Resource.Id.left;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.light = global::BeQuik.Droid.Resource.Id.light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.line1 = global::BeQuik.Droid.Resource.Id.line1;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.line3 = global::BeQuik.Droid.Resource.Id.line3;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.listMode = global::BeQuik.Droid.Resource.Id.listMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.list_item = global::BeQuik.Droid.Resource.Id.list_item;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.main_appbar = global::BeQuik.Droid.Resource.Id.main_appbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.main_tablayout = global::BeQuik.Droid.Resource.Id.main_tablayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.main_toolbar = global::BeQuik.Droid.Resource.Id.main_toolbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.main_viewpager = global::BeQuik.Droid.Resource.Id.main_viewpager;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.masked = global::BeQuik.Droid.Resource.Id.masked;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.media_actions = global::BeQuik.Droid.Resource.Id.media_actions;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.message = global::BeQuik.Droid.Resource.Id.message;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.META = global::BeQuik.Droid.Resource.Id.META;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.middle = global::BeQuik.Droid.Resource.Id.middle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.mini = global::BeQuik.Droid.Resource.Id.mini;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.mtrl_child_content_container = global::BeQuik.Droid.Resource.Id.mtrl_child_content_container;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.mtrl_internal_children_alpha_tag = global::BeQuik.Droid.Resource.Id.mtrl_internal_children_alpha_tag;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.multiply = global::BeQuik.Droid.Resource.Id.multiply;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.navigation_header_container = global::BeQuik.Droid.Resource.Id.navigation_header_container;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.never = global::BeQuik.Droid.Resource.Id.never;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.none = global::BeQuik.Droid.Resource.Id.none;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.normal = global::BeQuik.Droid.Resource.Id.normal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.notification_background = global::BeQuik.Droid.Resource.Id.notification_background;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.notification_main_column = global::BeQuik.Droid.Resource.Id.notification_main_column;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.notification_main_column_container = global::BeQuik.Droid.Resource.Id.notification_main_column_container;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.outline = global::BeQuik.Droid.Resource.Id.outline;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.parallax = global::BeQuik.Droid.Resource.Id.parallax;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.parentPanel = global::BeQuik.Droid.Resource.Id.parentPanel;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.parent_matrix = global::BeQuik.Droid.Resource.Id.parent_matrix;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.pin = global::BeQuik.Droid.Resource.Id.pin;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.progress_circular = global::BeQuik.Droid.Resource.Id.progress_circular;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.progress_horizontal = global::BeQuik.Droid.Resource.Id.progress_horizontal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.radio = global::BeQuik.Droid.Resource.Id.radio;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.right = global::BeQuik.Droid.Resource.Id.right;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.right_icon = global::BeQuik.Droid.Resource.Id.right_icon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.right_side = global::BeQuik.Droid.Resource.Id.right_side;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.satellite = global::BeQuik.Droid.Resource.Id.satellite;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.save_non_transition_alpha = global::BeQuik.Droid.Resource.Id.save_non_transition_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.screen = global::BeQuik.Droid.Resource.Id.screen;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.scroll = global::BeQuik.Droid.Resource.Id.scroll;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.scrollable = global::BeQuik.Droid.Resource.Id.scrollable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.scrollIndicatorDown = global::BeQuik.Droid.Resource.Id.scrollIndicatorDown;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.scrollIndicatorUp = global::BeQuik.Droid.Resource.Id.scrollIndicatorUp;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.scrollView = global::BeQuik.Droid.Resource.Id.scrollView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.search_badge = global::BeQuik.Droid.Resource.Id.search_badge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.search_bar = global::BeQuik.Droid.Resource.Id.search_bar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.search_button = global::BeQuik.Droid.Resource.Id.search_button;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.search_close_btn = global::BeQuik.Droid.Resource.Id.search_close_btn;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.search_edit_frame = global::BeQuik.Droid.Resource.Id.search_edit_frame;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.search_go_btn = global::BeQuik.Droid.Resource.Id.search_go_btn;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.search_mag_icon = global::BeQuik.Droid.Resource.Id.search_mag_icon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.search_plate = global::BeQuik.Droid.Resource.Id.search_plate;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.search_src_text = global::BeQuik.Droid.Resource.Id.search_src_text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.search_voice_btn = global::BeQuik.Droid.Resource.Id.search_voice_btn;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.selected = global::BeQuik.Droid.Resource.Id.selected;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.select_dialog_listview = global::BeQuik.Droid.Resource.Id.select_dialog_listview;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.shellcontent_appbar = global::BeQuik.Droid.Resource.Id.shellcontent_appbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.shellcontent_toolbar = global::BeQuik.Droid.Resource.Id.shellcontent_toolbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.SHIFT = global::BeQuik.Droid.Resource.Id.SHIFT;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.shortcut = global::BeQuik.Droid.Resource.Id.shortcut;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.showCustom = global::BeQuik.Droid.Resource.Id.showCustom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.showHome = global::BeQuik.Droid.Resource.Id.showHome;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.showTitle = global::BeQuik.Droid.Resource.Id.showTitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.smallLabel = global::BeQuik.Droid.Resource.Id.smallLabel;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.snackbar_action = global::BeQuik.Droid.Resource.Id.snackbar_action;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.snackbar_text = global::BeQuik.Droid.Resource.Id.snackbar_text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.snap = global::BeQuik.Droid.Resource.Id.snap;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.snapMargins = global::BeQuik.Droid.Resource.Id.snapMargins;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.spacer = global::BeQuik.Droid.Resource.Id.spacer;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.split_action_bar = global::BeQuik.Droid.Resource.Id.split_action_bar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.src_atop = global::BeQuik.Droid.Resource.Id.src_atop;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.src_in = global::BeQuik.Droid.Resource.Id.src_in;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.src_over = global::BeQuik.Droid.Resource.Id.src_over;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.standard = global::BeQuik.Droid.Resource.Id.standard;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.start = global::BeQuik.Droid.Resource.Id.start;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.status_bar_latest_event_content = global::BeQuik.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.stretch = global::BeQuik.Droid.Resource.Id.stretch;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.submenuarrow = global::BeQuik.Droid.Resource.Id.submenuarrow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.submit_area = global::BeQuik.Droid.Resource.Id.submit_area;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.SYM = global::BeQuik.Droid.Resource.Id.SYM;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.tabMode = global::BeQuik.Droid.Resource.Id.tabMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.tag_transition_group = global::BeQuik.Droid.Resource.Id.tag_transition_group;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.tag_unhandled_key_event_manager = global::BeQuik.Droid.Resource.Id.tag_unhandled_key_event_manager;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.tag_unhandled_key_listeners = global::BeQuik.Droid.Resource.Id.tag_unhandled_key_listeners;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.terrain = global::BeQuik.Droid.Resource.Id.terrain;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.text = global::BeQuik.Droid.Resource.Id.text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.text2 = global::BeQuik.Droid.Resource.Id.text2;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.textinput_counter = global::BeQuik.Droid.Resource.Id.textinput_counter;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.textinput_error = global::BeQuik.Droid.Resource.Id.textinput_error;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.textinput_helper_text = global::BeQuik.Droid.Resource.Id.textinput_helper_text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.textSpacerNoButtons = global::BeQuik.Droid.Resource.Id.textSpacerNoButtons;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.textSpacerNoTitle = global::BeQuik.Droid.Resource.Id.textSpacerNoTitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.textStart = global::BeQuik.Droid.Resource.Id.textStart;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.time = global::BeQuik.Droid.Resource.Id.time;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.title = global::BeQuik.Droid.Resource.Id.title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.titleDividerNoCustom = global::BeQuik.Droid.Resource.Id.titleDividerNoCustom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.title_template = global::BeQuik.Droid.Resource.Id.title_template;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.top = global::BeQuik.Droid.Resource.Id.top;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.topPanel = global::BeQuik.Droid.Resource.Id.topPanel;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.touch_outside = global::BeQuik.Droid.Resource.Id.touch_outside;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.transition_current_scene = global::BeQuik.Droid.Resource.Id.transition_current_scene;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.transition_layout_save = global::BeQuik.Droid.Resource.Id.transition_layout_save;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.transition_position = global::BeQuik.Droid.Resource.Id.transition_position;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.transition_scene_layoutid_cache = global::BeQuik.Droid.Resource.Id.transition_scene_layoutid_cache;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.transition_transform = global::BeQuik.Droid.Resource.Id.transition_transform;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.uniform = global::BeQuik.Droid.Resource.Id.uniform;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.unlabeled = global::BeQuik.Droid.Resource.Id.unlabeled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.up = global::BeQuik.Droid.Resource.Id.up;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.useLogo = global::BeQuik.Droid.Resource.Id.useLogo;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.view_offset_helper = global::BeQuik.Droid.Resource.Id.view_offset_helper;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.visible = global::BeQuik.Droid.Resource.Id.visible;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.wide = global::BeQuik.Droid.Resource.Id.wide;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.withText = global::BeQuik.Droid.Resource.Id.withText;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Id.wrap_content = global::BeQuik.Droid.Resource.Id.wrap_content;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Integer.abc_config_activityDefaultDur = global::BeQuik.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Integer.abc_config_activityShortDur = global::BeQuik.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Integer.app_bar_elevation_anim_duration = global::BeQuik.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Integer.bottom_sheet_slide_duration = global::BeQuik.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Integer.cancel_button_image_alpha = global::BeQuik.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Integer.config_tooltipAnimTime = global::BeQuik.Droid.Resource.Integer.config_tooltipAnimTime;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Integer.design_snackbar_text_max_lines = global::BeQuik.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Integer.design_tab_indicator_anim_duration_ms = global::BeQuik.Droid.Resource.Integer.design_tab_indicator_anim_duration_ms;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Integer.google_play_services_version = global::BeQuik.Droid.Resource.Integer.google_play_services_version;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Integer.hide_password_duration = global::BeQuik.Droid.Resource.Integer.hide_password_duration;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Integer.mtrl_btn_anim_delay_ms = global::BeQuik.Droid.Resource.Integer.mtrl_btn_anim_delay_ms;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Integer.mtrl_btn_anim_duration_ms = global::BeQuik.Droid.Resource.Integer.mtrl_btn_anim_duration_ms;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Integer.mtrl_chip_anim_duration = global::BeQuik.Droid.Resource.Integer.mtrl_chip_anim_duration;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::BeQuik.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Integer.show_password_duration = global::BeQuik.Droid.Resource.Integer.show_password_duration;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Integer.status_bar_notification_info_maxnum = global::BeQuik.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Interpolator.mtrl_fast_out_linear_in = global::BeQuik.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Interpolator.mtrl_fast_out_slow_in = global::BeQuik.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Interpolator.mtrl_linear = global::BeQuik.Droid.Resource.Interpolator.mtrl_linear;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Interpolator.mtrl_linear_out_slow_in = global::BeQuik.Droid.Resource.Interpolator.mtrl_linear_out_slow_in;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_action_bar_title_item = global::BeQuik.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_action_bar_up_container = global::BeQuik.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_action_menu_item_layout = global::BeQuik.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_action_menu_layout = global::BeQuik.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_action_mode_bar = global::BeQuik.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_action_mode_close_item_material = global::BeQuik.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_activity_chooser_view = global::BeQuik.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_activity_chooser_view_list_item = global::BeQuik.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_alert_dialog_button_bar_material = global::BeQuik.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_alert_dialog_material = global::BeQuik.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_alert_dialog_title_material = global::BeQuik.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_cascading_menu_item_layout = global::BeQuik.Droid.Resource.Layout.abc_cascading_menu_item_layout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_dialog_title_material = global::BeQuik.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_expanded_menu_layout = global::BeQuik.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_list_menu_item_checkbox = global::BeQuik.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_list_menu_item_icon = global::BeQuik.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_list_menu_item_layout = global::BeQuik.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_list_menu_item_radio = global::BeQuik.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_popup_menu_header_item_layout = global::BeQuik.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_popup_menu_item_layout = global::BeQuik.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_screen_content_include = global::BeQuik.Droid.Resource.Layout.abc_screen_content_include;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_screen_simple = global::BeQuik.Droid.Resource.Layout.abc_screen_simple;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_screen_simple_overlay_action_mode = global::BeQuik.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_screen_toolbar = global::BeQuik.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_search_dropdown_item_icons_2line = global::BeQuik.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_search_view = global::BeQuik.Droid.Resource.Layout.abc_search_view;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_select_dialog_material = global::BeQuik.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.abc_tooltip = global::BeQuik.Droid.Resource.Layout.abc_tooltip;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.BottomTabLayout = global::BeQuik.Droid.Resource.Layout.BottomTabLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.browser_actions_context_menu_page = global::BeQuik.Droid.Resource.Layout.browser_actions_context_menu_page;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.browser_actions_context_menu_row = global::BeQuik.Droid.Resource.Layout.browser_actions_context_menu_row;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.design_bottom_navigation_item = global::BeQuik.Droid.Resource.Layout.design_bottom_navigation_item;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.design_bottom_sheet_dialog = global::BeQuik.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.design_layout_snackbar = global::BeQuik.Droid.Resource.Layout.design_layout_snackbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.design_layout_snackbar_include = global::BeQuik.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.design_layout_tab_icon = global::BeQuik.Droid.Resource.Layout.design_layout_tab_icon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.design_layout_tab_text = global::BeQuik.Droid.Resource.Layout.design_layout_tab_text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.design_menu_item_action_area = global::BeQuik.Droid.Resource.Layout.design_menu_item_action_area;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.design_navigation_item = global::BeQuik.Droid.Resource.Layout.design_navigation_item;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.design_navigation_item_header = global::BeQuik.Droid.Resource.Layout.design_navigation_item_header;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.design_navigation_item_separator = global::BeQuik.Droid.Resource.Layout.design_navigation_item_separator;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.design_navigation_item_subheader = global::BeQuik.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.design_navigation_menu = global::BeQuik.Droid.Resource.Layout.design_navigation_menu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.design_navigation_menu_item = global::BeQuik.Droid.Resource.Layout.design_navigation_menu_item;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.FlyoutContent = global::BeQuik.Droid.Resource.Layout.FlyoutContent;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.mtrl_layout_snackbar = global::BeQuik.Droid.Resource.Layout.mtrl_layout_snackbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.mtrl_layout_snackbar_include = global::BeQuik.Droid.Resource.Layout.mtrl_layout_snackbar_include;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.notification_action = global::BeQuik.Droid.Resource.Layout.notification_action;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.notification_action_tombstone = global::BeQuik.Droid.Resource.Layout.notification_action_tombstone;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.notification_media_action = global::BeQuik.Droid.Resource.Layout.notification_media_action;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.notification_media_cancel_action = global::BeQuik.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.notification_template_big_media = global::BeQuik.Droid.Resource.Layout.notification_template_big_media;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.notification_template_big_media_custom = global::BeQuik.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.notification_template_big_media_narrow = global::BeQuik.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.notification_template_big_media_narrow_custom = global::BeQuik.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.notification_template_custom_big = global::BeQuik.Droid.Resource.Layout.notification_template_custom_big;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.notification_template_icon_group = global::BeQuik.Droid.Resource.Layout.notification_template_icon_group;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.notification_template_lines_media = global::BeQuik.Droid.Resource.Layout.notification_template_lines_media;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.notification_template_media = global::BeQuik.Droid.Resource.Layout.notification_template_media;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.notification_template_media_custom = global::BeQuik.Droid.Resource.Layout.notification_template_media_custom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.notification_template_part_chronometer = global::BeQuik.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.notification_template_part_time = global::BeQuik.Droid.Resource.Layout.notification_template_part_time;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.RootLayout = global::BeQuik.Droid.Resource.Layout.RootLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.select_dialog_item_material = global::BeQuik.Droid.Resource.Layout.select_dialog_item_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.select_dialog_multichoice_material = global::BeQuik.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.select_dialog_singlechoice_material = global::BeQuik.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.ShellContent = global::BeQuik.Droid.Resource.Layout.ShellContent;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::BeQuik.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_action_bar_home_description = global::BeQuik.Droid.Resource.String.abc_action_bar_home_description;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_action_bar_up_description = global::BeQuik.Droid.Resource.String.abc_action_bar_up_description;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_action_menu_overflow_description = global::BeQuik.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_action_mode_done = global::BeQuik.Droid.Resource.String.abc_action_mode_done;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_activitychooserview_choose_application = global::BeQuik.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_activity_chooser_view_see_all = global::BeQuik.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_capital_off = global::BeQuik.Droid.Resource.String.abc_capital_off;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_capital_on = global::BeQuik.Droid.Resource.String.abc_capital_on;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_menu_alt_shortcut_label = global::BeQuik.Droid.Resource.String.abc_menu_alt_shortcut_label;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_menu_ctrl_shortcut_label = global::BeQuik.Droid.Resource.String.abc_menu_ctrl_shortcut_label;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_menu_delete_shortcut_label = global::BeQuik.Droid.Resource.String.abc_menu_delete_shortcut_label;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_menu_enter_shortcut_label = global::BeQuik.Droid.Resource.String.abc_menu_enter_shortcut_label;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_menu_function_shortcut_label = global::BeQuik.Droid.Resource.String.abc_menu_function_shortcut_label;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_menu_meta_shortcut_label = global::BeQuik.Droid.Resource.String.abc_menu_meta_shortcut_label;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_menu_shift_shortcut_label = global::BeQuik.Droid.Resource.String.abc_menu_shift_shortcut_label;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_menu_space_shortcut_label = global::BeQuik.Droid.Resource.String.abc_menu_space_shortcut_label;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_menu_sym_shortcut_label = global::BeQuik.Droid.Resource.String.abc_menu_sym_shortcut_label;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_prepend_shortcut_label = global::BeQuik.Droid.Resource.String.abc_prepend_shortcut_label;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_searchview_description_clear = global::BeQuik.Droid.Resource.String.abc_searchview_description_clear;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_searchview_description_query = global::BeQuik.Droid.Resource.String.abc_searchview_description_query;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_searchview_description_search = global::BeQuik.Droid.Resource.String.abc_searchview_description_search;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_searchview_description_submit = global::BeQuik.Droid.Resource.String.abc_searchview_description_submit;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_searchview_description_voice = global::BeQuik.Droid.Resource.String.abc_searchview_description_voice;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_search_hint = global::BeQuik.Droid.Resource.String.abc_search_hint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_shareactionprovider_share_with = global::BeQuik.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_shareactionprovider_share_with_application = global::BeQuik.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.abc_toolbar_collapse_description = global::BeQuik.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.appbar_scrolling_view_behavior = global::BeQuik.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.bottom_sheet_behavior = global::BeQuik.Droid.Resource.String.bottom_sheet_behavior;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.character_counter_content_description = global::BeQuik.Droid.Resource.String.character_counter_content_description;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.character_counter_pattern = global::BeQuik.Droid.Resource.String.character_counter_pattern;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.common_google_play_services_enable_button = global::BeQuik.Droid.Resource.String.common_google_play_services_enable_button;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.common_google_play_services_enable_text = global::BeQuik.Droid.Resource.String.common_google_play_services_enable_text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.common_google_play_services_enable_title = global::BeQuik.Droid.Resource.String.common_google_play_services_enable_title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.common_google_play_services_install_button = global::BeQuik.Droid.Resource.String.common_google_play_services_install_button;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.common_google_play_services_install_text = global::BeQuik.Droid.Resource.String.common_google_play_services_install_text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.common_google_play_services_install_title = global::BeQuik.Droid.Resource.String.common_google_play_services_install_title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.common_google_play_services_notification_channel_name = global::BeQuik.Droid.Resource.String.common_google_play_services_notification_channel_name;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.common_google_play_services_notification_ticker = global::BeQuik.Droid.Resource.String.common_google_play_services_notification_ticker;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.common_google_play_services_unknown_issue = global::BeQuik.Droid.Resource.String.common_google_play_services_unknown_issue;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.common_google_play_services_unsupported_text = global::BeQuik.Droid.Resource.String.common_google_play_services_unsupported_text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.common_google_play_services_update_button = global::BeQuik.Droid.Resource.String.common_google_play_services_update_button;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.common_google_play_services_update_text = global::BeQuik.Droid.Resource.String.common_google_play_services_update_text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.common_google_play_services_update_title = global::BeQuik.Droid.Resource.String.common_google_play_services_update_title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.common_google_play_services_updating_text = global::BeQuik.Droid.Resource.String.common_google_play_services_updating_text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.common_google_play_services_wear_update_text = global::BeQuik.Droid.Resource.String.common_google_play_services_wear_update_text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.common_open_on_phone = global::BeQuik.Droid.Resource.String.common_open_on_phone;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.common_signin_button_text = global::BeQuik.Droid.Resource.String.common_signin_button_text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.common_signin_button_text_long = global::BeQuik.Droid.Resource.String.common_signin_button_text_long;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.fab_transformation_scrim_behavior = global::BeQuik.Droid.Resource.String.fab_transformation_scrim_behavior;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.fab_transformation_sheet_behavior = global::BeQuik.Droid.Resource.String.fab_transformation_sheet_behavior;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.hide_bottom_view_on_scroll_behavior = global::BeQuik.Droid.Resource.String.hide_bottom_view_on_scroll_behavior;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.mtrl_chip_close_icon_content_description = global::BeQuik.Droid.Resource.String.mtrl_chip_close_icon_content_description;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.password_toggle_content_description = global::BeQuik.Droid.Resource.String.password_toggle_content_description;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.path_password_eye = global::BeQuik.Droid.Resource.String.path_password_eye;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.path_password_eye_mask_strike_through = global::BeQuik.Droid.Resource.String.path_password_eye_mask_strike_through;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.path_password_eye_mask_visible = global::BeQuik.Droid.Resource.String.path_password_eye_mask_visible;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.path_password_strike_through = global::BeQuik.Droid.Resource.String.path_password_strike_through;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.search_menu_title = global::BeQuik.Droid.Resource.String.search_menu_title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.String.status_bar_notification_info_overflow = global::BeQuik.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.AlertDialog_AppCompat = global::BeQuik.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.AlertDialog_AppCompat_Light = global::BeQuik.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Animation_AppCompat_Dialog = global::BeQuik.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Animation_AppCompat_DropDownUp = global::BeQuik.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Animation_AppCompat_Tooltip = global::BeQuik.Droid.Resource.Style.Animation_AppCompat_Tooltip;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Animation_Design_BottomSheetDialog = global::BeQuik.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_AlertDialog_AppCompat = global::BeQuik.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_AlertDialog_AppCompat_Light = global::BeQuik.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Animation_AppCompat_Dialog = global::BeQuik.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::BeQuik.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Animation_AppCompat_Tooltip = global::BeQuik.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_CardView = global::BeQuik.Droid.Resource.Style.Base_CardView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::BeQuik.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::BeQuik.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Button = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Large = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Small = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Title = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::BeQuik.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_ThemeOverlay_AppCompat = global::BeQuik.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::BeQuik.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::BeQuik.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::BeQuik.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::BeQuik.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::BeQuik.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::BeQuik.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog = global::BeQuik.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert = global::BeQuik.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_AppCompat = global::BeQuik.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::BeQuik.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::BeQuik.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::BeQuik.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::BeQuik.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::BeQuik.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::BeQuik.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_AppCompat_Light = global::BeQuik.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::BeQuik.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::BeQuik.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::BeQuik.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::BeQuik.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::BeQuik.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::BeQuik.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_MaterialComponents = global::BeQuik.Droid.Resource.Style.Base_Theme_MaterialComponents;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_MaterialComponents_Bridge = global::BeQuik.Droid.Resource.Style.Base_Theme_MaterialComponents_Bridge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_MaterialComponents_CompactMenu = global::BeQuik.Droid.Resource.Style.Base_Theme_MaterialComponents_CompactMenu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog = global::BeQuik.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge = global::BeQuik.Droid.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert = global::BeQuik.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize = global::BeQuik.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth = global::BeQuik.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_MaterialComponents_Light = global::BeQuik.Droid.Resource.Style.Base_Theme_MaterialComponents_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge = global::BeQuik.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar = global::BeQuik.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::BeQuik.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog = global::BeQuik.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge = global::BeQuik.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert = global::BeQuik.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize = global::BeQuik.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth = global::BeQuik.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog = global::BeQuik.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = global::BeQuik.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V14_Theme_MaterialComponents = global::BeQuik.Droid.Resource.Style.Base_V14_Theme_MaterialComponents;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge = global::BeQuik.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog = global::BeQuik.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light = global::BeQuik.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge = global::BeQuik.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::BeQuik.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog = global::BeQuik.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::BeQuik.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V21_Theme_AppCompat = global::BeQuik.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::BeQuik.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::BeQuik.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::BeQuik.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V22_Theme_AppCompat = global::BeQuik.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::BeQuik.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V23_Theme_AppCompat = global::BeQuik.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V23_Theme_AppCompat_Light = global::BeQuik.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V26_Theme_AppCompat = global::BeQuik.Droid.Resource.Style.Base_V26_Theme_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V26_Theme_AppCompat_Light = global::BeQuik.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::BeQuik.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V28_Theme_AppCompat = global::BeQuik.Droid.Resource.Style.Base_V28_Theme_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V28_Theme_AppCompat_Light = global::BeQuik.Droid.Resource.Style.Base_V28_Theme_AppCompat_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::BeQuik.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V7_Theme_AppCompat = global::BeQuik.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::BeQuik.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::BeQuik.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::BeQuik.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::BeQuik.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::BeQuik.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::BeQuik.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_ActionBar = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_ActionButton = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_ActionMode = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_Button = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_Button_Small = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_EditText = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_ImageButton = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_ListView = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_RatingBar = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_SearchView = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_SeekBar = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::BeQuik.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_Design_TabLayout = global::BeQuik.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_MaterialComponents_Chip = global::BeQuik.Droid.Resource.Style.Base_Widget_MaterialComponents_Chip;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText = global::BeQuik.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout = global::BeQuik.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.CardView = global::BeQuik.Droid.Resource.Style.CardView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.CardView_Dark = global::BeQuik.Droid.Resource.Style.CardView_Dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.CardView_Light = global::BeQuik.Droid.Resource.Style.CardView_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Platform_AppCompat = global::BeQuik.Droid.Resource.Style.Platform_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Platform_AppCompat_Light = global::BeQuik.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Platform_MaterialComponents = global::BeQuik.Droid.Resource.Style.Platform_MaterialComponents;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Platform_MaterialComponents_Dialog = global::BeQuik.Droid.Resource.Style.Platform_MaterialComponents_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Platform_MaterialComponents_Light = global::BeQuik.Droid.Resource.Style.Platform_MaterialComponents_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Platform_MaterialComponents_Light_Dialog = global::BeQuik.Droid.Resource.Style.Platform_MaterialComponents_Light_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::BeQuik.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::BeQuik.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::BeQuik.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Platform_V21_AppCompat = global::BeQuik.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Platform_V21_AppCompat_Light = global::BeQuik.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Platform_V25_AppCompat = global::BeQuik.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Platform_V25_AppCompat_Light = global::BeQuik.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Platform_Widget_AppCompat_Spinner = global::BeQuik.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::BeQuik.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::BeQuik.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::BeQuik.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::BeQuik.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::BeQuik.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = global::BeQuik.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = global::BeQuik.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::BeQuik.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = global::BeQuik.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::BeQuik.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::BeQuik.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::BeQuik.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::BeQuik.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::BeQuik.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::BeQuik.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::BeQuik.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::BeQuik.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Body1 = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Body2 = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Button = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Caption = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Display1 = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Display2 = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Display3 = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Display4 = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Headline = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Inverse = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Large = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Medium = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Menu = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Small = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Subhead = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Title = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Tooltip = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Tooltip;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::BeQuik.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Compat_Notification = global::BeQuik.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Compat_Notification_Info = global::BeQuik.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::BeQuik.Droid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::BeQuik.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::BeQuik.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Compat_Notification_Media = global::BeQuik.Droid.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Compat_Notification_Time = global::BeQuik.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::BeQuik.Droid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Compat_Notification_Title = global::BeQuik.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::BeQuik.Droid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::BeQuik.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Design_Counter = global::BeQuik.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Design_Counter_Overflow = global::BeQuik.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Design_Error = global::BeQuik.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Design_HelperText = global::BeQuik.Droid.Resource.Style.TextAppearance_Design_HelperText;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Design_Hint = global::BeQuik.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Design_Snackbar_Message = global::BeQuik.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Design_Tab = global::BeQuik.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_MaterialComponents_Body1 = global::BeQuik.Droid.Resource.Style.TextAppearance_MaterialComponents_Body1;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_MaterialComponents_Body2 = global::BeQuik.Droid.Resource.Style.TextAppearance_MaterialComponents_Body2;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_MaterialComponents_Button = global::BeQuik.Droid.Resource.Style.TextAppearance_MaterialComponents_Button;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_MaterialComponents_Caption = global::BeQuik.Droid.Resource.Style.TextAppearance_MaterialComponents_Caption;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_MaterialComponents_Chip = global::BeQuik.Droid.Resource.Style.TextAppearance_MaterialComponents_Chip;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_MaterialComponents_Headline1 = global::BeQuik.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline1;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_MaterialComponents_Headline2 = global::BeQuik.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline2;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_MaterialComponents_Headline3 = global::BeQuik.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline3;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_MaterialComponents_Headline4 = global::BeQuik.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline4;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_MaterialComponents_Headline5 = global::BeQuik.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline5;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_MaterialComponents_Headline6 = global::BeQuik.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline6;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_MaterialComponents_Overline = global::BeQuik.Droid.Resource.Style.TextAppearance_MaterialComponents_Overline;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_MaterialComponents_Subtitle1 = global::BeQuik.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle1;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_MaterialComponents_Subtitle2 = global::BeQuik.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle2;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::BeQuik.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::BeQuik.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::BeQuik.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.ThemeOverlay_AppCompat = global::BeQuik.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::BeQuik.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::BeQuik.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::BeQuik.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::BeQuik.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::BeQuik.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.ThemeOverlay_AppCompat_Light = global::BeQuik.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.ThemeOverlay_MaterialComponents = global::BeQuik.Droid.Resource.Style.ThemeOverlay_MaterialComponents;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar = global::BeQuik.Droid.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.ThemeOverlay_MaterialComponents_Dark = global::BeQuik.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.ThemeOverlay_MaterialComponents_Dark_ActionBar = global::BeQuik.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dark_ActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.ThemeOverlay_MaterialComponents_Dialog = global::BeQuik.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert = global::BeQuik.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.ThemeOverlay_MaterialComponents_Light = global::BeQuik.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText = global::BeQuik.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = global::BeQuik.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = global::BeQuik.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = global::BeQuik.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::BeQuik.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat = global::BeQuik.Droid.Resource.Style.Theme_AppCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::BeQuik.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat_DayNight = global::BeQuik.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::BeQuik.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::BeQuik.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::BeQuik.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::BeQuik.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::BeQuik.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::BeQuik.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat_Dialog = global::BeQuik.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::BeQuik.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::BeQuik.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::BeQuik.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat_Light = global::BeQuik.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::BeQuik.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::BeQuik.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::BeQuik.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::BeQuik.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::BeQuik.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::BeQuik.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::BeQuik.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_Design = global::BeQuik.Droid.Resource.Style.Theme_Design;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_Design_BottomSheetDialog = global::BeQuik.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_Design_Light = global::BeQuik.Droid.Resource.Style.Theme_Design_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::BeQuik.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_Design_Light_NoActionBar = global::BeQuik.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_Design_NoActionBar = global::BeQuik.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents_BottomSheetDialog = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents_BottomSheetDialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents_Bridge = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents_Bridge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents_CompactMenu = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents_CompactMenu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents_Dialog = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents_DialogWhenLarge = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents_DialogWhenLarge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents_Dialog_Alert = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents_Light = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents_Light;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents_Light_Bridge = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents_Light_Bridge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents_Light_NoActionBar = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents_NoActionBar = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge = global::BeQuik.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_ActionBar = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_ActionButton = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_ActionMode = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_ActivityChooserView = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Button = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Button_Borderless = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Button_Colored = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Button_Small = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_EditText = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_ImageButton = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_ActionBar = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_ActionButton = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_SearchView = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_ListMenuView = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_ListPopupWindow = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_ListView = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_ListView_DropDown = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_ListView_Menu = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_PopupMenu = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_PopupWindow = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_ProgressBar = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_RatingBar = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_RatingBar_Small = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_SearchView = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_SeekBar = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Spinner = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Toolbar = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::BeQuik.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_Compat_NotificationActionContainer = global::BeQuik.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_Compat_NotificationActionText = global::BeQuik.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_Design_AppBarLayout = global::BeQuik.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_Design_BottomNavigationView = global::BeQuik.Droid.Resource.Style.Widget_Design_BottomNavigationView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_Design_BottomSheet_Modal = global::BeQuik.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::BeQuik.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_Design_FloatingActionButton = global::BeQuik.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_Design_NavigationView = global::BeQuik.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::BeQuik.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_Design_Snackbar = global::BeQuik.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_Design_TabLayout = global::BeQuik.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_Design_TextInputLayout = global::BeQuik.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_BottomAppBar = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_BottomAppBar_Colored = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar_Colored;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_BottomNavigationView = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_BottomNavigationView_Colored = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView_Colored;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_BottomSheet_Modal = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_BottomSheet_Modal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_Button = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_Button;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_Button_Icon = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_Button_Icon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton_Icon = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton_Icon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_Button_TextButton = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Icon = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Icon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_Button_TextButton_Icon = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Icon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_CardView = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_CardView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_ChipGroup = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_ChipGroup;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_Chip_Action = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_Chip_Action;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_Chip_Choice = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_Chip_Choice;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_Chip_Entry = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_Chip_Entry;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_Chip_Filter = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_Chip_Filter;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_FloatingActionButton = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_FloatingActionButton;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_NavigationView = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_NavigationView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_Snackbar = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_Snackbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_TabLayout = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_TabLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_TabLayout_Colored = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_TabLayout_Colored;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox_Dense;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_MaterialComponents_Toolbar = global::BeQuik.Droid.Resource.Style.Widget_MaterialComponents_Toolbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Style.Widget_Support_CoordinatorLayout = global::BeQuik.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar = global::BeQuik.Droid.Resource.Styleable.ActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBarLayout = global::BeQuik.Droid.Resource.Styleable.ActionBarLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::BeQuik.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_background = global::BeQuik.Droid.Resource.Styleable.ActionBar_background;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_backgroundSplit = global::BeQuik.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_backgroundStacked = global::BeQuik.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_contentInsetEnd = global::BeQuik.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::BeQuik.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_contentInsetLeft = global::BeQuik.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_contentInsetRight = global::BeQuik.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_contentInsetStart = global::BeQuik.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::BeQuik.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_customNavigationLayout = global::BeQuik.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_displayOptions = global::BeQuik.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_divider = global::BeQuik.Droid.Resource.Styleable.ActionBar_divider;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_elevation = global::BeQuik.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_height = global::BeQuik.Droid.Resource.Styleable.ActionBar_height;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_hideOnContentScroll = global::BeQuik.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_homeAsUpIndicator = global::BeQuik.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_homeLayout = global::BeQuik.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_icon = global::BeQuik.Droid.Resource.Styleable.ActionBar_icon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::BeQuik.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_itemPadding = global::BeQuik.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_logo = global::BeQuik.Droid.Resource.Styleable.ActionBar_logo;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_navigationMode = global::BeQuik.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_popupTheme = global::BeQuik.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_progressBarPadding = global::BeQuik.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_progressBarStyle = global::BeQuik.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_subtitle = global::BeQuik.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_subtitleTextStyle = global::BeQuik.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_title = global::BeQuik.Droid.Resource.Styleable.ActionBar_title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionBar_titleTextStyle = global::BeQuik.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionMenuItemView = global::BeQuik.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionMenuItemView_android_minWidth = global::BeQuik.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionMenuView = global::BeQuik.Droid.Resource.Styleable.ActionMenuView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionMode = global::BeQuik.Droid.Resource.Styleable.ActionMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionMode_background = global::BeQuik.Droid.Resource.Styleable.ActionMode_background;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionMode_backgroundSplit = global::BeQuik.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionMode_closeItemLayout = global::BeQuik.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionMode_height = global::BeQuik.Droid.Resource.Styleable.ActionMode_height;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionMode_subtitleTextStyle = global::BeQuik.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActionMode_titleTextStyle = global::BeQuik.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActivityChooserView = global::BeQuik.Droid.Resource.Styleable.ActivityChooserView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::BeQuik.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ActivityChooserView_initialActivityCount = global::BeQuik.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AlertDialog = global::BeQuik.Droid.Resource.Styleable.AlertDialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AlertDialog_android_layout = global::BeQuik.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AlertDialog_buttonIconDimen = global::BeQuik.Droid.Resource.Styleable.AlertDialog_buttonIconDimen;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::BeQuik.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AlertDialog_listItemLayout = global::BeQuik.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AlertDialog_listLayout = global::BeQuik.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::BeQuik.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AlertDialog_showTitle = global::BeQuik.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::BeQuik.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AnimatedStateListDrawableCompat = global::BeQuik.Droid.Resource.Styleable.AnimatedStateListDrawableCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize = global::BeQuik.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither = global::BeQuik.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration = global::BeQuik.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration = global::BeQuik.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding = global::BeQuik.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible = global::BeQuik.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AnimatedStateListDrawableItem = global::BeQuik.Droid.Resource.Styleable.AnimatedStateListDrawableItem;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable = global::BeQuik.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AnimatedStateListDrawableItem_android_id = global::BeQuik.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_id;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AnimatedStateListDrawableTransition = global::BeQuik.Droid.Resource.Styleable.AnimatedStateListDrawableTransition;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable = global::BeQuik.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId = global::BeQuik.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible = global::BeQuik.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId = global::BeQuik.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppBarLayout = global::BeQuik.Droid.Resource.Styleable.AppBarLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppBarLayoutStates = global::BeQuik.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::BeQuik.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::BeQuik.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppBarLayoutStates_state_liftable = global::BeQuik.Droid.Resource.Styleable.AppBarLayoutStates_state_liftable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppBarLayoutStates_state_lifted = global::BeQuik.Droid.Resource.Styleable.AppBarLayoutStates_state_lifted;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppBarLayout_android_background = global::BeQuik.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::BeQuik.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::BeQuik.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppBarLayout_elevation = global::BeQuik.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppBarLayout_expanded = global::BeQuik.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppBarLayout_Layout = global::BeQuik.Droid.Resource.Styleable.AppBarLayout_Layout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::BeQuik.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::BeQuik.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppBarLayout_liftOnScroll = global::BeQuik.Droid.Resource.Styleable.AppBarLayout_liftOnScroll;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatImageView = global::BeQuik.Droid.Resource.Styleable.AppCompatImageView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatImageView_android_src = global::BeQuik.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatImageView_srcCompat = global::BeQuik.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatImageView_tint = global::BeQuik.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatImageView_tintMode = global::BeQuik.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatSeekBar = global::BeQuik.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatSeekBar_android_thumb = global::BeQuik.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatSeekBar_tickMark = global::BeQuik.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::BeQuik.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::BeQuik.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTextHelper = global::BeQuik.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::BeQuik.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::BeQuik.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::BeQuik.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::BeQuik.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::BeQuik.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::BeQuik.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::BeQuik.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTextView = global::BeQuik.Droid.Resource.Styleable.AppCompatTextView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTextView_android_textAppearance = global::BeQuik.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::BeQuik.Droid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::BeQuik.Droid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::BeQuik.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::BeQuik.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::BeQuik.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::BeQuik.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTextView_fontFamily = global::BeQuik.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::BeQuik.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTextView_lineHeight = global::BeQuik.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTextView_textAllCaps = global::BeQuik.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionBarDivider = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionBarSize = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionBarStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionBarTheme = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionModeBackground = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionModeStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_buttonStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_checkboxStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_colorAccent = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_colorControlActivated = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_colorControlNormal = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_colorError = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_colorError;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_colorPrimary = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_controlBackground = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_dialogCornerRadius = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_dialogCornerRadius;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_dialogTheme = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_dividerVertical = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_editTextBackground = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_editTextColor = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_editTextStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_panelBackground = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_searchViewStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_seekBarStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_spinnerStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_switchStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_toolbarStyle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_viewInflaterClass = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_viewInflaterClass;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_windowActionBar = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.AppCompatTheme_windowNoTitle = global::BeQuik.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomAppBar = global::BeQuik.Droid.Resource.Styleable.BottomAppBar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomAppBar_backgroundTint = global::BeQuik.Droid.Resource.Styleable.BottomAppBar_backgroundTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomAppBar_fabAlignmentMode = global::BeQuik.Droid.Resource.Styleable.BottomAppBar_fabAlignmentMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomAppBar_fabCradleMargin = global::BeQuik.Droid.Resource.Styleable.BottomAppBar_fabCradleMargin;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius = global::BeQuik.Droid.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset = global::BeQuik.Droid.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomAppBar_hideOnScroll = global::BeQuik.Droid.Resource.Styleable.BottomAppBar_hideOnScroll;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomNavigationView = global::BeQuik.Droid.Resource.Styleable.BottomNavigationView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomNavigationView_elevation = global::BeQuik.Droid.Resource.Styleable.BottomNavigationView_elevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomNavigationView_itemBackground = global::BeQuik.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled = global::BeQuik.Droid.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomNavigationView_itemIconSize = global::BeQuik.Droid.Resource.Styleable.BottomNavigationView_itemIconSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomNavigationView_itemIconTint = global::BeQuik.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive = global::BeQuik.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive = global::BeQuik.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomNavigationView_itemTextColor = global::BeQuik.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomNavigationView_labelVisibilityMode = global::BeQuik.Droid.Resource.Styleable.BottomNavigationView_labelVisibilityMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomNavigationView_menu = global::BeQuik.Droid.Resource.Styleable.BottomNavigationView_menu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomSheetBehavior_Layout = global::BeQuik.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents = global::BeQuik.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::BeQuik.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::BeQuik.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::BeQuik.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ButtonBarLayout = global::BeQuik.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ButtonBarLayout_allowStacking = global::BeQuik.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CardView = global::BeQuik.Droid.Resource.Styleable.CardView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CardView_android_minHeight = global::BeQuik.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CardView_android_minWidth = global::BeQuik.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CardView_cardBackgroundColor = global::BeQuik.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CardView_cardCornerRadius = global::BeQuik.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CardView_cardElevation = global::BeQuik.Droid.Resource.Styleable.CardView_cardElevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CardView_cardMaxElevation = global::BeQuik.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CardView_cardPreventCornerOverlap = global::BeQuik.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CardView_cardUseCompatPadding = global::BeQuik.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CardView_contentPadding = global::BeQuik.Droid.Resource.Styleable.CardView_contentPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CardView_contentPaddingBottom = global::BeQuik.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CardView_contentPaddingLeft = global::BeQuik.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CardView_contentPaddingRight = global::BeQuik.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CardView_contentPaddingTop = global::BeQuik.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip = global::BeQuik.Droid.Resource.Styleable.Chip;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ChipGroup = global::BeQuik.Droid.Resource.Styleable.ChipGroup;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ChipGroup_checkedChip = global::BeQuik.Droid.Resource.Styleable.ChipGroup_checkedChip;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ChipGroup_chipSpacing = global::BeQuik.Droid.Resource.Styleable.ChipGroup_chipSpacing;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ChipGroup_chipSpacingHorizontal = global::BeQuik.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ChipGroup_chipSpacingVertical = global::BeQuik.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ChipGroup_singleLine = global::BeQuik.Droid.Resource.Styleable.ChipGroup_singleLine;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ChipGroup_singleSelection = global::BeQuik.Droid.Resource.Styleable.ChipGroup_singleSelection;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_android_checkable = global::BeQuik.Droid.Resource.Styleable.Chip_android_checkable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_android_ellipsize = global::BeQuik.Droid.Resource.Styleable.Chip_android_ellipsize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_android_maxWidth = global::BeQuik.Droid.Resource.Styleable.Chip_android_maxWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_android_text = global::BeQuik.Droid.Resource.Styleable.Chip_android_text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_android_textAppearance = global::BeQuik.Droid.Resource.Styleable.Chip_android_textAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_checkedIcon = global::BeQuik.Droid.Resource.Styleable.Chip_checkedIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_checkedIconEnabled = global::BeQuik.Droid.Resource.Styleable.Chip_checkedIconEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_checkedIconVisible = global::BeQuik.Droid.Resource.Styleable.Chip_checkedIconVisible;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_chipBackgroundColor = global::BeQuik.Droid.Resource.Styleable.Chip_chipBackgroundColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_chipCornerRadius = global::BeQuik.Droid.Resource.Styleable.Chip_chipCornerRadius;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_chipEndPadding = global::BeQuik.Droid.Resource.Styleable.Chip_chipEndPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_chipIcon = global::BeQuik.Droid.Resource.Styleable.Chip_chipIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_chipIconEnabled = global::BeQuik.Droid.Resource.Styleable.Chip_chipIconEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_chipIconSize = global::BeQuik.Droid.Resource.Styleable.Chip_chipIconSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_chipIconTint = global::BeQuik.Droid.Resource.Styleable.Chip_chipIconTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_chipIconVisible = global::BeQuik.Droid.Resource.Styleable.Chip_chipIconVisible;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_chipMinHeight = global::BeQuik.Droid.Resource.Styleable.Chip_chipMinHeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_chipStartPadding = global::BeQuik.Droid.Resource.Styleable.Chip_chipStartPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_chipStrokeColor = global::BeQuik.Droid.Resource.Styleable.Chip_chipStrokeColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_chipStrokeWidth = global::BeQuik.Droid.Resource.Styleable.Chip_chipStrokeWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_closeIcon = global::BeQuik.Droid.Resource.Styleable.Chip_closeIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_closeIconEnabled = global::BeQuik.Droid.Resource.Styleable.Chip_closeIconEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_closeIconEndPadding = global::BeQuik.Droid.Resource.Styleable.Chip_closeIconEndPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_closeIconSize = global::BeQuik.Droid.Resource.Styleable.Chip_closeIconSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_closeIconStartPadding = global::BeQuik.Droid.Resource.Styleable.Chip_closeIconStartPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_closeIconTint = global::BeQuik.Droid.Resource.Styleable.Chip_closeIconTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_closeIconVisible = global::BeQuik.Droid.Resource.Styleable.Chip_closeIconVisible;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_hideMotionSpec = global::BeQuik.Droid.Resource.Styleable.Chip_hideMotionSpec;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_iconEndPadding = global::BeQuik.Droid.Resource.Styleable.Chip_iconEndPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_iconStartPadding = global::BeQuik.Droid.Resource.Styleable.Chip_iconStartPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_rippleColor = global::BeQuik.Droid.Resource.Styleable.Chip_rippleColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_showMotionSpec = global::BeQuik.Droid.Resource.Styleable.Chip_showMotionSpec;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_textEndPadding = global::BeQuik.Droid.Resource.Styleable.Chip_textEndPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Chip_textStartPadding = global::BeQuik.Droid.Resource.Styleable.Chip_textStartPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CollapsingToolbarLayout = global::BeQuik.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::BeQuik.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::BeQuik.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::BeQuik.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::BeQuik.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::BeQuik.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::BeQuik.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::BeQuik.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::BeQuik.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::BeQuik.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::BeQuik.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CollapsingToolbarLayout_Layout = global::BeQuik.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::BeQuik.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::BeQuik.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::BeQuik.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::BeQuik.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::BeQuik.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CollapsingToolbarLayout_title = global::BeQuik.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::BeQuik.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::BeQuik.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ColorStateListItem = global::BeQuik.Droid.Resource.Styleable.ColorStateListItem;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ColorStateListItem_alpha = global::BeQuik.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ColorStateListItem_android_alpha = global::BeQuik.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ColorStateListItem_android_color = global::BeQuik.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CompoundButton = global::BeQuik.Droid.Resource.Styleable.CompoundButton;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CompoundButton_android_button = global::BeQuik.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CompoundButton_buttonTint = global::BeQuik.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::BeQuik.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CoordinatorLayout = global::BeQuik.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CoordinatorLayout_keylines = global::BeQuik.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CoordinatorLayout_Layout = global::BeQuik.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::BeQuik.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::BeQuik.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::BeQuik.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::BeQuik.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::BeQuik.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::BeQuik.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::BeQuik.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::BeQuik.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.DrawerArrowToggle = global::BeQuik.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::BeQuik.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::BeQuik.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.DrawerArrowToggle_barLength = global::BeQuik.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.DrawerArrowToggle_color = global::BeQuik.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.DrawerArrowToggle_drawableSize = global::BeQuik.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::BeQuik.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.DrawerArrowToggle_spinBars = global::BeQuik.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.DrawerArrowToggle_thickness = global::BeQuik.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FloatingActionButton = global::BeQuik.Droid.Resource.Styleable.FloatingActionButton;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FloatingActionButton_backgroundTint = global::BeQuik.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::BeQuik.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::BeQuik.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::BeQuik.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FloatingActionButton_borderWidth = global::BeQuik.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FloatingActionButton_elevation = global::BeQuik.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FloatingActionButton_fabCustomSize = global::BeQuik.Droid.Resource.Styleable.FloatingActionButton_fabCustomSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FloatingActionButton_fabSize = global::BeQuik.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FloatingActionButton_hideMotionSpec = global::BeQuik.Droid.Resource.Styleable.FloatingActionButton_hideMotionSpec;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FloatingActionButton_hoveredFocusedTranslationZ = global::BeQuik.Droid.Resource.Styleable.FloatingActionButton_hoveredFocusedTranslationZ;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FloatingActionButton_maxImageSize = global::BeQuik.Droid.Resource.Styleable.FloatingActionButton_maxImageSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::BeQuik.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FloatingActionButton_rippleColor = global::BeQuik.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FloatingActionButton_showMotionSpec = global::BeQuik.Droid.Resource.Styleable.FloatingActionButton_showMotionSpec;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FloatingActionButton_useCompatPadding = global::BeQuik.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FlowLayout = global::BeQuik.Droid.Resource.Styleable.FlowLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FlowLayout_itemSpacing = global::BeQuik.Droid.Resource.Styleable.FlowLayout_itemSpacing;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FlowLayout_lineSpacing = global::BeQuik.Droid.Resource.Styleable.FlowLayout_lineSpacing;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FontFamily = global::BeQuik.Droid.Resource.Styleable.FontFamily;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FontFamilyFont = global::BeQuik.Droid.Resource.Styleable.FontFamilyFont;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FontFamilyFont_android_font = global::BeQuik.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FontFamilyFont_android_fontStyle = global::BeQuik.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::BeQuik.Droid.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FontFamilyFont_android_fontWeight = global::BeQuik.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::BeQuik.Droid.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FontFamilyFont_font = global::BeQuik.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FontFamilyFont_fontStyle = global::BeQuik.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::BeQuik.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FontFamilyFont_fontWeight = global::BeQuik.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FontFamilyFont_ttcIndex = global::BeQuik.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FontFamily_fontProviderAuthority = global::BeQuik.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FontFamily_fontProviderCerts = global::BeQuik.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::BeQuik.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::BeQuik.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FontFamily_fontProviderPackage = global::BeQuik.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.FontFamily_fontProviderQuery = global::BeQuik.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ForegroundLinearLayout = global::BeQuik.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::BeQuik.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::BeQuik.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::BeQuik.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.GradientColor = global::BeQuik.Droid.Resource.Styleable.GradientColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.GradientColorItem = global::BeQuik.Droid.Resource.Styleable.GradientColorItem;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.GradientColorItem_android_color = global::BeQuik.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.GradientColorItem_android_offset = global::BeQuik.Droid.Resource.Styleable.GradientColorItem_android_offset;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.GradientColor_android_centerColor = global::BeQuik.Droid.Resource.Styleable.GradientColor_android_centerColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.GradientColor_android_centerX = global::BeQuik.Droid.Resource.Styleable.GradientColor_android_centerX;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.GradientColor_android_centerY = global::BeQuik.Droid.Resource.Styleable.GradientColor_android_centerY;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.GradientColor_android_endColor = global::BeQuik.Droid.Resource.Styleable.GradientColor_android_endColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.GradientColor_android_endX = global::BeQuik.Droid.Resource.Styleable.GradientColor_android_endX;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.GradientColor_android_endY = global::BeQuik.Droid.Resource.Styleable.GradientColor_android_endY;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.GradientColor_android_gradientRadius = global::BeQuik.Droid.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.GradientColor_android_startColor = global::BeQuik.Droid.Resource.Styleable.GradientColor_android_startColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.GradientColor_android_startX = global::BeQuik.Droid.Resource.Styleable.GradientColor_android_startX;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.GradientColor_android_startY = global::BeQuik.Droid.Resource.Styleable.GradientColor_android_startY;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.GradientColor_android_tileMode = global::BeQuik.Droid.Resource.Styleable.GradientColor_android_tileMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.GradientColor_android_type = global::BeQuik.Droid.Resource.Styleable.GradientColor_android_type;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.LinearLayoutCompat = global::BeQuik.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::BeQuik.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::BeQuik.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.LinearLayoutCompat_android_gravity = global::BeQuik.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.LinearLayoutCompat_android_orientation = global::BeQuik.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::BeQuik.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.LinearLayoutCompat_divider = global::BeQuik.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::BeQuik.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.LinearLayoutCompat_Layout = global::BeQuik.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::BeQuik.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::BeQuik.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::BeQuik.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::BeQuik.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::BeQuik.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::BeQuik.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ListPopupWindow = global::BeQuik.Droid.Resource.Styleable.ListPopupWindow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::BeQuik.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::BeQuik.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.LoadingImageView = global::BeQuik.Droid.Resource.Styleable.LoadingImageView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.LoadingImageView_circleCrop = global::BeQuik.Droid.Resource.Styleable.LoadingImageView_circleCrop;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.LoadingImageView_imageAspectRatio = global::BeQuik.Droid.Resource.Styleable.LoadingImageView_imageAspectRatio;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.LoadingImageView_imageAspectRatioAdjust = global::BeQuik.Droid.Resource.Styleable.LoadingImageView_imageAspectRatioAdjust;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs = global::BeQuik.Droid.Resource.Styleable.MapAttrs;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_ambientEnabled = global::BeQuik.Droid.Resource.Styleable.MapAttrs_ambientEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_cameraBearing = global::BeQuik.Droid.Resource.Styleable.MapAttrs_cameraBearing;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_cameraMaxZoomPreference = global::BeQuik.Droid.Resource.Styleable.MapAttrs_cameraMaxZoomPreference;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_cameraMinZoomPreference = global::BeQuik.Droid.Resource.Styleable.MapAttrs_cameraMinZoomPreference;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_cameraTargetLat = global::BeQuik.Droid.Resource.Styleable.MapAttrs_cameraTargetLat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_cameraTargetLng = global::BeQuik.Droid.Resource.Styleable.MapAttrs_cameraTargetLng;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_cameraTilt = global::BeQuik.Droid.Resource.Styleable.MapAttrs_cameraTilt;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_cameraZoom = global::BeQuik.Droid.Resource.Styleable.MapAttrs_cameraZoom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_latLngBoundsNorthEastLatitude = global::BeQuik.Droid.Resource.Styleable.MapAttrs_latLngBoundsNorthEastLatitude;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_latLngBoundsNorthEastLongitude = global::BeQuik.Droid.Resource.Styleable.MapAttrs_latLngBoundsNorthEastLongitude;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_latLngBoundsSouthWestLatitude = global::BeQuik.Droid.Resource.Styleable.MapAttrs_latLngBoundsSouthWestLatitude;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_latLngBoundsSouthWestLongitude = global::BeQuik.Droid.Resource.Styleable.MapAttrs_latLngBoundsSouthWestLongitude;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_liteMode = global::BeQuik.Droid.Resource.Styleable.MapAttrs_liteMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_mapType = global::BeQuik.Droid.Resource.Styleable.MapAttrs_mapType;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_uiCompass = global::BeQuik.Droid.Resource.Styleable.MapAttrs_uiCompass;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_uiMapToolbar = global::BeQuik.Droid.Resource.Styleable.MapAttrs_uiMapToolbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_uiRotateGestures = global::BeQuik.Droid.Resource.Styleable.MapAttrs_uiRotateGestures;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_uiScrollGestures = global::BeQuik.Droid.Resource.Styleable.MapAttrs_uiScrollGestures;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_uiScrollGesturesDuringRotateOrZoom = global::BeQuik.Droid.Resource.Styleable.MapAttrs_uiScrollGesturesDuringRotateOrZoom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_uiTiltGestures = global::BeQuik.Droid.Resource.Styleable.MapAttrs_uiTiltGestures;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_uiZoomControls = global::BeQuik.Droid.Resource.Styleable.MapAttrs_uiZoomControls;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_uiZoomGestures = global::BeQuik.Droid.Resource.Styleable.MapAttrs_uiZoomGestures;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_useViewLifecycle = global::BeQuik.Droid.Resource.Styleable.MapAttrs_useViewLifecycle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MapAttrs_zOrderOnTop = global::BeQuik.Droid.Resource.Styleable.MapAttrs_zOrderOnTop;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MaterialButton = global::BeQuik.Droid.Resource.Styleable.MaterialButton;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MaterialButton_android_insetBottom = global::BeQuik.Droid.Resource.Styleable.MaterialButton_android_insetBottom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MaterialButton_android_insetLeft = global::BeQuik.Droid.Resource.Styleable.MaterialButton_android_insetLeft;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MaterialButton_android_insetRight = global::BeQuik.Droid.Resource.Styleable.MaterialButton_android_insetRight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MaterialButton_android_insetTop = global::BeQuik.Droid.Resource.Styleable.MaterialButton_android_insetTop;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MaterialButton_backgroundTint = global::BeQuik.Droid.Resource.Styleable.MaterialButton_backgroundTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MaterialButton_backgroundTintMode = global::BeQuik.Droid.Resource.Styleable.MaterialButton_backgroundTintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MaterialButton_cornerRadius = global::BeQuik.Droid.Resource.Styleable.MaterialButton_cornerRadius;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MaterialButton_icon = global::BeQuik.Droid.Resource.Styleable.MaterialButton_icon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MaterialButton_iconGravity = global::BeQuik.Droid.Resource.Styleable.MaterialButton_iconGravity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MaterialButton_iconPadding = global::BeQuik.Droid.Resource.Styleable.MaterialButton_iconPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MaterialButton_iconSize = global::BeQuik.Droid.Resource.Styleable.MaterialButton_iconSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MaterialButton_iconTint = global::BeQuik.Droid.Resource.Styleable.MaterialButton_iconTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MaterialButton_iconTintMode = global::BeQuik.Droid.Resource.Styleable.MaterialButton_iconTintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MaterialButton_rippleColor = global::BeQuik.Droid.Resource.Styleable.MaterialButton_rippleColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MaterialButton_strokeColor = global::BeQuik.Droid.Resource.Styleable.MaterialButton_strokeColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MaterialButton_strokeWidth = global::BeQuik.Droid.Resource.Styleable.MaterialButton_strokeWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MaterialCardView = global::BeQuik.Droid.Resource.Styleable.MaterialCardView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MaterialCardView_strokeColor = global::BeQuik.Droid.Resource.Styleable.MaterialCardView_strokeColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MaterialCardView_strokeWidth = global::BeQuik.Droid.Resource.Styleable.MaterialCardView_strokeWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuGroup = global::BeQuik.Droid.Resource.Styleable.MenuGroup;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuGroup_android_checkableBehavior = global::BeQuik.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuGroup_android_enabled = global::BeQuik.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuGroup_android_id = global::BeQuik.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuGroup_android_menuCategory = global::BeQuik.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuGroup_android_orderInCategory = global::BeQuik.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuGroup_android_visible = global::BeQuik.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem = global::BeQuik.Droid.Resource.Styleable.MenuItem;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_actionLayout = global::BeQuik.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_actionProviderClass = global::BeQuik.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_actionViewClass = global::BeQuik.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_alphabeticModifiers = global::BeQuik.Droid.Resource.Styleable.MenuItem_alphabeticModifiers;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::BeQuik.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_android_checkable = global::BeQuik.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_android_checked = global::BeQuik.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_android_enabled = global::BeQuik.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_android_icon = global::BeQuik.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_android_id = global::BeQuik.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_android_menuCategory = global::BeQuik.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_android_numericShortcut = global::BeQuik.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_android_onClick = global::BeQuik.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_android_orderInCategory = global::BeQuik.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_android_title = global::BeQuik.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_android_titleCondensed = global::BeQuik.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_android_visible = global::BeQuik.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_contentDescription = global::BeQuik.Droid.Resource.Styleable.MenuItem_contentDescription;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_iconTint = global::BeQuik.Droid.Resource.Styleable.MenuItem_iconTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_iconTintMode = global::BeQuik.Droid.Resource.Styleable.MenuItem_iconTintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_numericModifiers = global::BeQuik.Droid.Resource.Styleable.MenuItem_numericModifiers;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_showAsAction = global::BeQuik.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuItem_tooltipText = global::BeQuik.Droid.Resource.Styleable.MenuItem_tooltipText;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuView = global::BeQuik.Droid.Resource.Styleable.MenuView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuView_android_headerBackground = global::BeQuik.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuView_android_horizontalDivider = global::BeQuik.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuView_android_itemBackground = global::BeQuik.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::BeQuik.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuView_android_itemTextAppearance = global::BeQuik.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuView_android_verticalDivider = global::BeQuik.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuView_android_windowAnimationStyle = global::BeQuik.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuView_preserveIconSpacing = global::BeQuik.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.MenuView_subMenuArrow = global::BeQuik.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.NavigationView = global::BeQuik.Droid.Resource.Styleable.NavigationView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.NavigationView_android_background = global::BeQuik.Droid.Resource.Styleable.NavigationView_android_background;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::BeQuik.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.NavigationView_android_maxWidth = global::BeQuik.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.NavigationView_elevation = global::BeQuik.Droid.Resource.Styleable.NavigationView_elevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.NavigationView_headerLayout = global::BeQuik.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.NavigationView_itemBackground = global::BeQuik.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.NavigationView_itemHorizontalPadding = global::BeQuik.Droid.Resource.Styleable.NavigationView_itemHorizontalPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.NavigationView_itemIconPadding = global::BeQuik.Droid.Resource.Styleable.NavigationView_itemIconPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.NavigationView_itemIconTint = global::BeQuik.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.NavigationView_itemTextAppearance = global::BeQuik.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.NavigationView_itemTextColor = global::BeQuik.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.NavigationView_menu = global::BeQuik.Droid.Resource.Styleable.NavigationView_menu;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.PopupWindow = global::BeQuik.Droid.Resource.Styleable.PopupWindow;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.PopupWindowBackgroundState = global::BeQuik.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::BeQuik.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::BeQuik.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.PopupWindow_android_popupBackground = global::BeQuik.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.PopupWindow_overlapAnchor = global::BeQuik.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.RecycleListView = global::BeQuik.Droid.Resource.Styleable.RecycleListView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::BeQuik.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::BeQuik.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.RecyclerView = global::BeQuik.Droid.Resource.Styleable.RecyclerView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.RecyclerView_android_descendantFocusability = global::BeQuik.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.RecyclerView_android_orientation = global::BeQuik.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.RecyclerView_fastScrollEnabled = global::BeQuik.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable = global::BeQuik.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable = global::BeQuik.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable = global::BeQuik.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable = global::BeQuik.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.RecyclerView_layoutManager = global::BeQuik.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.RecyclerView_reverseLayout = global::BeQuik.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.RecyclerView_spanCount = global::BeQuik.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.RecyclerView_stackFromEnd = global::BeQuik.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ScrimInsetsFrameLayout = global::BeQuik.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::BeQuik.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ScrollingViewBehavior_Layout = global::BeQuik.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::BeQuik.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SearchView = global::BeQuik.Droid.Resource.Styleable.SearchView;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SearchView_android_focusable = global::BeQuik.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SearchView_android_imeOptions = global::BeQuik.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SearchView_android_inputType = global::BeQuik.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SearchView_android_maxWidth = global::BeQuik.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SearchView_closeIcon = global::BeQuik.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SearchView_commitIcon = global::BeQuik.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SearchView_defaultQueryHint = global::BeQuik.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SearchView_goIcon = global::BeQuik.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SearchView_iconifiedByDefault = global::BeQuik.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SearchView_layout = global::BeQuik.Droid.Resource.Styleable.SearchView_layout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SearchView_queryBackground = global::BeQuik.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SearchView_queryHint = global::BeQuik.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SearchView_searchHintIcon = global::BeQuik.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SearchView_searchIcon = global::BeQuik.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SearchView_submitBackground = global::BeQuik.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SearchView_suggestionRowLayout = global::BeQuik.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SearchView_voiceIcon = global::BeQuik.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SignInButton = global::BeQuik.Droid.Resource.Styleable.SignInButton;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SignInButton_buttonSize = global::BeQuik.Droid.Resource.Styleable.SignInButton_buttonSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SignInButton_colorScheme = global::BeQuik.Droid.Resource.Styleable.SignInButton_colorScheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SignInButton_scopeUris = global::BeQuik.Droid.Resource.Styleable.SignInButton_scopeUris;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Snackbar = global::BeQuik.Droid.Resource.Styleable.Snackbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SnackbarLayout = global::BeQuik.Droid.Resource.Styleable.SnackbarLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SnackbarLayout_android_maxWidth = global::BeQuik.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SnackbarLayout_elevation = global::BeQuik.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::BeQuik.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Snackbar_snackbarButtonStyle = global::BeQuik.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Snackbar_snackbarStyle = global::BeQuik.Droid.Resource.Styleable.Snackbar_snackbarStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Spinner = global::BeQuik.Droid.Resource.Styleable.Spinner;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Spinner_android_dropDownWidth = global::BeQuik.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Spinner_android_entries = global::BeQuik.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Spinner_android_popupBackground = global::BeQuik.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Spinner_android_prompt = global::BeQuik.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Spinner_popupTheme = global::BeQuik.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.StateListDrawable = global::BeQuik.Droid.Resource.Styleable.StateListDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.StateListDrawableItem = global::BeQuik.Droid.Resource.Styleable.StateListDrawableItem;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.StateListDrawableItem_android_drawable = global::BeQuik.Droid.Resource.Styleable.StateListDrawableItem_android_drawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.StateListDrawable_android_constantSize = global::BeQuik.Droid.Resource.Styleable.StateListDrawable_android_constantSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.StateListDrawable_android_dither = global::BeQuik.Droid.Resource.Styleable.StateListDrawable_android_dither;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.StateListDrawable_android_enterFadeDuration = global::BeQuik.Droid.Resource.Styleable.StateListDrawable_android_enterFadeDuration;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.StateListDrawable_android_exitFadeDuration = global::BeQuik.Droid.Resource.Styleable.StateListDrawable_android_exitFadeDuration;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.StateListDrawable_android_variablePadding = global::BeQuik.Droid.Resource.Styleable.StateListDrawable_android_variablePadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.StateListDrawable_android_visible = global::BeQuik.Droid.Resource.Styleable.StateListDrawable_android_visible;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SwitchCompat = global::BeQuik.Droid.Resource.Styleable.SwitchCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SwitchCompat_android_textOff = global::BeQuik.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SwitchCompat_android_textOn = global::BeQuik.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SwitchCompat_android_thumb = global::BeQuik.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SwitchCompat_showText = global::BeQuik.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SwitchCompat_splitTrack = global::BeQuik.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SwitchCompat_switchMinWidth = global::BeQuik.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SwitchCompat_switchPadding = global::BeQuik.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SwitchCompat_switchTextAppearance = global::BeQuik.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SwitchCompat_thumbTextPadding = global::BeQuik.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SwitchCompat_thumbTint = global::BeQuik.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SwitchCompat_thumbTintMode = global::BeQuik.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SwitchCompat_track = global::BeQuik.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SwitchCompat_trackTint = global::BeQuik.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.SwitchCompat_trackTintMode = global::BeQuik.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabItem = global::BeQuik.Droid.Resource.Styleable.TabItem;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabItem_android_icon = global::BeQuik.Droid.Resource.Styleable.TabItem_android_icon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabItem_android_layout = global::BeQuik.Droid.Resource.Styleable.TabItem_android_layout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabItem_android_text = global::BeQuik.Droid.Resource.Styleable.TabItem_android_text;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout = global::BeQuik.Droid.Resource.Styleable.TabLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabBackground = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabContentStart = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabGravity = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabIconTint = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabIconTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabIconTintMode = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabIconTintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabIndicator = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabIndicator;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabIndicatorColor = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabIndicatorFullWidth = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabIndicatorFullWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabIndicatorGravity = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabIndicatorGravity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabIndicatorHeight = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabInlineLabel = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabInlineLabel;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabMaxWidth = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabMinWidth = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabMode = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabPadding = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabPaddingBottom = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabPaddingEnd = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabPaddingStart = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabPaddingTop = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabRippleColor = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabRippleColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabSelectedTextColor = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabTextAppearance = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabTextColor = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TabLayout_tabUnboundedRipple = global::BeQuik.Droid.Resource.Styleable.TabLayout_tabUnboundedRipple;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextAppearance = global::BeQuik.Droid.Resource.Styleable.TextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextAppearance_android_fontFamily = global::BeQuik.Droid.Resource.Styleable.TextAppearance_android_fontFamily;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextAppearance_android_shadowColor = global::BeQuik.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextAppearance_android_shadowDx = global::BeQuik.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextAppearance_android_shadowDy = global::BeQuik.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextAppearance_android_shadowRadius = global::BeQuik.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextAppearance_android_textColor = global::BeQuik.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextAppearance_android_textColorHint = global::BeQuik.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextAppearance_android_textColorLink = global::BeQuik.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextAppearance_android_textSize = global::BeQuik.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextAppearance_android_textStyle = global::BeQuik.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextAppearance_android_typeface = global::BeQuik.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextAppearance_fontFamily = global::BeQuik.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextAppearance_textAllCaps = global::BeQuik.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout = global::BeQuik.Droid.Resource.Styleable.TextInputLayout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_android_hint = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_android_textColorHint = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_boxBackgroundColor = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_boxBackgroundColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_boxBackgroundMode = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_boxBackgroundMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_boxCollapsedPaddingTop = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_boxCollapsedPaddingTop;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomEnd = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomEnd;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomStart = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomStart;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_boxStrokeColor = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_boxStrokeColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_boxStrokeWidth = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_boxStrokeWidth;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_counterEnabled = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_counterMaxLength = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_counterTextAppearance = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_errorEnabled = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_errorTextAppearance = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_helperText = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_helperText;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_helperTextEnabled = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_helperTextEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_helperTextTextAppearance = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_helperTextTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_hintEnabled = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_hintTextAppearance = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_passwordToggleTint = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::BeQuik.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ThemeEnforcement = global::BeQuik.Droid.Resource.Styleable.ThemeEnforcement;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ThemeEnforcement_android_textAppearance = global::BeQuik.Droid.Resource.Styleable.ThemeEnforcement_android_textAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme = global::BeQuik.Droid.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ThemeEnforcement_enforceTextAppearance = global::BeQuik.Droid.Resource.Styleable.ThemeEnforcement_enforceTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar = global::BeQuik.Droid.Resource.Styleable.Toolbar;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_android_gravity = global::BeQuik.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_android_minHeight = global::BeQuik.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_buttonGravity = global::BeQuik.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_collapseContentDescription = global::BeQuik.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_collapseIcon = global::BeQuik.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_contentInsetEnd = global::BeQuik.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::BeQuik.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_contentInsetLeft = global::BeQuik.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_contentInsetRight = global::BeQuik.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_contentInsetStart = global::BeQuik.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::BeQuik.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_logo = global::BeQuik.Droid.Resource.Styleable.Toolbar_logo;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_logoDescription = global::BeQuik.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_maxButtonHeight = global::BeQuik.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_navigationContentDescription = global::BeQuik.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_navigationIcon = global::BeQuik.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_popupTheme = global::BeQuik.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_subtitle = global::BeQuik.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_subtitleTextAppearance = global::BeQuik.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_subtitleTextColor = global::BeQuik.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_title = global::BeQuik.Droid.Resource.Styleable.Toolbar_title;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_titleMargin = global::BeQuik.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_titleMarginBottom = global::BeQuik.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_titleMarginEnd = global::BeQuik.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_titleMargins = global::BeQuik.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_titleMarginStart = global::BeQuik.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_titleMarginTop = global::BeQuik.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_titleTextAppearance = global::BeQuik.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.Toolbar_titleTextColor = global::BeQuik.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.View = global::BeQuik.Droid.Resource.Styleable.View;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ViewBackgroundHelper = global::BeQuik.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ViewBackgroundHelper_android_background = global::BeQuik.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::BeQuik.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::BeQuik.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ViewStubCompat = global::BeQuik.Droid.Resource.Styleable.ViewStubCompat;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ViewStubCompat_android_id = global::BeQuik.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::BeQuik.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.ViewStubCompat_android_layout = global::BeQuik.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.View_android_focusable = global::BeQuik.Droid.Resource.Styleable.View_android_focusable;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.View_android_theme = global::BeQuik.Droid.Resource.Styleable.View_android_theme;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.View_paddingEnd = global::BeQuik.Droid.Resource.Styleable.View_paddingEnd;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.View_paddingStart = global::BeQuik.Droid.Resource.Styleable.View_paddingStart;
+			global::Xamarin.Forms.GoogleMaps.Android.Resource.Styleable.View_theme = global::BeQuik.Droid.Resource.Styleable.View_theme;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_in = global::BeQuik.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_out = global::BeQuik.Droid.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::BeQuik.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -19047,70 +21681,73 @@ namespace BeQuik.Droid
 			public const int uiScrollGestures = 2130903681;
 			
 			// aapt resource value: 0x7F030282
-			public const int uiTiltGestures = 2130903682;
+			public const int uiScrollGesturesDuringRotateOrZoom = 2130903682;
 			
 			// aapt resource value: 0x7F030283
-			public const int uiZoomControls = 2130903683;
+			public const int uiTiltGestures = 2130903683;
 			
 			// aapt resource value: 0x7F030284
-			public const int uiZoomGestures = 2130903684;
+			public const int uiZoomControls = 2130903684;
 			
 			// aapt resource value: 0x7F030285
-			public const int useCompatPadding = 2130903685;
+			public const int uiZoomGestures = 2130903685;
 			
 			// aapt resource value: 0x7F030286
-			public const int useMaterialThemeColors = 2130903686;
+			public const int useCompatPadding = 2130903686;
 			
 			// aapt resource value: 0x7F030287
-			public const int useViewLifecycle = 2130903687;
+			public const int useMaterialThemeColors = 2130903687;
 			
 			// aapt resource value: 0x7F030288
-			public const int viewInflaterClass = 2130903688;
+			public const int useViewLifecycle = 2130903688;
 			
 			// aapt resource value: 0x7F030289
-			public const int voiceIcon = 2130903689;
+			public const int viewInflaterClass = 2130903689;
 			
 			// aapt resource value: 0x7F03028A
-			public const int windowActionBar = 2130903690;
+			public const int voiceIcon = 2130903690;
 			
 			// aapt resource value: 0x7F03028B
-			public const int windowActionBarOverlay = 2130903691;
+			public const int windowActionBar = 2130903691;
 			
 			// aapt resource value: 0x7F03028C
-			public const int windowActionModeOverlay = 2130903692;
+			public const int windowActionBarOverlay = 2130903692;
 			
 			// aapt resource value: 0x7F03028D
-			public const int windowFixedHeightMajor = 2130903693;
+			public const int windowActionModeOverlay = 2130903693;
 			
 			// aapt resource value: 0x7F03028E
-			public const int windowFixedHeightMinor = 2130903694;
+			public const int windowFixedHeightMajor = 2130903694;
 			
 			// aapt resource value: 0x7F03028F
-			public const int windowFixedWidthMajor = 2130903695;
+			public const int windowFixedHeightMinor = 2130903695;
 			
 			// aapt resource value: 0x7F030290
-			public const int windowFixedWidthMinor = 2130903696;
+			public const int windowFixedWidthMajor = 2130903696;
 			
 			// aapt resource value: 0x7F030291
-			public const int windowMinWidthMajor = 2130903697;
+			public const int windowFixedWidthMinor = 2130903697;
 			
 			// aapt resource value: 0x7F030292
-			public const int windowMinWidthMinor = 2130903698;
+			public const int windowMinWidthMajor = 2130903698;
 			
 			// aapt resource value: 0x7F030293
-			public const int windowNoTitle = 2130903699;
+			public const int windowMinWidthMinor = 2130903699;
 			
 			// aapt resource value: 0x7F030294
-			public const int yearSelectedStyle = 2130903700;
+			public const int windowNoTitle = 2130903700;
 			
 			// aapt resource value: 0x7F030295
-			public const int yearStyle = 2130903701;
+			public const int yearSelectedStyle = 2130903701;
 			
 			// aapt resource value: 0x7F030296
-			public const int yearTodayStyle = 2130903702;
+			public const int yearStyle = 2130903702;
 			
 			// aapt resource value: 0x7F030297
-			public const int zOrderOnTop = 2130903703;
+			public const int yearTodayStyle = 2130903703;
+			
+			// aapt resource value: 0x7F030298
+			public const int zOrderOnTop = 2130903704;
 			
 			static Attribute()
 			{
@@ -23133,199 +25770,202 @@ namespace BeQuik.Droid
 			public const int common_google_play_services_install_title = 2131689514;
 			
 			// aapt resource value: 0x7F0F002B
-			public const int common_google_play_services_notification_ticker = 2131689515;
+			public const int common_google_play_services_notification_channel_name = 2131689515;
 			
 			// aapt resource value: 0x7F0F002C
-			public const int common_google_play_services_unknown_issue = 2131689516;
+			public const int common_google_play_services_notification_ticker = 2131689516;
 			
 			// aapt resource value: 0x7F0F002D
-			public const int common_google_play_services_unsupported_text = 2131689517;
+			public const int common_google_play_services_unknown_issue = 2131689517;
 			
 			// aapt resource value: 0x7F0F002E
-			public const int common_google_play_services_update_button = 2131689518;
+			public const int common_google_play_services_unsupported_text = 2131689518;
 			
 			// aapt resource value: 0x7F0F002F
-			public const int common_google_play_services_update_text = 2131689519;
+			public const int common_google_play_services_update_button = 2131689519;
 			
 			// aapt resource value: 0x7F0F0030
-			public const int common_google_play_services_update_title = 2131689520;
+			public const int common_google_play_services_update_text = 2131689520;
 			
 			// aapt resource value: 0x7F0F0031
-			public const int common_google_play_services_updating_text = 2131689521;
+			public const int common_google_play_services_update_title = 2131689521;
 			
 			// aapt resource value: 0x7F0F0032
-			public const int common_google_play_services_wear_update_text = 2131689522;
+			public const int common_google_play_services_updating_text = 2131689522;
 			
 			// aapt resource value: 0x7F0F0033
-			public const int common_open_on_phone = 2131689523;
+			public const int common_google_play_services_wear_update_text = 2131689523;
 			
 			// aapt resource value: 0x7F0F0034
-			public const int common_signin_button_text = 2131689524;
+			public const int common_open_on_phone = 2131689524;
 			
 			// aapt resource value: 0x7F0F0035
-			public const int common_signin_button_text_long = 2131689525;
+			public const int common_signin_button_text = 2131689525;
 			
 			// aapt resource value: 0x7F0F0036
-			public const int copy_toast_msg = 2131689526;
+			public const int common_signin_button_text_long = 2131689526;
 			
 			// aapt resource value: 0x7F0F0037
-			public const int error_icon_content_description = 2131689527;
+			public const int copy_toast_msg = 2131689527;
 			
 			// aapt resource value: 0x7F0F0038
-			public const int exposed_dropdown_menu_content_description = 2131689528;
+			public const int error_icon_content_description = 2131689528;
 			
 			// aapt resource value: 0x7F0F0039
-			public const int fab_transformation_scrim_behavior = 2131689529;
+			public const int exposed_dropdown_menu_content_description = 2131689529;
 			
 			// aapt resource value: 0x7F0F003A
-			public const int fab_transformation_sheet_behavior = 2131689530;
+			public const int fab_transformation_scrim_behavior = 2131689530;
 			
 			// aapt resource value: 0x7F0F003B
-			public const int fallback_menu_item_copy_link = 2131689531;
+			public const int fab_transformation_sheet_behavior = 2131689531;
 			
 			// aapt resource value: 0x7F0F003C
-			public const int fallback_menu_item_open_in_browser = 2131689532;
+			public const int fallback_menu_item_copy_link = 2131689532;
 			
 			// aapt resource value: 0x7F0F003D
-			public const int fallback_menu_item_share_link = 2131689533;
+			public const int fallback_menu_item_open_in_browser = 2131689533;
+			
+			// aapt resource value: 0x7F0F003E
+			public const int fallback_menu_item_share_link = 2131689534;
 			
 			// aapt resource value: 0x7F0F0001
 			public const int Hello = 2131689473;
 			
-			// aapt resource value: 0x7F0F003E
-			public const int hello = 2131689534;
-			
 			// aapt resource value: 0x7F0F003F
-			public const int hide_bottom_view_on_scroll_behavior = 2131689535;
+			public const int hello = 2131689535;
 			
 			// aapt resource value: 0x7F0F0040
-			public const int icon_content_description = 2131689536;
+			public const int hide_bottom_view_on_scroll_behavior = 2131689536;
 			
 			// aapt resource value: 0x7F0F0041
-			public const int mtrl_badge_numberless_content_description = 2131689537;
+			public const int icon_content_description = 2131689537;
 			
 			// aapt resource value: 0x7F0F0042
-			public const int mtrl_chip_close_icon_content_description = 2131689538;
+			public const int mtrl_badge_numberless_content_description = 2131689538;
 			
 			// aapt resource value: 0x7F0F0043
-			public const int mtrl_exceed_max_badge_number_suffix = 2131689539;
+			public const int mtrl_chip_close_icon_content_description = 2131689539;
 			
 			// aapt resource value: 0x7F0F0044
-			public const int mtrl_picker_a11y_next_month = 2131689540;
+			public const int mtrl_exceed_max_badge_number_suffix = 2131689540;
 			
 			// aapt resource value: 0x7F0F0045
-			public const int mtrl_picker_a11y_prev_month = 2131689541;
+			public const int mtrl_picker_a11y_next_month = 2131689541;
 			
 			// aapt resource value: 0x7F0F0046
-			public const int mtrl_picker_announce_current_selection = 2131689542;
+			public const int mtrl_picker_a11y_prev_month = 2131689542;
 			
 			// aapt resource value: 0x7F0F0047
-			public const int mtrl_picker_cancel = 2131689543;
+			public const int mtrl_picker_announce_current_selection = 2131689543;
 			
 			// aapt resource value: 0x7F0F0048
-			public const int mtrl_picker_confirm = 2131689544;
+			public const int mtrl_picker_cancel = 2131689544;
 			
 			// aapt resource value: 0x7F0F0049
-			public const int mtrl_picker_date_header_selected = 2131689545;
+			public const int mtrl_picker_confirm = 2131689545;
 			
 			// aapt resource value: 0x7F0F004A
-			public const int mtrl_picker_date_header_title = 2131689546;
+			public const int mtrl_picker_date_header_selected = 2131689546;
 			
 			// aapt resource value: 0x7F0F004B
-			public const int mtrl_picker_date_header_unselected = 2131689547;
+			public const int mtrl_picker_date_header_title = 2131689547;
 			
 			// aapt resource value: 0x7F0F004C
-			public const int mtrl_picker_day_of_week_column_header = 2131689548;
+			public const int mtrl_picker_date_header_unselected = 2131689548;
 			
 			// aapt resource value: 0x7F0F004D
-			public const int mtrl_picker_invalid_format = 2131689549;
+			public const int mtrl_picker_day_of_week_column_header = 2131689549;
 			
 			// aapt resource value: 0x7F0F004E
-			public const int mtrl_picker_invalid_format_example = 2131689550;
+			public const int mtrl_picker_invalid_format = 2131689550;
 			
 			// aapt resource value: 0x7F0F004F
-			public const int mtrl_picker_invalid_format_use = 2131689551;
+			public const int mtrl_picker_invalid_format_example = 2131689551;
 			
 			// aapt resource value: 0x7F0F0050
-			public const int mtrl_picker_invalid_range = 2131689552;
+			public const int mtrl_picker_invalid_format_use = 2131689552;
 			
 			// aapt resource value: 0x7F0F0051
-			public const int mtrl_picker_navigate_to_year_description = 2131689553;
+			public const int mtrl_picker_invalid_range = 2131689553;
 			
 			// aapt resource value: 0x7F0F0052
-			public const int mtrl_picker_out_of_range = 2131689554;
+			public const int mtrl_picker_navigate_to_year_description = 2131689554;
 			
 			// aapt resource value: 0x7F0F0053
-			public const int mtrl_picker_range_header_only_end_selected = 2131689555;
+			public const int mtrl_picker_out_of_range = 2131689555;
 			
 			// aapt resource value: 0x7F0F0054
-			public const int mtrl_picker_range_header_only_start_selected = 2131689556;
+			public const int mtrl_picker_range_header_only_end_selected = 2131689556;
 			
 			// aapt resource value: 0x7F0F0055
-			public const int mtrl_picker_range_header_selected = 2131689557;
+			public const int mtrl_picker_range_header_only_start_selected = 2131689557;
 			
 			// aapt resource value: 0x7F0F0056
-			public const int mtrl_picker_range_header_title = 2131689558;
+			public const int mtrl_picker_range_header_selected = 2131689558;
 			
 			// aapt resource value: 0x7F0F0057
-			public const int mtrl_picker_range_header_unselected = 2131689559;
+			public const int mtrl_picker_range_header_title = 2131689559;
 			
 			// aapt resource value: 0x7F0F0058
-			public const int mtrl_picker_save = 2131689560;
+			public const int mtrl_picker_range_header_unselected = 2131689560;
 			
 			// aapt resource value: 0x7F0F0059
-			public const int mtrl_picker_text_input_date_hint = 2131689561;
+			public const int mtrl_picker_save = 2131689561;
 			
 			// aapt resource value: 0x7F0F005A
-			public const int mtrl_picker_text_input_date_range_end_hint = 2131689562;
+			public const int mtrl_picker_text_input_date_hint = 2131689562;
 			
 			// aapt resource value: 0x7F0F005B
-			public const int mtrl_picker_text_input_date_range_start_hint = 2131689563;
+			public const int mtrl_picker_text_input_date_range_end_hint = 2131689563;
 			
 			// aapt resource value: 0x7F0F005C
-			public const int mtrl_picker_text_input_day_abbr = 2131689564;
+			public const int mtrl_picker_text_input_date_range_start_hint = 2131689564;
 			
 			// aapt resource value: 0x7F0F005D
-			public const int mtrl_picker_text_input_month_abbr = 2131689565;
+			public const int mtrl_picker_text_input_day_abbr = 2131689565;
 			
 			// aapt resource value: 0x7F0F005E
-			public const int mtrl_picker_text_input_year_abbr = 2131689566;
+			public const int mtrl_picker_text_input_month_abbr = 2131689566;
 			
 			// aapt resource value: 0x7F0F005F
-			public const int mtrl_picker_toggle_to_calendar_input_mode = 2131689567;
+			public const int mtrl_picker_text_input_year_abbr = 2131689567;
 			
 			// aapt resource value: 0x7F0F0060
-			public const int mtrl_picker_toggle_to_day_selection = 2131689568;
+			public const int mtrl_picker_toggle_to_calendar_input_mode = 2131689568;
 			
 			// aapt resource value: 0x7F0F0061
-			public const int mtrl_picker_toggle_to_text_input_mode = 2131689569;
+			public const int mtrl_picker_toggle_to_day_selection = 2131689569;
 			
 			// aapt resource value: 0x7F0F0062
-			public const int mtrl_picker_toggle_to_year_selection = 2131689570;
+			public const int mtrl_picker_toggle_to_text_input_mode = 2131689570;
 			
 			// aapt resource value: 0x7F0F0063
-			public const int overflow_tab_title = 2131689571;
+			public const int mtrl_picker_toggle_to_year_selection = 2131689571;
 			
 			// aapt resource value: 0x7F0F0064
-			public const int password_toggle_content_description = 2131689572;
+			public const int overflow_tab_title = 2131689572;
 			
 			// aapt resource value: 0x7F0F0065
-			public const int path_password_eye = 2131689573;
+			public const int password_toggle_content_description = 2131689573;
 			
 			// aapt resource value: 0x7F0F0066
-			public const int path_password_eye_mask_strike_through = 2131689574;
+			public const int path_password_eye = 2131689574;
 			
 			// aapt resource value: 0x7F0F0067
-			public const int path_password_eye_mask_visible = 2131689575;
+			public const int path_password_eye_mask_strike_through = 2131689575;
 			
 			// aapt resource value: 0x7F0F0068
-			public const int path_password_strike_through = 2131689576;
+			public const int path_password_eye_mask_visible = 2131689576;
 			
 			// aapt resource value: 0x7F0F0069
-			public const int search_menu_title = 2131689577;
+			public const int path_password_strike_through = 2131689577;
 			
 			// aapt resource value: 0x7F0F006A
-			public const int status_bar_notification_info_overflow = 2131689578;
+			public const int search_menu_title = 2131689578;
+			
+			// aapt resource value: 0x7F0F006B
+			public const int status_bar_notification_info_overflow = 2131689579;
 			
 			static String()
 			{
@@ -25887,7 +28527,7 @@ namespace BeQuik.Droid
 			// aapt resource value: 20
 			public const int AppCompatTextView_textLocale = 20;
 			
-			// aapt resource value: { 0x1010057,0x10100AE,0x7F030000,0x7F030001,0x7F030002,0x7F030003,0x7F030004,0x7F030005,0x7F030006,0x7F030007,0x7F030008,0x7F030009,0x7F03000A,0x7F03000B,0x7F03000C,0x7F03000E,0x7F03000F,0x7F030010,0x7F030011,0x7F030012,0x7F030013,0x7F030014,0x7F030015,0x7F030016,0x7F030017,0x7F030018,0x7F030019,0x7F03001A,0x7F03001B,0x7F03001C,0x7F03001D,0x7F03001E,0x7F030022,0x7F030023,0x7F030024,0x7F030025,0x7F030026,0x7F03002F,0x7F03004F,0x7F03005E,0x7F03005F,0x7F030060,0x7F030061,0x7F030062,0x7F030068,0x7F030069,0x7F03007B,0x7F030082,0x7F0300A6,0x7F0300A7,0x7F0300A8,0x7F0300A9,0x7F0300AA,0x7F0300AB,0x7F0300AC,0x7F0300B3,0x7F0300B4,0x7F0300BB,0x7F0300CA,0x7F0300E3,0x7F0300E4,0x7F0300E5,0x7F0300E8,0x7F0300EA,0x7F0300F6,0x7F0300F7,0x7F0300F8,0x7F0300F9,0x7F0300FA,0x7F030141,0x7F03014F,0x7F030184,0x7F030185,0x7F030186,0x7F030187,0x7F03018A,0x7F03018B,0x7F03018C,0x7F03018D,0x7F03018E,0x7F03018F,0x7F030190,0x7F030191,0x7F030192,0x7F0301CF,0x7F0301D0,0x7F0301D1,0x7F0301D8,0x7F0301DA,0x7F0301E1,0x7F0301E3,0x7F0301E4,0x7F0301E5,0x7F0301F0,0x7F0301F1,0x7F0301F2,0x7F0301F3,0x7F030206,0x7F030207,0x7F030225,0x7F03024C,0x7F03024E,0x7F03024F,0x7F030250,0x7F030252,0x7F030253,0x7F030254,0x7F030255,0x7F030258,0x7F030259,0x7F030275,0x7F030276,0x7F030277,0x7F030278,0x7F030288,0x7F03028A,0x7F03028B,0x7F03028C,0x7F03028D,0x7F03028E,0x7F03028F,0x7F030290,0x7F030291,0x7F030292,0x7F030293 }
+			// aapt resource value: { 0x1010057,0x10100AE,0x7F030000,0x7F030001,0x7F030002,0x7F030003,0x7F030004,0x7F030005,0x7F030006,0x7F030007,0x7F030008,0x7F030009,0x7F03000A,0x7F03000B,0x7F03000C,0x7F03000E,0x7F03000F,0x7F030010,0x7F030011,0x7F030012,0x7F030013,0x7F030014,0x7F030015,0x7F030016,0x7F030017,0x7F030018,0x7F030019,0x7F03001A,0x7F03001B,0x7F03001C,0x7F03001D,0x7F03001E,0x7F030022,0x7F030023,0x7F030024,0x7F030025,0x7F030026,0x7F03002F,0x7F03004F,0x7F03005E,0x7F03005F,0x7F030060,0x7F030061,0x7F030062,0x7F030068,0x7F030069,0x7F03007B,0x7F030082,0x7F0300A6,0x7F0300A7,0x7F0300A8,0x7F0300A9,0x7F0300AA,0x7F0300AB,0x7F0300AC,0x7F0300B3,0x7F0300B4,0x7F0300BB,0x7F0300CA,0x7F0300E3,0x7F0300E4,0x7F0300E5,0x7F0300E8,0x7F0300EA,0x7F0300F6,0x7F0300F7,0x7F0300F8,0x7F0300F9,0x7F0300FA,0x7F030141,0x7F03014F,0x7F030184,0x7F030185,0x7F030186,0x7F030187,0x7F03018A,0x7F03018B,0x7F03018C,0x7F03018D,0x7F03018E,0x7F03018F,0x7F030190,0x7F030191,0x7F030192,0x7F0301CF,0x7F0301D0,0x7F0301D1,0x7F0301D8,0x7F0301DA,0x7F0301E1,0x7F0301E3,0x7F0301E4,0x7F0301E5,0x7F0301F0,0x7F0301F1,0x7F0301F2,0x7F0301F3,0x7F030206,0x7F030207,0x7F030225,0x7F03024C,0x7F03024E,0x7F03024F,0x7F030250,0x7F030252,0x7F030253,0x7F030254,0x7F030255,0x7F030258,0x7F030259,0x7F030275,0x7F030276,0x7F030277,0x7F030278,0x7F030289,0x7F03028B,0x7F03028C,0x7F03028D,0x7F03028E,0x7F03028F,0x7F030290,0x7F030291,0x7F030292,0x7F030293,0x7F030294 }
 			public static int[] AppCompatTheme = new int[] {
 					16842839,
 					16842926,
@@ -26003,8 +28643,7 @@ namespace BeQuik.Droid
 					2130903670,
 					2130903671,
 					2130903672,
-					2130903688,
-					2130903690,
+					2130903689,
 					2130903691,
 					2130903692,
 					2130903693,
@@ -26013,7 +28652,8 @@ namespace BeQuik.Droid
 					2130903696,
 					2130903697,
 					2130903698,
-					2130903699};
+					2130903699,
+					2130903700};
 			
 			// aapt resource value: 2
 			public const int AppCompatTheme_actionBarDivider = 2;
@@ -27028,7 +29668,7 @@ namespace BeQuik.Droid
 			// aapt resource value: 4
 			public const int ExtendedFloatingActionButton_shrinkMotionSpec = 4;
 			
-			// aapt resource value: { 0x7F03003E,0x7F03003F,0x7F03004E,0x7F0300FB,0x7F030106,0x7F03011D,0x7F03011E,0x7F03013A,0x7F030143,0x7F0301BF,0x7F0301DC,0x7F0301E8,0x7F0301F4,0x7F0301F7,0x7F0301FB,0x7F030285 }
+			// aapt resource value: { 0x7F03003E,0x7F03003F,0x7F03004E,0x7F0300FB,0x7F030106,0x7F03011D,0x7F03011E,0x7F03013A,0x7F030143,0x7F0301BF,0x7F0301DC,0x7F0301E8,0x7F0301F4,0x7F0301F7,0x7F0301FB,0x7F030286 }
 			public static int[] FloatingActionButton = new int[] {
 					2130903102,
 					2130903103,
@@ -27045,7 +29685,7 @@ namespace BeQuik.Droid
 					2130903540,
 					2130903543,
 					2130903547,
-					2130903685};
+					2130903686};
 			
 			// aapt resource value: 0
 			public const int FloatingActionButton_backgroundTint = 0;
@@ -27444,7 +30084,7 @@ namespace BeQuik.Droid
 			// aapt resource value: 15
 			public const int LottieAnimationView_lottie_url = 15;
 			
-			// aapt resource value: { 0x7F03002A,0x7F03006C,0x7F03006D,0x7F03006E,0x7F03006F,0x7F030070,0x7F030071,0x7F030072,0x7F030170,0x7F030171,0x7F030172,0x7F030173,0x7F030193,0x7F0301A7,0x7F03027E,0x7F03027F,0x7F030280,0x7F030281,0x7F030282,0x7F030283,0x7F030284,0x7F030287,0x7F030297 }
+			// aapt resource value: { 0x7F03002A,0x7F03006C,0x7F03006D,0x7F03006E,0x7F03006F,0x7F030070,0x7F030071,0x7F030072,0x7F030170,0x7F030171,0x7F030172,0x7F030173,0x7F030193,0x7F0301A7,0x7F03027E,0x7F03027F,0x7F030280,0x7F030281,0x7F030282,0x7F030283,0x7F030284,0x7F030285,0x7F030288,0x7F030298 }
 			public static int[] MapAttrs = new int[] {
 					2130903082,
 					2130903148,
@@ -27467,8 +30107,9 @@ namespace BeQuik.Droid
 					2130903682,
 					2130903683,
 					2130903684,
-					2130903687,
-					2130903703};
+					2130903685,
+					2130903688,
+					2130903704};
 			
 			// aapt resource value: 0
 			public const int MapAttrs_ambientEnabled = 0;
@@ -27525,19 +30166,22 @@ namespace BeQuik.Droid
 			public const int MapAttrs_uiScrollGestures = 17;
 			
 			// aapt resource value: 18
-			public const int MapAttrs_uiTiltGestures = 18;
+			public const int MapAttrs_uiScrollGesturesDuringRotateOrZoom = 18;
 			
 			// aapt resource value: 19
-			public const int MapAttrs_uiZoomControls = 19;
+			public const int MapAttrs_uiTiltGestures = 19;
 			
 			// aapt resource value: 20
-			public const int MapAttrs_uiZoomGestures = 20;
+			public const int MapAttrs_uiZoomControls = 20;
 			
 			// aapt resource value: 21
-			public const int MapAttrs_useViewLifecycle = 21;
+			public const int MapAttrs_uiZoomGestures = 21;
 			
 			// aapt resource value: 22
-			public const int MapAttrs_zOrderOnTop = 22;
+			public const int MapAttrs_useViewLifecycle = 22;
+			
+			// aapt resource value: 23
+			public const int MapAttrs_zOrderOnTop = 23;
 			
 			// aapt resource value: { 0x7F030037,0x7F030038,0x7F030039,0x7F03003A }
 			public static int[] MaterialAlertDialog = new int[] {
@@ -27675,7 +30319,7 @@ namespace BeQuik.Droid
 			// aapt resource value: 19
 			public const int MaterialButton_strokeWidth = 19;
 			
-			// aapt resource value: { 0x101020D,0x7F0300DE,0x7F0300DF,0x7F0300E0,0x7F0300E1,0x7F0301E2,0x7F030294,0x7F030295,0x7F030296 }
+			// aapt resource value: { 0x101020D,0x7F0300DE,0x7F0300DF,0x7F0300E0,0x7F0300E1,0x7F0301E2,0x7F030295,0x7F030296,0x7F030297 }
 			public static int[] MaterialCalendar = new int[] {
 					16843277,
 					2130903262,
@@ -27683,9 +30327,9 @@ namespace BeQuik.Droid
 					2130903264,
 					2130903265,
 					2130903522,
-					2130903700,
 					2130903701,
-					2130903702};
+					2130903702,
+					2130903703};
 			
 			// aapt resource value: { 0x10101B7,0x10101B8,0x10101B9,0x10101BA,0x7F030156,0x7F03015F,0x7F030160,0x7F030167,0x7F030168,0x7F03016C }
 			public static int[] MaterialCalendarItem = new int[] {
@@ -27800,10 +30444,10 @@ namespace BeQuik.Droid
 			// aapt resource value: 9
 			public const int MaterialCardView_strokeWidth = 9;
 			
-			// aapt resource value: { 0x7F03006A,0x7F030286 }
+			// aapt resource value: { 0x7F03006A,0x7F030287 }
 			public static int[] MaterialCheckBox = new int[] {
 					2130903146,
-					2130903686};
+					2130903687};
 			
 			// aapt resource value: 0
 			public const int MaterialCheckBox_buttonTint = 0;
@@ -27811,9 +30455,9 @@ namespace BeQuik.Droid
 			// aapt resource value: 1
 			public const int MaterialCheckBox_useMaterialThemeColors = 1;
 			
-			// aapt resource value: { 0x7F030286 }
+			// aapt resource value: { 0x7F030287 }
 			public static int[] MaterialRadioButton = new int[] {
-					2130903686};
+					2130903687};
 			
 			// aapt resource value: 0
 			public const int MaterialRadioButton_useMaterialThemeColors = 0;
@@ -28208,7 +30852,7 @@ namespace BeQuik.Droid
 			// aapt resource value: 0
 			public const int ScrollViewRendererTheme_scrollViewStyle = 0;
 			
-			// aapt resource value: { 0x10100DA,0x101011F,0x1010220,0x1010264,0x7F030098,0x7F0300BC,0x7F0300E2,0x7F030133,0x7F03014C,0x7F030174,0x7F0301DF,0x7F0301E0,0x7F0301EE,0x7F0301EF,0x7F03021C,0x7F030221,0x7F030289 }
+			// aapt resource value: { 0x10100DA,0x101011F,0x1010220,0x1010264,0x7F030098,0x7F0300BC,0x7F0300E2,0x7F030133,0x7F03014C,0x7F030174,0x7F0301DF,0x7F0301E0,0x7F0301EE,0x7F0301EF,0x7F03021C,0x7F030221,0x7F03028A }
 			public static int[] SearchView = new int[] {
 					16842970,
 					16843039,
@@ -28226,7 +30870,7 @@ namespace BeQuik.Droid
 					2130903535,
 					2130903580,
 					2130903585,
-					2130903689};
+					2130903690};
 			
 			// aapt resource value: 0
 			public const int SearchView_android_focusable = 0;
@@ -28498,9 +31142,9 @@ namespace BeQuik.Droid
 			// aapt resource value: 13
 			public const int SwitchCompat_trackTintMode = 13;
 			
-			// aapt resource value: { 0x7F030286 }
+			// aapt resource value: { 0x7F030287 }
 			public static int[] SwitchMaterial = new int[] {
-					2130903686};
+					2130903687};
 			
 			// aapt resource value: 0
 			public const int SwitchMaterial_useMaterialThemeColors = 0;

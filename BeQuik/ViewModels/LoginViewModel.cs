@@ -44,8 +44,7 @@ namespace BeQuik.ViewModels
                     await ShowLoading().ConfigureAwait(false);
                     break;
                 case "client":
-                    var isMap = await RequestPermissionsLocation();
-                    new ViewModels.MapClientViewModel(isMap);
+                    new ViewModels.MapClientViewModel();
                     break;
                 case "driver":
                     new ViewModels.MapDriverViewModel();

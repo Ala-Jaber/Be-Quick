@@ -26,7 +26,7 @@ namespace BeQuik.Droid
             XF.Material.Droid.Material.Init(this, bundle);
             XamEffects.Droid.Effects.Init();
 
-            var platformConfig = new PlatformConfig { BitmapDescriptorFactory = new CachingNativeBitmapDescriptorFactory() };
+            var platformConfig = new PlatformConfig { BitmapDescriptorFactory = new AccessNativeBitmapConfig() };
             Xamarin.FormsGoogleMaps.Init(this, bundle, platformConfig); 
 
             LoadApplication(new App());

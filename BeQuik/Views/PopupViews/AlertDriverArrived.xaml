@@ -52,7 +52,7 @@
                 <Label Text="{Utils:Translate Your_driver_has_arrived_Please_be_there_within_5_minutes}" Padding="30,0" TextColor="#000000" FontAttributes="Bold" FontSize="Small"/>
                 <Button Text="{Utils:Translate Confirm}" TextColor="White" BackgroundColor="#75B2FF" 
                                 TextTransform="None" CornerRadius="5" Padding="0,10"
-                                Command="{Binding ToggelDisplayPopupArrivedDeriverCommand}"
+                                Command="{Binding AcceptAlertArrivedDeriverCommand}"
                                 HorizontalOptions="FillAndExpand" VerticalOptions="End"/>
             </StackLayout>
 

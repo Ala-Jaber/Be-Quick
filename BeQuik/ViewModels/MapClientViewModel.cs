@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using Xamarin.Forms.GoogleMaps;
 using XF.Material.Forms.UI.Dialogs;
 
 namespace BeQuik.ViewModels
@@ -20,13 +21,14 @@ namespace BeQuik.ViewModels
         public bool IsPromotionCodeAdded { get; set; }
         public List<Model.MenuItem> MenuItems { get; set; }
         public static Action<string,bool,bool> ShowMessageAlert { get; set; }
-        public MapClientViewModel(bool getCurrentLocation)
+        public static Func<Position> GetPositionSelected { get; set; }
+        public MapClientViewModel()
         {
             InitMenuItem();
             MenuShow = new Command(ShowMenu);
             RequestServiceCommand = new Command(RequestService);
             EnterPromoCodeCommand = new Command(()=> ShowDialogEnterPromoCode());
-            Page = new Views.MasterDetailView(new Views.MapClientView(getCurrentLocation));
+            Page = new Views.MasterDetailView(new Views.MapClientView());
             OpenAsRootPage(Page);
         }
 
@@ -44,7 +46,8 @@ namespace BeQuik.ViewModels
         private void ShowMenu() => Page.IsPresented = true; 
         private void RequestService()
         {
-            new ViewModels.TracingServiceViewModel();
+            if(GetPositionSelected.Method != null)
+            new ViewModels.TracingServiceViewModel(GetPositionSelected());
         }
         private async Task ShowDialogEnterPromoCode()
         {
@@ -55,16 +58,18 @@ namespace BeQuik.ViewModels
                                                         dismissiveText: "Cancel",
                                                         confirmingText: "Confirme",
                                                         configuration: App.GetMaterialInputDialogConfiguration());
-            IsPromotionCodeAdded = !string.IsNullOrEmpty(input) && IsValidPromotionCode(input);
-            if (IsPromotionCodeAdded)
-            {
-                PromotionCode = input;
-                OnPropertyChanged(nameof(PromotionCode));
-                OnPropertyChanged(nameof(IsPromotionCodeAdded));
+            if (!string.IsNullOrEmpty(input)) {
+                IsPromotionCodeAdded = IsValidPromotionCode(input);
+                if (IsPromotionCodeAdded)
+                {
+                    PromotionCode = input;
+                    OnPropertyChanged(nameof(PromotionCode));
+                    OnPropertyChanged(nameof(IsPromotionCodeAdded));
+                }
+                var MessageText = IsPromotionCodeAdded ? "Promoation Code is Added, Successfully" : "Promoation Code is Invalide, Sorry :(";
+                ShowMessageAlert?.Invoke(MessageText, IsPromotionCodeAdded, true);
+                Device.StartTimer(TimeSpan.FromSeconds(15), () => { ShowMessageAlert?.Invoke(string.Empty, false, false); return false; });
             }
-            var MessageText = IsPromotionCodeAdded ? "Promoation Code is Added, Successfully" : "Promoation Code is Invalide, Sorry :(";
-            ShowMessageAlert?.Invoke(MessageText, IsPromotionCodeAdded, true);
-            Device.StartTimer(TimeSpan.FromSeconds(15), () => { ShowMessageAlert?.Invoke(string.Empty, false, false); return false; });
         }
         private bool IsValidPromotionCode(string code)
         {

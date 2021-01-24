@@ -16,5 +16,7 @@ namespace BeQuik.Views.PopupViews
         {
             InitializeComponent();
         }
+        protected override bool OnBackButtonPressed() => true;
+        protected override bool OnBackgroundClicked() => true;
     }
 }
