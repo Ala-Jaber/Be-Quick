@@ -21,11 +21,14 @@ namespace BeQuik.ViewModels
         }
 
         public Command ChangeActiveTabCommand { get; set; }
+        public Command BackCommand { get; set; }
         public BookingHistoryViewModel()
         {
             ActiveTabName = "Weekly";
             OrdersHistory = new ObservableCollection<Model.Order>();
+            FullListOrder();
             ChangeActiveTabCommand = new Command(ChangeActiveTab);
+            BackCommand = new Command(BackButtonPressed);
             OpenPage(new Views.BookingHistoryPage());
         }
         private void ChangeActiveTab()
@@ -33,20 +36,25 @@ namespace BeQuik.ViewModels
             var PreviousActiveTabName = ActiveTabName;
             if(PreviousActiveTabName == "Weekly")
             {
-                OrdersHistory.Clear();
+                OrdersHistory?.Clear();
                 ActiveTabName = "Monthly";
             }
             else
             {
-                OrdersHistory.Add(new Model.Order { Date = DateTime.Now, ImageSource = "delivery", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Delivery });
-                OrdersHistory.Add(new Model.Order { Date = DateTime.Now, ImageSource = "tow_truck", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Winch });
-                OrdersHistory.Add(new Model.Order { Date = DateTime.Now, ImageSource = "delivery", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Delivery });
-                OrdersHistory.Add(new Model.Order { Date = DateTime.Now, ImageSource = "delivery", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Delivery });
-                OrdersHistory.Add(new Model.Order { Date = DateTime.Now, ImageSource = "gas", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Gas });
-                OrdersHistory.Add(new Model.Order { Date = DateTime.Now, ImageSource = "taxi", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Taxi });
-
+                FullListOrder();
                 ActiveTabName = "Weekly";
             }
+        }
+        private void BackButtonPressed()=> Application.Current.MainPage.Navigation.PopAsync();
+        private void FullListOrder()
+        {
+            OrdersHistory ??= new ObservableCollection<Model.Order>();
+            OrdersHistory.Add(new Model.Order { Date = DateTime.Now, ImageSource = "delivery", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Delivery });
+            OrdersHistory.Add(new Model.Order { Date = DateTime.Now, ImageSource = "tow_truck", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Winch });
+            OrdersHistory.Add(new Model.Order { Date = DateTime.Now, ImageSource = "delivery", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Delivery });
+            OrdersHistory.Add(new Model.Order { Date = DateTime.Now, ImageSource = "delivery", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Delivery });
+            OrdersHistory.Add(new Model.Order { Date = DateTime.Now, ImageSource = "gas", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Gas });
+            OrdersHistory.Add(new Model.Order { Date = DateTime.Now, ImageSource = "taxi", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Taxi });
         }
     }
 }

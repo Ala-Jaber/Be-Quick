@@ -14,18 +14,17 @@ namespace BeQuik.ViewModels
     {
         public FlyoutPage Page { get;}
         public Command MenuShow { get; }
-        public Command DisplaySummaryOrderCommand { get; }
         public Command RequestServiceCommand { get; }
         public Command EnterPromoCodeCommand { get; }
         public string PromotionCode { get; set; }
         public bool IsPromotionCodeAdded { get; set; }
         public List<Model.MenuItem> MenuItems { get; set; }
+        public static Action<string,bool,bool> ShowMessageAlert { get; set; }
         public MapClientViewModel(bool getCurrentLocation)
         {
             InitMenuItem();
             MenuShow = new Command(ShowMenu);
             RequestServiceCommand = new Command(RequestService);
-            DisplaySummaryOrderCommand = new Command(DisplaySummaryOrder);
             EnterPromoCodeCommand = new Command(()=> ShowDialogEnterPromoCode());
             Page = new Views.MasterDetailView(new Views.MapClientView(getCurrentLocation));
             OpenAsRootPage(Page);
@@ -43,14 +42,8 @@ namespace BeQuik.ViewModels
         }
 
         private void ShowMenu() => Page.IsPresented = true; 
-        private void DisplaySummaryOrder()
-        {
-            var PopupView = new Views.PopupViews.SummaryRequestOrder() { BindingContext = this };
-            PopupNavigation.Instance.PushAsync(PopupView);
-        }
         private void RequestService()
         {
-            PopupNavigation.Instance.PopAllAsync();
             new ViewModels.TracingServiceViewModel();
         }
         private async Task ShowDialogEnterPromoCode()
@@ -69,6 +62,9 @@ namespace BeQuik.ViewModels
                 OnPropertyChanged(nameof(PromotionCode));
                 OnPropertyChanged(nameof(IsPromotionCodeAdded));
             }
+            var MessageText = IsPromotionCodeAdded ? "Promoation Code is Added, Successfully" : "Promoation Code is Invalide, Sorry :(";
+            ShowMessageAlert?.Invoke(MessageText, IsPromotionCodeAdded, true);
+            Device.StartTimer(TimeSpan.FromSeconds(15), () => { ShowMessageAlert?.Invoke(string.Empty, false, false); return false; });
         }
         private bool IsValidPromotionCode(string code)
         {

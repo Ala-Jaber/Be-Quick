@@ -19,7 +19,17 @@ namespace BeQuik.Views
             InitializeComponent();
             App.AddMapStyle(MapForms);
             MapForms.MyLocationEnabled = ShowCurrentLocation;
+            ViewModels.MapClientViewModel.ShowMessageAlert = this.ShowMessageAlert;
         }
-        
+        public async void ShowMessageAlert(string Message,bool isSuccessed,bool show)
+        {
+            MessageText.Text = Message;
+            MessageCard.BackgroundColor = Color.FromHex(isSuccessed ? "" : "");
+            if (show) MessageCard.IsVisible = show;
+            MessageCard.FadeTo(opacity: show ? 100 : 0, 950).ConfigureAwait(false);
+            await MessageCard.TranslateTo(0, show ? 0 : -50, 1000);
+            if (!show) MessageCard.IsVisible = show;
+        }
+
     }
 }

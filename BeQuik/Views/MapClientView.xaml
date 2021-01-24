@@ -61,6 +61,11 @@
                     <XF:MaterialIconButton Image="menu_but" BackgroundColor="White" CornerRadius="25" WidthRequest="50" HeightRequest="50" Command="{Binding MenuShow}"/>
                     <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
                 </StackLayout>
+                <XF:MaterialCard x:Name="MessageCard" Margin="0" Padding="20,10" BackgroundColor="#43B372" VerticalOptions="Start"
+                                 TranslationY="-50" Opacity="0" IsVisible="False">
+                    <Label x:Name="MessageText" TextColor="White"
+                           FontAttributes="Bold"/>
+                </XF:MaterialCard>
                 <ScrollView Orientation="Horizontal" Margin="5,0" Padding="0" VerticalOptions="Start" HorizontalScrollBarVisibility="Never">
                     <Grid ColumnDefinitions="*,*,*,*" ColumnSpacing="10" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" RadioButtonGroup.GroupName="SeriveType">
                         <RadioButton Grid.Column="0" Value="Delivery" IsChecked="False">
@@ -104,6 +109,17 @@
                         TextTransform="None" CornerRadius="5" Padding="0,10"
                         Margin="30,0" Command="{Binding DisplaySummaryOrderCommand}"
                         HorizontalOptions="FillAndExpand" VerticalOptions="End"/>
+                <Button ImageSource="money_discount_white" Text="Add Promo Code" 
+                        TextColor="White" BackgroundColor="#43B372"                         
+                        TextTransform="None" CornerRadius="5" Padding="0,10"
+                        Margin="30,0" Command="{Binding EnterPromoCodeCommand}"
+                        HorizontalOptions="FillAndExpand" VerticalOptions="End">
+                    <Button.Triggers>
+                        <DataTrigger TargetType="Button" Binding="{Binding IsPromotionCodeAdded}" Value="True">
+                            <Setter Property="IsVisible" Value="False"/>
+                        </DataTrigger>
+                    </Button.Triggers>
+                </Button>
                 <Grid RowSpacing="0" RowDefinitions="Auto,*">
                     <Frame Margin="0" Padding="20,5" HeightRequest="40" VerticalOptions="End"
                        Grid.Row="1" Grid.Column="0" CornerRadius="0"

@@ -18,6 +18,7 @@ namespace BeQuik.Views
             App.AddMapStyle(MapForms);
             ViewModels.MapDriverViewModel.ShowDriverWalletEmptyError = this.ShowDriverWalletEmptyError;
         }
+
         public async void ShowDriverWalletEmptyError(bool show)
         {
             if(show) ErrorCard.IsVisible = show;
