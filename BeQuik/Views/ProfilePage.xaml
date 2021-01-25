@@ -1,12 +1,83 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BeQuik.Views.ProfilePage">
+             x:Class="BeQuik.Views.ProfilePage"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:Utils="clr-namespace:BeQuik.Utils"
+             xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" 
+             xmlns:UserControl="clr-namespace:BeQuik.UserControl"
+             BackgroundColor="#F5F5F5">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid Margin="0" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
+            <StackLayout Margin="0" Padding="0" Spacing="0">
+                <!--Header-->
+                <StackLayout Margin="0" Padding="0,20" Spacing="10" VerticalOptions="Start">
+                    <StackLayout Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
+                        <XF:MaterialIconButton Image="arrow_left" BackgroundColor="White" CornerRadius="25" WidthRequest="50" HeightRequest="50" Command="{Binding MenuShow}"/>
+                        <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <XF:MaterialCard x:Name="MessageCard" Margin="0" Padding="20,10" BackgroundColor="#43B372" VerticalOptions="Start"
+                                 TranslationY="-50" Opacity="0" IsVisible="False">
+                        <Label x:Name="MessageText" TextColor="White"
+                           FontAttributes="Bold"/>
+                    </XF:MaterialCard>
+                    <StackLayout Margin="0" Padding="20" Spacing="20" VerticalOptions="Center">
+                        <Grid Margin="0" Padding="0" ColumnDefinitions="*,*" ColumnSpacing="10" HorizontalOptions="FillAndExpand">
+                            <XF:MaterialCard Grid.Column="0" Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                <XF:MaterialTextField Placeholder="{Utils:Translate First_Name}" TextColor="#000000" InputType="Text"
+                                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                              CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                            </XF:MaterialCard>
+                            <XF:MaterialCard Grid.Column="1" Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                <XF:MaterialTextField Placeholder="{Utils:Translate Last_Name}" TextColor="#000000" InputType="Text"
+                                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                              CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                            </XF:MaterialCard>
+                        </Grid>
+
+                        <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                            <XF:MaterialTextField Placeholder="{Utils:Translate Email}" TextColor="#000000" InputType="Email"
+                                                          FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                          CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                        </XF:MaterialCard>
+
+                        <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                            <XF:MaterialTextField Placeholder="{Utils:Translate Password}" TextColor="#000000" InputType="Password"
+                                                          FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                          CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                        </XF:MaterialCard>
+
+                        <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                            <XF:MaterialTextField Placeholder="{Utils:Translate Confirm_Password}" TextColor="#000000" InputType="Password"
+                                                          FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                          CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                        </XF:MaterialCard>
+
+                        <Grid Margin="0" Padding="0" ColumnDefinitions="1.5*,2.5*" ColumnSpacing="10" HorizontalOptions="FillAndExpand">
+                            <XF:MaterialCard Grid.Column="0" Margin="0" Padding="10,0,5,0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                <UserControl:CustomPicker Title="Area Code" TextColor="#000000" FontSize="16" TitleColor="DimGray"
+                                                       Image="arrow_downlist" ImageSize="40"
+                                                       ItemsSource="{Binding ListAreaCode}" 
+                                                       ItemDisplayBinding="{Binding .}"
+                                                       SelectedItem="{Binding AreaCodeSelected}"/>
+                            </XF:MaterialCard>
+                            <XF:MaterialCard Grid.Column="1" Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                <XF:MaterialTextField Placeholder="{Utils:Translate Phone_Number}" TextColor="#000000" InputType="Telephone"
+                                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                              CardBackgroundColor="White" ShouldAnimateUnderline="False"
+                                                              Text="{Binding PhoneNumber}"/>
+                            </XF:MaterialCard>
+                        </Grid>
+
+                        <Button Text="Update" TextColor="White" BackgroundColor="#75B2FF" 
+                                TextTransform="None" CornerRadius="5" HeightRequest="50" Padding="40,0" 
+                                HorizontalOptions="FillAndExpand"/>
+
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -54,7 +54,7 @@
     <ContentPage.Content>
         <Grid Margin="0" Padding="0" >
             <GoogleMaps:Map x:Name="MapForms" Padding="0,250,0,200"/>
-            <Image Source="pin" HorizontalOptions="Center" VerticalOptions="Center" TranslationY="-30"/>
+            <Image Source="pin" HorizontalOptions="Center" VerticalOptions="Center"/>
             <!--Header-->
             <StackLayout Margin="0" Padding="0" Spacing="10" VerticalOptions="Start">
                 <StackLayout Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
