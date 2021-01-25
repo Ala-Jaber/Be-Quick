@@ -7,8 +7,8 @@ namespace BeQuik.ViewModels
 {
     public class BookingHistoryViewModel: BaseViewModel
     {
-        private ObservableCollection<Model.Order> _OrdersHistory;
-        public ObservableCollection<Model.Order> OrdersHistory
+        private ObservableCollection<Model.BookingOrder> _OrdersHistory;
+        public ObservableCollection<Model.BookingOrder> OrdersHistory
         {
             get { return _OrdersHistory; }
             set { _OrdersHistory = value; OnPropertyChanged(); }
@@ -25,7 +25,7 @@ namespace BeQuik.ViewModels
         public BookingHistoryViewModel()
         {
             ActiveTabName = "Weekly";
-            OrdersHistory = new ObservableCollection<Model.Order>();
+            OrdersHistory = new ObservableCollection<Model.BookingOrder>();
             FullListOrder();
             ChangeActiveTabCommand = new Command(ChangeActiveTab);
             BackCommand = new Command(BackButtonPressed);
@@ -48,13 +48,13 @@ namespace BeQuik.ViewModels
         private void BackButtonPressed()=> Application.Current.MainPage.Navigation.PopAsync();
         private void FullListOrder()
         {
-            OrdersHistory ??= new ObservableCollection<Model.Order>();
-            OrdersHistory.Add(new Model.Order { Date = DateTime.Now, ImageSource = "delivery", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Delivery });
-            OrdersHistory.Add(new Model.Order { Date = DateTime.Now, ImageSource = "tow_truck", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Winch });
-            OrdersHistory.Add(new Model.Order { Date = DateTime.Now, ImageSource = "delivery", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Delivery });
-            OrdersHistory.Add(new Model.Order { Date = DateTime.Now, ImageSource = "delivery", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Delivery });
-            OrdersHistory.Add(new Model.Order { Date = DateTime.Now, ImageSource = "gas", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Gas });
-            OrdersHistory.Add(new Model.Order { Date = DateTime.Now, ImageSource = "taxi", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Taxi });
+            OrdersHistory ??= new ObservableCollection<Model.BookingOrder>();
+            OrdersHistory.Add(new Model.BookingOrder { Date = DateTime.Now, ImageSource = "delivery", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Delivery });
+            OrdersHistory.Add(new Model.BookingOrder { Date = DateTime.Now, ImageSource = "tow_truck", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Winch });
+            OrdersHistory.Add(new Model.BookingOrder { Date = DateTime.Now, ImageSource = "delivery", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Delivery });
+            OrdersHistory.Add(new Model.BookingOrder { Date = DateTime.Now, ImageSource = "delivery", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Delivery });
+            OrdersHistory.Add(new Model.BookingOrder { Date = DateTime.Now, ImageSource = "gas", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Gas });
+            OrdersHistory.Add(new Model.BookingOrder { Date = DateTime.Now, ImageSource = "taxi", OrderID = 258, Price = 1.25, Type = Enums.ServiceType.Taxi });
         }
     }
 }
