@@ -17,21 +17,27 @@ namespace BeQuik.ViewModels
         public Command MenuShow { get; }
         public Command RequestServiceCommand { get; }
         public Command EnterPromoCodeCommand { get; }
+        public Command OpenProfileCommand { get; set; }
+        public Command OpenWalletCommand { get; set; }
+
         public string PromotionCode { get; set; }
         public bool IsPromotionCodeAdded { get; set; }
         public List<Model.MenuItem> MenuItems { get; set; }
+
         public static Action<string,bool,bool> ShowMessageAlert { get; set; }
         public static Func<Position> GetPositionSelected { get; set; }
+
         public MapClientViewModel()
         {
             InitMenuItem();
+            OpenProfileCommand = new Command(() => new ViewModels.ProfilePageViewModel());
+            OpenWalletCommand = new Command(() => new ViewModels.WalletPageViewModel());
             MenuShow = new Command(ShowMenu);
             RequestServiceCommand = new Command(RequestService);
             EnterPromoCodeCommand = new Command(()=> ShowDialogEnterPromoCode());
             Page = new Views.MasterDetailView(new Views.MapClientView());
             OpenAsRootPage(Page);
         }
-
         private void InitMenuItem()
         {
             MenuItems = new List<Model.MenuItem>
@@ -42,7 +48,6 @@ namespace BeQuik.ViewModels
                 //new Model.MenuItem{ImageSource="question.png" ,Text="Help",Command=new Command(()=> new ViewModels.HelpPageViewModel())},
             };
         }
-
         private void ShowMenu() => Page.IsPresented = true; 
         private void RequestService()
         {

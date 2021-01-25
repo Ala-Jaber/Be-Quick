@@ -12,6 +12,9 @@ namespace BeQuik.ViewModels
         public FlyoutPage Page { get; }
         public Command TrunOnOffCommand { get; }
         public Command MenuShow { get; }
+        public Command OpenProfileCommand { get; set; }
+        public Command OpenWalletCommand { get; set; }
+
         public List<Model.MenuItem> MenuItems { get; set; }
         public ObservableCollection<Model.Order> Orders { get; set; }
         public static Action<bool> ShowDriverWalletEmptyError;
@@ -37,7 +40,9 @@ namespace BeQuik.ViewModels
         public MapDriverViewModel()
         {
             InitMenuItem();
-            InitOrders();
+            InitOrders(); 
+            OpenProfileCommand = new Command(() => new ViewModels.ProfilePageViewModel());
+            OpenWalletCommand = new Command(() => new ViewModels.WalletPageViewModel());
             MenuShow = new Command(ShowMenu);
             TrunOnOffCommand = new Command(() => TrunOnOff = !TrunOnOff);
             Page = new Views.MasterDetailView(new Views.MapDriverView());

@@ -150,7 +150,8 @@
                             </StackLayout>
                             <StackLayout Margin="0" Padding="0" Spacing="5" HorizontalOptions="EndAndExpand">
                                 <ImageButton Source="profile_unactive" HeightRequest="24" WidthRequest="24"
-                                     HorizontalOptions="Center" BackgroundColor="Transparent">
+                                     HorizontalOptions="Center" BackgroundColor="Transparent"
+                                             Command="{Binding OpenProfileCommand}">
                                     <VisualStateManager.VisualStateGroups>
                                         <VisualStateGroup x:Name="CommonStates">
                                             <VisualState x:Name="Normal">
@@ -175,7 +176,7 @@
                              HeightRequest="64" WidthRequest="64" CornerRadius="32"
                              Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" TranslationY="-20"
                              HorizontalOptions="Center" VerticalOptions="Start"
-                             Source="digital_wallet">
+                             Source="digital_wallet" Command="{Binding OpenWalletCommand}">
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
                                 <VisualState x:Name="Normal">
