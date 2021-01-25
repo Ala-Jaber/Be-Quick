@@ -7,38 +7,115 @@
              NavigationPage.HasNavigationBar="False"  
              xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
              xmlns:GoogleMaps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             xmlns:UserControl="clr-namespace:BeQuik.UserControl"
              xmlns:Utils="clr-namespace:BeQuik.Utils">
     <ContentPage.Content>
         <Grid Margin="0" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <GoogleMaps:Map x:Name="MapForms" Padding="0,250"/>
-            <Image Source="pin" HorizontalOptions="Center" VerticalOptions="Center" TranslationY="-30"/>
-            <!--Header-->
-            <StackLayout Margin="0" Padding="0" Spacing="0" VerticalOptions="Start">
-                <StackLayout Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
-                    <XF:MaterialIconButton Image="menu_but" BackgroundColor="White" CornerRadius="25" WidthRequest="50" HeightRequest="50" Command="{Binding MenuShow}"/>
-                    <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
-                </StackLayout>
-                <XF:MaterialCard x:Name="ErrorCard" Margin="0" Padding="20,10" BackgroundColor="#E93832" VerticalOptions="Start"
-                                 TranslationY="-50" Opacity="0" IsVisible="False">
-                    <Label x:Name="TextError" Text="You have to charge to get order from client" TextColor="White"
-                           FontAttributes="Bold"/>
-                </XF:MaterialCard>
-                <Button Margin="10,0" HeightRequest="60" WidthRequest="60" CornerRadius="30"
-                        HorizontalOptions="End" VerticalOptions="Start"
-                        Text="On" BackgroundColor="#75B2FF" TextColor="White"
-                        Command="{Binding TrunOnOffCommand}">
-                    <Button.Triggers>
-                        <DataTrigger TargetType="Button" Binding="{Binding TrunOnOff}" Value="False">
-                            <Setter Property="Text" Value="Off"/>
-                            <Setter Property="BackgroundColor" Value="White"/>
-                            <Setter Property="TextColor" Value="Black"/>
-                        </DataTrigger>
-                    </Button.Triggers>
-                </Button>
-            </StackLayout>
+            <UserControl:BottomSheet x:Name="BottomSheet" 
+                                     PercentageHeightMainPage="1.00" PercentageLockMainPageTranslation="1.00"
+                                     PercentageHideBottomSheet="0.70" PercentageExpandBottomSheet="0.60"
+                                     MinPercentageBottomSheetSwipe="0.95" MaxPercentageBottomSheetSwipe="0.60"
+                                     CornerRadiusBottomSheet="25"
+                                     IsBottomButtonEnable="True" IsSwipeIconVisible="True"
+                                     BackgroundBottomSheetColor="White" 
+                                     BottomButtonText="You are revice new Order">
+                <UserControl:BottomSheet.ContentMainPage>
+                    <Grid Margin="0" Padding="0">
+                        <GoogleMaps:Map x:Name="MapForms" Padding="0,250,0,50"/>
+                        <Image Source="pin" HorizontalOptions="Center" VerticalOptions="Center" TranslationY="75"/>
+                        <!--Header-->
+                        <StackLayout Margin="0" Padding="0" Spacing="0" VerticalOptions="Start">
+                            <StackLayout Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
+                                <XF:MaterialIconButton Image="menu_but" BackgroundColor="White" CornerRadius="25" WidthRequest="50" HeightRequest="50" Command="{Binding MenuShow}"/>
+                                <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
+                            </StackLayout>
+                            <XF:MaterialCard x:Name="ErrorCard" Margin="0" Padding="20,10" BackgroundColor="#E93832" VerticalOptions="Start"
+                                             TranslationY="-50" Opacity="0" IsVisible="False">
+                                <Label x:Name="TextError" Text="You have to charge to get order from client" TextColor="White"
+                                       FontAttributes="Bold"/>
+                            </XF:MaterialCard>
+                            <Button Margin="10,0" HeightRequest="60" WidthRequest="60" CornerRadius="30"
+                                    HorizontalOptions="End" VerticalOptions="Start"
+                                    Text="On" BackgroundColor="#75B2FF" TextColor="White"
+                                    Command="{Binding TrunOnOffCommand}">
+                                <Button.Triggers>
+                                    <DataTrigger TargetType="Button" Binding="{Binding TrunOnOff}" Value="False">
+                                        <Setter Property="Text" Value="Off"/>
+                                        <Setter Property="BackgroundColor" Value="White"/>
+                                        <Setter Property="TextColor" Value="Black"/>
+                                    </DataTrigger>
+                                </Button.Triggers>
+                            </Button>
+                        </StackLayout>
+                    </Grid>
+                </UserControl:BottomSheet.ContentMainPage>
 
+                <UserControl:BottomSheet.ContentBottomSheet>
+                    <StackLayout Margin="0" Padding="10,20" Spacing="40" VerticalOptions="FillAndExpand">
+                        <StackLayout Margin="0" Padding="0" Spacing="10" VerticalOptions="FillAndExpand">
+                        <Frame Margin="0" Padding="0" CornerRadius="5" BorderColor="#75B2FF" BackgroundColor="White">
+                            <StackLayout Orientation="Horizontal" Margin="0" Padding="0,0,20,0" Spacing="0">
+                                <Label Text="Distance:" BackgroundColor="#75B2FF" TextColor="White"
+                                       WidthRequest="150" Padding="10"
+                                       HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+                                       FontAttributes="Bold" FontSize="Medium"/>
+                                <XF:MaterialLabel TextColor="Black" FontAttributes="Bold" FontSize="Medium"
+                                                  HorizontalTextAlignment="Center" HorizontalOptions="EndAndExpand"
+                                                  VerticalTextAlignment="Center" VerticalOptions="FillAndExpand">
+                                    <XF:MaterialLabel.FormattedText>
+                                        <FormattedString>
+                                            <FormattedString.Spans>
+                                                <Span Text="1.40"/>
+                                                <Span Text=" "/>
+                                                <Span Text="JOD"/>
+                                            </FormattedString.Spans>
+                                        </FormattedString>
+                                    </XF:MaterialLabel.FormattedText>
+                                </XF:MaterialLabel>
+
+                            </StackLayout>
+                        </Frame>
+                        <Frame Margin="0" Padding="0" CornerRadius="5" BorderColor="#43B372" BackgroundColor="White">
+                            <StackLayout Orientation="Horizontal" Margin="0" Padding="0,0,20,0" Spacing="0">
+                                <Label Text="Addation Fees:" BackgroundColor="#43B372" TextColor="White"
+                                       WidthRequest="150" Padding="10"
+                                       HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+                                       FontAttributes="Bold" FontSize="Medium"/>
+                                <XF:MaterialLabel TextColor="Black" FontAttributes="Bold" FontSize="Medium"
+                                                  HorizontalTextAlignment="Center" HorizontalOptions="EndAndExpand"
+                                                  VerticalTextAlignment="Center" VerticalOptions="FillAndExpand">
+                                    <XF:MaterialLabel.FormattedText>
+                                        <FormattedString>
+                                            <FormattedString.Spans>
+                                                <Span Text="1.40"/>
+                                                <Span Text=" "/>
+                                                <Span Text="JOD"/>
+                                            </FormattedString.Spans>
+                                        </FormattedString>
+                                    </XF:MaterialLabel.FormattedText>
+                                </XF:MaterialLabel>
+
+                            </StackLayout>
+                        </Frame>
+                        </StackLayout>
+                            <Grid Margin="0" Padding="0" ColumnDefinitions="*,*" ColumnSpacing="20" VerticalOptions="EndAndExpand">
+                                <Button Grid.Column="1" Text="Accept" TextColor="White" BackgroundColor="#43B372" 
+                                    TextTransform="None" CornerRadius="5"
+                                    Command="{Binding SingInCommand}"/>
+                                <Button Grid.Column="0" Text="Ignore" TextColor="White" BackgroundColor="#E93832" 
+                                    TextTransform="None" CornerRadius="5"
+                                    Command="{Binding SingInCommand}"/>
+                            </Grid>
+                    </StackLayout>
+                </UserControl:BottomSheet.ContentBottomSheet>
+            </UserControl:BottomSheet>
             <!--Footer-->
             <StackLayout Margin="0" Padding="0" Spacing="30"  VerticalOptions="End">
+                <StackLayout.Triggers>
+                    <DataTrigger TargetType="StackLayout" Binding="{Binding Source={x:Reference BottomSheet},Path=IsOpenBottomSheet}" Value="True">
+                        <Setter Property="IsVisible" Value="False"/>
+                    </DataTrigger>
+                </StackLayout.Triggers>
                 <Grid RowSpacing="0" RowDefinitions="Auto,*">
                     <Frame Margin="0" Padding="20,5" HeightRequest="40" VerticalOptions="End"
                            Grid.Row="1" Grid.Column="0" CornerRadius="0"
@@ -110,6 +187,6 @@
                     </ImageButton>
                 </Grid>
             </StackLayout>
-        </Grid>
+        </Grid>        
     </ContentPage.Content>
 </ContentPage>

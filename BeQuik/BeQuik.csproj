@@ -49,6 +49,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="UserControl\BottomSheet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="UserControl\RateStars.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

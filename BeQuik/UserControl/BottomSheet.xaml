@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="BeQuik.UserControl.BottomSheet"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="bottomSheetComponent"
+    mc:Ignorable="d">
+    <ContentView.GestureRecognizers>
+        <PanGestureRecognizer PanUpdated="OnPanUpdated" />
+    </ContentView.GestureRecognizers>
+    <ContentView.Content>
+        <RelativeLayout x:Name="relativeLayout">
+            <ContentView x:Name="contentview"
+                        Content="{Binding ContentMainPage, Source={x:Reference bottomSheetComponent}}"
+                        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=1,Constant=0}" />
+            <Frame x:Name="frame" Padding="0,15,0,0" HasShadow="true"
+                    BackgroundColor="{Binding BackgroundBottomSheetColor, Source={x:Reference bottomSheetComponent}}"
+                    CornerRadius="{Binding CornerRadiusBottomSheet, Source={x:Reference bottomSheetComponent}}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=1.2,Constant=0}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=1,Constant=0}">
+                <StackLayout>
+                    <BoxView HeightRequest="5" WidthRequest="50"  BackgroundColor="Gray" CornerRadius="2" HorizontalOptions="Center"
+                             IsVisible="{Binding IsSwipeIconEnabled, Source={x:Reference bottomSheetComponent}}"/>
+                    <ContentView Content="{Binding ContentBottomSheet, Source={x:Reference bottomSheetComponent}}" />
+                </StackLayout>
+
+            </Frame>
+            <Button x:Name="expandeButton" Padding="0" Opacity="0"
+                    IsVisible="{Binding IsBottomButtonEnable, Source={x:Reference bottomSheetComponent}}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=.5,Constant=0}"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=.25,Constant=0}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.8}"
+                    Text="{Binding BottomButtonText, Source={x:Reference bottomSheetComponent}}"
+                    TextColor="White" BackgroundColor="#75B2FF" HeightRequest="40" 
+                    TextTransform="None" CornerRadius="5" 
+                    Clicked="ExpandeButton_Clicked"/>
+        </RelativeLayout>
+    </ContentView.Content>
+</ContentView>
