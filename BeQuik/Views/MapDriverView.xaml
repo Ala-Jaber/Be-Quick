@@ -11,7 +11,7 @@
     <ContentPage.Content>
         <Grid Margin="0" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <GoogleMaps:Map x:Name="MapForms" Padding="0,250"/>
-            <Image Source="pin" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Image Source="pin" HorizontalOptions="Center" VerticalOptions="Center" TranslationY="-30"/>
             <!--Header-->
             <StackLayout Margin="0" Padding="0" Spacing="0" VerticalOptions="Start">
                 <StackLayout Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
@@ -23,6 +23,18 @@
                     <Label x:Name="TextError" Text="You have to charge to get order from client" TextColor="White"
                            FontAttributes="Bold"/>
                 </XF:MaterialCard>
+                <Button Margin="10,0" HeightRequest="60" WidthRequest="60" CornerRadius="30"
+                        HorizontalOptions="End" VerticalOptions="Start"
+                        Text="On" BackgroundColor="#75B2FF" TextColor="White"
+                        Command="{Binding TrunOnOffCommand}">
+                    <Button.Triggers>
+                        <DataTrigger TargetType="Button" Binding="{Binding TrunOnOff}" Value="False">
+                            <Setter Property="Text" Value="Off"/>
+                            <Setter Property="BackgroundColor" Value="White"/>
+                            <Setter Property="TextColor" Value="Black"/>
+                        </DataTrigger>
+                    </Button.Triggers>
+                </Button>
             </StackLayout>
 
             <!--Footer-->
