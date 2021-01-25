@@ -6,11 +6,11 @@
              NavigationPage.HasNavigationBar="False"  
              xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
              xmlns:Utils="clr-namespace:BeQuik.Utils"
-             xmlns:UserControl="clr-namespace:BeQuik.UserControl">
+             xmlns:GoogleMaps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps">
     <ContentPage.Content>
         <Grid Margin="0" Padding="0" RowDefinitions="1.5*,30,*">
             <Grid Grid.Row="0" Grid.RowSpan="2" Margin="0" Padding="0" VerticalOptions="FillAndExpand">
-                <UserControl:CustomMap x:Name="MapForms"/>
+            <GoogleMaps:Map x:Name="MapForms"/>
                 <!--Header-->
                 <StackLayout Margin="0" Padding="10" Spacing="10" VerticalOptions="Start">
                     <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
@@ -102,6 +102,5 @@
             </XF:MaterialIconButton>
 
         </Grid>
-
     </ContentPage.Content>
 </ContentPage>

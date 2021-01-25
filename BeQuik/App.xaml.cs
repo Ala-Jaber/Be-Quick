@@ -68,6 +68,9 @@ namespace BeQuik
                     styleFile = reader.ReadToEnd();
                 }
                 MapForms.MapStyle = MapStyle.FromJson(styleFile);
+                MapForms.MyLocationEnabled = true;
+                MapForms.UiSettings.MyLocationButtonEnabled = true;
+                MapForms.UiSettings.ZoomControlsEnabled = true;
             }
         }
         public static FlowDirection GetFlowDirection()

@@ -8,13 +8,22 @@ namespace BeQuik.ViewModels
     public class MapDriverViewModel:BaseViewModel
     {
         public FlyoutPage Page { get; }
+        public Command TrunOnOffCommand { get; }
         public Command MenuShow { get; }
         public List<Model.MenuItem> MenuItems { get; set; }
         public static Action<bool> ShowDriverWalletEmptyError;
+        private bool _TrunOnOff;
+        public bool TrunOnOff
+        {
+            get { return _TrunOnOff; }
+            set { _TrunOnOff = value; OnPropertyChanged(); }
+        }
+
         public MapDriverViewModel()
         {
             InitMenuItem();
             MenuShow = new Command(ShowMenu);
+            TrunOnOffCommand = new Command(() => TrunOnOff = !TrunOnOff);
             Page = new Views.MasterDetailView(new Views.MapDriverView());
             OpenAsRootPage(Page);
 
