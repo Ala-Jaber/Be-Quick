@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BeQuik.Views.CustomerRatePage"
-             Shell.NavBarIsVisible="False"
+             
              NavigationPage.HasNavigationBar="False"
              xmlns:UserControls="clr-namespace:BeQuik.UserControl"             
              xmlns:Utils="clr-namespace:BeQuik.Utils"

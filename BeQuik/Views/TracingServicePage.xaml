@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BeQuik.Views.TracingServicePage"
-             Shell.NavBarIsVisible="False"
+             
              NavigationPage.HasNavigationBar="False"  
              xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
              xmlns:Utils="clr-namespace:BeQuik.Utils"
