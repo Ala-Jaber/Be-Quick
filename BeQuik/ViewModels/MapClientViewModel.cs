@@ -73,7 +73,7 @@ namespace BeQuik.ViewModels
                 }
                 var MessageText = IsPromotionCodeAdded ? "Promoation Code is Added, Successfully" : "Promoation Code is Invalide, Sorry :(";
                 ShowMessageAlert?.Invoke(MessageText, IsPromotionCodeAdded, true);
-                Device.StartTimer(TimeSpan.FromSeconds(15), () => { ShowMessageAlert?.Invoke(string.Empty, false, false); return false; });
+                Device.StartTimer(TimeSpan.FromSeconds(15), () => { ShowMessageAlert?.Invoke(MessageText, IsPromotionCodeAdded, false); return false; });
             }
         }
         private bool IsValidPromotionCode(string code)
