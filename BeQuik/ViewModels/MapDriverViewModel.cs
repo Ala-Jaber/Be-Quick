@@ -72,11 +72,11 @@ namespace BeQuik.ViewModels
         private void InitOrders()
         {
             Orders ??= new ObservableCollection<Model.Order>();
-            Orders.Add(new Model.Order { PhoneNumber = "00962785461900", Address = "Irbid", Position = new Position(36.9628066, -122.0194722), IsServiced = false });
-            Orders.Add(new Model.Order { PhoneNumber = "00962785461900", Address = "Irbid", Position = new Position(36.9628066, -122.0194722), IsServiced = false });
-            Orders.Add(new Model.Order { PhoneNumber = "00962785461900", Address = "Irbid", Position = new Position(36.9628066, -122.0194722), IsServiced = false });
-            Orders.Add(new Model.Order { PhoneNumber = "00962785461900", Address = "Irbid", Position = new Position(36.9628066, -122.0194722), IsServiced = false });
-            Orders.Add(new Model.Order { PhoneNumber = "00962785461900", Address = "Irbid", Position = new Position(36.9628066, -122.0194722), IsServiced = false });
+            Orders.Add(new Model.Order { FirstName = "Ala'", LastName= "Jaber", PhoneNumber = "00962785461900", Address = "Irbid", Position = new Position(36.9628066, -122.0194722), IsServiced = false });
+            Orders.Add(new Model.Order { FirstName = "Ala'", LastName= "Jaber", PhoneNumber = "00962785461900", Address = "Irbid", Position = new Position(36.9628066, -122.0194722), IsServiced = false });
+            Orders.Add(new Model.Order { FirstName = "Ala'", LastName= "Jaber", PhoneNumber = "00962785461900", Address = "Irbid", Position = new Position(36.9628066, -122.0194722), IsServiced = false });
+            Orders.Add(new Model.Order { FirstName = "Ala'", LastName= "Jaber", PhoneNumber = "00962785461900", Address = "Irbid", Position = new Position(36.9628066, -122.0194722), IsServiced = false });
+            Orders.Add(new Model.Order { FirstName = "Ala'", LastName = "Jaber", PhoneNumber = "00962785461900", Address = "Irbid", Position = new Position(36.9628066, -122.0194722), IsServiced = false });
         }
     }
 }

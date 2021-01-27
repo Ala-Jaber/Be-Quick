@@ -1,7 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
-             x:Class="BeQuik.Views.WalletPage">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeQuik.Views.WalletPage"
+             NavigationPage.HasNavigationBar="False"  
+             xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+             xmlns:GoogleMaps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             xmlns:UserControl="clr-namespace:BeQuik.UserControl"
+             xmlns:Utils="clr-namespace:BeQuik.Utils">
     <ContentPage.Content>
         <Grid Margin="0" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
@@ -12,8 +17,68 @@
                         <XF:MaterialIconButton Image="arrow_left" BackgroundColor="White" CornerRadius="25" WidthRequest="50" HeightRequest="50" Command="{Binding MenuShow}"/>
                         <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
                     </StackLayout>
+                    <XF:MaterialCard x:Name="ErrorCard" Margin="0" Padding="20,10" BackgroundColor="#E93832" VerticalOptions="Start"
+                                             TranslationY="-50" Opacity="0" IsVisible="False">
+                        <Label x:Name="TextError" Text="You have to charge to get order from client" TextColor="White"
+                                       FontAttributes="Bold"/>
+                    </XF:MaterialCard>
                 </StackLayout>
+                <Grid Margin="20,10" Padding="0" RowSpacing="10" RowDefinitions="1*,2*,2.5*">
+                    <XF:MaterialCard Grid.Row="0" Margin="0" Padding="0" BackgroundColor="White" CornerRadius="10" VerticalOptions="Start">
+                        <Grid Margin="0" Padding="0">
+                            <Image Source="background" Aspect="Fill"/>
+                            <StackLayout Margin="0" Padding="20,10" Spacing="10">
+                                <XF:MaterialLabel Text="JOD wallet" TextColor="White" FontSize="Medium" FontAttributes="Bold" TypeScale="H5"/>
+                                <XF:MaterialLabel Text="0.00" TextColor="White" FontAttributes="Bold" TypeScale="H6"/>
+                            </StackLayout>
+                        </Grid>
+                    </XF:MaterialCard>
+                    <XF:MaterialCard Grid.Row="1" Margin="0" Padding="20,10" 
+                                     BackgroundColor="White" CornerRadius="10" VerticalOptions="Start">
+                        <StackLayout Margin="0" Padding="0" Spacing="10">
+                            <Label Text="Redeem voucher" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
+                            <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                <XF:MaterialTextField Placeholder="Enter voucher code" TextColor="#000000" InputType="Email"
+                                                          FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                          CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                            </XF:MaterialCard>
+                            <Button Text="Redeem voucher" TextColor="White" BackgroundColor="#75B2FF" 
+                                    TextTransform="None" CornerRadius="5" Padding="40,0"/>
+                        </StackLayout>
+                    </XF:MaterialCard>
+                    <StackLayout Grid.Row="2" Margin="0" Padding="0" Spacing="0">
+                        <XF:MaterialLabel Text="Recent transactions" TextColor="#9097AC" 
+                                          TypeScale="Subtitle2"
+                                         HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start"/>
+
+                        <CollectionView ItemsSource="{Binding Transaction}">
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout Orientation="Vertical" ItemSpacing="10"/>
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                        <CollectionView.EmptyView>
+                            <StackLayout Margin="0" Padding="0" Spacing="20">
+                                <StackLayout Margin="0" Padding="0" Spacing="20"
+                                             HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                                    <Image Source="empty_file" Aspect="AspectFit" HeightRequest="64" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    <StackLayout Margin="0" Padding="0" Spacing="5">
+                                        <XF:MaterialLabel Text="Booking history is empty" TextColor="#9097AC" TypeScale="Subtitle2"
+                                                          HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                        <XF:MaterialLabel Text="Let get started" TextColor="#9097AC" TypeScale="Body2"
+                                                        HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </CollectionView.EmptyView>
+                    </CollectionView>
+                    </StackLayout>
+                </Grid>
             </StackLayout>
+            
         </Grid>
     </ContentPage.Content>
 </ContentPage>

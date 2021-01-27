@@ -53,41 +53,57 @@
                 </UserControl:BottomSheet.ContentMainPage>
                 <UserControl:BottomSheet.ContentBottomSheet>
                         <!--List Of Order Recived-->
-                        <CollectionView Margin="10,0,10,150" VerticalOptions="FillAndExpand" ItemsSource="{Binding Orders}">
-                            <CollectionView.ItemsLayout>
-                                <LinearItemsLayout Orientation="Vertical" ItemSpacing="10"/>
-                            </CollectionView.ItemsLayout>
-                            <CollectionView.ItemTemplate>
+                        <ListView Margin="10,0,10,150" HasUnevenRows="True"
+                                  VerticalScrollBarVisibility="Never" SelectionMode="None"
+                                  VerticalOptions="FillAndExpand" ItemsSource="{Binding Orders}">
+                        <ListView.ItemTemplate>
                                 <DataTemplate>
-                                    <XF:MaterialCard Margin="0" Padding="10" CornerRadius="5" HasShadow="True" BackgroundColor="White" Elevation="10"
-                                                         BorderColor="#AD556080">
-                                        <Grid ColumnDefinitions="68,*" RowDefinitions="*,45" Margin="0" Padding="0" ColumnSpacing="10">
-                                            <XF:MaterialCard Grid.Row="0" Grid.Column="0" Margin="0" Padding="0"
-                                                     CornerRadius="30" HeightRequest="60" WidthRequest="60"
-                                                     HorizontalOptions="Start" VerticalOptions="Center">
-                                                <XF:MaterialIcon Source="{Binding ImageUser}" Aspect="AspectFill"
-                                                                 VerticalOptions="Center" HorizontalOptions="Center"/>
-                                            </XF:MaterialCard>
-                                        <XF:MaterialLabel Grid.Row="0" Grid.Column="1" Text="{Binding PhoneNumber}" TextColor="Black" TypeScale="Body2"
-                                                              VerticalOptions="Start"/>
-
-                                        <XF:MaterialIconButton Grid.Row="0" Grid.Column="1"
-                                                               Image="call" CornerRadius="25" WidthRequest="50" HeightRequest="50" 
-                                                               BackgroundColor="#E2E5EF" HorizontalOptions="End" VerticalOptions="Start"
-                                                               Command="{Binding CallCommand}" CommandParameter="{Binding PhoneNumber}"/>
-
-                                        <StackLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="End"
-                                                     Orientation="Horizontal" Margin="0" Padding="0" Spacing="10">
-                                            <Button Grid.Column="1" Text="Accept" TextColor="White" BackgroundColor="#43B372" 
-                                                        TextTransform="None" CornerRadius="5"/>
-                                            <Button Grid.Column="0" Text="Client Map" TextColor="White" BackgroundColor="#E93832" 
-                                                        TextTransform="None" CornerRadius="5"/>
+                                <ViewCell>
+                                    <XF:MaterialCard Margin="0,5" Padding="0" CornerRadius="5" HasShadow="True" BackgroundColor="White" BorderColor="#AD556080">
+                                        <StackLayout Margin="20,10" Padding="0" Spacing="10">
+                                            <XF:MaterialLabel Text="In Progress" TextColor="Orange" TypeScale="Subtitle2" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                                                <XF:MaterialLabel.Triggers>
+                                                    <DataTrigger TargetType="XF:MaterialLabel" Binding="{Binding IsServiced}" Value="True">
+                                                        <Setter Property="Text" Value="Complete"/>
+                                                        <Setter Property="TextColor" Value="Green"/>
+                                                    </DataTrigger>
+                                                </XF:MaterialLabel.Triggers>
+                                            </XF:MaterialLabel>
+                                            <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="0" HorizontalOptions="FillAndExpand">
+                                                <StackLayout Margin="0" Padding="0" Spacing="10" HorizontalOptions="FillAndExpand">
+                                                    <XF:MaterialLabel TextColor="Black" TypeScale="Subtitle2">
+                                                        <XF:MaterialLabel.Text>
+                                                            <MultiBinding StringFormat="{}{0} {1}">
+                                                                <Binding Path="FirstName" />
+                                                                <Binding Path="LastName" />
+                                                            </MultiBinding>
+                                                        </XF:MaterialLabel.Text>
+                                                    </XF:MaterialLabel>
+                                                    <XF:MaterialLabel Text="{Binding Address}" TextColor="Black" TypeScale="Subtitle2"/>
+                                                </StackLayout>
+                                                <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="20" VerticalOptions="Start">
+                                                    <XF:MaterialIconButton Image="call" 
+                                                                           CornerRadius="25" WidthRequest="50" HeightRequest="50" 
+                                                                           BackgroundColor="#E2E5EF"
+                                                                           Command="{Binding CallCommand}" CommandParameter="{Binding PhoneNumber}"/>
+                                                    <XF:MaterialIconButton Image="message" 
+                                                                           CornerRadius="25" WidthRequest="50" HeightRequest="50" 
+                                                                           BackgroundColor="#E2E5EF"
+                                                                           Command="{Binding SmsCommand}" CommandParameter="{Binding PhoneNumber}"/>
+                                                </StackLayout>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10" HeightRequest="40">
+                                                <Button Text="Arrived" TextColor="White" BackgroundColor="#43B372" 
+                                                        TextTransform="None" CornerRadius="5" HorizontalOptions="FillAndExpand"/>
+                                                <Button Text="Client Map" TextColor="White" BackgroundColor="#E93832" 
+                                                        TextTransform="None" CornerRadius="5" HorizontalOptions="FillAndExpand"/>
+                                            </StackLayout>
                                         </StackLayout>
-                                    </Grid>
                                     </XF:MaterialCard>
+                                </ViewCell>
                                 </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>
+                            </ListView.ItemTemplate>
+                        </ListView>
                 </UserControl:BottomSheet.ContentBottomSheet>
             </UserControl:BottomSheet>
             
@@ -215,7 +231,6 @@
                                     </FormattedString>
                                 </XF:MaterialLabel.FormattedText>
                             </XF:MaterialLabel>
-
                         </StackLayout>
                     </Frame>
                 </StackLayout>

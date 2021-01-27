@@ -128,7 +128,7 @@
                                 <Image Source="empty_file" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center"/>
                                 <StackLayout Margin="0" Padding="0" Spacing="5">
                                     <XF:MaterialLabel
-                                  Text="Booking history is empty" TextColor="#9097AC" TypeScale="Subtitle1"
+                                  Text="Booking history is empty" TextColor="#9097AC" TypeScale="Subtitle2"
                                   HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
                                     <XF:MaterialLabel
                                   Text="Let get started" TextColor="#9097AC" TypeScale="Body2"

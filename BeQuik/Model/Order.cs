@@ -7,7 +7,8 @@ namespace BeQuik.Model
 {
     public class Order
     {
-        public string ImageUser { get; set; } = "img_profile.png";
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public string PhoneNumber { get; set; }
         public string Address { get; set; }
         public Position Position { get; set; }
