@@ -23716,7 +23716,7 @@ namespace BeQuik.Droid
 			public const int accountant = 2131165276;
 			
 			// aapt resource value: 0x7F07005D
-			public const int Admin = 2131165277;
+			public const int admin = 2131165277;
 			
 			// aapt resource value: 0x7F07005E
 			public const int analysis_report = 2131165278;
@@ -24064,100 +24064,103 @@ namespace BeQuik.Droid
 			public const int partner = 2131165392;
 			
 			// aapt resource value: 0x7F0700D1
-			public const int pin = 2131165393;
+			public const int permission = 2131165393;
 			
 			// aapt resource value: 0x7F0700D2
-			public const int pin_delivery = 2131165394;
+			public const int pin = 2131165394;
 			
 			// aapt resource value: 0x7F0700D3
-			public const int pin_gas = 2131165395;
+			public const int pin_delivery = 2131165395;
 			
 			// aapt resource value: 0x7F0700D4
-			public const int pin_taxi = 2131165396;
+			public const int pin_gas = 2131165396;
 			
 			// aapt resource value: 0x7F0700D5
-			public const int pin_winch = 2131165397;
+			public const int pin_taxi = 2131165397;
 			
 			// aapt resource value: 0x7F0700D6
-			public const int price_tag = 2131165398;
+			public const int pin_winch = 2131165398;
 			
 			// aapt resource value: 0x7F0700D7
-			public const int profile_active = 2131165399;
+			public const int price_tag = 2131165399;
 			
 			// aapt resource value: 0x7F0700D8
-			public const int profile_unactive = 2131165400;
+			public const int profile_active = 2131165400;
 			
 			// aapt resource value: 0x7F0700D9
-			public const int question = 2131165401;
+			public const int profile_unactive = 2131165401;
 			
 			// aapt resource value: 0x7F0700DA
-			public const int scale = 2131165402;
+			public const int question = 2131165402;
 			
 			// aapt resource value: 0x7F0700DB
-			public const int search_map = 2131165403;
+			public const int scale = 2131165403;
 			
 			// aapt resource value: 0x7F0700DC
-			public const int staff = 2131165404;
-			
-			// aapt resource value: 0x7F0700DE
-			public const int stars_empty = 2131165406;
-			
-			// aapt resource value: 0x7F0700DF
-			public const int stars_filled = 2131165407;
+			public const int search_map = 2131165404;
 			
 			// aapt resource value: 0x7F0700DD
-			public const int star_filled_gray = 2131165405;
+			public const int staff = 2131165405;
+			
+			// aapt resource value: 0x7F0700DF
+			public const int stars_empty = 2131165407;
 			
 			// aapt resource value: 0x7F0700E0
-			public const int taxi = 2131165408;
+			public const int stars_filled = 2131165408;
+			
+			// aapt resource value: 0x7F0700DE
+			public const int star_filled_gray = 2131165406;
 			
 			// aapt resource value: 0x7F0700E1
-			public const int test_custom_background = 2131165409;
+			public const int taxi = 2131165409;
 			
 			// aapt resource value: 0x7F0700E2
-			public const int tooltip_frame_dark = 2131165410;
+			public const int test_custom_background = 2131165410;
 			
 			// aapt resource value: 0x7F0700E3
-			public const int tooltip_frame_light = 2131165411;
+			public const int tooltip_frame_dark = 2131165411;
 			
 			// aapt resource value: 0x7F0700E4
-			public const int tow_truck = 2131165412;
+			public const int tooltip_frame_light = 2131165412;
 			
 			// aapt resource value: 0x7F0700E5
-			public const int verfication = 2131165413;
+			public const int tow_truck = 2131165413;
 			
 			// aapt resource value: 0x7F0700E6
-			public const int warningBut = 2131165414;
+			public const int verfication = 2131165414;
 			
 			// aapt resource value: 0x7F0700E7
-			public const int xamarin_logo = 2131165415;
+			public const int warningBut = 2131165415;
 			
 			// aapt resource value: 0x7F0700E8
-			public const int xf_arrow_dropdown = 2131165416;
+			public const int xamarin_logo = 2131165416;
 			
 			// aapt resource value: 0x7F0700E9
-			public const int xf_arrow_right = 2131165417;
+			public const int xf_arrow_dropdown = 2131165417;
 			
 			// aapt resource value: 0x7F0700EA
-			public const int xf_check = 2131165418;
+			public const int xf_arrow_right = 2131165418;
 			
 			// aapt resource value: 0x7F0700EB
-			public const int xf_checkbox_selected = 2131165419;
+			public const int xf_check = 2131165419;
 			
 			// aapt resource value: 0x7F0700EC
-			public const int xf_checkbox_unselected = 2131165420;
+			public const int xf_checkbox_selected = 2131165420;
 			
 			// aapt resource value: 0x7F0700ED
-			public const int xf_clear = 2131165421;
+			public const int xf_checkbox_unselected = 2131165421;
 			
 			// aapt resource value: 0x7F0700EE
-			public const int xf_error = 2131165422;
+			public const int xf_clear = 2131165422;
 			
 			// aapt resource value: 0x7F0700EF
-			public const int xf_radio_button_selected = 2131165423;
+			public const int xf_error = 2131165423;
 			
 			// aapt resource value: 0x7F0700F0
-			public const int xf_radio_button_unselected = 2131165424;
+			public const int xf_radio_button_selected = 2131165424;
+			
+			// aapt resource value: 0x7F0700F1
+			public const int xf_radio_button_unselected = 2131165425;
 			
 			static Drawable()
 			{

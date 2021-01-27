@@ -267,9 +267,9 @@
                                 </StackLayout.Triggers>
                             </StackLayout>                            
                             <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="3" CornerRadius="5" IsVisible="False">
-                                <XF:MaterialTextField Placeholder="Plate Number" TextColor="#000000" InputType="Email"
-                                                          FloatingPlaceholderColor="#000000" TintColor="#000000"
-                                                          CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                                <XF:MaterialTextField Placeholder="Plate Number" TextColor="#000000" InputType="Text"
+                                                    FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                    CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
                                 <XF:MaterialCard.Triggers>
                                     <DataTrigger TargetType="XF:MaterialCard" Binding="{Binding RegisterAs}" Value="Driver">
                                         <Setter Property="IsVisible" Value="True"/>
@@ -277,7 +277,7 @@
                                 </XF:MaterialCard.Triggers>
                             </XF:MaterialCard>
 
-                            <Button Text="{Utils:Translate SingUp}" TextColor="White" BackgroundColor="#75B2FF" TextTransform="None" CornerRadius="5" Padding="40,0"/>
+                            <Button Text="{Utils:Translate SingUp}" TextColor="White" BackgroundColor="#75B2FF" TextTransform="None" CornerRadius="5" Padding="20,0"/>
 
                         </StackLayout>
                     </XF:MaterialCard>
