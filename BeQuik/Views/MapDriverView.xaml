@@ -241,6 +241,24 @@
                                         TextTransform="None" CornerRadius="5"/>
                 </Grid>
             </StackLayout>
+            <!--Information Trip-->
+            <StackLayout BackgroundColor="White" Margin="0" Padding="10,30,10,20" Spacing="40" VerticalOptions="End">
+                <XF:MaterialLabel TextColor="Black" FontAttributes="Bold" FontSize="Medium"
+                                  HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"
+                                  VerticalTextAlignment="Center" VerticalOptions="FillAndExpand">
+                    <XF:MaterialLabel.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Duration Trip"/>
+                                <Span Text=" : "/>
+                                <Span Text="00:00:04"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </XF:MaterialLabel.FormattedText>
+                </XF:MaterialLabel>
+                <Button Text="Start Trip" TextColor="White" BackgroundColor="#75B2FF" 
+                        TextTransform="None" CornerRadius="5"/>
+            </StackLayout>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
