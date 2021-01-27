@@ -1,12 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BeQuik.Views.BalanceOperationPage">
+             x:Class="BeQuik.Views.BalanceOperationPage"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:UserControl="clr-namespace:BeQuik.UserControl"             
+             xmlns:Utils="clr-namespace:BeQuik.Utils"
+             xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" 
+             BackgroundColor="#F5F5F5">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid Margin="0" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
+            <StackLayout Margin="0" Padding="0" Spacing="20">
+                <StackLayout Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
+                    <XF:MaterialIconButton Image="arrow_left" BackgroundColor="White" CornerRadius="25" WidthRequest="50" HeightRequest="50" Command="{Binding BackCommand}"/>
+                    <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
+                </StackLayout>
+                <StackLayout Margin="20,10" Padding="0" Spacing="20">
+                    <XF:MaterialCard Margin="0" Padding="20,10" BackgroundColor="White" CornerRadius="10">
+                        <StackLayout Margin="0" Padding="0" Spacing="20">
+                            <XF:MaterialLabel Text="Balance Operation" FontAttributes="Bold" TextColor="#000000" TypeScale="Subtitle1"/>
+                            <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="3" CornerRadius="5">
+                                <XF:MaterialTextField Placeholder="{Utils:Translate Phone_Number}" TextColor="#000000" InputType="Telephone"
+                                                          FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                          CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                            </XF:MaterialCard>
+                            <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="3" CornerRadius="5">
+                                <XF:MaterialTextField Placeholder="Ammount" TextColor="#000000" InputType="Numeric"
+                                                          FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                          CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                            </XF:MaterialCard>
+                            <Button Text="Update Balance" TextColor="White" BackgroundColor="#75B2FF" 
+                                    TextTransform="None" CornerRadius="5" Margin="0,20,0,0" Padding="20,0"/>
+                        </StackLayout>
+                    </XF:MaterialCard>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
