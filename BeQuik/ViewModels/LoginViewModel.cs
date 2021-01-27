@@ -49,6 +49,9 @@ namespace BeQuik.ViewModels
                 case "driver":
                     new ViewModels.MapDriverViewModel();
                     break;
+                case "admin":
+                    new ViewModels.MapAdminViewModel();
+                    break;
             }
         }
         private async Task ShowAlert()
