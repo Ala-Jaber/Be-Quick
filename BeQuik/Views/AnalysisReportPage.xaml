@@ -1,12 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BeQuik.Views.AnalysisReportPage">
+             x:Class="BeQuik.Views.AnalysisReportPage"
+             
+             NavigationPage.HasNavigationBar="False"
+             xmlns:Utils="clr-namespace:BeQuik.Utils"
+             xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" 
+             xmlns:UserControl="clr-namespace:BeQuik.UserControl"
+             BackgroundColor="#F5F5F5">
+
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid Margin="0" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
+            <StackLayout Margin="0" Padding="0" Spacing="20">
+                <StackLayout Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
+                    <XF:MaterialIconButton Image="arrow_left" BackgroundColor="White" CornerRadius="25" WidthRequest="50" HeightRequest="50" Command="{Binding BackCommand}"/>
+                    <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
+                </StackLayout>
+                <StackLayout Margin="20,10" Padding="0" Spacing="20">
+                    <XF:MaterialCard Margin="0" Padding="20,10" BackgroundColor="White" CornerRadius="10">
+                        <StackLayout Margin="0" Padding="0" Spacing="20">
+                            <XF:MaterialLabel Text="People" FontAttributes="Bold" TextColor="#000000" TypeScale="Subtitle1"/>
+                            <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="60" HorizontalOptions="CenterAndExpand">
+                                <UserControl:Badge SizeLayout="40" HorizontalOptions="FillAndExpand"
+                                                   ImageSource="driver" SizeImage="50"
+                                                   TextImage="Driver" TextImageSize="Medium"
+                                                   NumberBadge="10" TextBadgeSize="Small"/>
+                                <UserControl:Badge SizeLayout="40"  HorizontalOptions="FillAndExpand"
+                                                   ImageSource="staff" SizeImage="50"
+                                                   TextImage="Client" TextImageSize="Medium"
+                                                   NumberBadge="10" TextBadgeSize="Small"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </XF:MaterialCard>
+                    <XF:MaterialCard Margin="0" Padding="20,10" BackgroundColor="White" CornerRadius="10">
+                        <StackLayout Margin="0" Padding="0" Spacing="20">
+                            <XF:MaterialLabel Text="Service" FontAttributes="Bold" TextColor="#000000" TypeScale="Subtitle1"/>
+                            <FlexLayout Margin="0" Padding="0" HorizontalOptions="FillAndExpand"
+                                        Wrap="Wrap" JustifyContent="SpaceEvenly" AlignItems="Start" AlignContent="SpaceEvenly">
+                                <UserControl:Badge ImageSource="delivery" SizeImage="25"
+                                                       TextImage="Delivery" TextImageSize="Medium"
+                                                       NumberBadge="10" TextBadgeSize="Small"/>
+                                <UserControl:Badge ImageSource="gas" SizeImage="25"
+                                                       TextImage="Gas" TextImageSize="Medium"
+                                                       NumberBadge="10" TextBadgeSize="Small"/>
+                                <UserControl:Badge ImageSource="taxi" SizeImage="25"
+                                                       TextImage="Yellow Taxi" TextImageSize="Medium"
+                                                       NumberBadge="10" TextBadgeSize="Small"/>
+                                <UserControl:Badge ImageSource="tow_truck" SizeImage="25"
+                                                       TextImage="Winch" TextImageSize="Medium"
+                                                       NumberBadge="10" TextBadgeSize="Small"/>
+                            </FlexLayout>
+                        </StackLayout>
+                    </XF:MaterialCard>
+                </StackLayout>
+                <Button Text="Refrech Data" TextColor="White" BackgroundColor="#75B2FF" 
+                        TextTransform="None" CornerRadius="5" Margin="20,10" Padding="40,0"/>
+
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+             x:Class="BeQuik.UserControl.Badge">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <Style TargetType="XF:MaterialCard" x:Key="ImageBorder">
+                <Setter Property="Margin" Value="0"/>
+                <Setter Property="Padding" Value="0"/>
+                <Setter Property="Elevation" Value="2"/>
+            </Style>
+            <Style TargetType="XF:MaterialCard" x:Key="NumberBorder">
+                <Setter Property="Margin" Value="0"/>
+                <Setter Property="Padding" Value="0"/>
+                <Setter Property="Elevation" Value="1"/>
+            </Style>
+            <Style TargetType="XF:MaterialLabel" x:Key="ImageLable">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="Micro"/>
+                <Setter Property="TypeScale" Value="Subtitle2"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+            <Style TargetType="XF:MaterialLabel" x:Key="NumberLable">
+                <Setter Property="Margin" Value="0"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="Micro"/>
+                <Setter Property="TypeScale" Value="Subtitle2"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentView.Resources>
+
+    <ContentView.Content>
+        <Grid x:Name="GridLayout" Margin="0" Padding="0" RowSpacing="0" ColumnSpacing="0"
+                  RowDefinitions="20,20,*" ColumnDefinitions="13,13,13,39"
+                  HorizontalOptions="Start" VerticalOptions="Start">
+            <XF:MaterialCard x:Name="ImageBorderCard" 
+                            Grid.Column="0" Grid.ColumnSpan="4" 
+                             Grid.Row="1" Grid.RowSpan="2"
+                             HeightRequest="78" WidthRequest="78" CornerRadius="39"
+                             Style="{Binding Source={x:StaticResource ImageBorder}}">
+                <StackLayout Margin="0" Padding="0" Spacing="5" 
+                                 HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image x:Name="BadgeImage" Aspect="AspectFit" HeightRequest="25" />
+                    <XF:MaterialLabel x:Name="ImageLabel"  Style="{Binding Source={x:StaticResource ImageLable}}"/>
+                </StackLayout>
+            </XF:MaterialCard>
+            <XF:MaterialCard  x:Name="NumberBorderCard" 
+                              Grid.Column="3" Grid.Row="0" 
+                             Grid.RowSpan="2"
+                             HeightRequest="39" WidthRequest="39" CornerRadius="20"
+                             Style="{Binding Source={x:StaticResource NumberBorder}}">
+                <XF:MaterialLabel x:Name="BadgeLabel" Style="{Binding Source={x:StaticResource NumberLable}}"/>
+            </XF:MaterialCard>
+        </Grid>
+    </ContentView.Content>
+</ContentView>
