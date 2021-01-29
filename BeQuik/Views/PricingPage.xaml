@@ -1,12 +1,121 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BeQuik.Views.PricingPage">
+             x:Class="BeQuik.Views.PricingPage"
+             
+             NavigationPage.HasNavigationBar="False"
+             xmlns:Utils="clr-namespace:BeQuik.Utils"
+             xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" 
+             xmlns:UserControl="clr-namespace:BeQuik.UserControl"
+             BackgroundColor="#F5F5F5">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="XF:MaterialCard" x:Key="ImageBorder">
+                <Setter Property="Margin" Value="0"/>
+                <Setter Property="Padding" Value="5"/>
+                <Setter Property="HeightRequest" Value="60"/>
+                <Setter Property="WidthRequest" Value="60"/>
+                <Setter Property="CornerRadius" Value="3"/>
+                <Setter Property="Elevation" Value="0.25"/>
+            </Style>
+            <Style TargetType="XF:MaterialCard" x:Key="TextFieldBorder">
+                <Setter Property="Margin" Value="0,0,10,0"/>
+                <Setter Property="Padding" Value="5"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="Elevation" Value="1"/>
+            </Style>
+            <Style TargetType="Label" x:Key="ImageLable">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+
+            <Style TargetType="XF:MaterialTextField" x:Key="TextFieldStyle">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="TextFontSize" Value="Small"/>
+                <Setter Property="InputType" Value="Numeric"/>
+                <Setter Property="FloatingPlaceholderColor" Value="#000000"/>
+                <Setter Property="TintColor" Value="#000000"/>
+                <Setter Property="CardBackgroundColor" Value="White"/>
+                <Setter Property="ShouldAnimateUnderline" Value="False"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid Margin="0" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
+            <StackLayout Margin="0" Padding="0" Spacing="0">
+                <!--Header-->
+                <StackLayout Margin="0" Padding="0,20" Spacing="10" VerticalOptions="Start">
+                    <StackLayout Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
+                        <XF:MaterialIconButton Image="arrow_left" BackgroundColor="White" CornerRadius="25" WidthRequest="50" HeightRequest="50" Command="{Binding MenuShow}"/>
+                        <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
+                    </StackLayout>
+                </StackLayout>
+                <ScrollView Margin="0" Padding="20,10">
+                    <StackLayout Margin="0" Padding="0" Spacing="20">
+                        <XF:MaterialCard Margin="0" Padding="0" CornerRadius="10" BackgroundColor="White">
+                            <StackLayout Orientation="Horizontal" Margin="10" Padding="0" Spacing="10">
+                                <XF:MaterialCard Style="{Binding Source={x:StaticResource ImageBorder}}">
+                                    <StackLayout Margin="0" Padding="0" Spacing="5">
+                                        <Image Source="delivery" Aspect="AspectFit" />
+                                        <Label Text="{Utils:Translate Delivery}" Style="{Binding Source={x:StaticResource ImageLable}}"/>
+                                    </StackLayout>
+                                </XF:MaterialCard>
+                                <XF:MaterialCard Style="{Binding Source={x:StaticResource TextFieldBorder}}">
+                                    <XF:MaterialTextField Placeholder="Amount"  Text="0.00" Style="{Binding Source={x:StaticResource TextFieldStyle}}"/>
+                                </XF:MaterialCard>
+                            </StackLayout>
+                        </XF:MaterialCard>
+                        <XF:MaterialCard Margin="0" Padding="0" CornerRadius="10" BackgroundColor="White">
+                            <StackLayout Orientation="Horizontal" Margin="10" Padding="0" Spacing="10">
+                                <XF:MaterialCard Style="{Binding Source={x:StaticResource ImageBorder}}">
+                                    <StackLayout Margin="0" Padding="0" Spacing="5">
+                                        <Image Source="gas" Aspect="AspectFit" />
+                                        <Label Text="{Utils:Translate Gas}" Style="{Binding Source={x:StaticResource ImageLable}}"/>
+                                    </StackLayout>
+                                </XF:MaterialCard>
+                                <XF:MaterialCard Style="{Binding Source={x:StaticResource TextFieldBorder}}">
+                                    <XF:MaterialTextField Placeholder="Amount" Text="0.00" Style="{Binding Source={x:StaticResource TextFieldStyle}}"/>
+                                </XF:MaterialCard>
+                            </StackLayout>
+                        </XF:MaterialCard>
+                        <XF:MaterialCard Margin="0" Padding="0" CornerRadius="10" BackgroundColor="White">
+                            <StackLayout Orientation="Horizontal" Margin="10" Padding="0" Spacing="10">
+                                <XF:MaterialCard Style="{Binding Source={x:StaticResource ImageBorder}}">
+                                    <StackLayout Margin="0" Padding="0" Spacing="5">
+                                        <Image Source="taxi" Aspect="AspectFit" />
+                                        <Label Text="{Utils:Translate Yellow_Taxi}" Style="{Binding Source={x:StaticResource ImageLable}}"/>
+                                    </StackLayout>
+                                </XF:MaterialCard>
+                                <XF:MaterialCard Style="{Binding Source={x:StaticResource TextFieldBorder}}">
+                                    <XF:MaterialTextField Placeholder="Amount" Text="0.00" Style="{Binding Source={x:StaticResource TextFieldStyle}}"/>
+                                </XF:MaterialCard>
+                            </StackLayout>
+                        </XF:MaterialCard>
+                        <XF:MaterialCard Margin="0" Padding="0" CornerRadius="10" BackgroundColor="White">
+                            <StackLayout Orientation="Horizontal" Margin="10" Padding="0" Spacing="10">
+                                <XF:MaterialCard Style="{Binding Source={x:StaticResource ImageBorder}}">
+                                    <StackLayout Margin="0" Padding="0" Spacing="5">
+                                        <Image Source="tow_truck" Aspect="AspectFit" />
+                                        <Label Text="{Utils:Translate Winch}" Style="{Binding Source={x:StaticResource ImageLable}}"/>
+                                    </StackLayout>
+                                </XF:MaterialCard>
+                                <XF:MaterialCard Style="{Binding Source={x:StaticResource TextFieldBorder}}">
+                                    <XF:MaterialTextField Placeholder="Amount" Text="0.00" Style="{Binding Source={x:StaticResource TextFieldStyle}}"/>
+                                </XF:MaterialCard>
+                            </StackLayout>
+                        </XF:MaterialCard>
+                        <Button Text="Update" TextColor="White" BackgroundColor="#75B2FF" 
+                                TextTransform="None" CornerRadius="5" HeightRequest="50" Padding="40,0" 
+                                HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -69,7 +69,7 @@ namespace BeQuik.UserControl
             expandeButton.FadeTo(1, 500, Easing.CubicIn);
             IsOpenBottomSheet = false;
         }
-        private void ExpandeButton_Clicked(object sender, EventArgs e)
+        public void ShowHalfPage()
         {
             var translationY = (frame.TranslationY - (Height - Height * PercentageExpandBottomSheet))-CornerRadiusBottomSheet;
             RelativeLayout.SetHeightConstraint(contentview, Constraint.RelativeToParent((parent) => parent.Height * PercentageExpandBottomSheet));
@@ -79,6 +79,7 @@ namespace BeQuik.UserControl
             expandeButton.FadeTo(0, 100, Easing.CubicOut);
             IsOpenBottomSheet = true;
         }
+        private void ExpandeButton_Clicked(object sender, EventArgs e)=> ShowHalfPage();
         public static readonly BindableProperty IsOpenBottomSheetProperty = BindableProperty.Create(nameof(IsOpenBottomSheet), typeof(bool), typeof(BottomSheet));
         public bool IsOpenBottomSheet
         {
