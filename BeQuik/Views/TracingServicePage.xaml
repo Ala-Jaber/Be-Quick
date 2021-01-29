@@ -10,13 +10,13 @@
     <ContentPage.Content>
         <Grid Margin="0" Padding="0" RowDefinitions="1.5*,30,*">
             <Grid Grid.Row="0" Grid.RowSpan="2" Margin="0" Padding="0" VerticalOptions="FillAndExpand">
-            <GoogleMaps:Map x:Name="MapForms"/>
+                <GoogleMaps:Map x:Name="MapForms"/>
                 <!--Header-->
                 <StackLayout Margin="0" Padding="10" Spacing="10" VerticalOptions="Start">
                     <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
                 </StackLayout>
             </Grid>
-            <!--Footer-->
+            <!--Half Page-->
             <Grid Grid.Row="2" Margin="0" Padding="0" BackgroundColor="White">
                 <StackLayout Margin="0" Padding="0,0,0,10" Spacing="10">
                     <Label Text="{Utils:Translate WE_FOUND_YOU_A_DRIVER}" TextColor="#000000" FontAttributes="Bold" 
@@ -100,7 +100,6 @@
                     </DataTrigger>
                 </XF:MaterialIconButton.Triggers>
             </XF:MaterialIconButton>
-
         </Grid>
     </ContentPage.Content>
 </ContentPage>
