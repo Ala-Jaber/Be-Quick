@@ -7,13 +7,13 @@ using Xamarin.Forms.GoogleMaps;
 
 namespace BeQuik.ViewModels
 {
-    public class MapDriverViewModel:BaseViewModel
+    public class MapDriverViewModel:BaseViewModel, IMasterCommonViewModel
     {
         public FlyoutPage Page { get; }
         public Command TrunOnOffCommand { get; }
         public Command MenuShow { get; }
-        public Command OpenProfileCommand { get; set; }
-        public Command OpenWalletCommand { get; set; }
+        public Command OpenProfileCommand { get; }
+        public Command OpenWalletCommand { get; }
 
         public List<Model.MenuItem> MenuItems { get; set; }
         public ObservableCollection<Model.Order> Orders { get; set; }
@@ -40,7 +40,7 @@ namespace BeQuik.ViewModels
         public MapDriverViewModel()
         {
             InitMenuItem();
-            InitOrders(); 
+            InitOrders();
             OpenProfileCommand = new Command(() => new ViewModels.ProfilePageViewModel());
             OpenWalletCommand = new Command(() => new ViewModels.WalletPageViewModel());
             MenuShow = new Command(ShowMenu);

@@ -7,7 +7,8 @@
              xmlns:Utils="clr-namespace:BeQuik.Utils"
              xmlns:XE="clr-namespace:XamEffects;assembly=XamEffects">
   <StackLayout Margin="0,50,0,0" Padding="0" Spacing="30">
-        <StackLayout Orientation="Horizontal" Margin="20,0" Padding="0" Spacing="20">
+        <StackLayout Orientation="Horizontal" Margin="20,0" Padding="0" Spacing="20"
+                     XE:Commands.Tap="{Binding OpenProfileCommand}">
             <Image Source="img_profile" Aspect="AspectFit" WidthRequest="80" HeightRequest="80">
                 <Image.Clip>
                     <EllipseGeometry Center="40,40" RadiusX="40" RadiusY="40"/>

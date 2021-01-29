@@ -11,14 +11,14 @@ using XF.Material.Forms.UI.Dialogs;
 
 namespace BeQuik.ViewModels
 {
-    public class MapClientViewModel : BaseViewModel
+    public class MapClientViewModel : BaseViewModel, IMasterCommonViewModel
     {
         public FlyoutPage Page { get;}
         public Command MenuShow { get; }
         public Command RequestServiceCommand { get; }
         public Command EnterPromoCodeCommand { get; }
-        public Command OpenProfileCommand { get; set; }
-        public Command OpenWalletCommand { get; set; }
+        public Command OpenProfileCommand { get; }
+        public Command OpenWalletCommand { get;}
 
         public string PromotionCode { get; set; }
         public bool IsPromotionCodeAdded { get; set; }

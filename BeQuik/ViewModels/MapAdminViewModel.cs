@@ -5,14 +5,17 @@ using Xamarin.Forms;
 
 namespace BeQuik.ViewModels
 {
-    public class MapAdminViewModel : BaseViewModel
+    public class MapAdminViewModel : BaseViewModel, IMasterCommonViewModel
     {
         public FlyoutPage Page { get; }
         public Command MenuShow { get; }
         public List<Model.MenuItem> MenuItems { get; set; }
+        public Command OpenProfileCommand { get ; }
+
         public MapAdminViewModel()
         {
             InitMenuItem();
+            OpenProfileCommand = new Command(OpenProfilePage);
             MenuShow = new Command(ShowMenu);
             Page = new Views.MasterDetailView(new Views.MapAdminView());
             OpenAsRootPage(Page);
@@ -33,5 +36,9 @@ namespace BeQuik.ViewModels
             };
         }
         private void ShowMenu() => Page.IsPresented = true;
+        private void OpenProfilePage()
+        {
+            new ViewModels.ProfilePageViewModel();
+        }
     }
 }
