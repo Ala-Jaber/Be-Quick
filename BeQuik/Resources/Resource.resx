@@ -300,6 +300,9 @@
   <data name="Keep_the_booking" xml:space="preserve">
     <value>Keep the booking</value>
   </data>
+  <data name="Language_Selected" xml:space="preserve">
+    <value>Language Selected</value>
+  </data>
   <data name="Last_Name" xml:space="preserve">
     <value>Last Name</value>
   </data>

@@ -28,8 +28,9 @@ namespace BeQuik.ViewModels
 
         public LoginViewModel()
         {
-            SingInCommand = new Command(()=> OnSingInClicked().ConfigureAwait(false));
+            SingInCommand = new Command(() => OnSingInClicked().ConfigureAwait(false));
             SingUpCommand = new Command(OnSingUpClicked);
+
             OpenAsRootPage(new Views.LoginPage());
         }
 

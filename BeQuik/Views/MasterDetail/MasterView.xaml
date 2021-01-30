@@ -25,6 +25,20 @@
                 </StackLayout>
             </StackLayout>
         </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="20,0" Padding="0" Spacing="20" XE:Commands.Tap="{Binding ToggelLanguageCommand}">
+            <XF:MaterialLabel TextColor="#556080" TypeScale="Subtitle2" FontSize="15" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                <XF:MaterialLabel.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="{Utils:Translate Language_Selected}"/>
+                            <Span Text=":"/>
+                            <Span Text="{Binding LanguageSelected}"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </XF:MaterialLabel.FormattedText>
+            </XF:MaterialLabel>
+            <Image Source="translate" Aspect="AspectFit"/>
+        </StackLayout>
         <BoxView Color="#556080" Opacity="0.30" HorizontalOptions="FillAndExpand" VerticalOptions="Start" HeightRequest="2"/>
         <ScrollView Margin="0" Padding="0">
             <StackLayout Margin="0" Padding="0" Spacing="5" BindableLayout.ItemsSource="{Binding MenuItems}">
@@ -38,7 +52,7 @@
                 </BindableLayout.ItemTemplate>
             </StackLayout>
         </ScrollView>
-        <Button ImageSource="logout"
+        <Button ImageSource="logout" Padding="20,0"
                 Text="{Utils:Translate Logout}" TextColor="White" 
                 BackgroundColor="#EE6763" VerticalOptions="EndAndExpand" 
                 Command="{Binding LogoutCommand}"/>

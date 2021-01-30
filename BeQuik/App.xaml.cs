@@ -73,19 +73,6 @@ namespace BeQuik
                 MapForms.UiSettings.ZoomControlsEnabled = true;
             }
         }
-        public static FlowDirection GetFlowDirection()
-        {
-            try
-            {
-                if (LocalizationResourceManager.Instance.CurrentCulture.TextInfo.IsRightToLeft)
-                    return FlowDirection.RightToLeft;
-                return FlowDirection.LeftToRight;
-            }
-            catch
-            {
-                return default;
-            }
-        }
         protected override void OnStart()
         {
         }

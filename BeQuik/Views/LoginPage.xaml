@@ -8,18 +8,20 @@
              
              NavigationPage.HasNavigationBar="False"
              xmlns:Utils="clr-namespace:BeQuik.Utils"
+             xmlns:XE="clr-namespace:XamEffects;assembly=XamEffects"
              xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
              BackgroundColor="#F5F5F5">
     <ContentPage.Content>
         <Grid Margin="0" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
             <StackLayout Margin="0" Padding="0" Spacing="0">
-                <Image Margin="20" Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
+                <StackLayout Margin="0" Padding="0" Spacing="0" FlowDirection="LeftToRight">
+                    <Image Margin="20" Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
+                </StackLayout>
                 <ScrollView Margin="0" Padding="10">
                     <StackLayout Margin="0" Padding="0" Spacing="20">
                         <StackLayout Margin="0" Padding="0" Spacing="10">
                             <Image Source="lost_login" Aspect="AspectFit" HeightRequest="150"/>
-
                             <XF:MaterialCard Margin="0" Padding="20,10" HasShadow="True" Elevation="0.5" CornerRadius="5">
                                 <StackLayout Margin="0" Padding="0" Spacing="20">
                                     <StackLayout Margin="0" Padding="0" Spacing="10">
@@ -80,6 +82,25 @@
                                     </FormattedString>
                                 </XF:MaterialLabel.FormattedText>
                             </XF:MaterialLabel>
+                            <StackLayout  FlowDirection="LeftToRight" Orientation="Horizontal" Margin="0,20" Padding="0" Spacing="10" HorizontalOptions="CenterAndExpand">
+                                <XF:MaterialLabel Text="English" TextDecorations="None" XE:Commands.Tap="{Binding SetEnglishLanguageCommand}">
+                                    <XF:MaterialLabel.Triggers>
+                                        <DataTrigger TargetType="XF:MaterialLabel" Binding="{Binding LanguageSelected}" Value="English">
+                                            <Setter Property="FontAttributes" Value="Bold"/>
+                                            <Setter Property="TextDecorations" Value="Underline"/>
+                                        </DataTrigger>
+                                    </XF:MaterialLabel.Triggers>
+                                </XF:MaterialLabel>
+                                <XF:MaterialLabel Text="•" FontAttributes="Bold"/>
+                                <XF:MaterialLabel Text="العربية" TextDecorations="None" XE:Commands.Tap="{Binding SetArabicLanguageCommand}">
+                                    <XF:MaterialLabel.Triggers>
+                                        <DataTrigger TargetType="XF:MaterialLabel" Binding="{Binding LanguageSelected}" Value="العربية">
+                                            <Setter Property="FontAttributes" Value="Bold"/>
+                                            <Setter Property="TextDecorations" Value="Underline"/>
+                                        </DataTrigger>
+                                    </XF:MaterialLabel.Triggers>
+                                </XF:MaterialLabel>
+                            </StackLayout>
                         </StackLayout>
                     </StackLayout>
                 </ScrollView>

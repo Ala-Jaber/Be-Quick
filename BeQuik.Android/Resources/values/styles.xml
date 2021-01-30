@@ -3,5 +3,6 @@
 
   <style name="MainTheme" parent="MainTheme.Base">
     <item name="android:textAllCaps">false</item>
+    <item name="android:forceDarkAllowed">false</item>
   </style>
 </resources>

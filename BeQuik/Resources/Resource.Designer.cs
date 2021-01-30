@@ -610,6 +610,15 @@ namespace BeQuik.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Language Selected.
+        /// </summary>
+        public static string Language_Selected {
+            get {
+                return ResourceManager.GetString("Language_Selected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Last Name.
         /// </summary>
         public static string Last_Name {

@@ -6,20 +6,19 @@ using System.Reflection;
 using System.Resources;
 using System.Threading;
 using Xamarin.Essentials;
+using Xamarin.Forms;
 
 namespace BeQuik.Utils
 {
-    public class LocalizationResourceManager : INotifyPropertyChanged
+    public class LocalizationResourceManager : NotifyPropertyChanged
     {
-        private const string LanguageKey = nameof(LanguageKey);
-        public CultureInfo CultureInfoArabic { get; set; }
-        public CultureInfo CultureInfoEnglish { get; set; }
         public static LocalizationResourceManager Instance { get; } = new LocalizationResourceManager();
+        public FlowDirection FlowDirection { get; set; }
 
+        private const string LanguageKey = nameof(LanguageKey);
+        private CultureInfo CurrentCulture => Resource.Culture ?? Thread.CurrentThread.CurrentUICulture;
         private LocalizationResourceManager()
         {
-            CultureInfoArabic = new CultureInfo("ar-JO");
-            CultureInfoEnglish = new CultureInfo("en-US");
             SetCulture(new CultureInfo(Preferences.Get(LanguageKey, CurrentCulture.TwoLetterISOLanguageName)));
         }
         public string this[string text]
@@ -29,27 +28,39 @@ namespace BeQuik.Utils
                 return Resource.ResourceManager.GetString(text, Resource.Culture);
             }
         }
-        public void SetCulture(CultureInfo language)
-        {
-            Thread.CurrentThread.CurrentUICulture = language;
-            Resource.Culture = language;
-            Preferences.Set(LanguageKey, language.TwoLetterISOLanguageName);
-
-            Invalidate();
-        }
         public string GetValue(string key)
         {
             return Resource.ResourceManager.GetString(key, Resource.Culture);
         }
-        public string GetValue(string key, string ResourceId)
+        public static void SetArabicCulture() => Instance.SetCulture(new CultureInfo("ar-JO"));
+        public static void SetEnglishCulture() => Instance.SetCulture(new CultureInfo("en-US"));
+        private void SetCulture(CultureInfo language)
         {
-            ResourceManager resourceManager = new ResourceManager(ResourceId, typeof(TranslateExtension).GetTypeInfo().Assembly);
-            return resourceManager.GetString(key, CultureInfo.CurrentCulture);
+            Thread.CurrentThread.CurrentUICulture = language;
+            Resource.Culture = language;
+            FlowDirection = GetFlowDirection();
+            Invalidate();
+            Preferences.Set(LanguageKey, language.TwoLetterISOLanguageName);
+        }
+        private FlowDirection GetFlowDirection()
+        {
+            try
+            {
+                if (LocalizationResourceManager.Instance.CurrentCulture.TextInfo.IsRightToLeft)
+                    return FlowDirection.RightToLeft;
+                return FlowDirection.LeftToRight;
+            }
+            catch
+            {
+                return default;
+            }
         }
 
-        public CultureInfo CurrentCulture => Resource.Culture ?? Thread.CurrentThread.CurrentUICulture;
+    }
+    public class NotifyPropertyChanged : INotifyPropertyChanged
+    {
         public event PropertyChangedEventHandler PropertyChanged;
-        public void Invalidate()
+        protected void Invalidate()
         {
             try
             {
