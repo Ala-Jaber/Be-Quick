@@ -25,6 +25,11 @@
                     </XF:MaterialCard>
                     <StackLayout Margin="0" Padding="20" Spacing="20" VerticalOptions="Center">
                         <Label Text="{Utils:Translate Profile}" FontAttributes="Bold" TextColor="#000000" FontSize="Large"/>
+                        <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                            <XF:MaterialTextField Placeholder="{Utils:Translate Partnet_ID}" TextColor="#000000" InputType="Numeric"
+                                                          FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                          CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                        </XF:MaterialCard>
 
                         <Grid Margin="0" Padding="0" ColumnDefinitions="*,*" ColumnSpacing="10" HorizontalOptions="FillAndExpand">
                             <XF:MaterialCard Grid.Column="0" Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
