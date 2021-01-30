@@ -63,7 +63,7 @@
                                                     <FormattedString.Spans>
                                                         <Span Text="1.40"/>
                                                         <Span Text=" "/>
-                                                        <Span Text="JOD"/>
+                                                        <Span Text="{Utils:Translate JOD}"/>
                                                     </FormattedString.Spans>
                                                 </FormattedString>
                                             </XF:MaterialLabel.FormattedText>
@@ -79,7 +79,7 @@
                                                         <FormattedString.Spans>
                                                             <Span Text="1.40"/>
                                                             <Span Text=" "/>
-                                                            <Span Text="JOD"/>
+                                                            <Span Text="{Utils:Translate JOD}"/>
                                                         </FormattedString.Spans>
                                                     </FormattedString>
                                                 </XF:MaterialLabel.FormattedText>
@@ -93,7 +93,7 @@
                                                         <FormattedString.Spans>
                                                             <Span Text="1.40"/>
                                                             <Span Text=" "/>
-                                                            <Span Text="JOD"/>
+                                                            <Span Text="{Utils:Translate JOD}"/>
                                                         </FormattedString.Spans>
                                                     </FormattedString>
                                                 </XF:MaterialLabel.FormattedText>
@@ -111,7 +111,7 @@
                                                             <FormattedString.Spans>
                                                                 <Span Text="1.40"/>
                                                                 <Span Text=" "/>
-                                                                <Span Text="JOD"/>
+                                                                <Span Text="{Utils:Translate JOD}"/>
                                                             </FormattedString.Spans>
                                                         </FormattedString>
                                                     </XF:MaterialLabel.FormattedText>
@@ -125,7 +125,7 @@
                                                             <FormattedString.Spans>
                                                                 <Span Text="1.40"/>
                                                                 <Span Text=" "/>
-                                                                <Span Text="JOD"/>
+                                                                <Span Text="{Utils:Translate JOD}"/>
                                                             </FormattedString.Spans>
                                                         </FormattedString>
                                                     </XF:MaterialLabel.FormattedText>
@@ -139,7 +139,7 @@
                                                             <FormattedString.Spans>
                                                                 <Span Text="1.40"/>
                                                                 <Span Text=" "/>
-                                                                <Span Text="JOD"/>
+                                                                <Span Text="{Utils:Translate JOD}"/>
                                                             </FormattedString.Spans>
                                                         </FormattedString>
                                                     </XF:MaterialLabel.FormattedText>
@@ -153,7 +153,7 @@
                                                             <FormattedString.Spans>
                                                                 <Span Text="1.40"/>
                                                                 <Span Text=" "/>
-                                                                <Span Text="JOD"/>
+                                                                <Span Text="{Utils:Translate JOD}"/>
                                                             </FormattedString.Spans>
                                                         </FormattedString>
                                                     </XF:MaterialLabel.FormattedText>

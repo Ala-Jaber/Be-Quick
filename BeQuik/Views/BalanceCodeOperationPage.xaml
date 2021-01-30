@@ -63,7 +63,7 @@
                     <StackLayout Margin="20,10" Padding="0" Spacing="20">
                         <XF:MaterialCard Margin="0" Padding="20,10" BackgroundColor="White" CornerRadius="10">
                             <StackLayout Margin="0" Padding="0" Spacing="20">
-                                <XF:MaterialLabel Text="Service" FontAttributes="Bold" TextColor="#000000" TypeScale="Subtitle1"/>
+                                <XF:MaterialLabel Text="{Utils:Translate Service}" FontAttributes="Bold" TextColor="#000000" TypeScale="Subtitle1"/>
                                 <ScrollView Orientation="Horizontal" Margin="5,0" Padding="0" VerticalOptions="Start" HorizontalScrollBarVisibility="Never">
                                     <Grid ColumnDefinitions="*,*,*,*" ColumnSpacing="10" RowDefinitions="90"
                                           HorizontalOptions="CenterAndExpand" VerticalOptions="Start"
@@ -102,22 +102,32 @@
                                         </RadioButton>
                                     </Grid>
                                 </ScrollView>
-                                <Button Text="Generate Code" TextColor="White" BackgroundColor="#75B2FF" 
+                                <Button Text="{Utils:Translate Generate_Code}" TextColor="White" BackgroundColor="#75B2FF" 
                                     TextTransform="None" CornerRadius="5" Margin="0,20,0,0" Padding="40,0"
                                     Command="{Binding GenerateCodeCommand}"/>
                             </StackLayout>
                         </XF:MaterialCard>
                         <XF:MaterialCard Margin="0" Padding="20,10" BackgroundColor="White" CornerRadius="10" IsVisible="{Binding IsCodeGenerated}">
                             <StackLayout Margin="0" Padding="0" Spacing="20">
-                                <XF:MaterialLabel Text="Code Generated" TextColor="#000000" FontAttributes="Bold" TypeScale="Subtitle1"/>
+                                <XF:MaterialLabel Text="{Utils:Translate Code_Generated}" TextColor="#000000" FontAttributes="Bold" TypeScale="Subtitle1"/>
                                 <XF:MaterialLabel Text="Monday 11,Jan" TextColor="#000000" TypeScale="Caption"/>
                                 <Grid Margin="0" Padding="0" RowDefinitions="*,*" ColumnDefinitions="3*,*">
-                                    <XF:MaterialLabel Grid.Row="0" Grid.Column="0" Text="Code" TextColor="#000000" FontAttributes="Bold" TypeScale="Subtitle1"/>
+                                    <XF:MaterialLabel Grid.Row="0" Grid.Column="0" Text="{Utils:Translate Code}" TextColor="#000000" FontAttributes="Bold" TypeScale="Subtitle1"/>
                                     <XF:MaterialLabel Grid.Row="1" Grid.Column="0" Text="W9258603122021706" TextColor="#000000" FontAttributes="Bold" TypeScale="Subtitle1"/>
-                                    <XF:MaterialLabel Grid.Row="0" Grid.Column="1" Text="Balance" TextColor="#000000" FontAttributes="Bold" TypeScale="Subtitle1"/>
-                                    <XF:MaterialLabel Grid.Row="1" Grid.Column="1" Text="6 JOD" TextColor="#000000" FontAttributes="Bold" TypeScale="Subtitle1"/>
+                                    <XF:MaterialLabel Grid.Row="0" Grid.Column="1" Text="{Utils:Translate Balance}" TextColor="#000000" FontAttributes="Bold" TypeScale="Subtitle1"/>
+                                    <XF:MaterialLabel Grid.Row="1" Grid.Column="1" TextColor="#000000" FontAttributes="Bold" TypeScale="Subtitle1">
+                                        <XF:MaterialLabel.FormattedText>
+                                            <FormattedString>
+                                                <FormattedString.Spans>
+                                                    <Span Text="6"/>
+                                                    <Span Text=" "/>
+                                                    <Span Text="{Utils:Translate JOD}"/>
+                                                </FormattedString.Spans>
+                                            </FormattedString>
+                                        </XF:MaterialLabel.FormattedText>
+                                    </XF:MaterialLabel>
                                 </Grid>
-                                <Button Text="Save Code" TextColor="White" BackgroundColor="#75B2FF" 
+                                <Button Text="{Utils:Translate Save_Code}" TextColor="White" BackgroundColor="#75B2FF" 
                                     TextTransform="None" CornerRadius="5" Margin="0,20,0,0" Padding="40,0"/>
                             </StackLayout>
                         </XF:MaterialCard>

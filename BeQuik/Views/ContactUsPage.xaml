@@ -22,7 +22,7 @@
                         <StackLayout Margin="10" Padding="5" Spacing="40">
                             <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10">
                                 <Image Source="headset" Aspect="AspectFit"/>
-                                <XF:MaterialLabel Text="Contact Us" FontAttributes="Bold" TextColor="#000000" TypeScale="H5" VerticalTextAlignment="Center"/>
+                                <XF:MaterialLabel Text="{Utils:Translate Contact_Us}" FontAttributes="Bold" TextColor="#000000" TypeScale="H5" VerticalTextAlignment="Center"/>
                             </StackLayout>
                             <StackLayout Margin="0" Padding="0" Spacing="20">
                                 <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="1" CornerRadius="5">
@@ -34,7 +34,7 @@
                                                HorizontalOptions="Center" VerticalOptions="Center"/>
                                         </XF:MaterialCard>
                                         <StackLayout Margin="0" Padding="0" Spacing="0" VerticalOptions="Center">
-                                            <XF:MaterialLabel  Text="Company" TypeScale="H6" TextColor="Black"/>
+                                            <XF:MaterialLabel  Text="{Utils:Translate Company}" TypeScale="H6" TextColor="Black"/>
                                             <XF:MaterialLabel  Text="Naser Hasan Est." TypeScale="Subtitle2"/>
                                         </StackLayout>
                                     </StackLayout>
@@ -48,7 +48,7 @@
                                                HorizontalOptions="Center" VerticalOptions="Center"/>
                                         </XF:MaterialCard>
                                         <StackLayout Margin="0" Padding="0" Spacing="0" VerticalOptions="Center">
-                                            <XF:MaterialLabel  Text="Phone" TypeScale="H6" TextColor="Black"/>
+                                            <XF:MaterialLabel  Text="{Utils:Translate Phone}" TypeScale="H6" TextColor="Black"/>
                                             <XF:MaterialLabel  Text="+962-78-5555-101" TypeScale="Subtitle2"/>
                                         </StackLayout>
                                     </StackLayout>
@@ -62,7 +62,7 @@
                                                HorizontalOptions="Center" VerticalOptions="Center"/>
                                         </XF:MaterialCard>
                                         <StackLayout Margin="0" Padding="0" Spacing="0" VerticalOptions="Center">
-                                            <XF:MaterialLabel  Text="Email" TypeScale="H6" TextColor="Black"/>
+                                            <XF:MaterialLabel  Text="{Utils:Translate Email}" TypeScale="H6" TextColor="Black"/>
                                             <XF:MaterialLabel  Text="support@pickquickly.com" TypeScale="Subtitle2"/>
                                         </StackLayout>
                                     </StackLayout>
@@ -76,7 +76,7 @@
                                                HorizontalOptions="Center" VerticalOptions="Center"/>
                                         </XF:MaterialCard>
                                         <StackLayout Margin="0" Padding="0" Spacing="0" VerticalOptions="Center">
-                                            <XF:MaterialLabel  Text="Website" TypeScale="H6" TextColor="Black"/>
+                                            <XF:MaterialLabel  Text="{Utils:Translate Website}" TypeScale="H6" TextColor="Black"/>
                                             <XF:MaterialLabel  Text="www.pickquickly.com" TypeScale="Subtitle2"/>
                                         </StackLayout>
                                     </StackLayout>

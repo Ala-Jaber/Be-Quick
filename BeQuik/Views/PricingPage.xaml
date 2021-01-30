@@ -65,7 +65,7 @@
                                     </StackLayout>
                                 </XF:MaterialCard>
                                 <XF:MaterialCard Style="{Binding Source={x:StaticResource TextFieldBorder}}">
-                                    <XF:MaterialTextField Placeholder="Amount"  Text="0.00" Style="{Binding Source={x:StaticResource TextFieldStyle}}"/>
+                                    <XF:MaterialTextField Placeholder="{Utils:Translate Amount}"  Text="0.00" Style="{Binding Source={x:StaticResource TextFieldStyle}}"/>
                                 </XF:MaterialCard>
                             </StackLayout>
                         </XF:MaterialCard>
@@ -78,7 +78,7 @@
                                     </StackLayout>
                                 </XF:MaterialCard>
                                 <XF:MaterialCard Style="{Binding Source={x:StaticResource TextFieldBorder}}">
-                                    <XF:MaterialTextField Placeholder="Amount" Text="0.00" Style="{Binding Source={x:StaticResource TextFieldStyle}}"/>
+                                    <XF:MaterialTextField Placeholder="{Utils:Translate Amount}" Text="0.00" Style="{Binding Source={x:StaticResource TextFieldStyle}}"/>
                                 </XF:MaterialCard>
                             </StackLayout>
                         </XF:MaterialCard>
@@ -91,7 +91,7 @@
                                     </StackLayout>
                                 </XF:MaterialCard>
                                 <XF:MaterialCard Style="{Binding Source={x:StaticResource TextFieldBorder}}">
-                                    <XF:MaterialTextField Placeholder="Amount" Text="0.00" Style="{Binding Source={x:StaticResource TextFieldStyle}}"/>
+                                    <XF:MaterialTextField Placeholder="{Utils:Translate Amount}" Text="0.00" Style="{Binding Source={x:StaticResource TextFieldStyle}}"/>
                                 </XF:MaterialCard>
                             </StackLayout>
                         </XF:MaterialCard>
@@ -104,11 +104,11 @@
                                     </StackLayout>
                                 </XF:MaterialCard>
                                 <XF:MaterialCard Style="{Binding Source={x:StaticResource TextFieldBorder}}">
-                                    <XF:MaterialTextField Placeholder="Amount" Text="0.00" Style="{Binding Source={x:StaticResource TextFieldStyle}}"/>
+                                    <XF:MaterialTextField Placeholder="{Utils:Translate Amount}" Text="0.00" Style="{Binding Source={x:StaticResource TextFieldStyle}}"/>
                                 </XF:MaterialCard>
                             </StackLayout>
                         </XF:MaterialCard>
-                        <Button Text="Update" TextColor="White" BackgroundColor="#75B2FF" 
+                        <Button Text="{Utils:Translate Update}" TextColor="White" BackgroundColor="#75B2FF" 
                                 TextTransform="None" CornerRadius="5" HeightRequest="50" Padding="40,0" 
                                 HorizontalOptions="FillAndExpand"/>
                     </StackLayout>

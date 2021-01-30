@@ -45,7 +45,7 @@
                                     <FormattedString>
                                         <FormattedString.Spans>
                                             <Span Text="{Utils:Translate Forget_Password}"/>
-                                            <Span Text="?"/>
+                                            <Span Text="{Utils:Translate ?}"/>
                                         </FormattedString.Spans>
                                     </FormattedString>
                                 </XF:MaterialLabel.FormattedText>
@@ -58,7 +58,7 @@
                                         <FormattedString>
                                             <FormattedString.Spans>
                                                 <Span Text="{Utils:Translate New_user}"/>
-                                                <Span Text="?"/>
+                                                <Span Text="{Utils:Translate ?}"/>
                                             </FormattedString.Spans>
                                         </FormattedString>
                                     </XF:MaterialLabel.FormattedText>
@@ -73,9 +73,9 @@
                                 <XF:MaterialLabel.FormattedText>
                                     <FormattedString>
                                         <FormattedString.Spans>
-                                            <Span Text="Privacy terms" TextColor="#5D74E3"/>
+                                            <Span Text="{Utils:Translate Privacy_terms}" TextColor="#5D74E3"/>
                                             <Span Text=" &amp; " TextColor="Black"/>
-                                            <Span Text="Conditions" TextColor="#5D74E3"/>
+                                            <Span Text="{Utils:Translate Conditions}" TextColor="#5D74E3"/>
                                         </FormattedString.Spans>
                                     </FormattedString>
                                 </XF:MaterialLabel.FormattedText>

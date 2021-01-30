@@ -59,7 +59,7 @@
                                         <FormattedString>
                                             <FormattedString.Spans>
                                                 <Span Text="{Utils:Translate HOW_IS_YOUR_TRIP}"/>
-                                                <Span Text="?"/>
+                                                <Span Text="{Utils:Translate ?}"/>
                                             </FormattedString.Spans>
                                         </FormattedString>
                                     </XF:MaterialLabel.FormattedText>

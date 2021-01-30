@@ -20,7 +20,7 @@
                                      IsBottomButtonEnable="True"
                                      IsSwipeIconVisible="True"
                                      BackgroundBottomSheetColor="White" 
-                                     BottomButtonText="{Binding TextButton}">
+                                     BottomButtonText="{Utils:Translate Show_Order_Request}">
                 <UserControl:BottomSheet.ContentMainPage>
                     <Grid Margin="0" Padding="0">
                         <GoogleMaps:Map x:Name="MapForms" Padding="0,250,0,50"/>
@@ -33,12 +33,12 @@
                             </StackLayout>
                             <XF:MaterialCard x:Name="ErrorCard" Margin="0" Padding="20,10" BackgroundColor="#E93832" VerticalOptions="Start"
                                              TranslationY="-50" Opacity="0" IsVisible="False">
-                                <Label x:Name="TextError" Text="You have to charge to get order from client" TextColor="White"
+                                <Label x:Name="TextError" Text="{Utils:Translate You_have_to_charge_to_get_order_from_client}" TextColor="White"
                                        FontAttributes="Bold"/>
                             </XF:MaterialCard>
                             <Button Margin="10,0" HeightRequest="60" WidthRequest="60" CornerRadius="30"
                                     HorizontalOptions="End" VerticalOptions="Start"
-                                    Text="On" BackgroundColor="#75B2FF" TextColor="White"
+                                    Text="{Utils:Translate On}" BackgroundColor="#75B2FF" TextColor="White"
                                     Command="{Binding TrunOnOffCommand}">
                                 <Button.Triggers>
                                     <DataTrigger TargetType="Button" Binding="{Binding TrunOnOff}" Value="False">
@@ -61,7 +61,7 @@
                                 <ViewCell>
                                     <XF:MaterialCard Margin="0,5" Padding="0" CornerRadius="5" HasShadow="True" BackgroundColor="White" BorderColor="#AD556080">
                                         <StackLayout Margin="20,10" Padding="0" Spacing="10">
-                                            <XF:MaterialLabel Text="In Progress" TextColor="Orange" TypeScale="Subtitle2" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                                            <XF:MaterialLabel Text="{Utils:Translate In_Progress}" TextColor="Orange" TypeScale="Subtitle2" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
                                                 <XF:MaterialLabel.Triggers>
                                                     <DataTrigger TargetType="XF:MaterialLabel" Binding="{Binding IsServiced}" Value="True">
                                                         <Setter Property="Text" Value="Complete"/>
@@ -93,9 +93,9 @@
                                                 </StackLayout>
                                             </StackLayout>
                                             <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10" HeightRequest="40">
-                                                <Button Text="Arrived" TextColor="White" BackgroundColor="#43B372" 
+                                                <Button Text="{Utils:Translate Arrived}" TextColor="White" BackgroundColor="#43B372" 
                                                         TextTransform="None" CornerRadius="5" HorizontalOptions="FillAndExpand"/>
-                                                <Button Text="Client Map" TextColor="White" BackgroundColor="#E93832" 
+                                                <Button Text="{Utils:Translate Client_Map}" TextColor="White" BackgroundColor="#E93832" 
                                                         TextTransform="None" CornerRadius="5" HorizontalOptions="FillAndExpand"/>
                                             </StackLayout>
                                         </StackLayout>
@@ -192,10 +192,19 @@
                 <StackLayout Margin="0" Padding="0" Spacing="10" VerticalOptions="FillAndExpand">
                     <Frame Margin="0" Padding="0" CornerRadius="5" BorderColor="#75B2FF" BackgroundColor="White">
                         <StackLayout Orientation="Horizontal" Margin="0" Padding="0,0,20,0" Spacing="0">
-                            <Label Text="Distance:" BackgroundColor="#75B2FF" TextColor="White"
-                                               WidthRequest="150" Padding="10"
-                                               HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
-                                               FontAttributes="Bold" FontSize="Medium"/>
+                            <Label BackgroundColor="#75B2FF" TextColor="White"
+                                    WidthRequest="150" Padding="10"
+                                    HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+                                    FontAttributes="Bold" FontSize="Medium">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="{Utils:Translate Distance}"/>
+                                            <Span Text=":"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
                             <XF:MaterialLabel TextColor="Black" FontAttributes="Bold" FontSize="Medium"
                                                   HorizontalTextAlignment="Center" HorizontalOptions="EndAndExpand"
                                                   VerticalTextAlignment="Center" VerticalOptions="FillAndExpand">
@@ -204,7 +213,7 @@
                                         <FormattedString.Spans>
                                             <Span Text="1.40"/>
                                             <Span Text=" "/>
-                                            <Span Text="JOD"/>
+                                            <Span Text="{Utils:Translate JOD}"/>
                                         </FormattedString.Spans>
                                     </FormattedString>
                                 </XF:MaterialLabel.FormattedText>
@@ -214,10 +223,19 @@
                     </Frame>
                     <Frame Margin="0" Padding="0" CornerRadius="5" BorderColor="#43B372" BackgroundColor="White">
                         <StackLayout Orientation="Horizontal" Margin="0" Padding="0,0,20,0" Spacing="0">
-                            <Label Text="Addation Fees:" BackgroundColor="#43B372" TextColor="White"
+                            <Label BackgroundColor="#43B372" TextColor="White"
                                     WidthRequest="150" Padding="10"
                                     HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
-                                    FontAttributes="Bold" FontSize="Medium"/>
+                                    FontAttributes="Bold" FontSize="Medium">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="{Utils:Translate Addation_Fees}"/>
+                                            <Span Text=":"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
                             <XF:MaterialLabel TextColor="Black" FontAttributes="Bold" FontSize="Medium"
                                                 HorizontalTextAlignment="Center" HorizontalOptions="EndAndExpand"
                                                 VerticalTextAlignment="Center" VerticalOptions="FillAndExpand">
@@ -226,7 +244,7 @@
                                         <FormattedString.Spans>
                                             <Span Text="1.40"/>
                                             <Span Text=" "/>
-                                            <Span Text="JOD"/>
+                                            <Span Text="{Utils:Translate JOD}"/>
                                         </FormattedString.Spans>
                                     </FormattedString>
                                 </XF:MaterialLabel.FormattedText>
@@ -235,9 +253,9 @@
                     </Frame>
                 </StackLayout>
                 <Grid Margin="0" Padding="0" ColumnDefinitions="*,*" ColumnSpacing="20" VerticalOptions="EndAndExpand">
-                    <Button Grid.Column="1" Text="Confirme" TextColor="White" BackgroundColor="#75B2FF" 
+                    <Button Grid.Column="1" Text="{Utils:Translate Confirme}" TextColor="White" BackgroundColor="#75B2FF" 
                                         TextTransform="None" CornerRadius="5"/>
-                    <Button Grid.Column="0" Text="Ignore" TextColor="White" BackgroundColor="#E93832" 
+                    <Button Grid.Column="0" Text="{Utils:Translate Ignore}" TextColor="White" BackgroundColor="#E93832" 
                                         TextTransform="None" CornerRadius="5"/>
                 </Grid>
             </StackLayout>
@@ -253,7 +271,7 @@
                         <XF:MaterialLabel.FormattedText>
                             <FormattedString>
                                 <FormattedString.Spans>
-                                    <Span Text="Duration Trip"/>
+                                    <Span Text="{Utils:Translate Duration_Trip}"/>
                                     <Span Text=" : "/>
                                     <Span Text="00:00:04"/>
                                 </FormattedString.Spans>

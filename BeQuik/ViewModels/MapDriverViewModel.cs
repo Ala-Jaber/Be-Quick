@@ -36,14 +36,8 @@ namespace BeQuik.ViewModels
             get { return _IsReceiveNewOrder; }
             set { _IsReceiveNewOrder = value; OnPropertyChanged(); }
         }
-        private string _TextButton = "Show Order List";
-        public string TextButton
-        {
-            get { return _TextButton; }
-            set { _TextButton = value; OnPropertyChanged(); }
-        }
 
-        private string _TextTripButton = "Start Trip";
+        private string _TextTripButton = Utils.LocalizationResourceManager.Instance.GetValue("Start_Trip");
         public string TextTripButton
         {
             get { return _TextTripButton; }
@@ -73,7 +67,7 @@ namespace BeQuik.ViewModels
             OpenProfileCommand = new Command(() => new ViewModels.ProfilePageViewModel());
             OpenWalletCommand = new Command(() => new ViewModels.WalletPageViewModel());
             ToggelDisplayCancelRideCommand = new Command(() => SetShowCancelRide(!IsShowCancelRide));
-            CancelRideCommand = new Command(() => {TextTripButton = "Start Trip"; IsShowTripInfromation = false; SetShowCancelRide(false); });
+            CancelRideCommand = new Command(() => {TextTripButton = Utils.LocalizationResourceManager.Instance.GetValue("Start_Trip"); IsShowTripInfromation = false; SetShowCancelRide(false); });
             MenuShow = new Command(ShowMenu);
             TrunOnOffCommand = new Command(() => TrunOnOff = !TrunOnOff);
             Page = new Views.MasterDetailView(new Views.MapDriverView());
@@ -87,13 +81,12 @@ namespace BeQuik.ViewModels
         private void ShowMenu() => Page.IsPresented = true;
         private void ReceiveNewOrder()
         {
-            TextButton = "Show Order Request";
             IsReceiveNewOrder = true;
         }
         private void ToggelTrip()
         {
-            IsShowTripInfromation = !TextTripButton.Equals("End Trip");
-            TextTripButton = "Start Trip";
+            IsShowTripInfromation = !TextTripButton.Equals(Utils.LocalizationResourceManager.Instance.GetValue("End_Trip"));
+            TextTripButton = Utils.LocalizationResourceManager.Instance.GetValue("Start_Trip");
         }
         public void SetShowCancelRide(bool show)
         {
@@ -104,9 +97,9 @@ namespace BeQuik.ViewModels
         {
             MenuItems = new List<Model.MenuItem>
             {
-                new Model.MenuItem{ImageSource="calendar.png" ,Text="Booking history",Command=new Command(()=> new ViewModels.BookingHistoryViewModel())},
-                new Model.MenuItem{ImageSource="digital_wallet_g.png" ,Text="Your wallet",Command=new Command(()=> new ViewModels.WalletPageViewModel())},
-                new Model.MenuItem{ImageSource="headphones.png" ,Text="Contact us",Command=new Command(()=> new ViewModels.ContactUsViewModel())},
+                new Model.MenuItem{ImageSource="calendar.png" ,Text=Utils.LocalizationResourceManager.Instance.GetValue("Booking_history"),Command=new Command(()=> new ViewModels.BookingHistoryViewModel())},
+                new Model.MenuItem{ImageSource="digital_wallet_g.png" ,Text=Utils.LocalizationResourceManager.Instance.GetValue("Your_wallet"),Command=new Command(()=> new ViewModels.WalletPageViewModel())},
+                new Model.MenuItem{ImageSource="headphones.png" ,Text=Utils.LocalizationResourceManager.Instance.GetValue("Contact_us"),Command=new Command(()=> new ViewModels.ContactUsViewModel())},
             };
         }
         private void InitOrders()

@@ -123,7 +123,7 @@
                             </Grid>
                             <!--Register As-->
                             <StackLayout Margin="0" Padding="0" Spacing="10">
-                                <XF:MaterialLabel Text="Register as" TextColor="#000000" TypeScale="Subtitle2"/>
+                                <XF:MaterialLabel Text="{Utils:Translate Register_as}" TextColor="#000000" TypeScale="Subtitle2"/>
                                 <Grid ColumnDefinitions="*,*,*" ColumnSpacing="10" 
                                       RowDefinitions="100" x:Name="GridRadioRegisterAs"
                                       HorizontalOptions="FillAndExpand" VerticalOptions="Start"
@@ -132,7 +132,7 @@
                                         <RadioButton.Content>
                                             <StackLayout>
                                                 <Image Source="driver" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-                                                <Label Text="Driver" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                                <Label Text="{Utils:Translate Driver}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
                                             </StackLayout>
                                         </RadioButton.Content>
                                     </RadioButton>
@@ -140,7 +140,7 @@
                                         <RadioButton.Content>
                                             <StackLayout>
                                                 <Image Source="partner" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-                                                <Label Text="Partner" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                                <Label Text="{Utils:Translate Partner}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
                                             </StackLayout>
                                         </RadioButton.Content>
                                     </RadioButton>
@@ -148,7 +148,7 @@
                                         <RadioButton.Content>
                                             <StackLayout>
                                                 <Image Source="staff" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-                                                <Label Text="Staff" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                                <Label Text="{Utils:Translate Staff}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
                                             </StackLayout>
                                         </RadioButton.Content>
                                     </RadioButton>
@@ -156,7 +156,7 @@
                             </StackLayout>
                             <!--Service Type-->
                             <StackLayout Margin="0" Padding="0" Spacing="10" IsVisible="False">
-                                <XF:MaterialLabel Text="Service" TextColor="#000000" TypeScale="Subtitle2"/>
+                                <XF:MaterialLabel Text="{Utils:Translate Service}" TextColor="#000000" TypeScale="Subtitle2"/>
                                 <ScrollView Orientation="Horizontal" Margin="5,0" Padding="0" VerticalOptions="Start" HorizontalScrollBarVisibility="Never">
                                     <Grid ColumnDefinitions="*,*,*,*" ColumnSpacing="10" RowDefinitions="90"
                                           HorizontalOptions="CenterAndExpand" VerticalOptions="Start"
@@ -206,7 +206,7 @@
                             </StackLayout>
                             <!--Staff Type-->
                             <StackLayout Margin="0" Padding="0" Spacing="10" IsVisible="False">
-                                <XF:MaterialLabel Text="Type" TextColor="#000000" TypeScale="Subtitle2"/>
+                                <XF:MaterialLabel Text="{Utils:Translate Type}" TextColor="#000000" TypeScale="Subtitle2"/>
                                 <ScrollView Orientation="Horizontal" Margin="5,0" Padding="0" VerticalOptions="Start" HorizontalScrollBarVisibility="Never">
                                     <Grid ColumnDefinitions="*,*,*" ColumnSpacing="10" 
                                           RowDefinitions="90"
@@ -216,7 +216,7 @@
                                             <RadioButton.Content>
                                                 <StackLayout>
                                                     <Image Source="markteing" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-                                                    <Label Text="Marketing" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                                    <Label Text="{Utils:Translate Marketing}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
                                                 </StackLayout>
                                             </RadioButton.Content>
                                         </RadioButton>
@@ -224,7 +224,7 @@
                                             <RadioButton.Content>
                                                 <StackLayout>
                                                     <Image Source="collector" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-                                                    <Label Text="Collector" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                                    <Label Text="{Utils:Translate Collector}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
                                                 </StackLayout>
                                             </RadioButton.Content>
                                         </RadioButton>
@@ -232,7 +232,7 @@
                                             <RadioButton.Content>
                                                 <StackLayout>
                                                     <Image Source="accountant" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-                                                    <Label Text="Accountant" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                                    <Label Text="{Utils:Translate Accountant}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
                                                 </StackLayout>
                                             </RadioButton.Content>
                                         </RadioButton>
@@ -248,12 +248,12 @@
 
                             <StackLayout Margin="0" Padding="0" Spacing="20" IsVisible="False">
                                 <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="3" CornerRadius="5">
-                                    <XF:MaterialTextField Placeholder="License Number" TextColor="#000000" InputType="Email"
+                                    <XF:MaterialTextField Placeholder="{Utils:Translate License_Number}" TextColor="#000000" InputType="Email"
                                                     FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                     CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
                                 </XF:MaterialCard>
                                 <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="3" CornerRadius="5">
-                                    <XF:MaterialTextField Placeholder="Vehicle License Number" TextColor="#000000" InputType="Email"
+                                    <XF:MaterialTextField Placeholder="{Utils:Translate Vehicle_License_Number}" TextColor="#000000" InputType="Email"
                                                           FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                           CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
                                 </XF:MaterialCard>
@@ -267,7 +267,7 @@
                                 </StackLayout.Triggers>
                             </StackLayout>                            
                             <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="3" CornerRadius="5" IsVisible="False">
-                                <XF:MaterialTextField Placeholder="Plate Number" TextColor="#000000" InputType="Text"
+                                <XF:MaterialTextField Placeholder="{Utils:Translate Plate_Number}" TextColor="#000000" InputType="Text"
                                                     FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                     CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
                                 <XF:MaterialCard.Triggers>

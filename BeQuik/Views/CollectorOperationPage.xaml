@@ -19,7 +19,7 @@
                     <StackLayout Margin="20,10" Padding="0" Spacing="20">
                         <XF:MaterialCard Margin="0" Padding="20,10" BackgroundColor="White" CornerRadius="10">
                             <StackLayout Margin="0" Padding="0" Spacing="20">
-                                <XF:MaterialLabel Text="Money Collecting" FontAttributes="Bold" TextColor="#000000" TypeScale="Subtitle1"/>
+                                <XF:MaterialLabel Text="{Utils:Translate Money_Collecting}" FontAttributes="Bold" TextColor="#000000" TypeScale="Subtitle1"/>
                                 <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="3" CornerRadius="5">
                                     <XF:MaterialTextField Placeholder="Partnet ID" TextColor="#000000" InputType="Numeric"
                                                           FloatingPlaceholderColor="#000000" TintColor="#000000"
@@ -30,13 +30,13 @@
                                                           FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                           CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
                                 </XF:MaterialCard>
-                                <Button Text="Deduct from partner balance" TextColor="White" BackgroundColor="#75B2FF" 
+                                <Button Text="{Utils:Translate Deduct_from_partner_balance}" TextColor="White" BackgroundColor="#75B2FF" 
                                     TextTransform="None" CornerRadius="5" Margin="0,20,0,0" Padding="40,0"/>
                             </StackLayout>
                         </XF:MaterialCard>
                         <XF:MaterialCard Margin="0" Padding="20,10" BackgroundColor="White" CornerRadius="10">
                             <StackLayout Margin="0" Padding="0" Spacing="20">
-                                <XF:MaterialLabel Text="Receive Operation" FontAttributes="Bold" TextColor="#000000" TypeScale="Subtitle1"/>
+                                <XF:MaterialLabel Text="{Utils:Translate Receive_Operation}" FontAttributes="Bold" TextColor="#000000" TypeScale="Subtitle1"/>
                                 <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="3" CornerRadius="5">
                                     <XF:MaterialTextField Placeholder="Partnet ID" TextColor="#000000" InputType="Numeric"
                                                           FloatingPlaceholderColor="#000000" TintColor="#000000"
@@ -47,7 +47,7 @@
                                                           FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                           CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
                                 </XF:MaterialCard>
-                                <Button Text="Receive operation" TextColor="White" BackgroundColor="#75B2FF" 
+                                <Button Text="{Utils:Translate Receive_Operation}" TextColor="White" BackgroundColor="#75B2FF" 
                                     TextTransform="None" CornerRadius="5" Margin="0,20,0,0" Padding="40,0"/>
                             </StackLayout>
                         </XF:MaterialCard>

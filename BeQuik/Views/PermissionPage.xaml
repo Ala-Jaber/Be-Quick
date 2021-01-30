@@ -18,7 +18,7 @@
                 <StackLayout Margin="20,10" Padding="0" Spacing="20">
                     <XF:MaterialCard Margin="0" Padding="20,10" BackgroundColor="White" CornerRadius="10">
                         <StackLayout Margin="0" Padding="0" Spacing="20">
-                            <XF:MaterialLabel Text="Permission" FontAttributes="Bold" TextColor="#000000" TypeScale="Subtitle1"/>
+                            <XF:MaterialLabel Text="{Utils:Translate Permission}" FontAttributes="Bold" TextColor="#000000" TypeScale="Subtitle1"/>
                             <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="3" CornerRadius="5">
                                 <XF:MaterialTextField Placeholder="{Utils:Translate Phone_Number}" TextColor="#000000" InputType="Telephone"
                                                           FloatingPlaceholderColor="#000000" TintColor="#000000"
@@ -26,11 +26,11 @@
                             </XF:MaterialCard>
                             <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="3" CornerRadius="5">
 
-                                <XF:MaterialTextField Placeholder="Type" TextColor="#000000" InputType="Email"
+                                <XF:MaterialTextField Placeholder="{Utils:Translate Type}" TextColor="#000000" InputType="Email"
                                                           FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                           CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
                             </XF:MaterialCard>
-                            <Button Text="Update" TextColor="White" BackgroundColor="#75B2FF" 
+                            <Button Text="{Utils:Translate Update}" TextColor="White" BackgroundColor="#75B2FF" 
                                     TextTransform="None" CornerRadius="5" Margin="0,20,0,0" Padding="40,0"/>
                         </StackLayout>
                     </XF:MaterialCard>

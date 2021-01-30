@@ -20,7 +20,7 @@
                 </StackLayout>
                 <Grid ColumnDefinitions="*,*" RowDefinitions="25,2.5" ColumnSpacing="10" RowSpacing="5">
                     <XF:MaterialLabel Grid.Row="0" Grid.Column="0"
-                                  Text="Weekly" TextColor="Black" TypeScale="Subtitle1"
+                                  Text="{Utils:Translate Weekly}" TextColor="Black" TypeScale="Subtitle1"
                                   HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"
                                   VerticalOptions="FillAndExpand" VerticalTextAlignment="Center"
                                   FontAttributes="Bold">
@@ -42,7 +42,7 @@
                     </BoxView>
 
                     <XF:MaterialLabel Grid.Row="0" Grid.Column="1" 
-                                  Text="Monthly" TextColor="Black" TypeScale="Subtitle1"
+                                  Text="{Utils:Translate Monthly}" TextColor="Black" TypeScale="Subtitle1"
                                   HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"
                                   VerticalOptions="FillAndExpand" VerticalTextAlignment="Center"
                                   FontAttributes="Bold">
@@ -87,7 +87,7 @@
                                             <XF:MaterialLabel.FormattedText>
                                                 <FormattedString>
                                                     <FormattedString.Spans>
-                                                        <Span Text="Order Number"/>
+                                                        <Span Text="{Utils:Translate Order_Number}"/>
                                                         <Span Text=": "/>
                                                         <Span Text="{Binding OrderID}" FontAttributes="Bold"/>
                                                     </FormattedString.Spans>
@@ -98,7 +98,7 @@
                                             <XF:MaterialLabel.FormattedText>
                                                 <FormattedString>
                                                     <FormattedString.Spans>
-                                                        <Span Text="Service Type"/>
+                                                        <Span Text="{Utils:Translate Service_Type}"/>
                                                         <Span Text=": "/>
                                                         <Span Text="{Binding Type}" FontAttributes="Bold"/>
                                                     </FormattedString.Spans>
@@ -112,7 +112,7 @@
                                                 <FormattedString.Spans>
                                                     <Span Text="{Binding Price,StringFormat='{0:D2}'}"/>
                                                     <Span Text=" "/>
-                                                    <Span Text="JOD"/>
+                                                    <Span Text="{Utils:Translate JOD}"/>
                                                 </FormattedString.Spans>
                                             </FormattedString>
                                         </XF:MaterialLabel.FormattedText>
@@ -127,12 +127,10 @@
                                      HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                                 <Image Source="empty_file" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center"/>
                                 <StackLayout Margin="0" Padding="0" Spacing="5">
-                                    <XF:MaterialLabel
-                                  Text="Booking history is empty" TextColor="#9097AC" TypeScale="Subtitle2"
-                                  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
-                                    <XF:MaterialLabel
-                                  Text="Let get started" TextColor="#9097AC" TypeScale="Body2"
-                                  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                    <XF:MaterialLabel Text="{Utils:Translate Booking_history_is_empty}" TextColor="#9097AC" TypeScale="Subtitle2"
+                                                        HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                    <XF:MaterialLabel Text="{Utils:Translate Let_get_started}" TextColor="#9097AC" TypeScale="Body2"
+                                                        HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
                                 </StackLayout>
                             </StackLayout>
                         </StackLayout>

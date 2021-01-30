@@ -117,23 +117,62 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="?" xml:space="preserve">
+    <value>?</value>
+  </data>
+  <data name="Accountant" xml:space="preserve">
+    <value>Accountant</value>
+  </data>
+  <data name="Addation_Fees" xml:space="preserve">
+    <value>Addation Fees</value>
+  </data>
   <data name="Additional_comments" xml:space="preserve">
     <value>Additional comments... </value>
+  </data>
+  <data name="Add_Promo_Code" xml:space="preserve">
+    <value>Add Promo Code</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Administration</value>
   </data>
   <data name="Already_have_account" xml:space="preserve">
     <value>Already have account</value>
   </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
   <data name="Amount_charged" xml:space="preserve">
     <value>Amount charged</value>
   </data>
+  <data name="Analysis_report" xml:space="preserve">
+    <value>Analysis report</value>
+  </data>
   <data name="Area_Code" xml:space="preserve">
     <value>Area Code</value>
+  </data>
+  <data name="Arrived" xml:space="preserve">
+    <value>Arrived</value>
+  </data>
+  <data name="Balance" xml:space="preserve">
+    <value>Balance</value>
+  </data>
+  <data name="Balance_code_operation" xml:space="preserve">
+    <value>Balance code operation</value>
+  </data>
+  <data name="Balance_operation" xml:space="preserve">
+    <value>Balance operation</value>
   </data>
   <data name="BeQuick_service_fees" xml:space="preserve">
     <value>BeQuick service fees (incl. Tax)</value>
   </data>
   <data name="Booking_history" xml:space="preserve">
     <value>Booking history</value>
+  </data>
+  <data name="Booking_history_is_empty" xml:space="preserve">
+    <value>Booking history is empty</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
   </data>
   <data name="Cancel_Ride" xml:space="preserve">
     <value>Cancel Ride</value>
@@ -143,6 +182,27 @@
   </data>
   <data name="Cash" xml:space="preserve">
     <value>Cash</value>
+  </data>
+  <data name="Client_Map" xml:space="preserve">
+    <value>Client Map</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="Code_Generated" xml:space="preserve">
+    <value>Code Generated</value>
+  </data>
+  <data name="Collector" xml:space="preserve">
+    <value>Collector</value>
+  </data>
+  <data name="Collector_operation" xml:space="preserve">
+    <value>Collector operation</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="Conditions" xml:space="preserve">
+    <value>Conditions</value>
   </data>
   <data name="Confirme" xml:space="preserve">
     <value>Confirme</value>
@@ -165,6 +225,9 @@
   <data name="Customer_Payment" xml:space="preserve">
     <value>Customer Payment</value>
   </data>
+  <data name="Deduct_from_partner_balance" xml:space="preserve">
+    <value>Deduct from partner balance</value>
+  </data>
   <data name="Delivery" xml:space="preserve">
     <value>Delivery</value>
   </data>
@@ -174,14 +237,26 @@
   <data name="Distance" xml:space="preserve">
     <value>Distance</value>
   </data>
+  <data name="Driver" xml:space="preserve">
+    <value>Driver</value>
+  </data>
   <data name="Driver_will_arrive_to_you_in" xml:space="preserve">
     <value>Driver will arrive to you in</value>
+  </data>
+  <data name="Duration_Trip" xml:space="preserve">
+    <value>Duration Trip</value>
   </data>
   <data name="Email" xml:space="preserve">
     <value>Email</value>
   </data>
+  <data name="End_Trip" xml:space="preserve">
+    <value>End Trip</value>
+  </data>
   <data name="Enter_OTP_code_sent_to_your_number" xml:space="preserve">
     <value>Enter OTP code sent to your number</value>
+  </data>
+  <data name="Enter_promotion_code" xml:space="preserve">
+    <value>Enter promotion code</value>
   </data>
   <data name="FARE" xml:space="preserve">
     <value>FARE</value>
@@ -195,6 +270,9 @@
   <data name="Gas" xml:space="preserve">
     <value>Gas</value>
   </data>
+  <data name="Generate_Code" xml:space="preserve">
+    <value>Generate Code</value>
+  </data>
   <data name="Help" xml:space="preserve">
     <value>Help</value>
   </data>
@@ -204,8 +282,20 @@
   <data name="HOW_IS_YOUR_TRIP" xml:space="preserve">
     <value>HOW IS YOUR TRIP</value>
   </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Ignore</value>
+  </data>
   <data name="incl_Tax" xml:space="preserve">
     <value>(incl. Tax)</value>
+  </data>
+  <data name="In_Progress" xml:space="preserve">
+    <value>In Progress</value>
+  </data>
+  <data name="JOD" xml:space="preserve">
+    <value>JOD</value>
+  </data>
+  <data name="JOD_wallet" xml:space="preserve">
+    <value>JOD wallet</value>
   </data>
   <data name="Keep_the_booking" xml:space="preserve">
     <value>Keep the booking</value>
@@ -213,11 +303,38 @@
   <data name="Last_Name" xml:space="preserve">
     <value>Last Name</value>
   </data>
+  <data name="Let_get_started" xml:space="preserve">
+    <value>Let get started</value>
+  </data>
+  <data name="License_Number" xml:space="preserve">
+    <value>License Number</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="Marketing" xml:space="preserve">
+    <value>Marketing</value>
+  </data>
   <data name="Minmum_payment" xml:space="preserve">
     <value>Minmum payment</value>
   </data>
+  <data name="Money_Collecting" xml:space="preserve">
+    <value>Money Collecting</value>
+  </data>
+  <data name="Monthly" xml:space="preserve">
+    <value>Monthly</value>
+  </data>
   <data name="New_user" xml:space="preserve">
     <value>New user</value>
+  </data>
+  <data name="On" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="Order_Number" xml:space="preserve">
+    <value>Order Number</value>
+  </data>
+  <data name="Partner" xml:space="preserve">
+    <value>Partner</value>
   </data>
   <data name="Passengers_that_cancel_less_get_faster_bookings" xml:space="preserve">
     <value>Passengers that cancel less get faster bookings</value>
@@ -225,14 +342,56 @@
   <data name="Password" xml:space="preserve">
     <value>Password</value>
   </data>
+  <data name="People" xml:space="preserve">
+    <value>People</value>
+  </data>
+  <data name="Permission" xml:space="preserve">
+    <value>Permission</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
   <data name="Phone_Number" xml:space="preserve">
     <value>Phone Number</value>
+  </data>
+  <data name="Plate_Number" xml:space="preserve">
+    <value>Plate Number</value>
+  </data>
+  <data name="Pricing" xml:space="preserve">
+    <value>Pricing</value>
+  </data>
+  <data name="Privacy_terms" xml:space="preserve">
+    <value>Privacy terms</value>
   </data>
   <data name="Profile" xml:space="preserve">
     <value>Profile</value>
   </data>
+  <data name="Promoation_Code_is_Added_Successfully" xml:space="preserve">
+    <value>Promoation Code is Added Successfully</value>
+  </data>
+  <data name="Promoation_Code_is_Invalide_Sorry" xml:space="preserve">
+    <value>Promoation Code is Invalide Sorry</value>
+  </data>
+  <data name="Promotion_code" xml:space="preserve">
+    <value>Promotion code</value>
+  </data>
   <data name="Rated" xml:space="preserve">
     <value>Rated</value>
+  </data>
+  <data name="Receive_Operation" xml:space="preserve">
+    <value>Receive Operation</value>
+  </data>
+  <data name="Recent_transactions" xml:space="preserve">
+    <value>Recent transactions</value>
+  </data>
+  <data name="Redeem_voucher" xml:space="preserve">
+    <value>Redeem voucher</value>
+  </data>
+  <data name="Refresh_Data" xml:space="preserve">
+    <value>Refresh Data</value>
+  </data>
+  <data name="Register_as" xml:space="preserve">
+    <value>Register as</value>
   </data>
   <data name="resend_code_after" xml:space="preserve">
     <value>resend code after</value>
@@ -240,11 +399,26 @@
   <data name="Resend_verification_code" xml:space="preserve">
     <value>Resend verification code</value>
   </data>
+  <data name="Service" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="Service_Type" xml:space="preserve">
+    <value>Service Type</value>
+  </data>
+  <data name="Show_Order_Request" xml:space="preserve">
+    <value>Show Order Request</value>
+  </data>
   <data name="SingIn" xml:space="preserve">
     <value>SingIn</value>
   </data>
   <data name="SingUp" xml:space="preserve">
     <value>SingUp</value>
+  </data>
+  <data name="Staff" xml:space="preserve">
+    <value>Staff</value>
+  </data>
+  <data name="Start_Trip" xml:space="preserve">
+    <value>Start Trip</value>
   </data>
   <data name="Submit_Review" xml:space="preserve">
     <value>Submit Review</value>
@@ -252,8 +426,26 @@
   <data name="The_amount_the_customer_paid" xml:space="preserve">
     <value>The amount the customer paid</value>
   </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="Update_Balance" xml:space="preserve">
+    <value>Update Balance</value>
+  </data>
+  <data name="Vehicle_License_Number" xml:space="preserve">
+    <value>Vehicle License Number</value>
+  </data>
   <data name="Verification" xml:space="preserve">
     <value>Verification</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="Weekly" xml:space="preserve">
+    <value>Weekly</value>
   </data>
   <data name="WE_FOUND_YOU_A_DRIVER" xml:space="preserve">
     <value>WE FOUND YOU A DRIVER</value>
@@ -270,7 +462,10 @@
   <data name="Your_feedback_will_help_us_improve_driving_experience_better" xml:space="preserve">
     <value>Your feedback will help us improve driving experience better</value>
   </data>
-  <data name="Your_Wallet" xml:space="preserve">
-    <value>Your Wallet</value>
+  <data name="Your_wallet" xml:space="preserve">
+    <value>Your wallet</value>
+  </data>
+  <data name="You_have_to_charge_to_get_order_from_client" xml:space="preserve">
+    <value>You have to charge to get order from client</value>
   </data>
 </root>

@@ -45,9 +45,9 @@ namespace BeQuik.ViewModels
         {
             MenuItems = new List<Model.MenuItem>
             {
-                new Model.MenuItem{ImageSource="calendar.png" ,Text="Booking history",Command=new Command(()=> new ViewModels.BookingHistoryViewModel())},
-                new Model.MenuItem{ImageSource="digital_wallet_g.png" ,Text="Your wallet",Command=new Command(()=> new ViewModels.WalletPageViewModel())},
-                new Model.MenuItem{ImageSource="headphones.png" ,Text="Contact us",Command=new Command(()=> new ViewModels.ContactUsViewModel())},
+                new Model.MenuItem{ImageSource="calendar.png" ,Text=Utils.LocalizationResourceManager.Instance.GetValue("Booking_history"),Command=new Command(()=> new ViewModels.BookingHistoryViewModel())},
+                new Model.MenuItem{ImageSource="digital_wallet_g.png" ,Text=Utils.LocalizationResourceManager.Instance.GetValue("Your_wallet"),Command=new Command(()=> new ViewModels.WalletPageViewModel())},
+                new Model.MenuItem{ImageSource="headphones.png" ,Text=Utils.LocalizationResourceManager.Instance.GetValue("Contact_us"),Command=new Command(()=> new ViewModels.ContactUsViewModel())},
             };
         }
         private void ShowMenu() => Page.IsPresented = true; 
@@ -59,11 +59,11 @@ namespace BeQuik.ViewModels
         private async Task ShowDialogEnterPromoCode()
         {
             var input = await MaterialDialog.Instance.InputAsync(
-                                                        title: "Promotion code",
-                                                        message: "Enter promotion code",
-                                                        inputPlaceholder: "Code",
-                                                        dismissiveText: "Cancel",
-                                                        confirmingText: "Confirme",
+                                                        title: Utils.LocalizationResourceManager.Instance.GetValue("Promotion_code"),
+                                                        message: Utils.LocalizationResourceManager.Instance.GetValue("Enter_promotion_code"),
+                                                        inputPlaceholder: Utils.LocalizationResourceManager.Instance.GetValue("Code"),
+                                                        dismissiveText: Utils.LocalizationResourceManager.Instance.GetValue("Cancel"),
+                                                        confirmingText: Utils.LocalizationResourceManager.Instance.GetValue("Confirme"),
                                                         configuration: App.GetMaterialInputDialogConfiguration());
             if (!string.IsNullOrEmpty(input)) {
                 IsPromotionCodeAdded = IsValidPromotionCode(input);
@@ -73,7 +73,8 @@ namespace BeQuik.ViewModels
                     OnPropertyChanged(nameof(PromotionCode));
                     OnPropertyChanged(nameof(IsPromotionCodeAdded));
                 }
-                var MessageText = IsPromotionCodeAdded ? "Promoation Code is Added, Successfully" : "Promoation Code is Invalide, Sorry :(";
+                var MessageText = IsPromotionCodeAdded ? Utils.LocalizationResourceManager.Instance.GetValue("Promoation_Code_is_Added_Successfully") :
+                                                         Utils.LocalizationResourceManager.Instance.GetValue("Promoation_Code_is_Invalide_Sorry");
                 ShowMessageAlert?.Invoke(MessageText, IsPromotionCodeAdded, true);
                 Device.StartTimer(TimeSpan.FromSeconds(15), () => { ShowMessageAlert?.Invoke(MessageText, IsPromotionCodeAdded, false); return false; });
             }

@@ -106,7 +106,7 @@
             <!--Footer-->
             <StackLayout Margin="0" Padding="0" Spacing="30"  VerticalOptions="End">
                 <StackLayout Margin="0" Padding="0" Spacing="10">
-                    <Button ImageSource="money_discount_white" Text="Add Promo Code" 
+                    <Button ImageSource="money_discount_white" Text="{Utils:Translate Add_Promo_Code}" 
                         TextColor="White" BackgroundColor="#43B372"                         
                         TextTransform="None" CornerRadius="5"
                         Margin="30,0" Command="{Binding EnterPromoCodeCommand}"

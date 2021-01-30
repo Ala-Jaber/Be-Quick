@@ -51,7 +51,7 @@
 
                                 <Grid Margin="0" Padding="0" ColumnDefinitions="1.5*,2.5*" ColumnSpacing="10" HorizontalOptions="FillAndExpand">
                                     <XF:MaterialCard Grid.Column="0" Margin="0" Padding="10,0,5,0" HasShadow="True" Elevation="0.5" CornerRadius="5">
-                                        <UserControl:CustomPicker Title="Area Code" TextColor="#000000" FontSize="16" TitleColor="DimGray"
+                                        <UserControl:CustomPicker Title="{Utils:Translate Area_Code}" TextColor="#000000" FontSize="16" TitleColor="DimGray"
                                                                   Image="arrow_downlist" ImageSize="40"
                                                                   ItemsSource="{Binding ListAreaCode}" 
                                                                   ItemDisplayBinding="{Binding .}"
@@ -76,7 +76,7 @@
                                     <FormattedString>
                                         <FormattedString.Spans>
                                             <Span Text="{Utils:Translate Already_have_account}" />
-                                            <Span Text="?"/>
+                                            <Span Text="{Utils:Translate ?}"/>
                                         </FormattedString.Spans>
                                     </FormattedString>
                                 </XF:MaterialLabel.FormattedText>

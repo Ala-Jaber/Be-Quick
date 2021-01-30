@@ -20,7 +20,7 @@
                 <StackLayout Margin="20,10" Padding="0" Spacing="20">
                     <XF:MaterialCard Margin="0" Padding="20,10" BackgroundColor="White" CornerRadius="10">
                         <StackLayout Margin="0" Padding="0" Spacing="20">
-                            <XF:MaterialLabel Text="People" FontAttributes="Bold" TextColor="#000000" TypeScale="Subtitle1"/>
+                            <XF:MaterialLabel Text="{Utils:Translate People}" FontAttributes="Bold" TextColor="#000000" TypeScale="Subtitle1"/>
                             <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="60" HorizontalOptions="CenterAndExpand">
                                 <UserControl:Badge SizeLayout="40" HorizontalOptions="FillAndExpand"
                                                    ImageSource="driver" SizeImage="50"
@@ -35,7 +35,7 @@
                     </XF:MaterialCard>
                     <XF:MaterialCard Margin="0" Padding="20,10" BackgroundColor="White" CornerRadius="10">
                         <StackLayout Margin="0" Padding="0" Spacing="20">
-                            <XF:MaterialLabel Text="Service" FontAttributes="Bold" TextColor="#000000" TypeScale="Subtitle1"/>
+                            <XF:MaterialLabel Text="{Utils:Translate Service}" FontAttributes="Bold" TextColor="#000000" TypeScale="Subtitle1"/>
                             <FlexLayout Margin="0" Padding="0" HorizontalOptions="FillAndExpand"
                                         Wrap="Wrap" JustifyContent="SpaceEvenly" AlignItems="Start" AlignContent="SpaceEvenly">
                                 <UserControl:Badge ImageSource="delivery" SizeImage="25"
@@ -54,7 +54,7 @@
                         </StackLayout>
                     </XF:MaterialCard>
                 </StackLayout>
-                <Button Text="Refrech Data" TextColor="White" BackgroundColor="#75B2FF" 
+                <Button Text="{Utils:Translate Refresh_Data}" TextColor="White" BackgroundColor="#75B2FF" 
                         TextTransform="None" CornerRadius="5" Margin="20,10" Padding="40,0"/>
 
             </StackLayout>

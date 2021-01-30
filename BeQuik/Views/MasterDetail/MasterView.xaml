@@ -39,7 +39,7 @@
             </StackLayout>
         </ScrollView>
         <Button ImageSource="logout"
-                Text="Logout" TextColor="White" 
+                Text="{Utils:Translate Logout}" TextColor="White" 
                 BackgroundColor="#EE6763" VerticalOptions="EndAndExpand" 
                 Command="{Binding LogoutCommand}"/>
     </StackLayout>
