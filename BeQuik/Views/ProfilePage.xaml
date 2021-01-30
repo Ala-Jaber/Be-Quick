@@ -13,7 +13,7 @@
             <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
             <StackLayout Margin="0" Padding="0" Spacing="0">
                 <!--Header-->
-                <StackLayout Margin="0" Padding="0,20" Spacing="10" VerticalOptions="Start">
+                <StackLayout Margin="0" Padding="0,20,0,0" Spacing="10" VerticalOptions="Start">
                     <StackLayout FlowDirection="LeftToRight" Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
                         <XF:MaterialIconButton Image="arrow_left" BackgroundColor="White" CornerRadius="25" WidthRequest="50" HeightRequest="50" Command="{Binding MenuShow}"/>
                         <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
@@ -23,57 +23,59 @@
                         <Label x:Name="MessageText" TextColor="White"
                            FontAttributes="Bold"/>
                     </XF:MaterialCard>
-                    <StackLayout Margin="0" Padding="20" Spacing="20" VerticalOptions="Center">
-                        <Label Text="{Utils:Translate Profile}" FontAttributes="Bold" TextColor="#000000" FontSize="Large"/>
-                        <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
-                            <XF:MaterialTextField Placeholder="{Utils:Translate Partnet_ID}" TextColor="#000000" InputType="Numeric"
+                    <ScrollView Margin="0" Padding="20,20,20,0">
+                        <StackLayout Margin="0" Padding="0" Spacing="20" VerticalOptions="Center">
+                            <Label Text="{Utils:Translate Profile}" FontAttributes="Bold" TextColor="#000000" FontSize="Large"/>
+                            <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                <XF:MaterialTextField Placeholder="{Utils:Translate Partnet_ID}" TextColor="#000000" InputType="Numeric"
                                                           FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                           CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
-                        </XF:MaterialCard>
+                            </XF:MaterialCard>
 
-                        <Grid Margin="0" Padding="0" ColumnDefinitions="*,*" ColumnSpacing="10" HorizontalOptions="FillAndExpand">
-                            <XF:MaterialCard Grid.Column="0" Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
-                                <XF:MaterialTextField Placeholder="{Utils:Translate First_Name}" TextColor="#000000" InputType="Text"
+                            <Grid Margin="0" Padding="0" ColumnDefinitions="*,*" ColumnSpacing="10" HorizontalOptions="FillAndExpand">
+                                <XF:MaterialCard Grid.Column="0" Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                    <XF:MaterialTextField Placeholder="{Utils:Translate First_Name}" TextColor="#000000" InputType="Text"
                                                               FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                               CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
-                            </XF:MaterialCard>
-                            <XF:MaterialCard Grid.Column="1" Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
-                                <XF:MaterialTextField Placeholder="{Utils:Translate Last_Name}" TextColor="#000000" InputType="Text"
+                                </XF:MaterialCard>
+                                <XF:MaterialCard Grid.Column="1" Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                    <XF:MaterialTextField Placeholder="{Utils:Translate Last_Name}" TextColor="#000000" InputType="Text"
                                                               FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                               CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                                </XF:MaterialCard>
+                            </Grid>
+
+                            <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                <XF:MaterialTextField Placeholder="{Utils:Translate Email}" TextColor="#000000" InputType="Email"
+                                                          FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                          CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
                             </XF:MaterialCard>
-                        </Grid>
 
-                        <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
-                            <XF:MaterialTextField Placeholder="{Utils:Translate Email}" TextColor="#000000" InputType="Email"
+                            <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                <XF:MaterialTextField Placeholder="{Utils:Translate Password}" TextColor="#000000" InputType="Password"
                                                           FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                           CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
-                        </XF:MaterialCard>
+                            </XF:MaterialCard>
 
-                        <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
-                            <XF:MaterialTextField Placeholder="{Utils:Translate Password}" TextColor="#000000" InputType="Password"
+                            <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                <XF:MaterialTextField Placeholder="{Utils:Translate Confirm_Password}" TextColor="#000000" InputType="Password"
                                                           FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                           CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
-                        </XF:MaterialCard>
+                            </XF:MaterialCard>
 
-                        <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
-                            <XF:MaterialTextField Placeholder="{Utils:Translate Confirm_Password}" TextColor="#000000" InputType="Password"
-                                                          FloatingPlaceholderColor="#000000" TintColor="#000000"
-                                                          CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
-                        </XF:MaterialCard>
-
-                        <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
-                            <XF:MaterialTextField Placeholder="{Utils:Translate Phone_Number}" TextColor="#000000" InputType="Telephone"
+                            <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                <XF:MaterialTextField Placeholder="{Utils:Translate Phone_Number}" TextColor="#000000" InputType="Telephone"
                                                 FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                 CardBackgroundColor="White" ShouldAnimateUnderline="False"
                                                 Text="{Binding PhoneNumber}"/>
-                        </XF:MaterialCard>
+                            </XF:MaterialCard>
 
-                        <Button Text="{Utils:Translate Update}" TextColor="White" BackgroundColor="#75B2FF" 
+                            <Button Text="{Utils:Translate Update}" TextColor="White" BackgroundColor="#75B2FF" 
                                 TextTransform="None" CornerRadius="5" HeightRequest="50" Padding="40,0" 
                                 HorizontalOptions="FillAndExpand"/>
 
-                    </StackLayout>
+                        </StackLayout>
+                    </ScrollView>
                 </StackLayout>
             </StackLayout>
         </Grid>

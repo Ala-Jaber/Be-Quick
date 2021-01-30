@@ -2,59 +2,57 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BeQuik.Views.MasterView"
-             Title="Master"  BackgroundColor="White"
+             Title="Master"
              xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
              xmlns:Utils="clr-namespace:BeQuik.Utils"
-             xmlns:XE="clr-namespace:XamEffects;assembly=XamEffects">
-  <StackLayout Margin="0,50,0,0" Padding="0" Spacing="30">
-        <StackLayout Orientation="Horizontal" Margin="20,0" Padding="0" Spacing="20"
-                     XE:Commands.Tap="{Binding OpenProfileCommand}">
-            <Image Source="img_profile" Aspect="AspectFit" WidthRequest="80" HeightRequest="80">
-                <Image.Clip>
-                    <EllipseGeometry Center="40,40" RadiusX="40" RadiusY="40"/>
-                </Image.Clip>
-            </Image>
-            <StackLayout Margin="0" Padding="0" Spacing="10" VerticalOptions="Center">
-                <XF:MaterialLabel Text="Ala' Jaber" TextColor="#000000" FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"/>
-                <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="20">
-                    <XF:MaterialLabel Text="{Utils:Translate Rated}" TextColor="#556080" FontAttributes="Bold" FontSize="Small"/>
-                    <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10">
-                        <XF:MaterialLabel Text="4.90" TextColor="#556080" FontAttributes="Bold" FontSize="Small"/>
-                        <Image Source="star_filled_gray" Aspect="AspectFit"/>
-                    </StackLayout>
+             xmlns:XE="clr-namespace:XamEffects;assembly=XamEffects"
+             BackgroundColor="#2C3E50">
+    <Grid Margin="0" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
+        <StackLayout Margin="0,10,0,0" Padding="0" Spacing="30">
+            <StackLayout Margin="20,0" Padding="0" Spacing="20">
+                <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
+                <Image Source="delivery_large" Aspect="AspectFit" HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout Margin="0" Padding="0" Spacing="10">
+                <BoxView Color="#556080" Opacity="0.30" HorizontalOptions="FillAndExpand" VerticalOptions="Start" HeightRequest="2"/>
+                <StackLayout Orientation="Horizontal" Margin="20,0" Padding="0" Spacing="20" XE:Commands.Tap="{Binding ToggelLanguageCommand}">
+                    <XF:MaterialLabel TextColor="White" TypeScale="Subtitle2" FontSize="Body" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                        <XF:MaterialLabel.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="{Utils:Translate Language_Selected}"/>
+                                    <Span Text=" :    "/>
+                                    <Span Text="{Binding LanguageSelected}"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </XF:MaterialLabel.FormattedText>
+                    </XF:MaterialLabel>
+                    <Image Source="translate" Aspect="AspectFit"/>
                 </StackLayout>
+                <BoxView Color="#556080" Opacity="0.30" HorizontalOptions="FillAndExpand" VerticalOptions="Start" HeightRequest="2"/>
             </StackLayout>
-        </StackLayout>
-        <StackLayout Orientation="Horizontal" Margin="20,0" Padding="0" Spacing="20" XE:Commands.Tap="{Binding ToggelLanguageCommand}">
-            <XF:MaterialLabel TextColor="#556080" TypeScale="Subtitle2" FontSize="15" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                <XF:MaterialLabel.FormattedText>
-                    <FormattedString>
-                        <FormattedString.Spans>
-                            <Span Text="{Utils:Translate Language_Selected}"/>
-                            <Span Text=" :    "/>
-                            <Span Text="{Binding LanguageSelected}"/>
-                        </FormattedString.Spans>
-                    </FormattedString>
-                </XF:MaterialLabel.FormattedText>
-            </XF:MaterialLabel>
-            <Image Source="translate" Aspect="AspectFit"/>
-        </StackLayout>
-        <BoxView Color="#556080" Opacity="0.30" HorizontalOptions="FillAndExpand" VerticalOptions="Start" HeightRequest="2"/>
-        <ScrollView Margin="0" Padding="0">
-            <StackLayout Margin="0" Padding="0" Spacing="5" BindableLayout.ItemsSource="{Binding MenuItems}">
-                <BindableLayout.ItemTemplate>
+            <ListView ItemsSource="{Binding MenuItems}" HasUnevenRows="True" SeparatorVisibility="None">
+                <ListView.ItemTemplate>
                     <DataTemplate>
-                        <StackLayout Orientation="Horizontal" Margin="0" Padding="20,10" Spacing="20" XE:TouchEffect.Color="#5275B2FF" XE:Commands.Tap="{Binding Command}">
-                            <Image Source="{Binding ImageSource}" Aspect="AspectFit" HeightRequest="32"/>
-                            <XF:MaterialLabel Text="{Binding Text}" TextColor="#556080" VerticalOptions="Center" TypeScale="Body1" FontAttributes="Bold"/>
-                        </StackLayout>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="0" Padding="20,10" Spacing="20">
+                                <Image Source="{Binding ImageSource}" Aspect="AspectFit" HeightRequest="32"/>
+                                <XF:MaterialLabel Text="{Binding Text}" TextColor="White"  
+                                                  VerticalOptions="Center" TypeScale="Subtitle2" FontSize="Body"/>
+                                
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Command}"/>
+                                </StackLayout.GestureRecognizers>
+                            </StackLayout>
+                        </ViewCell>
                     </DataTemplate>
-                </BindableLayout.ItemTemplate>
-            </StackLayout>
-        </ScrollView>
-        <Button ImageSource="logout" Padding="20,0"
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button ImageSource="logout" Padding="20,0"
                 Text="{Utils:Translate Logout}" TextColor="White" 
                 BackgroundColor="#EE6763" VerticalOptions="EndAndExpand" 
                 Command="{Binding LogoutCommand}"/>
-    </StackLayout>
+        </StackLayout>
+    </Grid>
 </ContentPage>

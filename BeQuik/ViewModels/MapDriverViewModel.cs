@@ -97,10 +97,10 @@ namespace BeQuik.ViewModels
         {
             MenuItems = new List<Model.MenuItem>
             {                
-                new Model.MenuItem{ImageSource="profile_gray.png" ,Text=Utils.LocalizationResourceManager.Instance.GetValue("Profile"),Command=new Command(()=> new ViewModels.ProfilePageViewModel())},
-                new Model.MenuItem{ImageSource="calendar.png" ,Text=Utils.LocalizationResourceManager.Instance.GetValue("Booking_history"),Command=new Command(()=> new ViewModels.BookingHistoryViewModel())},
-                new Model.MenuItem{ImageSource="digital_wallet_g.png" ,Text=Utils.LocalizationResourceManager.Instance.GetValue("Your_wallet"),Command=new Command(()=> new ViewModels.WalletPageViewModel())},
-                new Model.MenuItem{ImageSource="headphones.png" ,Text=Utils.LocalizationResourceManager.Instance.GetValue("Contact_us"),Command=new Command(()=> new ViewModels.ContactUsViewModel())},
+                new Model.MenuItem{ImageSource="profile_white.png" ,Text=Utils.LocalizationResourceManager.Instance.GetValue("Profile"),Command=new Command(()=> new ViewModels.ProfilePageViewModel())},
+                new Model.MenuItem{ImageSource="calendar_white.png" ,Text=Utils.LocalizationResourceManager.Instance.GetValue("Booking_history"),Command=new Command(()=> new ViewModels.BookingHistoryViewModel())},
+                new Model.MenuItem{ImageSource="digital_wallet_white.png" ,Text=Utils.LocalizationResourceManager.Instance.GetValue("Your_wallet"),Command=new Command(()=> new ViewModels.WalletPageViewModel())},
+                new Model.MenuItem{ImageSource="headphones_white.png" ,Text=Utils.LocalizationResourceManager.Instance.GetValue("Contact_us"),Command=new Command(()=> new ViewModels.ContactUsViewModel())},
             };
         }
         private void InitOrders()
