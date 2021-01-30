@@ -13,6 +13,7 @@ namespace BeQuik.ViewModels
         public Command AcceptAlertArrivedDeriverCommand { get; }
         public Command ToggelDisplayCancelRideCommand { get; }
         public Command CancelRideCommand { get; }
+        public Command OpenCustomerPaymentCommand { get; }
         public Command CallCommand { get; }
         public Command MessageCommand { get; }
         public bool IsShowCancelRide { get; set; } = false;
@@ -22,6 +23,7 @@ namespace BeQuik.ViewModels
             AcceptAlertArrivedDeriverCommand = new Command(HidePoupArrivedDriver);
             ToggelDisplayCancelRideCommand = new Command(() => SetShowCancelRide(!IsShowCancelRide));
             CancelRideCommand = new Command(()=> OnCancelRide());
+            OpenCustomerPaymentCommand = new Command(() => { SetShowCancelRide(!IsShowCancelRide); new ViewModels.CustomerPaymentViewModel(); });
             CallCommand = new Command(OnCall);
             MessageCommand = new Command(OnMessage);
 

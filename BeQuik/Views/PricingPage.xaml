@@ -49,7 +49,7 @@
             <StackLayout Margin="0" Padding="0" Spacing="0">
                 <!--Header-->
                 <StackLayout Margin="0" Padding="0,20" Spacing="10" VerticalOptions="Start">
-                    <StackLayout Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
+                    <StackLayout FlowDirection="LeftToRight" Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
                         <XF:MaterialIconButton Image="arrow_left" BackgroundColor="White" CornerRadius="25" WidthRequest="50" HeightRequest="50" Command="{Binding MenuShow}"/>
                         <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
                     </StackLayout>

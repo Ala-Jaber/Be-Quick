@@ -11,7 +11,7 @@
         <Grid Margin="0" Padding="10,20,10,0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
             <StackLayout Margin="5,0,5,30" Padding="0" Spacing="10">
-                <StackLayout Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20">
+                <StackLayout  FlowDirection="LeftToRight" Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20">
                     <XF:MaterialIconButton Image="arrow_left" BackgroundColor="White" 
                                            CornerRadius="25" WidthRequest="50" HeightRequest="50"
                                            Command="{Binding BackButtonCommand}"/>

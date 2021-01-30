@@ -183,6 +183,9 @@
   <data name="Cash" xml:space="preserve">
     <value>Cash</value>
   </data>
+  <data name="Client" xml:space="preserve">
+    <value>Client</value>
+  </data>
   <data name="Client_Map" xml:space="preserve">
     <value>Client Map</value>
   </data>
@@ -257,6 +260,9 @@
   </data>
   <data name="Enter_promotion_code" xml:space="preserve">
     <value>Enter promotion code</value>
+  </data>
+  <data name="Enter_voucher_code" xml:space="preserve">
+    <value>Enter voucher code</value>
   </data>
   <data name="FARE" xml:space="preserve">
     <value>FARE</value>
@@ -338,6 +344,9 @@
   </data>
   <data name="Partner" xml:space="preserve">
     <value>Partner</value>
+  </data>
+  <data name="Partnet_ID" xml:space="preserve">
+    <value>Partnet ID</value>
   </data>
   <data name="Passengers_that_cancel_less_get_faster_bookings" xml:space="preserve">
     <value>Passengers that cancel less get faster bookings</value>

@@ -259,6 +259,15 @@ namespace BeQuik.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Client.
+        /// </summary>
+        public static string Client {
+            get {
+                return ResourceManager.GetString("Client", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Client Map.
         /// </summary>
         public static string Client_Map {
@@ -480,6 +489,15 @@ namespace BeQuik.Resources {
         public static string Enter_promotion_code {
             get {
                 return ResourceManager.GetString("Enter_promotion_code", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter voucher code.
+        /// </summary>
+        public static string Enter_voucher_code {
+            get {
+                return ResourceManager.GetString("Enter_voucher_code", resourceCulture);
             }
         }
         
@@ -723,6 +741,15 @@ namespace BeQuik.Resources {
         public static string Partner {
             get {
                 return ResourceManager.GetString("Partner", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Partnet ID.
+        /// </summary>
+        public static string Partnet_ID {
+            get {
+                return ResourceManager.GetString("Partnet_ID", resourceCulture);
             }
         }
         

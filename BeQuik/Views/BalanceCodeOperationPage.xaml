@@ -56,7 +56,7 @@
             <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
             <ScrollView Margin="0" Padding="0">
                 <StackLayout Margin="0" Padding="0" Spacing="0">
-                    <StackLayout Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
+                    <StackLayout FlowDirection="LeftToRight" Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
                         <XF:MaterialIconButton Image="arrow_left" BackgroundColor="White" CornerRadius="25" WidthRequest="50" HeightRequest="50" Command="{Binding BackCommand}"/>
                         <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
                     </StackLayout>

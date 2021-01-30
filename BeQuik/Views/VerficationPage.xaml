@@ -38,7 +38,9 @@
         <Grid Margin="0" Padding="20,20,20,0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
             <StackLayout Margin="5,0,5,30" Padding="0" Spacing="20">
-                <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
+                <StackLayout Margin="0" Padding="0" Spacing="0" FlowDirection="LeftToRight">
+                    <Image Margin="20" Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
+                </StackLayout>
                 <Label Text="{Utils:Translate Verification}" FontAttributes="Bold" TextColor="#000000" FontSize="Title"/>
                 <Frame Margin="0" Padding="0" BackgroundColor="White"
                        HasShadow="True" BorderColor="WhiteSmoke" CornerRadius="10">

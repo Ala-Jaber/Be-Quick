@@ -80,7 +80,7 @@
         <Grid Margin="0" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
             <StackLayout Margin="0" Padding="0" Spacing="0">
-                <StackLayout Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
+                <StackLayout FlowDirection="LeftToRight" Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
                     <XF:MaterialIconButton Image="arrow_left" BackgroundColor="White" CornerRadius="25" WidthRequest="50" HeightRequest="50" Command="{Binding BackCommand}"/>
                     <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
                 </StackLayout>
@@ -108,7 +108,7 @@
 
                             <Grid Margin="0" Padding="0" ColumnDefinitions="1.5*,2.5*" ColumnSpacing="10" HorizontalOptions="FillAndExpand">
                                 <XF:MaterialCard Grid.Column="0" Margin="0" Padding="10,0,5,0" HasShadow="True" Elevation="3" CornerRadius="5">
-                                    <UserControl:CustomPicker Title="Area Code" TextColor="#000000" FontSize="16" TitleColor="DimGray"
+                                    <UserControl:CustomPicker Title="{Utils:Translate Area_Code}" TextColor="#000000" FontSize="16" TitleColor="DimGray"
                                                                   Image="arrow_downlist" ImageSize="40"
                                                                   ItemsSource="{Binding ListAreaCode}" 
                                                                   ItemDisplayBinding="{Binding .}"

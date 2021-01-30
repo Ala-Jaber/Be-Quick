@@ -13,7 +13,7 @@
             <StackLayout Margin="0" Padding="0" Spacing="0">
                 <!--Header-->
                 <StackLayout Margin="0" Padding="0,20" Spacing="10" VerticalOptions="Start">
-                    <StackLayout Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
+                    <StackLayout FlowDirection="LeftToRight" Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
                         <XF:MaterialIconButton Image="arrow_left" BackgroundColor="White" CornerRadius="25" WidthRequest="50" HeightRequest="50" Command="{Binding MenuShow}"/>
                         <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
                     </StackLayout>
@@ -38,7 +38,7 @@
                         <StackLayout Margin="0" Padding="0" Spacing="10">
                             <Label Text="{Utils:Translate Redeem_voucher}" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
                             <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
-                                <XF:MaterialTextField Placeholder="Enter voucher code" TextColor="#000000" InputType="Email"
+                                <XF:MaterialTextField Placeholder="{Utils:Translate Enter_voucher_code}" TextColor="#000000" InputType="Email"
                                                           FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                           CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
                             </XF:MaterialCard>

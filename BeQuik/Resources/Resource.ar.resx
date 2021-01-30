@@ -183,6 +183,9 @@
   <data name="Cash" xml:space="preserve">
     <value>السيولة النقدية</value>
   </data>
+  <data name="Client" xml:space="preserve">
+    <value>العملاء</value>
+  </data>
   <data name="Client_Map" xml:space="preserve">
     <value>خريطة عميل</value>
   </data>
@@ -257,6 +260,9 @@
   </data>
   <data name="Enter_promotion_code" xml:space="preserve">
     <value>أدخل كود الترقية</value>
+  </data>
+  <data name="Enter_voucher_code" xml:space="preserve">
+    <value>ادخل رقم الشيفرة</value>
   </data>
   <data name="FARE" xml:space="preserve">
     <value>أجرة</value>
@@ -338,6 +344,9 @@
   </data>
   <data name="Partner" xml:space="preserve">
     <value>شريك</value>
+  </data>
+  <data name="Partnet_ID" xml:space="preserve">
+    <value>رقم المعرف الشريك</value>
   </data>
   <data name="Passengers_that_cancel_less_get_faster_bookings" xml:space="preserve">
     <value>الركاب أن إلغاء أقل الحصول على الحجوزات أسرع</value>
@@ -457,7 +466,7 @@
     <value>ونش</value>
   </data>
   <data name="Yellow_Taxi" xml:space="preserve">
-    <value>سيارات الأجرة الصفراء</value>
+    <value>سيارة أجرة</value>
   </data>
   <data name="Your_driver_has_arrived_Please_be_there_within_5_minutes" xml:space="preserve">
     <value>وصل السائق الخاص بك. يرجى أن يكون هناك في غضون 5 دقائق</value>

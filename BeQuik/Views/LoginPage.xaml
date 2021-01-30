@@ -17,7 +17,7 @@
             <StackLayout Margin="0" Padding="0" Spacing="0">
                 <StackLayout Margin="0" Padding="0" Spacing="0" FlowDirection="LeftToRight">
                     <Image Margin="20" Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
-                </StackLayout>
+                </StackLayout> 
                 <ScrollView Margin="0" Padding="10">
                     <StackLayout Margin="0" Padding="0" Spacing="20">
                         <StackLayout Margin="0" Padding="0" Spacing="10">

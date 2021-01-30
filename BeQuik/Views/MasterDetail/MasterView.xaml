@@ -31,7 +31,7 @@
                     <FormattedString>
                         <FormattedString.Spans>
                             <Span Text="{Utils:Translate Language_Selected}"/>
-                            <Span Text=":"/>
+                            <Span Text=" :    "/>
                             <Span Text="{Binding LanguageSelected}"/>
                         </FormattedString.Spans>
                     </FormattedString>
