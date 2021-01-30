@@ -1,12 +1,91 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BeQuik.Views.ContactUsPage">
+             x:Class="BeQuik.Views.ContactUsPage"
+             
+             NavigationPage.HasNavigationBar="False"
+             xmlns:Utils="clr-namespace:BeQuik.Utils"
+             xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" 
+             xmlns:UserControl="clr-namespace:BeQuik.UserControl"
+             BackgroundColor="#F5F5F5">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid Margin="0" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
+            <StackLayout Margin="0" Padding="0" Spacing="0">
+                <!--Header-->
+                <StackLayout Margin="0" Padding="0,20" Spacing="10" VerticalOptions="Start">
+                    <StackLayout Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
+                        <XF:MaterialIconButton Image="arrow_left" BackgroundColor="White" CornerRadius="25" WidthRequest="50" HeightRequest="50" Command="{Binding MenuShow}"/>
+                        <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <XF:MaterialCard Margin="20" Padding="0" HasShadow="True" Elevation="1" CornerRadius="5">
+                        <StackLayout Margin="10" Padding="5" Spacing="40">
+                            <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10">
+                                <Image Source="headset" Aspect="AspectFit"/>
+                                <XF:MaterialLabel Text="Contact Us" FontAttributes="Bold" TextColor="#000000" TypeScale="H5" VerticalTextAlignment="Center"/>
+                            </StackLayout>
+                            <StackLayout Margin="0" Padding="0" Spacing="20">
+                                <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="1" CornerRadius="5">
+                                    <StackLayout Orientation="Horizontal" Margin="5" Padding="0" Spacing="10">
+                                        <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="1"
+                                                     HeightRequest="60" WidthRequest="60" CornerRadius="30">
+                                            <Image Source="office_building" Aspect="AspectFit"
+                                               HeightRequest="35" WidthRequest="35"
+                                               HorizontalOptions="Center" VerticalOptions="Center"/>
+                                        </XF:MaterialCard>
+                                        <StackLayout Margin="0" Padding="0" Spacing="0" VerticalOptions="Center">
+                                            <XF:MaterialLabel  Text="Company" TypeScale="H6" TextColor="Black"/>
+                                            <XF:MaterialLabel  Text="Naser Hasan Est." TypeScale="Subtitle2"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </XF:MaterialCard>
+                                <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="1" CornerRadius="5">
+                                    <StackLayout Orientation="Horizontal" Margin="5" Padding="0" Spacing="10">
+                                        <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="1"
+                                                     HeightRequest="60" WidthRequest="60" CornerRadius="30">
+                                            <Image Source="customer_service" Aspect="AspectFit"
+                                               HeightRequest="35" WidthRequest="35"
+                                               HorizontalOptions="Center" VerticalOptions="Center"/>
+                                        </XF:MaterialCard>
+                                        <StackLayout Margin="0" Padding="0" Spacing="0" VerticalOptions="Center">
+                                            <XF:MaterialLabel  Text="Phone" TypeScale="H6" TextColor="Black"/>
+                                            <XF:MaterialLabel  Text="+962-78-5555-101" TypeScale="Subtitle2"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </XF:MaterialCard>
+                                <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="1" CornerRadius="5">
+                                    <StackLayout Orientation="Horizontal" Margin="5" Padding="0" Spacing="10">
+                                        <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="1"
+                                                     HeightRequest="60" WidthRequest="60" CornerRadius="30">
+                                            <Image Source="email" Aspect="AspectFit"
+                                               HeightRequest="35" WidthRequest="35"
+                                               HorizontalOptions="Center" VerticalOptions="Center"/>
+                                        </XF:MaterialCard>
+                                        <StackLayout Margin="0" Padding="0" Spacing="0" VerticalOptions="Center">
+                                            <XF:MaterialLabel  Text="Email" TypeScale="H6" TextColor="Black"/>
+                                            <XF:MaterialLabel  Text="support@pickquickly.com" TypeScale="Subtitle2"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </XF:MaterialCard>
+                                <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="1" CornerRadius="5">
+                                    <StackLayout Orientation="Horizontal" Margin="5" Padding="0" Spacing="10">
+                                        <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="1"
+                                                     HeightRequest="60" WidthRequest="60" CornerRadius="30">
+                                            <Image Source="globe_website" Aspect="AspectFit"
+                                               HeightRequest="35" WidthRequest="35"
+                                               HorizontalOptions="Center" VerticalOptions="Center"/>
+                                        </XF:MaterialCard>
+                                        <StackLayout Margin="0" Padding="0" Spacing="0" VerticalOptions="Center">
+                                            <XF:MaterialLabel  Text="Website" TypeScale="H6" TextColor="Black"/>
+                                            <XF:MaterialLabel  Text="www.pickquickly.com" TypeScale="Subtitle2"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </XF:MaterialCard>
+                            </StackLayout>
+                        </StackLayout>
+                    </XF:MaterialCard>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
