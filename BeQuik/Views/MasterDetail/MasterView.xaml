@@ -38,11 +38,9 @@
                 </BindableLayout.ItemTemplate>
             </StackLayout>
         </ScrollView>
-        <Button
-                VerticalOptions="EndAndExpand" 
-                ImageSource="logout"
+        <Button ImageSource="logout"
                 Text="Logout" TextColor="White" 
-                BackgroundColor="#EE6763"
+                BackgroundColor="#EE6763" VerticalOptions="EndAndExpand" 
                 Command="{Binding LogoutCommand}"/>
     </StackLayout>
 </ContentPage>

@@ -243,7 +243,8 @@
             </StackLayout>
             
             <!--Information Trip-->
-            <Grid Margin="0" Padding="0" VerticalOptions="End" RowDefinitions="25,25,*,30">
+            <Grid Margin="0" Padding="0" VerticalOptions="End" RowDefinitions="25,25,*,30"
+                  IsVisible="{Binding IsShowTripInfromation}">
                 <StackLayout Grid.Row="1" Grid.RowSpan="3" BackgroundColor="White" 
                              Margin="0" Padding="10,30,10,20" Spacing="40" VerticalOptions="End">
                     <XF:MaterialLabel TextColor="Black" FontAttributes="Bold" FontSize="Medium"
@@ -259,15 +260,15 @@
                             </FormattedString>
                         </XF:MaterialLabel.FormattedText>
                     </XF:MaterialLabel>
-                    <Button Text="Start Trip" TextColor="White" BackgroundColor="#75B2FF" 
-                        TextTransform="None" CornerRadius="5"/>
+                    <Button Text="{Binding TextTripButton}" TextColor="White" BackgroundColor="#75B2FF" 
+                        TextTransform="None" CornerRadius="5" Command="{Binding ToggelTripCommand}"/>
                 </StackLayout>
                 <XF:MaterialIconButton Grid.Row="0" Grid.RowSpan="2" Image="cancelBut"
                                     HeightRequest="50" WidthRequest="50" CornerRadius="25"
                                     HorizontalOptions="Start" VerticalOptions="Start"
                                     BackgroundColor="#E93832"/>
                 <StackLayout Grid.Row="0" Grid.RowSpan="4" BackgroundColor="White"
-                             Margin="0" Padding="0,10" Spacing="20" IsVisible="False">
+                             Margin="0" Padding="0,10" Spacing="20" IsVisible="{Binding IsShowCancelRide}">
                     <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10" HorizontalOptions="CenterAndExpand">
                         <Image Source="warningBut" Aspect="AspectFit" HeightRequest="32"/>
                         <Label Text="{Utils:Translate CANCEL_THIS_RIDE?}" TextColor="#000000" FontAttributes="Bold" FontSize="Medium" VerticalOptions="Center"/>

@@ -27,12 +27,13 @@ namespace BeQuik.ViewModels
 
             OpenPage(new Views.TracingServicePage(position)).ConfigureAwait(false);
         }
-        public async Task OnCancelRide() {
-            await Application.Current.MainPage.Navigation.PopToRootAsync();
-        }
         public void OnCall() {
         }
-        public void OnMessage() { 
+        public void OnMessage() {
+        }
+        public async Task OnCancelRide()
+        {
+            await Application.Current.MainPage.Navigation.PopToRootAsync();
         }
         public void SetShowCancelRide(bool show)
         {

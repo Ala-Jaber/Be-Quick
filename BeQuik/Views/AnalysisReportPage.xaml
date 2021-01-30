@@ -27,7 +27,7 @@
                                                    TextImage="Driver" TextImageSize="Medium"
                                                    NumberBadge="10" TextBadgeSize="Small"/>
                                 <UserControl:Badge SizeLayout="40"  HorizontalOptions="FillAndExpand"
-                                                   ImageSource="staff" SizeImage="50"
+                                                   ImageSource="client" SizeImage="50"
                                                    TextImage="Client" TextImageSize="Medium"
                                                    NumberBadge="10" TextBadgeSize="Small"/>
                             </StackLayout>
