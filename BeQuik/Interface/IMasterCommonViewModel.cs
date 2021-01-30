@@ -8,5 +8,6 @@ namespace BeQuik.ViewModels
     public interface IMasterCommonViewModel
     {
         public Command OpenProfileCommand { get;}
+        public Command LogoutCommand { get;}
     }
 }

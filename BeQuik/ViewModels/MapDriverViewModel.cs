@@ -13,7 +13,8 @@ namespace BeQuik.ViewModels
         public Command TrunOnOffCommand { get; }
         public Command MenuShow { get; }
         public Command OpenProfileCommand { get; }
-        public Command OpenWalletCommand { get; }
+        public Command OpenProfileCommand { get; }
+        public Command LogoutCommand { get; }
 
         public List<Model.MenuItem> MenuItems { get; set; }
         public ObservableCollection<Model.Order> Orders { get; set; }
@@ -41,6 +42,7 @@ namespace BeQuik.ViewModels
         {
             InitMenuItem();
             InitOrders();
+            LogoutCommand = new Command(Logout);
             OpenProfileCommand = new Command(() => new ViewModels.ProfilePageViewModel());
             OpenWalletCommand = new Command(() => new ViewModels.WalletPageViewModel());
             MenuShow = new Command(ShowMenu);
@@ -78,5 +80,10 @@ namespace BeQuik.ViewModels
             Orders.Add(new Model.Order { FirstName = "Ala'", LastName= "Jaber", PhoneNumber = "00962785461900", Address = "Irbid", Position = new Position(36.9628066, -122.0194722), IsServiced = false });
             Orders.Add(new Model.Order { FirstName = "Ala'", LastName = "Jaber", PhoneNumber = "00962785461900", Address = "Irbid", Position = new Position(36.9628066, -122.0194722), IsServiced = false });
         }
+        private void Logout()
+        {
+            new ViewModels.LoginViewModel();
+        }
+
     }
 }

@@ -18,7 +18,9 @@ namespace BeQuik.ViewModels
         public Command RequestServiceCommand { get; }
         public Command EnterPromoCodeCommand { get; }
         public Command OpenProfileCommand { get; }
-        public Command OpenWalletCommand { get;}
+        public Command OpenWalletCommand { get; }
+        public Command LogoutCommand { get; }
+
 
         public string PromotionCode { get; set; }
         public bool IsPromotionCodeAdded { get; set; }
@@ -29,7 +31,8 @@ namespace BeQuik.ViewModels
 
         public MapClientViewModel()
         {
-            InitMenuItem();
+            InitMenuItem(); 
+            LogoutCommand = new Command(Logout);
             OpenProfileCommand = new Command(() => new ViewModels.ProfilePageViewModel());
             OpenWalletCommand = new Command(() => new ViewModels.WalletPageViewModel());
             MenuShow = new Command(ShowMenu);
@@ -80,5 +83,10 @@ namespace BeQuik.ViewModels
         {
             return true;
         }
+        private void Logout()
+        {
+            new ViewModels.LoginViewModel();
+        }
+
     }
 }

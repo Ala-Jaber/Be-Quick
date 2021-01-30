@@ -11,10 +11,13 @@ namespace BeQuik.ViewModels
         public Command MenuShow { get; }
         public List<Model.MenuItem> MenuItems { get; set; }
         public Command OpenProfileCommand { get ; }
+        public Command LogoutCommand { get; }
+
 
         public MapAdminViewModel()
         {
             InitMenuItem();
+            LogoutCommand = new Command(Logout);
             OpenProfileCommand = new Command(OpenProfilePage);
             MenuShow = new Command(ShowMenu);
             Page = new Views.MasterDetailView(new Views.MapAdminView());
@@ -40,5 +43,10 @@ namespace BeQuik.ViewModels
         {
             new ViewModels.ProfilePageViewModel();
         }
+        private void Logout()
+        {
+            new ViewModels.LoginViewModel();
+        }
+
     }
 }
