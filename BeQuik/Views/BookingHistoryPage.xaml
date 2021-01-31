@@ -5,6 +5,7 @@
              
              NavigationPage.HasNavigationBar="False"
              xmlns:Utils="clr-namespace:BeQuik.Utils"
+             xmlns:ViewModels="clr-namespace:BeQuik.ViewModels"
              xmlns:XE="clr-namespace:XamEffects;assembly=XamEffects"
              xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" 
              BackgroundColor="#F5F5F5">
@@ -65,7 +66,11 @@
                         </BoxView.Triggers>
                     </BoxView>
                 </Grid>
-                <CollectionView ItemsSource="{Binding OrdersHistory}" ItemSizingStrategy="MeasureFirstItem" Margin="10,0,10,30">
+                <CollectionView x:Name="MyCollectionView" Margin="10,0,10,30" 
+                                ItemSizingStrategy="MeasureFirstItem" SelectionMode="Single"
+                                ItemsSource="{Binding OrdersHistory}"                                
+                                SelectionChangedCommand="{Binding ShowDetailsCommand}"
+                                SelectionChangedCommandParameter="{Binding SelectedItem, Source={x:Reference MyCollectionView}}">
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
                     </CollectionView.ItemsLayout>
@@ -111,7 +116,7 @@
                                         <XF:MaterialLabel.FormattedText>
                                             <FormattedString>
                                                 <FormattedString.Spans>
-                                                    <Span Text="{Binding Price,StringFormat='{0:D2}'}"/>
+                                                    <Span Text="{Binding Price,StringFormat='{0:F}'}"/>
                                                     <Span Text=" "/>
                                                     <Span Text="{Utils:Translate JOD}"/>
                                                 </FormattedString.Spans>

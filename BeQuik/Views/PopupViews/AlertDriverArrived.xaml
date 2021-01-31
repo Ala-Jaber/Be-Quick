@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BeQuik.Views.PopupViews.AlertDriverArrived"  
              xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             x:Class="BeQuik.Views.PopupViews.AlertDriverArrived"  
              xmlns:animations="http://rotorgames.com"
              xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"            
              xmlns:Utils="clr-namespace:BeQuik.Utils" >

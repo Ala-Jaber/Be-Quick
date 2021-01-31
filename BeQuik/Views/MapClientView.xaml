@@ -103,6 +103,27 @@
                     </Grid>
                 </ScrollView>
             </StackLayout>
+            
+            <!--Footer-->
+            <StackLayout Margin="0" Padding="0,20" Spacing="30"  VerticalOptions="End">
+                <StackLayout Margin="0" Padding="0" Spacing="10">
+                    <Button ImageSource="money_discount_white" Text="{Utils:Translate Add_Promo_Code}" 
+                        TextColor="White" BackgroundColor="#43B372"                         
+                        TextTransform="None" CornerRadius="5"
+                        Margin="30,0" Command="{Binding EnterPromoCodeCommand}"
+                        HorizontalOptions="FillAndExpand" VerticalOptions="End">
+                        <Button.Triggers>
+                            <DataTrigger TargetType="Button" Binding="{Binding IsPromotionCodeAdded}" Value="True">
+                                <Setter Property="IsVisible" Value="False"/>
+                            </DataTrigger>
+                        </Button.Triggers>
+                    </Button>
+                    <Button Text="{Utils:Translate Confirm_Place}" TextColor="White" BackgroundColor="#75B2FF" 
+                        TextTransform="None" CornerRadius="5" Padding="0,10"
+                        Margin="30,0" Command="{Binding RequestServiceCommand}"
+                        HorizontalOptions="FillAndExpand" VerticalOptions="End"/>
+                </StackLayout>
+            </StackLayout>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

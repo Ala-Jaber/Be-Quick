@@ -18,7 +18,7 @@
                     <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
                 </StackLayout>
                 <XF:MaterialCard x:Name="ErrorCard" Margin="0" Padding="20,10" BackgroundColor="#E93832" VerticalOptions="Start"
-                                             TranslationY="-50" Opacity="0" IsVisible="False">
+                                 TranslationY="-50" Opacity="0" IsVisible="False">
                     <Label x:Name="TextError"  TextColor="White" FontAttributes="Bold"/>
                 </XF:MaterialCard>
             </StackLayout>
