@@ -17,7 +17,7 @@
             <StackLayout Margin="0" Padding="0" Spacing="10">
                 <BoxView Color="#556080" Opacity="0.30" HorizontalOptions="FillAndExpand" VerticalOptions="Start" HeightRequest="2"/>
                 <StackLayout Orientation="Horizontal" Margin="20,0" Padding="0" Spacing="20" XE:Commands.Tap="{Binding ToggelLanguageCommand}">
-                    <XF:MaterialLabel TextColor="White" TypeScale="Subtitle2" FontSize="Body" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                    <XF:MaterialLabel TextColor="White" TypeScale="Subtitle2" FontSize="Small" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
                         <XF:MaterialLabel.FormattedText>
                             <FormattedString>
                                 <FormattedString.Spans>
