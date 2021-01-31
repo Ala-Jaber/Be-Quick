@@ -6,7 +6,8 @@
              NavigationPage.HasNavigationBar="False"
              xmlns:UserControls="clr-namespace:BeQuik.UserControl"             
              xmlns:Utils="clr-namespace:BeQuik.Utils"
-             xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" BackgroundColor="#F5F5F5">
+             xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" 
+             BackgroundColor="#F5F5F5">
     <ContentPage.Content>
         <Grid Margin="0" Padding="10,20,10,0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
