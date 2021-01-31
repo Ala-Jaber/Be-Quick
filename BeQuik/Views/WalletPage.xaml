@@ -23,59 +23,70 @@
                                        FontAttributes="Bold"/>
                     </XF:MaterialCard>
                 </StackLayout>
-                <Grid Margin="20,10" Padding="0" RowSpacing="10" RowDefinitions="1*,2*,2.5*">
-                    <XF:MaterialCard Grid.Row="0" Margin="0" Padding="0" BackgroundColor="White" CornerRadius="10" VerticalOptions="Start">
-                        <Grid Margin="0" Padding="0">
-                            <Image Source="background" Aspect="Fill"/>
-                            <StackLayout Margin="0" Padding="20,10" Spacing="10">
-                                <XF:MaterialLabel Text="{Utils:Translate JOD_wallet}" TextColor="White" FontSize="Medium" FontAttributes="Bold" TypeScale="H5"/>
-                                <XF:MaterialLabel Text="0.00" TextColor="White" FontAttributes="Bold" TypeScale="H6"/>
-                            </StackLayout>
-                        </Grid>
-                    </XF:MaterialCard>
-                    <XF:MaterialCard Grid.Row="1" Margin="0" Padding="20,10" 
+                <ScrollView Margin="0" Padding="20,10">
+                    <StackLayout Margin="0" Padding="0" Spacing="10">
+                        <XF:MaterialCard Grid.Row="0" Margin="0" Padding="0" BackgroundColor="White"
+                                         HeightRequest="120"
+                                         CornerRadius="10" VerticalOptions="Start">
+                            <Grid Margin="0" Padding="0">
+                                <Image Source="background" Aspect="Fill"/>
+                                <StackLayout Margin="0" Padding="20,10" Spacing="10">
+                                    <XF:MaterialLabel Text="{Utils:Translate JOD_wallet}" TextColor="White" FontSize="Medium" FontAttributes="Bold" TypeScale="H5"/>
+                                    <XF:MaterialLabel Text="0.00" TextColor="White" FontAttributes="Bold" TypeScale="H6"/>
+                                </StackLayout>
+                            </Grid>
+                        </XF:MaterialCard>
+                        <XF:MaterialCard Grid.Row="1" Margin="0" Padding="20,10" 
                                      BackgroundColor="White" CornerRadius="10" VerticalOptions="Start">
-                        <StackLayout Margin="0" Padding="0" Spacing="10">
-                            <Label Text="{Utils:Translate Redeem_voucher}" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
-                            <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
-                                <XF:MaterialTextField Placeholder="{Utils:Translate Enter_voucher_code}" TextColor="#000000" InputType="Email"
+                            <StackLayout Margin="0" Padding="0" Spacing="10">
+                                <Label Text="{Utils:Translate Redeem_voucher}" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
+                                <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
+                                    <XF:MaterialTextField Placeholder="{Utils:Translate Enter_voucher_code}" TextColor="#000000" InputType="Email"
                                                           FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                           CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
-                            </XF:MaterialCard>
-                            <Button Text="{Utils:Translate Redeem_voucher}" TextColor="White" BackgroundColor="#75B2FF" 
+                                </XF:MaterialCard>
+                                <Button Text="{Utils:Translate Redeem_voucher}" TextColor="White" BackgroundColor="#75B2FF" 
                                     TextTransform="None" CornerRadius="5" Padding="40,0"/>
-                        </StackLayout>
-                    </XF:MaterialCard>
-                    <StackLayout Grid.Row="2" Margin="0" Padding="0" Spacing="0">
-                        <XF:MaterialLabel Text="{Utils:Translate Recent_transactions}" TextColor="#9097AC" 
+                            </StackLayout>
+                        </XF:MaterialCard>
+                        <StackLayout Grid.Row="2" Margin="0" Padding="0" Spacing="0">
+                            <XF:MaterialLabel Text="{Utils:Translate Recent_transactions}" TextColor="#9097AC" 
                                           TypeScale="Subtitle2"
                                          HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start"/>
 
-                        <CollectionView ItemsSource="{Binding Transaction}">
-                            <CollectionView.ItemsLayout>
-                                <LinearItemsLayout Orientation="Vertical" ItemSpacing="10"/>
-                            </CollectionView.ItemsLayout>
-                            <CollectionView.ItemTemplate>
-                                <DataTemplate>
-                                    <XF:MaterialCard Margin="0" Padding="10" CornerRadius="5" HasShadow="True" BackgroundColor="White" Elevation="200">
-                                        <Grid ColumnDefinitions="68,3*,*" Margin="0" Padding="0" ColumnSpacing="10">
-                                            <XF:MaterialCard Grid.Column="0" Margin="0" Padding="0"
-                                                     CornerRadius="34" HeightRequest="68" WidthRequest="68"
-                                                     HorizontalOptions="Start" VerticalOptions="Center">
-                                                <XF:MaterialIcon Source="wallet" Aspect="AspectFit"
-                                                         HeightRequest="35" WidthRequest="35" 
-                                                         VerticalOptions="Center" HorizontalOptions="Center"/>
-                                            </XF:MaterialCard>
-                                            <StackLayout Grid.Column="1" Margin="0" Padding="0" Spacing="5">
-                                                <XF:MaterialLabel Text="{Binding Date,StringFormat='{0:dd MMM, hh\\:mm tt}'}"
-                                                          TextColor="Black" FontAttributes="Bold" TypeScale="Body2"/>
+                            <CollectionView ItemsSource="{Binding TransactionList}">
+                                <CollectionView.ItemsLayout>
+                                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="10"/>
+                                </CollectionView.ItemsLayout>
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <XF:MaterialCard Margin="0" Padding="10" CornerRadius="5" HasShadow="True" BackgroundColor="White" Elevation="200">
+                                            <StackLayout Margin="0" Padding="0" Spacing="10">
+                                                <StackLayout Margin="0" Padding="0" Spacing="5">
+                                                    <XF:MaterialLabel Text="{Binding Date,StringFormat='{0:dd MMM, hh\\:mm tt}'}"
+                                                          TextColor="Black" FontAttributes="Bold" TypeScale="Body2"
+                                                          HorizontalOptions="EndAndExpand"/>
+                                                    <XF:MaterialLabel TypeScale="Body2">
+                                                        <XF:MaterialLabel.FormattedText>
+                                                            <FormattedString>
+                                                                <FormattedString.Spans>
+                                                                    <Span Text="Transaction Name"/>
+                                                                    <Span Text=" "/>
+                                                                    <Span Text="{Binding Name}" TextColor="Black" FontAttributes="Bold"/>
+                                                                </FormattedString.Spans>
+                                                            </FormattedString>
+                                                        </XF:MaterialLabel.FormattedText>
+                                                    </XF:MaterialLabel>
+                                                </StackLayout>
                                                 <XF:MaterialLabel TextColor="Black"  TypeScale="Body2">
                                                     <XF:MaterialLabel.FormattedText>
                                                         <FormattedString>
                                                             <FormattedString.Spans>
+                                                                <Span Text="&#x2197;" TextColor="#00C853" FontSize="Large" FontAttributes="Bold"/>
+                                                                <Span Text=" "/>
                                                                 <Span Text="{Utils:Translate Credit}"/>
                                                                 <Span Text=": "/>
-                                                                <Span Text="{Binding CreditCost}" FontAttributes="Bold"/>
+                                                                <Span Text="{Binding Credit,StringFormat='{0:F}'}" FontAttributes="Bold"/>
                                                                 <Span Text=" "/>
                                                                 <Span Text="{Utils:Translate JOD}" FontAttributes="Bold"/>
                                                             </FormattedString.Spans>
@@ -86,9 +97,11 @@
                                                     <XF:MaterialLabel.FormattedText>
                                                         <FormattedString>
                                                             <FormattedString.Spans>
+                                                                <Span Text="&#x2199;" TextColor="#EF2523"  FontSize="Large" FontAttributes="Bold"/>
+                                                                <Span Text=" "/>
                                                                 <Span Text="{Utils:Translate Cash}"/>
                                                                 <Span Text=": "/>
-                                                                <Span Text="{Binding CashCost}" FontAttributes="Bold"/>
+                                                                <Span Text="{Binding Depth,StringFormat='{0:F}'}" FontAttributes="Bold"/>
                                                                 <Span Text=" "/>
                                                                 <Span Text="{Utils:Translate JOD}" FontAttributes="Bold"/>
                                                             </FormattedString.Spans>
@@ -96,38 +109,27 @@
                                                     </XF:MaterialLabel.FormattedText>
                                                 </XF:MaterialLabel>
                                             </StackLayout>
-                                            <XF:MaterialLabel Grid.Column="2" TextColor="Black" FontAttributes="Bold" TypeScale="Body2">
-                                                <XF:MaterialLabel.FormattedText>
-                                                    <FormattedString>
-                                                        <FormattedString.Spans>
-                                                            <Span Text="{Binding Price,StringFormat='{0:D2}'}"/>
-                                                            <Span Text=" "/>
-                                                            <Span Text="{Utils:Translate JOD}"/>
-                                                        </FormattedString.Spans>
-                                                    </FormattedString>
-                                                </XF:MaterialLabel.FormattedText>
-                                            </XF:MaterialLabel>
-                                        </Grid>
-                                    </XF:MaterialCard>
-                                </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                            <CollectionView.EmptyView>
-                                <StackLayout Margin="0" Padding="0" Spacing="20">
-                                    <StackLayout Margin="0" Padding="0" Spacing="20"
+                                        </XF:MaterialCard>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                                <CollectionView.EmptyView>
+                                    <StackLayout Margin="0" Padding="0" Spacing="20">
+                                        <StackLayout Margin="0" Padding="0" Spacing="20"
                                              HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                                        <Image Source="empty_file" Aspect="AspectFit" HeightRequest="64" HorizontalOptions="Center" VerticalOptions="Center"/>
-                                        <StackLayout Margin="0" Padding="0" Spacing="5">
-                                            <XF:MaterialLabel Text="{Utils:Translate Booking_history_is_empty}" TextColor="#9097AC" TypeScale="Subtitle2"
+                                            <Image Source="empty_file" Aspect="AspectFit" HeightRequest="64" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <StackLayout Margin="0" Padding="0" Spacing="5">
+                                                <XF:MaterialLabel Text="{Utils:Translate Booking_history_is_empty}" TextColor="#9097AC" TypeScale="Subtitle2"
                                                           HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
-                                            <XF:MaterialLabel Text="{Utils:Translate Let_get_started}" TextColor="#9097AC" TypeScale="Body2"
+                                                <XF:MaterialLabel Text="{Utils:Translate Let_get_started}" TextColor="#9097AC" TypeScale="Body2"
                                                         HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                            </StackLayout>
                                         </StackLayout>
                                     </StackLayout>
-                                </StackLayout>
-                            </CollectionView.EmptyView>
-                        </CollectionView>
+                                </CollectionView.EmptyView>
+                            </CollectionView>
+                        </StackLayout>
                     </StackLayout>
-                </Grid>
+                </ScrollView>
             </StackLayout>
         </Grid>
     </ContentPage.Content>
