@@ -31,6 +31,7 @@ namespace BeQuik.ViewModels
 
         public MapClientViewModel()
         {
+            LanguageHasChanged += (s, e) => InitMenuItem();
             InitMenuItem(); 
             LogoutCommand = new Command(Logout);
             OpenProfileCommand = new Command(() => new ViewModels.ProfilePageViewModel());

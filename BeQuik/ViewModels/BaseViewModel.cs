@@ -25,7 +25,7 @@ namespace BeQuik.ViewModels
         public Command SetArabicLanguageCommand { get; }
         public Command SetEnglishLanguageCommand { get; }
         public Command ToggelLanguageCommand { get; }
-
+        public event EventHandler LanguageHasChanged;
         public BaseViewModel()
         {
             LanguageSelected = Xamarin.Essentials.Preferences.Get("LanguageKey", System.Globalization.CultureInfo.CurrentCulture.TwoLetterISOLanguageName) == "ar" ? "العربية" : "English";
@@ -37,6 +37,7 @@ namespace BeQuik.ViewModels
                 { Utils.LocalizationResourceManager.SetEnglishCulture(); LanguageSelected = "English"; }
                 else
                 { Utils.LocalizationResourceManager.SetArabicCulture(); LanguageSelected = "العربية"; }
+                LanguageHasChanged?.Invoke(this,null);
             });
         }
         string title = string.Empty;

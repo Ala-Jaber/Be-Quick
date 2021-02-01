@@ -16,6 +16,7 @@ namespace BeQuik.ViewModels
 
         public MapAdminViewModel()
         {
+            LanguageHasChanged += (s,e)=> InitMenuItem();
             InitMenuItem();
             LogoutCommand = new Command(Logout);
             OpenProfileCommand = new Command(OpenProfilePage);

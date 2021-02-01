@@ -60,6 +60,7 @@ namespace BeQuik.ViewModels
 
         public MapDriverViewModel()
         {
+            LanguageHasChanged += (s, e) => InitMenuItem();
             InitMenuItem();
             InitOrders();
             LogoutCommand = new Command(Logout);
