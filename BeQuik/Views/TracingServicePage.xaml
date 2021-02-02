@@ -10,7 +10,7 @@
     <ContentPage.Content>
         <Grid Margin="0" Padding="0" RowDefinitions="1.5*,30,*">
             <Grid Grid.Row="0" Grid.RowSpan="2" Margin="0" Padding="0" VerticalOptions="FillAndExpand">
-                <GoogleMaps:Map x:Name="MapForms" Padding="0,250,0,0"/>
+                <GoogleMaps:Map x:Name="MapForms" Padding="0,250,0,100"/>
                 <!--Header-->
                 <StackLayout FlowDirection="LeftToRight" Margin="0" Padding="10" Spacing="10" VerticalOptions="Start">
                     <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
