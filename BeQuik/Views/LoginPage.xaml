@@ -9,7 +9,7 @@
              NavigationPage.HasNavigationBar="False"
              xmlns:Utils="clr-namespace:BeQuik.Utils"
              xmlns:XE="clr-namespace:XamEffects;assembly=XamEffects"
-             xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+             xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" xmlns:Trigger="clr-namespace:BeQuik.Triggers"
              BackgroundColor="#F5F5F5">
     <ContentPage.Content>
         <Grid Margin="0" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
@@ -27,14 +27,29 @@
                                     <StackLayout Margin="0" Padding="0" Spacing="10">
                                         <Label Text="{Utils:Translate SingIn}" FontAttributes="Bold" TextColor="#000000" FontSize="Large"/>
                                         <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
-                                            <XF:MaterialTextField Placeholder="{Utils:Translate Email}" Text="{Binding UserName}" TextColor="#000000" InputType="Email"
-                                                          FloatingPlaceholderColor="#000000" TintColor="#000000"
-                                                          CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                                            <XF:MaterialTextField Placeholder="{Utils:Translate Email}" Text="{Binding UserName}" 
+                                                                  TextColor="#000000" InputType="Email"
+                                                                  FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                                  CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
                                         </XF:MaterialCard>
                                         <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
-                                            <XF:MaterialTextField Placeholder="{Utils:Translate Password}" Text="{Binding Password}" TextColor="#000000" InputType="Password"
-                                                          FloatingPlaceholderColor="#000000" TintColor="#000000"
-                                                          CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                                            <Grid Margin="0" Padding="5,0,10,0" ColumnSpacing="0" ColumnDefinitions="*,40">
+                                                <XF:MaterialTextField Grid.Column="0" Placeholder="{Utils:Translate Password}" 
+                                                                      Text="{Binding Password}" TextColor="#000000"
+                                                                      InputType="{Binding Source={x:Reference ShowPasswordActualTrigger}, Path=HidePassword}"
+                                                                      IsSpellCheckEnabled="False" IsTextPredictionEnabled="False"
+                                                                      FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                                      CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                                                <ImageButton Grid.Column="1" HeightRequest="20" Margin="10,0"
+                                                             VerticalOptions="Center" HorizontalOptions="End" 
+                                                             Source="ic_eye_hide">
+                                                    <ImageButton.Triggers>
+                                                        <EventTrigger Event="Clicked">
+                                                            <Trigger:ShowPasswordTriggerAction ShowIcon="ic_eye_hide" HideIcon="ic_eye_show" x:Name="ShowPasswordActualTrigger"/>
+                                                        </EventTrigger>
+                                                    </ImageButton.Triggers>
+                                                </ImageButton>
+                                            </Grid>
                                         </XF:MaterialCard>
                                     </StackLayout>
                                     <Button Text="{Utils:Translate SingIn}" TextColor="White" BackgroundColor="#75B2FF" 

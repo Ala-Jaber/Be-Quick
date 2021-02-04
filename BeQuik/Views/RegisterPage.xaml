@@ -6,7 +6,7 @@
              NavigationPage.HasNavigationBar="False"
              xmlns:UserControl="clr-namespace:BeQuik.UserControl"             
              xmlns:Utils="clr-namespace:BeQuik.Utils"
-             xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" BackgroundColor="#F5F5F5">
+             xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" xmlns:Trigger="clr-namespace:BeQuik.Triggers" BackgroundColor="#F5F5F5">
     <ContentPage.Content>
         <Grid Margin="0" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
@@ -38,17 +38,46 @@
                                                           FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                           CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
                                 </XF:MaterialCard>
-
+                                
                                 <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
-                                    <XF:MaterialTextField Placeholder="{Utils:Translate Password}" TextColor="#000000" InputType="Password"
-                                                          FloatingPlaceholderColor="#000000" TintColor="#000000"
-                                                          CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                                    <Grid Margin="0" Padding="0" ColumnSpacing="0" ColumnDefinitions="*,40">
+                                        <XF:MaterialTextField Grid.Column="0" 
+                                                              Placeholder="{Utils:Translate Password}"
+                                                              InputType="{Binding Source={x:Reference ShowPasswordActualTriggerPassword}, Path=HidePassword}"
+                                                              TextColor="#000000"
+                                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                              CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                                        <ImageButton Grid.Column="1" HeightRequest="20" Margin="10,0"
+                                                    VerticalOptions="Center" HorizontalOptions="End" 
+                                                    Source="ic_eye_hide">
+                                            <ImageButton.Triggers>
+                                                <EventTrigger Event="Clicked">
+                                                    <Trigger:ShowPasswordTriggerAction ShowIcon="ic_eye_hide" HideIcon="ic_eye_show" x:Name="ShowPasswordActualTriggerPassword"/>
+                                                </EventTrigger>
+                                            </ImageButton.Triggers>
+                                        </ImageButton>
+                                    </Grid>
+
                                 </XF:MaterialCard>
 
                                 <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="0.5" CornerRadius="5">
-                                    <XF:MaterialTextField Placeholder="{Utils:Translate Confirm_Password}" TextColor="#000000" InputType="Password"
-                                                          FloatingPlaceholderColor="#000000" TintColor="#000000"
-                                                          CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                                    <Grid Margin="0" Padding="0" ColumnSpacing="0" ColumnDefinitions="*,40">
+                                        <XF:MaterialTextField Grid.Column="0"
+                                                              Placeholder="{Utils:Translate Confirm_Password}"
+                                                              InputType="{Binding Source={x:Reference ShowPasswordActualTriggerConfirmPassword}, Path=HidePassword}"
+                                                              TextColor="#000000"
+                                                              FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                              CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                                        <ImageButton Grid.Column="1" HeightRequest="20" Margin="10,0"
+                                                    VerticalOptions="Center" HorizontalOptions="End" 
+                                                    Source="ic_eye_hide">
+                                            <ImageButton.Triggers>
+                                                <EventTrigger Event="Clicked">
+                                                    <Trigger:ShowPasswordTriggerAction ShowIcon="ic_eye_hide" HideIcon="ic_eye_show" x:Name="ShowPasswordActualTriggerConfirmPassword"/>
+                                                </EventTrigger>
+                                            </ImageButton.Triggers>
+                                        </ImageButton>
+                                    </Grid>
                                 </XF:MaterialCard>
 
                                 <Grid Margin="0" Padding="0" ColumnDefinitions="1.5*,2.5*" ColumnSpacing="10" HorizontalOptions="FillAndExpand">

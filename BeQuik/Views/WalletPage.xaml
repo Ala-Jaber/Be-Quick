@@ -82,7 +82,7 @@
                                                         </XF:MaterialLabel>
                                                     </StackLayout>
                                                     <StackLayout Grid.Column="1" Orientation="Horizontal" Margin="0" Padding="0" Spacing="10">
-                                                        <Image Source="arrow_up_green" Aspect="AspectFit"/>
+                                                        <Image Source="arrow_down_red" Aspect="AspectFit"/>
                                                         <XF:MaterialLabel TextColor="Black" TypeScale="Body2">
                                                             <XF:MaterialLabel.FormattedText>
                                                                 <FormattedString>
