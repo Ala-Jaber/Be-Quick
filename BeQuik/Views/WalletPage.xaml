@@ -19,8 +19,7 @@
                     </StackLayout>
                     <XF:MaterialCard x:Name="ErrorCard" Margin="0" Padding="20,10" BackgroundColor="#E93832" VerticalOptions="Start"
                                              TranslationY="-50" Opacity="0" IsVisible="False">
-                        <Label x:Name="TextError" TextColor="White"
-                                       FontAttributes="Bold"/>
+                        <Label x:Name="TextError" TextColor="White" FontAttributes="Bold"/>
                     </XF:MaterialCard>
                 </StackLayout>
                 <ScrollView Margin="0" Padding="20,10">
@@ -66,36 +65,38 @@
                                                           TextColor="Black" FontAttributes="Bold" TypeScale="Caption"
                                                           HorizontalOptions="EndAndExpand"/>
                                                 <Grid Margin="0" Padding="0" ColumnDefinitions="*,*">
-                                                    <XF:MaterialLabel Grid.Column="0" TextColor="Black"  TypeScale="Body2">
-                                                        <XF:MaterialLabel.FormattedText>
-                                                            <FormattedString>
-                                                                <FormattedString.Spans>
-                                                                    <Span Text="&#x2197;" TextColor="#00C853" FontSize="Large" FontAttributes="Bold"/>
-                                                                    <Span Text=" "/>
-                                                                    <Span Text="{Utils:Translate Credit}"/>
-                                                                    <Span Text=": "/>
-                                                                    <Span Text="{Binding Credit,StringFormat='{0:F}'}" FontAttributes="Bold"/>
-                                                                    <Span Text=" "/>
-                                                                    <Span Text="{Utils:Translate JOD}" FontAttributes="Bold"/>
-                                                                </FormattedString.Spans>
-                                                            </FormattedString>
-                                                        </XF:MaterialLabel.FormattedText>
-                                                    </XF:MaterialLabel>
-                                                    <XF:MaterialLabel Grid.Column="1" TextColor="Black" TypeScale="Body2">
-                                                        <XF:MaterialLabel.FormattedText>
-                                                            <FormattedString>
-                                                                <FormattedString.Spans>
-                                                                    <Span Text="&#x2199;" TextColor="#EF2523"  FontSize="Large" FontAttributes="Bold"/>
-                                                                    <Span Text=" "/>
-                                                                    <Span Text="{Utils:Translate Cash}"/>
-                                                                    <Span Text=": "/>
-                                                                    <Span Text="{Binding Depth,StringFormat='{0:F}'}" FontAttributes="Bold"/>
-                                                                    <Span Text=" "/>
-                                                                    <Span Text="{Utils:Translate JOD}" FontAttributes="Bold"/>
-                                                                </FormattedString.Spans>
-                                                            </FormattedString>
-                                                        </XF:MaterialLabel.FormattedText>
-                                                    </XF:MaterialLabel>
+                                                    <StackLayout Grid.Column="0" Orientation="Horizontal" Margin="0" Padding="0" Spacing="10">
+                                                        <Image Source="arrow_up_green" Aspect="AspectFit"/>
+                                                        <XF:MaterialLabel TextColor="Black"  TypeScale="Body2" VerticalOptions="Center">
+                                                            <XF:MaterialLabel.FormattedText>
+                                                                <FormattedString>
+                                                                    <FormattedString.Spans>
+                                                                        <Span Text="{Utils:Translate Credit}"/>
+                                                                        <Span Text=": "/>
+                                                                        <Span Text="{Binding Credit,StringFormat='{0:F}'}" FontAttributes="Bold"/>
+                                                                        <Span Text=" "/>
+                                                                        <Span Text="{Utils:Translate JOD}" FontAttributes="Bold"/>
+                                                                    </FormattedString.Spans>
+                                                                </FormattedString>
+                                                            </XF:MaterialLabel.FormattedText>
+                                                        </XF:MaterialLabel>
+                                                    </StackLayout>
+                                                    <StackLayout Grid.Column="1" Orientation="Horizontal" Margin="0" Padding="0" Spacing="10">
+                                                        <Image Source="arrow_up_green" Aspect="AspectFit"/>
+                                                        <XF:MaterialLabel TextColor="Black" TypeScale="Body2">
+                                                            <XF:MaterialLabel.FormattedText>
+                                                                <FormattedString>
+                                                                    <FormattedString.Spans>
+                                                                        <Span Text="{Utils:Translate Cash}"/>
+                                                                        <Span Text=": "/>
+                                                                        <Span Text="{Binding Depth,StringFormat='{0:F}'}" FontAttributes="Bold"/>
+                                                                        <Span Text=" "/>
+                                                                        <Span Text="{Utils:Translate JOD}" FontAttributes="Bold"/>
+                                                                    </FormattedString.Spans>
+                                                                </FormattedString>
+                                                            </XF:MaterialLabel.FormattedText>
+                                                        </XF:MaterialLabel>
+                                                    </StackLayout>
                                                 </Grid>
                                                     <XF:MaterialLabel TypeScale="Body2">
                                                         <XF:MaterialLabel.FormattedText>
