@@ -127,8 +127,8 @@
 
             <!--Rate Window Window-->
             <StackLayout VerticalOptions="EndAndExpand"
-                         Margin="0,90,0,0" Padding="30,10" Spacing="20"
-                         BackgroundColor="#F5F5F5" IsVisible="{Binding ShowRatePage}">
+                         Margin="0,90,0,0" Padding="10" Spacing="20"
+                         BackgroundColor="#D3F5F5F5" IsVisible="{Binding ShowRatePage}">
                 <Frame Margin="0" Padding="0" BackgroundColor="White" CornerRadius="10">
                     <StackLayout Margin="10" Padding="5" Spacing="20">
                         <StackLayout Orientation="Horizontal" Margin="0" Padding="0" Spacing="10" HorizontalOptions="FillAndExpand">
