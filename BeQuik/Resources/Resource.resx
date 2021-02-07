@@ -204,6 +204,9 @@
   <data name="Company" xml:space="preserve">
     <value>Company</value>
   </data>
+  <data name="Company_Name" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
   <data name="Conditions" xml:space="preserve">
     <value>Conditions</value>
   </data>
@@ -263,6 +266,9 @@
   </data>
   <data name="Enter_voucher_code" xml:space="preserve">
     <value>Enter voucher code</value>
+  </data>
+  <data name="Facility_national_number" xml:space="preserve">
+    <value>Facility national number</value>
   </data>
   <data name="FARE" xml:space="preserve">
     <value>FARE</value>
@@ -375,6 +381,9 @@
   <data name="Privacy_terms" xml:space="preserve">
     <value>Privacy terms</value>
   </data>
+  <data name="Privilege" xml:space="preserve">
+    <value>Privilege</value>
+  </data>
   <data name="Profile" xml:space="preserve">
     <value>Profile</value>
   </data>
@@ -410,6 +419,9 @@
   </data>
   <data name="Resend_verification_code" xml:space="preserve">
     <value>Resend verification code</value>
+  </data>
+  <data name="Save_Code" xml:space="preserve">
+    <value>Save Code</value>
   </data>
   <data name="Service" xml:space="preserve">
     <value>Service</value>

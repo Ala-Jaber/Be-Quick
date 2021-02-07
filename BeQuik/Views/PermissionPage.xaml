@@ -7,35 +7,130 @@
              xmlns:Utils="clr-namespace:BeQuik.Utils"
              xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" 
              BackgroundColor="#F5F5F5">
-    <ContentPage.Content>
-        <Grid Margin="0" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
-            <StackLayout Margin="0" Padding="0" Spacing="20">
-                <StackLayout FlowDirection="LeftToRight" Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
-                    <XF:MaterialIconButton Image="arrow_left" BackgroundColor="White" CornerRadius="25" WidthRequest="50" HeightRequest="50" Command="{Binding BackCommand}"/>
-                    <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
-                </StackLayout>
-                <StackLayout Margin="20,10" Padding="0" Spacing="20">
-                    <XF:MaterialCard Margin="0" Padding="20,10" BackgroundColor="White" CornerRadius="10">
-                        <StackLayout Margin="0" Padding="0" Spacing="20">
-                            <XF:MaterialLabel Text="{Utils:Translate Permission}" FontAttributes="Bold" TextColor="#000000" TypeScale="Subtitle1"/>
-                            <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="3" CornerRadius="5">
-                                <XF:MaterialTextField Placeholder="{Utils:Translate Phone_Number}" TextColor="#000000" InputType="Telephone"
-                                                          FloatingPlaceholderColor="#000000" TintColor="#000000"
-                                                          CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
-                            </XF:MaterialCard>
-                            <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="3" CornerRadius="5">
+    <ContentPage.Resources>
+        <ControlTemplate x:Key="RadioRectButtonTemplate">
+            <Frame x:Name="FrameRadioButton" Margin="0" Padding="0" 
+                   HasShadow="True" BorderColor="#1A000000" 
+                   CornerRadius="10">
+                <ContentPresenter/>
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CheckedStates">
+                            <VisualState x:Name="Checked">
+                                <VisualState.Setters>
+                                    <Setter TargetName="FrameRadioButton" Property="Frame.BackgroundColor" Value="#75B2FF" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Unchecked">
+                                <VisualState.Setters>
+                                    <Setter TargetName="FrameRadioButton" Property="Frame.BackgroundColor" Value="White" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </VisualStateManager.VisualStateGroups>
+            </Frame>
+        </ControlTemplate>
+        <Style TargetType="RadioButton" x:Key="TempleteRect">
+            <Setter Property="ControlTemplate" Value="{x:StaticResource Key=RadioRectButtonTemplate}" />
+        </Style>
+        <StyleSheet>
+            <![CDATA[
+            RadioButton>StackLayout {
+                margin: 0;
+                padding: 10;
+            }
+            RadioButton>StackLayout>Image {
+            
+            }
+            RadioButton>StackLayout>Label {
+                text-align: center;
+                font-size: micro;
+                font-style:bold;
+            }
+            ]]>
+        </StyleSheet>
 
-                                <XF:MaterialTextField Placeholder="{Utils:Translate Type}" TextColor="#000000" InputType="Email"
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView Margin="0" Padding="0">
+            <Grid Margin="0" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
+                <StackLayout Margin="0" Padding="0" Spacing="20">
+                    <StackLayout FlowDirection="LeftToRight" Orientation="Horizontal" Margin="5,0" Padding="0" Spacing="20" VerticalOptions="Start">
+                        <XF:MaterialIconButton Image="arrow_left" BackgroundColor="White" CornerRadius="25" WidthRequest="50" HeightRequest="50" Command="{Binding BackCommand}"/>
+                        <Image Source="full_logo" Aspect="AspectFit" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Margin="20,10" Padding="0" Spacing="20">
+                        <XF:MaterialCard Margin="0" Padding="20,10" BackgroundColor="White" CornerRadius="10">
+                            <StackLayout Margin="0" Padding="0" Spacing="10">
+                                <XF:MaterialLabel Text="{Utils:Translate Permission}" FontAttributes="Bold" TextColor="#000000" TypeScale="Subtitle1"/>
+                                <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="3" CornerRadius="5">
+                                    <XF:MaterialTextField Placeholder="{Utils:Translate Phone_Number}" TextColor="#000000" InputType="Telephone"
                                                           FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                           CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
-                            </XF:MaterialCard>
-                            <Button Text="{Utils:Translate Update}" TextColor="White" BackgroundColor="#75B2FF" 
+                                </XF:MaterialCard>
+                                <XF:MaterialRadioButtonGroup x:Name="RadioTypePermission" 
+                                                         SelectedColor="#75B2FF" UnselectedColor="#75B2FF" 
+                                                         Margin="-10,0" VerticalSpacing="-15">
+                                    <XF:MaterialRadioButtonGroup.Choices>
+                                        <x:Array Type="{x:Type x:String}">
+                                            <x:String>Revoke</x:String>
+                                            <x:String>Authorization</x:String>
+                                        </x:Array>
+                                    </XF:MaterialRadioButtonGroup.Choices>
+                                </XF:MaterialRadioButtonGroup>
+                                <Button Text="{Utils:Translate Update}" TextColor="White" BackgroundColor="#75B2FF" 
                                     TextTransform="None" CornerRadius="5" Margin="0,20,0,0" Padding="40,0"/>
-                        </StackLayout>
-                    </XF:MaterialCard>
+                            </StackLayout>
+                        </XF:MaterialCard>
+                        <XF:MaterialCard Margin="0" Padding="20,10" BackgroundColor="White" CornerRadius="10">
+                            <StackLayout Margin="0" Padding="0" Spacing="10">
+                                <XF:MaterialLabel Text="{Utils:Translate Privilege}" FontAttributes="Bold" TextColor="#000000" TypeScale="Subtitle1"/>
+                                <StackLayout Margin="0" Padding="0" Spacing="10">
+                                    <Grid ColumnDefinitions="*,*,*" ColumnSpacing="10" 
+                                          RowDefinitions="100" x:Name="GridRadioRegisterAs"
+                                          HorizontalOptions="FillAndExpand" VerticalOptions="Start"
+                                          RadioButtonGroup.GroupName="RegisterAs" RadioButtonGroup.SelectedValue="{Binding RegisterAs}">
+                                        <RadioButton Grid.Column="0" Value="Driver" IsChecked="False" ControlTemplate="{x:StaticResource RadioRectButtonTemplate}">
+                                            <RadioButton.Content>
+                                                <StackLayout>
+                                                    <Image Source="driver" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                                                    <Label Text="{Utils:Translate Driver}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                                </StackLayout>
+                                            </RadioButton.Content>
+                                        </RadioButton>
+                                        <RadioButton Grid.Column="1" Value="Partner" IsChecked="False" ControlTemplate="{x:StaticResource RadioRectButtonTemplate}">
+                                            <RadioButton.Content>
+                                                <StackLayout>
+                                                    <Image Source="partner" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                                                    <Label Text="{Utils:Translate Partner}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                                </StackLayout>
+                                            </RadioButton.Content>
+                                        </RadioButton>
+                                        <RadioButton Grid.Column="2" Value="Staff" IsChecked="False" ControlTemplate="{x:StaticResource RadioRectButtonTemplate}">
+                                            <RadioButton.Content>
+                                                <StackLayout>
+                                                    <Image Source="staff" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                                                    <Label Text="{Utils:Translate Staff}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                                </StackLayout>
+                                            </RadioButton.Content>
+                                        </RadioButton>
+                                    </Grid>
+                                </StackLayout>
+                                <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="1" CornerRadius="5">
+                                    <XF:MaterialTextField Placeholder="{Utils:Translate Phone_Number}" TextColor="#000000" InputType="Telephone"
+                                                          FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                          CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                                </XF:MaterialCard>
+                                <Button Text="{Utils:Translate Update}" TextColor="White" BackgroundColor="#75B2FF" 
+                                    TextTransform="None" CornerRadius="5" Margin="0,20,0,0" Padding="40,0"/>
+                            </StackLayout>
+                        </XF:MaterialCard>
+
+                    </StackLayout>
                 </StackLayout>
-            </StackLayout>
-        </Grid>
+            </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

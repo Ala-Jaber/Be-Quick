@@ -322,6 +322,15 @@ namespace BeQuik.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Company Name.
+        /// </summary>
+        public static string Company_Name {
+            get {
+                return ResourceManager.GetString("Company_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Conditions.
         /// </summary>
         public static string Conditions {
@@ -498,6 +507,15 @@ namespace BeQuik.Resources {
         public static string Enter_voucher_code {
             get {
                 return ResourceManager.GetString("Enter_voucher_code", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Facility national number.
+        /// </summary>
+        public static string Facility_national_number {
+            get {
+                return ResourceManager.GetString("Facility_national_number", resourceCulture);
             }
         }
         
@@ -835,6 +853,15 @@ namespace BeQuik.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Privilege.
+        /// </summary>
+        public static string Privilege {
+            get {
+                return ResourceManager.GetString("Privilege", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Profile.
         /// </summary>
         public static string Profile {
@@ -939,6 +966,15 @@ namespace BeQuik.Resources {
         public static string Resend_verification_code {
             get {
                 return ResourceManager.GetString("Resend_verification_code", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save Code.
+        /// </summary>
+        public static string Save_Code {
+            get {
+                return ResourceManager.GetString("Save_Code", resourceCulture);
             }
         }
         

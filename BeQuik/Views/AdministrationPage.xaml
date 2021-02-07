@@ -5,6 +5,7 @@
              NavigationPage.HasNavigationBar="False"
              xmlns:UserControl="clr-namespace:BeQuik.UserControl"             
              xmlns:Utils="clr-namespace:BeQuik.Utils"
+             xmlns:Converter="clr-namespace:BeQuik.Converter"
              xmlns:XF="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" 
              BackgroundColor="#F5F5F5">
     <ContentPage.Resources>
@@ -29,6 +30,9 @@
                 </VisualStateManager.VisualStateGroups>
             </Frame>
         </ControlTemplate>
+        <Style TargetType="RadioButton" x:Key="TempleteRect">
+            <Setter Property="ControlTemplate" Value="{x:StaticResource Key=RadioRectButtonTemplate}" />
+        </Style>
         <ControlTemplate x:Key="RadioCircleButtonTemplate">
             <Frame x:Name="FrameRadioButton"
                    Margin="0" Padding="9,0" HasShadow="True"
@@ -52,9 +56,6 @@
                 </VisualStateManager.VisualStateGroups>
             </Frame>
         </ControlTemplate>
-        <Style TargetType="RadioButton" x:Key="TempleteRect">
-            <Setter Property="ControlTemplate" Value="{x:StaticResource Key=RadioRectButtonTemplate}" />
-        </Style>
         <Style TargetType="RadioButton" x:Key="TempleteCircle">
             <Setter Property="ControlTemplate" Value="{x:StaticResource Key=RadioCircleButtonTemplate}" />
         </Style>
@@ -74,6 +75,9 @@
             }
             ]]>
         </StyleSheet>
+        <ResourceDictionary>
+            <Converter:CheckIfDriverOrPartner x:Key="CheckIfDriverOrPartnerConverter"/>
+        </ResourceDictionary>
     </ContentPage.Resources>
 
     <ContentPage.Content>
@@ -155,7 +159,7 @@
                                 </Grid>
                             </StackLayout>
                             <!--Service Type-->
-                            <StackLayout Margin="0" Padding="0" Spacing="10" IsVisible="False">
+                            <StackLayout Margin="0" Padding="0" Spacing="10" IsVisible="{Binding RegisterAs,Converter={StaticResource CheckIfDriverOrPartnerConverter}}">
                                 <XF:MaterialLabel Text="{Utils:Translate Service}" TextColor="#000000" TypeScale="Subtitle2"/>
                                 <ScrollView Orientation="Horizontal" Margin="5,0" Padding="0" VerticalOptions="Start" HorizontalScrollBarVisibility="Never">
                                     <Grid ColumnDefinitions="*,*,*,*" ColumnSpacing="10" RowDefinitions="90"
@@ -195,16 +199,8 @@
                                         </RadioButton>
                                     </Grid>
                                 </ScrollView>
-                                <StackLayout.Triggers>
-                                    <DataTrigger TargetType="StackLayout" Binding="{Binding RegisterAs}" Value="Driver">
-                                        <Setter Property="IsVisible" Value="True"/>
-                                    </DataTrigger>
-                                    <DataTrigger TargetType="StackLayout" Binding="{Binding RegisterAs}" Value="Partner">
-                                        <Setter Property="IsVisible" Value="True"/>
-                                    </DataTrigger>
-                                </StackLayout.Triggers>
                             </StackLayout>
-                            <!--Staff Type-->
+                            <!--ContentView Staff Type-->
                             <StackLayout Margin="0" Padding="0" Spacing="10" IsVisible="False">
                                 <XF:MaterialLabel Text="{Utils:Translate Type}" TextColor="#000000" TypeScale="Subtitle2"/>
                                 <ScrollView Orientation="Horizontal" Margin="5,0" Padding="0" VerticalOptions="Start" HorizontalScrollBarVisibility="Never">
@@ -245,7 +241,7 @@
                                 </StackLayout.Triggers>
 
                             </StackLayout>
-
+                            <!--ContentView Driver-->
                             <StackLayout Margin="0" Padding="0" Spacing="20" IsVisible="False">
                                 <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="3" CornerRadius="5">
                                     <XF:MaterialTextField Placeholder="{Utils:Translate License_Number}" TextColor="#000000" InputType="Email"
@@ -257,28 +253,36 @@
                                                           FloatingPlaceholderColor="#000000" TintColor="#000000"
                                                           CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
                                 </XF:MaterialCard>
+                                <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="3" CornerRadius="5">
+                                    <XF:MaterialTextField Placeholder="{Utils:Translate Plate_Number}" TextColor="#000000" InputType="Text"
+                                                        FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                        CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                                </XF:MaterialCard>
                                 <StackLayout.Triggers>
                                     <DataTrigger TargetType="StackLayout" Binding="{Binding RegisterAs}" Value="Driver">
                                         <Setter Property="IsVisible" Value="True"/>
                                     </DataTrigger>
+                                </StackLayout.Triggers>
+                            </StackLayout>
+                            <!--ContentView Partner-->
+                            <StackLayout Margin="0" Padding="0" Spacing="20" IsVisible="False">
+                                <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="3" CornerRadius="5">
+                                    <XF:MaterialTextField Placeholder="{Utils:Translate Company_Name}" TextColor="#000000" InputType="Email"
+                                                    FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                    CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                                </XF:MaterialCard>
+                                <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="3" CornerRadius="5">
+                                    <XF:MaterialTextField Placeholder="{Utils:Translate Facility_national_number}" TextColor="#000000" InputType="Email"
+                                                          FloatingPlaceholderColor="#000000" TintColor="#000000"
+                                                          CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
+                                </XF:MaterialCard>
+                                <StackLayout.Triggers>
                                     <DataTrigger TargetType="StackLayout" Binding="{Binding RegisterAs}" Value="Partner">
                                         <Setter Property="IsVisible" Value="True"/>
                                     </DataTrigger>
                                 </StackLayout.Triggers>
-                            </StackLayout>                            
-                            <XF:MaterialCard Margin="0" Padding="0" HasShadow="True" Elevation="3" CornerRadius="5" IsVisible="False">
-                                <XF:MaterialTextField Placeholder="{Utils:Translate Plate_Number}" TextColor="#000000" InputType="Text"
-                                                    FloatingPlaceholderColor="#000000" TintColor="#000000"
-                                                    CardBackgroundColor="White" ShouldAnimateUnderline="False"/>
-                                <XF:MaterialCard.Triggers>
-                                    <DataTrigger TargetType="XF:MaterialCard" Binding="{Binding RegisterAs}" Value="Driver">
-                                        <Setter Property="IsVisible" Value="True"/>
-                                    </DataTrigger>
-                                </XF:MaterialCard.Triggers>
-                            </XF:MaterialCard>
-
+                            </StackLayout>
                             <Button Text="{Utils:Translate SingUp}" TextColor="White" BackgroundColor="#75B2FF" TextTransform="None" CornerRadius="5" Padding="20,0"/>
-
                         </StackLayout>
                     </XF:MaterialCard>
                 </ScrollView>

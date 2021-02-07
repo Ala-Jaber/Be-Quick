@@ -204,6 +204,9 @@
   <data name="Company" xml:space="preserve">
     <value>شركة</value>
   </data>
+  <data name="Company_Name" xml:space="preserve">
+    <value>اسم الشركة</value>
+  </data>
   <data name="Conditions" xml:space="preserve">
     <value>الظروف</value>
   </data>
@@ -263,6 +266,9 @@
   </data>
   <data name="Enter_voucher_code" xml:space="preserve">
     <value>ادخل رقم الشيفرة</value>
+  </data>
+  <data name="Facility_national_number" xml:space="preserve">
+    <value>رقم المؤسسة</value>
   </data>
   <data name="FARE" xml:space="preserve">
     <value>أجرة</value>
@@ -375,6 +381,9 @@
   <data name="Privacy_terms" xml:space="preserve">
     <value>حيث الخصوصية</value>
   </data>
+  <data name="Privilege" xml:space="preserve">
+    <value>منح الحصانة</value>
+  </data>
   <data name="Profile" xml:space="preserve">
     <value>الملف الشخصي</value>
   </data>
@@ -410,6 +419,9 @@
   </data>
   <data name="Resend_verification_code" xml:space="preserve">
     <value>إعادة إرسال رمز التحقق</value>
+  </data>
+  <data name="Save_Code" xml:space="preserve">
+    <value>حفظ الكود</value>
   </data>
   <data name="Service" xml:space="preserve">
     <value>الخدمات</value>

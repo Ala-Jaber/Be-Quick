@@ -41,6 +41,49 @@
                 <Setter Property="CardBackgroundColor" Value="White"/>
                 <Setter Property="ShouldAnimateUnderline" Value="False"/>
             </Style>
+
+            <ControlTemplate x:Key="RadioCircleButtonTemplate">
+                <Frame x:Name="FrameRadioButton"
+                   Margin="0" Padding="9,0" HasShadow="True"
+                   BorderColor="#1A000000" CornerRadius="50">
+                    <ContentPresenter/>
+                    <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroupList>
+                            <VisualStateGroup x:Name="CheckedStates">
+                                <VisualState x:Name="Checked">
+                                    <VisualState.Setters>
+                                        <Setter TargetName="FrameRadioButton" Property="Frame.BackgroundColor" Value="#75B2FF" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Unchecked">
+                                    <VisualState.Setters>
+                                        <Setter TargetName="FrameRadioButton" Property="Frame.BackgroundColor" Value="White" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateGroupList>
+                    </VisualStateManager.VisualStateGroups>
+                </Frame>
+            </ControlTemplate>
+            <Style TargetType="RadioButton" x:Key="TempleteCircle">
+                <Setter Property="ControlTemplate" Value="{x:StaticResource Key=RadioCircleButtonTemplate}" />
+            </Style>
+            <StyleSheet>
+                <![CDATA[
+            RadioButton>StackLayout {
+                margin: 0;
+                padding: 10;
+            }
+            RadioButton>StackLayout>Image {
+            
+            }
+            RadioButton>StackLayout>Label {
+                text-align: center;
+                font-size: micro;
+                font-style:bold;
+            }
+            ]]>
+            </StyleSheet>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
@@ -55,6 +98,7 @@
                     </StackLayout>
                 </StackLayout>
                 <ScrollView Margin="0" Padding="20,10">
+                    <StackLayout Margin="0" Padding="0" Spacing="20">                        
                     <StackLayout Margin="0" Padding="0" Spacing="20">
                         <XF:MaterialCard Margin="0" Padding="0" CornerRadius="10" BackgroundColor="White">
                             <StackLayout Orientation="Horizontal" Margin="10" Padding="0" Spacing="10">
@@ -111,6 +155,79 @@
                         <Button Text="{Utils:Translate Update}" TextColor="White" BackgroundColor="#75B2FF" 
                                 TextTransform="None" CornerRadius="5" HeightRequest="50" Padding="40,0" 
                                 HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+                        <StackLayout Margin="0" Padding="0" Spacing="20">
+                            <XF:MaterialCard Margin="0" Padding="20,10" BackgroundColor="White" CornerRadius="10">
+                                <StackLayout Margin="0" Padding="0" Spacing="20">
+                                    <XF:MaterialLabel Text="{Utils:Translate Service}" FontAttributes="Bold" TextColor="#000000" TypeScale="Subtitle1"/>
+                                    <ScrollView Orientation="Horizontal" Margin="5,0" Padding="0" VerticalOptions="Start" HorizontalScrollBarVisibility="Never">
+                                        <Grid ColumnDefinitions="*,*,*,*" ColumnSpacing="10" RowDefinitions="90"
+                                          HorizontalOptions="CenterAndExpand" VerticalOptions="Start"
+                                          RadioButtonGroup.GroupName="Service" RadioButtonGroup.SelectedValue="{Binding ServiceType}">
+                                            <RadioButton Grid.Column="0" Value="Delivery" IsChecked="False" ControlTemplate="{x:StaticResource RadioCircleButtonTemplate}">
+                                                <RadioButton.Content>
+                                                    <StackLayout>
+                                                        <Image Source="delivery" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                                                        <Label Text="{Utils:Translate Delivery}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                                    </StackLayout>
+                                                </RadioButton.Content>
+                                            </RadioButton>
+                                            <RadioButton Grid.Column="1" Value="Gas" IsChecked="False" ControlTemplate="{x:StaticResource RadioCircleButtonTemplate}">
+                                                <RadioButton.Content>
+                                                    <StackLayout>
+                                                        <Image Source="gas" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                                                        <Label Text="{Utils:Translate Gas}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                                    </StackLayout>
+                                                </RadioButton.Content>
+                                            </RadioButton>
+                                            <RadioButton Grid.Column="2" Value="Yellow Taxi" IsChecked="False" ControlTemplate="{x:StaticResource RadioCircleButtonTemplate}">
+                                                <RadioButton.Content>
+                                                    <StackLayout>
+                                                        <Image Source="taxi" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                                                        <Label Text="{Utils:Translate Yellow_Taxi}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                                    </StackLayout>
+                                                </RadioButton.Content>
+                                            </RadioButton>
+                                            <RadioButton Grid.Column="3" Value="Winch" IsChecked="False" ControlTemplate="{x:StaticResource RadioCircleButtonTemplate}">
+                                                <RadioButton.Content>
+                                                    <StackLayout>
+                                                        <Image Source="tow_truck" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                                                        <Label Text="{Utils:Translate Winch}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                                                    </StackLayout>
+                                                </RadioButton.Content>
+                                            </RadioButton>
+                                        </Grid>
+                                    </ScrollView>
+                                    <Button Text="{Utils:Translate Generate_Code}" TextColor="White" BackgroundColor="#75B2FF" 
+                                    TextTransform="None" CornerRadius="5" Margin="0,20,0,0" Padding="40,0"
+                                    Command="{Binding GenerateCodeCommand}"/>
+                                </StackLayout>
+                            </XF:MaterialCard>
+                            <XF:MaterialCard Margin="0" Padding="20,10" BackgroundColor="White" CornerRadius="10" IsVisible="{Binding IsCodeGenerated}">
+                                <StackLayout Margin="0" Padding="0" Spacing="20">
+                                    <XF:MaterialLabel Text="{Utils:Translate Code_Generated}" TextColor="#000000" FontAttributes="Bold" TypeScale="Subtitle1"/>
+                                    <XF:MaterialLabel Text="Monday 11,Jan" TextColor="#000000" TypeScale="Caption"/>
+                                    <Grid Margin="0" Padding="0" RowDefinitions="*,*" ColumnDefinitions="3*,*">
+                                        <XF:MaterialLabel Grid.Row="0" Grid.Column="0" Text="{Utils:Translate Code}" TextColor="#000000" FontAttributes="Bold" TypeScale="Subtitle1"/>
+                                        <XF:MaterialLabel Grid.Row="1" Grid.Column="0" Text="W9258603122021706" TextColor="#000000" FontAttributes="Bold" TypeScale="Subtitle1"/>
+                                        <XF:MaterialLabel Grid.Row="0" Grid.Column="1" Text="{Utils:Translate Balance}" TextColor="#000000" FontAttributes="Bold" TypeScale="Subtitle1"/>
+                                        <XF:MaterialLabel Grid.Row="1" Grid.Column="1" TextColor="#000000" FontAttributes="Bold" TypeScale="Subtitle1">
+                                            <XF:MaterialLabel.FormattedText>
+                                                <FormattedString>
+                                                    <FormattedString.Spans>
+                                                        <Span Text="6"/>
+                                                        <Span Text=" "/>
+                                                        <Span Text="{Utils:Translate JOD}"/>
+                                                    </FormattedString.Spans>
+                                                </FormattedString>
+                                            </XF:MaterialLabel.FormattedText>
+                                        </XF:MaterialLabel>
+                                    </Grid>
+                                    <Button Text="{Utils:Translate Save_Code}" TextColor="White" BackgroundColor="#75B2FF" 
+                                    TextTransform="None" CornerRadius="5" Margin="0,20,0,0" Padding="40,0"/>
+                                </StackLayout>
+                            </XF:MaterialCard>
+                        </StackLayout>
                     </StackLayout>
                 </ScrollView>
             </StackLayout>
