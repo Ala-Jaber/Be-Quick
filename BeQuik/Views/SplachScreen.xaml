@@ -26,7 +26,7 @@
                 </StackLayout>
                 
                 <StackLayout x:Name="ImageCars" 
-                             Margin="50,0,0,0" Padding="0" Spacing="50" Opacity="0"
+                             Margin="0" Padding="50,0" Spacing="50" Opacity="0"
                              HorizontalOptions="FillAndExpand" VerticalOptions="Start">
                     
                     <StackLayout Orientation="Horizontal"
