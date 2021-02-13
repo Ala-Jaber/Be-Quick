@@ -16,7 +16,8 @@ namespace BeQuik
         {
             InitializeComponent();
             XF.Material.Forms.Material.Init(this);
-            new ViewModels.LoginViewModel();
+            //new ViewModels.LoginViewModel();
+            MainPage = new Views.SplachScreen();
         }
         public static MaterialInputDialogConfiguration GetMaterialInputDialogConfiguration()
         {

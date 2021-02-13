@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeQuik.Views.SplachScreen"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid Margin="0" Padding="0">
+            <Image Source="building_background" Aspect="AspectFit" VerticalOptions="EndAndExpand"/>
+            <StackLayout Margin="0,60,0,0" Padding="0" Spacing="80">
+                
+                <StackLayout x:Name="logoStackLayout"
+                             Margin="0" Padding="0" Spacing="0"
+                             TranslationY="150" TranslationX="0"
+                             VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+                    
+                    <Image x:Name="logo_app" Source="logo_app_dark" 
+                           Aspect="AspectFit" IsOpaque="True"
+                           Margin="0" HeightRequest="70"
+                           VerticalOptions="Start" HorizontalOptions="FillAndExpand"/>
+                    
+                    <Image x:Name="your_life" Source="your_life_dark" 
+                           Aspect="AspectFit" IsOpaque="True"
+                           Margin="0" HeightRequest="30" TranslationX="60"
+                           VerticalOptions="Start" HorizontalOptions="FillAndExpand"/>
+                    
+                </StackLayout>
+                
+                <StackLayout x:Name="ImageCars" 
+                             Margin="50,0,0,0" Padding="0" Spacing="50" Opacity="0"
+                             HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                    
+                    <StackLayout Orientation="Horizontal"
+                                 Margin="0" Padding="0" Spacing="100">
+                        <Image x:Name="taxi" Source="taxi_3d" Aspect="AspectFit" Margin="10,10,0,50"/>
+                        <Image x:Name="truck" Source="tow_truck_3d" Aspect="AspectFit" Margin="0,50,0,0"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal"
+                                 Margin="50,0,0,0" Padding="0" Spacing="100">
+                        <Image x:Name="delivery" Source="delivery_3d" Aspect="AspectFit" Margin="10,10,0,50"/>
+                        <Image x:Name="gas" Source="gas_3d" Aspect="AspectFit" Margin="0,50,0,10"/>
+                    </StackLayout>
+                    
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+            <GradientStop Color="#75B2FF" Offset="0"/>
+            <GradientStop Color="#3B5980" Offset="1"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+</ContentPage>

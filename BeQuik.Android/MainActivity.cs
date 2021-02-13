@@ -7,14 +7,17 @@ using Android.Content.Res;
 
 namespace BeQuik.Droid
 {
-    [Activity(Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize )]
+    [Activity(
+                //Theme = "@style/MainTheme", MainLauncher = false,
+                Theme = "@style/SplashTheme", MainLauncher = true,
+                ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize )]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
+
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
-
             base.OnCreate(bundle);
 
             Rg.Plugins.Popup.Popup.Init(this);
@@ -24,12 +27,14 @@ namespace BeQuik.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
             XF.Material.Droid.Material.Init(this, bundle);
+
             XamEffects.Droid.Effects.Init();
 
             var platformConfig = new PlatformConfig { BitmapDescriptorFactory = new AccessNativeBitmapConfig() };
             Xamarin.FormsGoogleMaps.Init(this, bundle, platformConfig); 
 
             LoadApplication(new App());
+            SetTheme(Resource.Style.MainTheme);
         }
         public override Android.Content.Res.Resources Resources
         {
@@ -42,17 +47,6 @@ namespace BeQuik.Droid
                 var resources = context.Resources;
 
                 return resources;
-            }
-        }
-        public override void OnBackPressed()
-        {
-            if (Rg.Plugins.Popup.Popup.SendBackPressed(base.OnBackPressed))
-            {
-                // Do something if there are some pages in the `PopupStack`
-            }
-            else
-            {
-                base.OnBackPressed();
             }
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

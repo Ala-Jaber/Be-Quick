@@ -16,10 +16,10 @@ namespace BeQuik.Utils
         public FlowDirection FlowDirection { get; set; }
 
         private const string LanguageKey = nameof(LanguageKey);
-        private CultureInfo CurrentCulture => Resource.Culture ?? Thread.CurrentThread.CurrentUICulture;
+        private CultureInfo CurrentCulture => Thread.CurrentThread.CurrentUICulture ?? Resource.Culture;
         private LocalizationResourceManager()
         {
-            SetCulture(new CultureInfo(Preferences.Get(LanguageKey, CurrentCulture.TwoLetterISOLanguageName)));
+            ChangeCulture(new CultureInfo(Preferences.Get(LanguageKey, Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName)));
         }
         public string this[string text]
         {
@@ -32,28 +32,19 @@ namespace BeQuik.Utils
         {
             return Resource.ResourceManager.GetString(key, Resource.Culture);
         }
-        public static void SetArabicCulture() => Instance.SetCulture(new CultureInfo("ar-JO"));
-        public static void SetEnglishCulture() => Instance.SetCulture(new CultureInfo("en-US"));
-        private void SetCulture(CultureInfo language)
+        public static void SetArabicCulture() => Instance.ChangeCulture(new CultureInfo("ar-JO"));
+        public static void SetEnglishCulture() => Instance.ChangeCulture(new CultureInfo("en-US"));
+        private void ChangeCulture(CultureInfo language)
         {
-            Thread.CurrentThread.CurrentUICulture = language;
-            Resource.Culture = language;
-            FlowDirection = GetFlowDirection();
-            Invalidate();
+            Thread.CurrentThread.CurrentUICulture = Resource.Culture = language;
+            SetFlowDirection();
             Preferences.Set(LanguageKey, language.TwoLetterISOLanguageName);
         }
-        private FlowDirection GetFlowDirection()
+        private void SetFlowDirection()
         {
-            try
-            {
-                if (LocalizationResourceManager.Instance.CurrentCulture.TextInfo.IsRightToLeft)
-                    return FlowDirection.RightToLeft;
-                return FlowDirection.LeftToRight;
-            }
-            catch
-            {
-                return default;
-            }
+            FlowDirection = Thread.CurrentThread.CurrentUICulture.TextInfo.IsRightToLeft ? 
+                                FlowDirection.RightToLeft : FlowDirection.LeftToRight;
+            Invalidate();
         }
 
     }
